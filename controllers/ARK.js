@@ -68,8 +68,8 @@ class ARK extends ARK_api {
         try {
             newRates = await ARK_api.getRates();
         } catch (e) {
-            console.log('Error get ark_api');
-            console.log(e);
+            console.error('Error get ark_api');
+            console.error(e);
             return;
         }
         let changedRates = {};
@@ -109,7 +109,7 @@ class ARK extends ARK_api {
         for(let j in this.info) {
             let guild   = this.client.guilds.get(j);
             if(!guild) {
-                console.log("Guild "+j+" not found for ARK api");
+                console.error("Guild "+j+" not found for ARK api");
                 continue;
             }
 
@@ -201,11 +201,11 @@ class ARK extends ARK_api {
         if(isRole) {
             message.member.removeRole(isRole)
                 .then(function(){ message.reply('Роль для оповещения о множителях была с Вас снята, Вас более не будут упоминать при изменении множителей.'); })
-                .catch(function(){console.log("Роль не может быть удалена")})
+                .catch(function(){console.error("Роль не может быть удалена")})
         } else {
             message.member.addRole(roleId)
                 .then(function(){ message.reply('Роль для оповещения о множителях была Вам присвоена, теперь Вы получите оповещение при изменении множителей на __официальных серверах__.'); })
-                .catch(function(){console.log("Роль не может быть поставлена")})
+                .catch(function(){console.error("Роль не может быть поставлена")})
         }
     }
 

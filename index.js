@@ -184,7 +184,7 @@ client.on("voiceStateUpdate", (oldMember, newMember) => {
 });
 
 client.on('error', (e)=> {
-    console.log('Discord long query error, its normal.');
+    console.error('Discord long query error, its normal.');
 });
 
 

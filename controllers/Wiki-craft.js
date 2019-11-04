@@ -80,7 +80,7 @@ class Wiki_craft extends Wiki {
                         .catch(console.error);*/
                     return;
                 }
-                console.log(e.response);
+                console.error(e.response);
             }
             console.error(e);
             return;

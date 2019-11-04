@@ -131,7 +131,7 @@ class GetMap {
     static getResult(message, name, map){
         GetMap.getMap(message, name, map, (err, res) => {
             if(err) {
-                console.log(err);
+                console.error(err);
                 return;
             }
             const attachment = new Discord.Attachment(res, "map.jpg");
@@ -212,7 +212,7 @@ class GetMap {
                     let statusCode2 = res2.statusCode;
 
                     if(statusCode2 !== 200) {
-                        console.log(statusCode2);
+                        console.error('Status code not 200: ' + statusCode2);
                         callback(400);
                         return;
                     }
