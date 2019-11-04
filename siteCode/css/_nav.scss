@@ -1,0 +1,36 @@
+.nav {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background: $nav-bg-color;
+
+	&__link {
+		padding: 1em 2em;
+		display: block;
+		color: $nav-font-color;
+		text-decoration: none;
+		transition: background-color $main-delay;
+
+		&:hover, &:focus {
+			background: lighten($nav-bg-color, 10%);
+			outline: none;
+		}
+
+		&_active, &_active:hover, &_active:focus {
+			background: $nav-active-bg-color;
+			color: $nav-active-font-color;
+		}
+	}
+
+	&__item {
+		&_logo {
+			margin-left: auto;
+			margin-right: auto;
+			color: $nav-font-color;
+			font-weight: bold;
+			font-size: 2em;
+			opacity: .2;
+			user-select: none;
+		}
+	}
+}

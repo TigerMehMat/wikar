@@ -1,0 +1,48 @@
+{
+  "vivihilio": {
+    "The Island": {
+      "status": 2
+    },
+    "The Center": {
+      "status": 2
+    },
+    "Scorched Earth": {
+      "status": 2
+    },
+    "Ragnarok": {
+      "status": 2
+    },
+    "Aberration": {
+      "status": 2
+    },
+    "Extinction": {
+      "status": 2
+    },
+    "Valguero": {
+      "status": 2
+    }
+  },
+  "karhut": {
+    "The Island": {
+      "status": 0
+    },
+    "The Center": {
+      "status": 0
+    },
+    "Scorched Earth": {
+      "status": 0
+    },
+    "Ragnarok": {
+      "status": 1
+    },
+    "Aberration": {
+      "status": 1
+    },
+    "Extinction": {
+      "status": 1
+    },
+    "Valguero": {
+      "status": 0
+    }
+  }
+}

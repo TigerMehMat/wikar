@@ -1,0 +1,12 @@
+UPDATE `survey_invite` SET `data`="{""userdata"":	2221997	,""sk"":	8002	,""sv"":	3005	}" WHERE `poll`=3868 AND `key`="5de0a08242617c4929e4af782c858f6e";
+UPDATE `survey_invite` SET `data`="{""userdata"":	2222000	,""sk"":	16005	,""sv"":	4002	}" WHERE `poll`=3868 AND `key`="786ac1f0b5f02bdaae449bcef7439131";
+UPDATE `survey_invite` SET `data`="{""userdata"":	2222328	,""sk"":	3002	,""sv"":	4002	}" WHERE `poll`=3868 AND `key`="4c9c6c1d4b3412f627cf99afd7114d22";
+UPDATE `survey_invite` SET `data`="{""userdata"":	2222878	,""sk"":	2004	,""sv"":	4002	}" WHERE `poll`=3868 AND `key`="fa46c775ad48a13b46d48a8eb43a26c6";
+UPDATE `survey_invite` SET `data`="{""userdata"":	2224134	,""sk"":	4002	,""sv"":	4002	}" WHERE `poll`=3868 AND `key`="740b5dfd0f11230f258ab15703686f85";
+UPDATE `survey_invite` SET `data`="{""userdata"":	2224151	,""sk"":	4002	,""sv"":	4002	}" WHERE `poll`=3868 AND `key`="97d65027337980366607ba6618a3716d";
+UPDATE `survey_invite` SET `data`="{""userdata"":	2224156	,""sk"":	1004	,""sv"":	4002	}" WHERE `poll`=3868 AND `key`="47f5e0c021525a754dcae341c74ca73f";
+UPDATE `survey_invite` SET `data`="{""userdata"":	2224137	,""sk"":	3002	,""sv"":	8002	}" WHERE `poll`=3868 AND `key`="e39f317ea8557687b0c7b7681ed64a18";
+UPDATE `survey_invite` SET `data`="{""userdata"":	2224217	,""sk"":	4002	,""sv"":	3002	}" WHERE `poll`=3868 AND `key`="611b53480b57424c8f58e172512c9d85";
+UPDATE `survey_invite` SET `data`="{""userdata"":	2224218	,""sk"":	4002	,""sv"":	3002	}" WHERE `poll`=3868 AND `key`="5037272c0fc51dee587b90fa57a89bc2";
+UPDATE `survey_invite` SET `data`="{""userdata"":	2224239	,""sk"":	4002	,""sv"":	3002	}" WHERE `poll`=3868 AND `key`="488f3bff9a3e2a590a43d62d2b13af52";
+UPDATE `survey_invite` SET `data`="{""userdata"":	2224405	,""sk"":	1001	,""sv"":	3004	}" WHERE `poll`=3868 AND `key`="cfe3d36e8564cf603ef898b003bdfa9e";

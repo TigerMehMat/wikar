@@ -1,0 +1,14 @@
+@import "normalize";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic');
+
+@import "config";
+
+body {
+	font-family: $main-font-family;
+	font-size: $main-font-size;
+}
+
+@import "nav";
+@import "_main.scss";
+@import "form";
+@import "btn";

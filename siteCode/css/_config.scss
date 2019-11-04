@@ -1,0 +1,32 @@
+
+/* ПАЛИТРА */
+
+$color-white: #fff;
+$color-orange: #ffa304;
+$color-light-grey: #ccc;
+$color-black: #000;
+
+/* НАВИГАЦИЯ */
+
+$nav-bg-color: $color-orange;
+$nav-font-color: $color-white;
+
+$nav-active-bg-color: $color-white;
+$nav-active-font-color: $color-black;
+
+/* КНОПКИ */
+
+$btn-colors: (
+	"primary": ($color-orange, $color-white),
+	"secondary": $color-light-grey,
+	"default": ($color-white, $color-black),
+);
+
+
+/* ПРОЧИЕ НАСТРОЙКИ */
+
+$main-delay: .25s;
+$main-font-family: 'Roboto', sans-serif;
+$main-font-size: 16px;
+
+$light-shadow-color: $color-light-grey;

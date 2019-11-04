@@ -1,0 +1,411 @@
+const bm_api	= require("./GlobalControllers/BM_api");
+const config	= require('../configbot');
+const Discord	= require('discord.js');
+const fs		= require('fs');
+const path		= require('path');
+const Access	= require('./GlobalControllers/access');
+const DE		= require('./GlobalControllers/discord_expansion');
+
+const DB_bm_class	= require('./DB/db_bm');
+const DB_bm	= new DB_bm_class();
+
+const statusColor = [0x666666, 0xFFA61A, 0xFF1D05];
+
+class BM extends bm_api {
+    constructor(token, client){
+        super(token);
+        this.client = client;
+    }
+
+    async serversUpdate(firststart = false){
+    	let arrayServers;
+    	let res;
+    	try {
+    		arrayServers	= await DB_bm.getAllActiveBMServers();
+			res				= await this.getPlayersByAllServers(arrayServers);
+			await this.updateServers(res);
+			await this.updateDiscordServers();
+		} catch (e) {
+			console.error(e);
+		}
+		await this.timeout(180000)
+        this.serversUpdate();
+    }
+
+    async updateServers(players) {
+    	for(let k in players) {
+			await DB_bm.updateServerOnline(k, players[k]);
+		}
+	}
+
+	async updateDiscordServers(firstStart	= false) {
+    	let discordServers	= await DB_bm.getAllActiveDiscordServers();
+    	for(let i=0; i<discordServers.length; i++) {
+			let guild   = this.client.guilds.get(discordServers[i].guild);
+			if(!guild) {
+				console.error("Guild for " + discordServers[i].guild + " not found");
+				continue;
+			}
+			let channel = guild.channels.get(discordServers[i].channel);
+			if(!channel) {
+				console.error("Channel for " + discordServers[i].channel + " not found");
+				continue;
+			}
+
+    		let serversInfo		= await DB_bm.getServersInfoByDiscordServer(discordServers[i].guild);
+
+			let infoMessages	= await DE.getMessagesForLog(channel, this.client.user.id, serversInfo.length);
+
+			console.log(infoMessages);
+
+			return;
+			// let firstId			= await this.getFirstIdInChannel(channel);
+			//
+			// let infoMessages	= [];
+			//
+			// if(firstId) {
+			// 	let firstMessage = await channel.fetchMessage(firstId);
+			// 	let msgQ = serversInfo.length - (firstMessage.author.id === this.client.user.id);
+			// 	infoMessages = infoMessages.concat(await DE.fetchMessagesForLog(channel, this.client.user.id, msgQ, 1, firstId));
+			// 	if (firstMessage.author.id === this.client.user.id) {
+			// 		infoMessages = infoMessages.concat(firstMessage);
+			// 	}
+			// }
+			//
+			//
+			// if(infoMessages.length < serversInfo.length) {
+			// 	let cu	= serversInfo.length;
+			// 	for(let j=infoMessages.length; j<cu; j++) {
+			// 		infoMessages.unshift(await channel.send('Wikark battle-metrika'));
+			// 		await this.timeout(1000);
+			// 	}
+			// }
+			//
+			//
+			// let names	= await DB_bm.getNamesByDiscordServer(discordServers[i].guild);
+    		// for(let j=0; j<serversInfo.length;j++) {
+			// 	serversInfo[j].current_players	= this.getPlayersState(serversInfo[j].current_players, names);
+			// 	serversInfo[j].last_players		= this.getPlayersState(serversInfo[j].last_players, names);
+    		// 	await this.updateServerInfo(infoMessages[j], serversInfo[j]);
+    		// 	await this.sendServerAlerts(channel, serversInfo[j]);
+			// }
+		}
+	}
+
+	async updateServerInfo(message, serverInfo) {
+		let embed	= new Discord.RichEmbed()
+			.setTitle(serverInfo.name)
+			.setURL('https://www.battlemetrics.com/servers/ark/'+serverInfo.bm_id+'/')
+			.setTimestamp(Date.now())
+			.setColor(statusColor[serverInfo.state]);
+		let text	= this.text__nameList(serverInfo.current_players);
+		if(text === '') text = '*сервер пуст*';
+		embed.setDescription(text);
+		await message.edit(embed);
+		if(!message.pinned) {
+			await message.pin();
+			let systemMsg	= await message.channel.fetchMessages({limit: 1});
+			systemMsg		= systemMsg.find(el => el.system === true);
+			if(systemMsg) {
+				await systemMsg.delete();
+			}
+		}
+		await this.timeout(1000);
+	}
+
+	async sendServerAlerts(channel, serverInfo) {
+    	if(serverInfo.state === 0) return;
+
+
+    	let currentPlayers	= serverInfo.current_players;
+    	let lastPlayers		= serverInfo.last_players;
+
+    	if(serverInfo.state === 1) {
+			currentPlayers	= currentPlayers.filter(pl	=> pl.state === 2);
+			lastPlayers		= lastPlayers.filter(pl	=> pl.state === 2);
+		}
+
+		currentPlayers	= currentPlayers.sort((a,b)	=> a>b);
+		lastPlayers		= lastPlayers.sort((a,b)	=> a>b);
+
+		if(this.compareArrays(currentPlayers, lastPlayers)) return;
+
+    	let change_in	= this.getDiff(currentPlayers, lastPlayers);
+    	let change_out	= this.getDiff(lastPlayers, currentPlayers);
+
+    	if(change_in.length === 0 && change_out.length === 0) return;
+
+
+
+		let embed	= new Discord.RichEmbed()
+			.setTitle(serverInfo.name)
+			.setURL('https://www.battlemetrics.com/servers/ark/'+serverInfo.bm_id+'/')
+			.setTimestamp(Date.now())
+			.setColor(statusColor[serverInfo.state]);
+
+		let text = '';
+		if(change_in.length > 0) {
+			text += this.text__nameList(change_in, 1, ' зашел(ла) сервер');
+		}
+		if(change_out.length > 0) {
+			text += this.text__nameList(change_out, 1, ' покинул(а) сервер');
+		}
+
+
+
+		embed.setDescription(text);
+		await channel.send(embed);
+		await this.timeout(1000);
+	}
+
+	getPlayersState(players, names) {
+    	if(typeof players === "string") players = JSON.parse(players);
+		players.forEach((elem, i) => {
+			let player	= names.find(el => el.name === elem.name);
+			if(!player) player = {name: elem.name, state: 0, id: elem.id};
+			else player = {name: elem.name, state: player.state, id: elem.id};
+			players[i] = player;
+		});
+		return players;
+	}
+
+	getDiff(a, b){
+		let res = [];
+		a.forEach(function(i){
+			if(!b.find(elem => elem.name === i.name)) {
+				res.push(i);
+			}
+		});
+		return res;
+	}
+
+	getPlayerStateByCode(code) {
+    	switch (code) {
+			case 0:
+				return '?';
+			case 1:
+				return 'друг';
+			case 2:
+				return 'враг';
+			default:
+				return 'неверный код';
+		}
+	}
+
+	// getFirstIdInChannel(channel, firstID = null) {
+    // 	return new Promise((resolve, reject) => {
+	// 		let options	= { limit: 100 };
+	// 		if(firstID) {
+	// 			options.before	= firstID;
+	// 		}
+	// 		channel.fetchMessages(options)
+	// 			.then(msgs	=> {
+	// 				if(msgs.size === 0) resolve(false);
+	// 				else {
+	// 					this.getFirstIdInChannel(channel, msgs.last().id)
+	// 						.then(res => {
+	// 							if(!res)	resolve(msgs.last().id);
+	// 							else		resolve(res);
+	// 						})
+	// 						.catch(reject);
+	// 				}
+	// 			})
+	// 			.catch(reject)
+	// 	});
+	// }
+
+	// fetchAllMessagesByAuthor(channel, author, limit = 50, firstID = null){
+    // 	return new Promise((resolve, reject) => {
+    // 		let options	= { limit: 100 };
+    // 		if(firstID) {
+	// 			options.after	= firstID;
+	// 		}
+	// 		channel.fetchMessages(options)
+	// 			.then(msgs	=> {
+	// 				if(msgs.size === 0) {
+	// 					resolve(false);
+	// 					return;
+	// 				}
+	//
+	// 				let currentMessages	= msgs.filter(m => m.author.id === author && !m.system);
+	//
+	// 				if(currentMessages.size >= limit){
+	// 					resolve(currentMessages.last(limit));
+	// 				}
+	// 				else {
+	// 					this.fetchAllMessagesByAuthor(channel, author, limit - currentMessages.size, msgs.last().id)
+	// 						.then(moreMessages	=> {
+	// 							if(!moreMessages){
+	// 								resolve(currentMessages);
+	// 								return;
+	// 							}
+	// 							else {
+	// 								resolve(new Discord.Collection().concat(currentMessages, moreMessages));
+	// 								return;
+	// 							}
+	// 						})
+	// 						.catch(reject);
+	// 				}
+	// 			})
+	// 			.catch(reject);
+	// 	});
+	// }
+
+
+    changeState(message, args){
+        let clientId = Access.getActualBMKey(message);
+        if(clientId === false) return;
+        if(clientId === 0) {
+        	message.reply('Срок лицензии модуля BM истек');
+        	return;
+		}
+        if(args.length < 2) {
+            message.reply('Нужно указать минимум 2 параметра: сперва название карты (можно с пробелами), затем цифру статуса сервера от 0 до 2')
+                .catch(console.error);
+            return;
+        }
+        let status = parseInt(args.pop());
+        let serv = args.join('').toLowerCase();
+        if(isNaN(status)) status = 0;
+        if(status<0) status = 0;
+        if(status>2) status = 2;
+        switch (serv) {
+            case 'island':
+            case 'theisland':
+            case 'the_island':
+            case 'остров':
+            case 'i':
+            case 'о':
+                serv = 'The Island';
+                break;
+            case 'aber':
+            case 'aberr':
+            case 'aberration':
+            case 'абер':
+            case 'аберр':
+            case 'аберрация':
+            case 'a':
+            case 'а':
+                serv = 'Aberration';
+                break;
+            case 'extinction':
+            case 'вымирание':
+            case 'e':
+            case 'в':
+                serv = 'Extinction';
+                break;
+            case 'scorched_earth':
+            case 'scorchedearth':
+            case 'scorched':
+            case 'выжженные_земли':
+            case 'выжженныеземли':
+            case 'выжженка':
+            case 'se':
+            case 'вз':
+                serv = 'Scorched Earth';
+                break;
+            case 'center':
+            case 'thecenter':
+            case 'the_center':
+            case 'центр':
+            case 'c':
+            case 'ц':
+                serv = 'The Center';
+                break;
+            case 'ragnarok':
+            case 'рагнарек':
+            case 'рагнарёк':
+            case 'рагнарь':
+            case 'р':
+            case 'r':
+                serv = 'Ragnarok';
+                break;
+            case 'valguero':
+            case 'вальгуэро':
+            case 'вальгуеро':
+            case 'валгуэро':
+            case 'валгуеро':
+            case 'вальга':
+            case 'вал':
+            case 'v':
+                serv = 'Valguero';
+                break;
+            default:
+                message.reply('Сервер ' + serv + ' не найден');
+                return;
+        }
+        this.servers[clientId][serv].status = status;
+        let state = {};
+        for(let i in this.servers) {
+			state[i] = {};
+        	for(let j in this.servers[i]) {
+				state[i][j] = {
+					"status": this.servers[i][j].status,
+					// "currentPlayers": [],
+				};
+			}
+        }
+        fs.writeFileSync(path.resolve(__dirname, '../data/'+config.path.bm_directory+'/states.json'), JSON.stringify(state));
+        message.reply('Статус сервера ' + serv + ' изменен на ' + status)
+            .catch(console.error);
+    }
+
+
+    /* Функции внешнего вида */
+
+
+
+	text__nameList(arrPlayers, type = 0, postfix = '') {
+		let text	= '';
+		arrPlayers.forEach(player => {
+			text += this.text__player(player, type, postfix);
+		});
+		return text;
+	}
+
+	text__player(player, type = 0, postfix2 = '') {
+		let postfix	= '';
+		if(type === 0) {
+			postfix = ' - ' + this.getPlayerStateByCode(player.state);
+		} else if(type === 1) {
+			postfix = ' (' + this.getPlayerStateByCode(player.state) + ')';
+		}
+		return '[``' + Discord.Util.escapeMarkdown(player.name, false, true) + '``](https://www.battlemetrics.com/players/'+player.id+')' + postfix + postfix2 + '\n';
+	}
+
+
+	/* Вспомогательные функции */
+
+	timeout(ms) {
+		return new Promise(resolve => setTimeout(resolve, ms));
+	}
+
+	compareArrays(array1, array2) {
+		let i, isA1, isA2;
+		isA1 = Array.isArray(array1);
+		isA2 = Array.isArray(array2);
+
+		if (isA1 !== isA2) { // is one an array and the other not?
+			return false;      // yes then can not be the same
+		}
+		if (! (isA1 && isA2)) {      // Are both not arrays
+			return array1 === array2;  // return strict equality
+		}
+		if (array1.length !== array2.length) { // if lengths differ then can not be the same
+			return false;
+		}
+		// iterate arrays and compare them
+		for (i = 0; i < array1.length; i += 1) {
+			if (!this.compareArrays(array1[i], array2[i])) { // Do items compare recursively
+				return false;
+			}
+		}
+		return true; // must be equal
+	}
+
+	addPlayer() {
+		// todo: Добавление игрока в список
+	}
+}
+
+module.exports = BM;

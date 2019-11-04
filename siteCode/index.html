@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wikark</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <nav class="nav">
+        <span class="nav__item"><a href="#" class="nav__link">Главная</a></span>
+        <span class="nav__item"><a href="#" class="nav__link">О боте</a></span>
+        <span class="nav__item"><a href="#" class="nav__link">Новости</a></span>
+        <span class="nav__item"><a href="#" class="nav__link nav__link_active">Настройки</a></span>
+        <span class="nav__item nav__item_logo">WikARK</span>
+        <span class="nav__item"><a href="#" class="nav__link">Выход</a></span>
+    </nav>
+    <main class="main">
+        <h1 class="main__title">Заголовок страницы</h1>
+<!--        <div class="news">-->
+<!--            <div class="news__item">-->
+<!--                <div class="news__title">Заголовок новости</div>-->
+<!--                <div class="news__description">Описание новости</div>-->
+<!--            </div>-->
+<!--        </div>-->
+        <form action="#" method="get" class="server-settings form">
+            Активный канал
+            <select class="form__input" name="channel">
+                <option value="547378841606160406">основной</option>
+                <option value="547722052040130560">предложения</option>
+                <option value="547680328639184906">лог</option>
+                <option value="557182468520804372" selected>для-тестов</option>
+                <option value="557823771642429440">релизный-бот</option>
+                <option value="559689029252153364">battle-metrics</option>
+                <option value="596631182935064589">bm-2</option>
+                <option value="565133533245472774">множители</option>
+            </select>
+            <div class="btn-line">
+                <button class="btn btn_primary" type="submit">Сохранить</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

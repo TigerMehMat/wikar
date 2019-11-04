@@ -1,0 +1,882 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="78e569e7-c37a-40b6-933a-75e13f406e7d" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="DiscBot" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/BM.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="52" column="142" lean-forward="true" selection-start-line="52" selection-start-column="142" selection-end-line="52" selection-end-column="142" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/bm/players_test.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="364" selection-start-column="364" selection-end-column="364" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;d533570c-eb14-42c8-99a2-3cdd33f070b8&gt;/46/46.inc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="56" column="41" lean-forward="true" selection-start-line="56" selection-start-column="22" selection-end-line="56" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="true" current-in-tab="true">
+        <entry file="remoteDeploymentFS://&lt;d533570c-eb14-42c8-99a2-3cdd33f070b8&gt;/3941/3941.inc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1584">
+              <caret line="629" column="58" selection-start-line="629" selection-start-column="58" selection-end-line="629" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;d533570c-eb14-42c8-99a2-3cdd33f070b8&gt;/3903/3903.inc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="666" selection-start-line="666" selection-end-line="667" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;d533570c-eb14-42c8-99a2-3cdd33f070b8&gt;/3904/3904.inc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="1265" column="19" selection-start-line="1265" selection-start-column="19" selection-end-line="1265" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;d533570c-eb14-42c8-99a2-3cdd33f070b8&gt;/_inarchive/3828/3828.inc">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/configbot.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-510">
+              <caret line="84" column="34" lean-forward="true" selection-start-line="84" selection-start-column="34" selection-end-line="84" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;d533570c-eb14-42c8-99a2-3cdd33f070b8&gt;/3930/3930.inc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="87">
+              <caret line="327" column="10" lean-forward="true" selection-start-line="327" selection-start-column="10" selection-end-line="327" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="AMD JavaScript File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>140</find>
+      <find>(.*)\n</find>
+      <find>ё</find>
+      <find>1202</find>
+      <find>62</find>
+      <find>1010101</find>
+      <find>$.fn</find>
+      <find>клик</find>
+      <find>тест</find>
+      <find>(.*)coords=&quot;</find>
+      <find>04</find>
+      <find>Resource Map</find>
+      <find>Spawn Map</find>
+      <find>221</find>
+      <find>{{Ifpageexists|File:Spawning_{{{species}}}_{{{7|}}}.svg|Spawning_{{{species}}}_{{{7|}}}.svg|Blank.png}}</find>
+      <find>File:File:</find>
+      <find>group</find>
+      <find>dm</find>
+      <find>3</find>
+      <find>ю</find>
+      <find>3920</find>
+      <find>\n\w\n</find>
+      <find>далее</find>
+      <find>serverU</find>
+      <find>\n</find>
+      <find>\n\s*•\s*</find>
+      <find>(«.*»)</find>
+      <find>17</find>
+      <find>&lt;b&gt;'.$names[$i].'&lt;/b&gt;'</find>
+      <find>radd</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>:</replace>
+      <replace>$2}</replace>
+      <replace>name</replace>
+      <replace>$1:</replace>
+      <replace>parseInt</replace>
+      <replace>$1}</replace>
+      <replace>&quot;description&quot;</replace>
+      <replace>&quot;meleebase&quot;</replace>
+      <replace>&quot;&quot;</replace>
+      <replace>NoAutoCategories</replace>
+      <replace>&quot;,&quot;</replace>
+      <replace>css</replace>
+      <replace>&quot;$1&quot;,</replace>
+      <replace>var disabledAr; $.fn</replace>
+      <replace>Карта Ресурсов</replace>
+      <replace>Карта Существ</replace>
+      <replace>File:Spawning_{{{species}}}_{{{1|}}}.svg</replace>
+      <replace>File:Spawning_{{{species}}}_{{{2|}}}.svg</replace>
+      <replace>File:Spawning_{{{species}}}_{{{3|}}}.svg</replace>
+      <replace>File:Spawning_{{{species}}}_{{{4|}}}.svg</replace>
+      <replace>File:Spawning_{{{species}}}_{{{5|}}}.svg</replace>
+      <replace>File:Spawning_{{{species}}}_{{{6|}}}.svg</replace>
+      <replace>File:Spawning_{{{species}}}_{{{7|}}}.svg</replace>
+      <replace>File:</replace>
+      <replace>,</replace>
+      <replace>\n</replace>
+      <replace>&lt;br&gt;\n</replace>
+      <replace>&lt;/li&gt;\n&lt;li&gt;</replace>
+      <replace>&lt;b&gt;$1&lt;/b&gt;</replace>
+      <replace>&lt;b class=&quot;itemTitle&quot;&gt;'.$names[$i].'&lt;/b&gt;'</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$USER_HOME$/Downloads/projectConf (2).inc" />
+        <option value="&lt;d54cef2b-0ae7-42b1-a54b-947272aefa0a&gt;/www/profiresearch.net/controllers/proj/3895/3895.inc" />
+        <option value="&lt;d533570c-eb14-42c8-99a2-3cdd33f070b8&gt;/3903/index.php" />
+        <option value="&lt;d533570c-eb14-42c8-99a2-3cdd33f070b8&gt;/3904/index.php" />
+        <option value="&lt;d533570c-eb14-42c8-99a2-3cdd33f070b8&gt;/_inarchive/3823/index.php" />
+        <option value="&lt;d533570c-eb14-42c8-99a2-3cdd33f070b8&gt;/3911/index.php" />
+        <option value="$PROJECT_DIR$/aliases/creatureAliases.js" />
+        <option value="$PROJECT_DIR$/aliases/creatureAliases2.js" />
+        <option value="$PROJECT_DIR$/controllers/Breeding.js" />
+        <option value="$PROJECT_DIR$/aliases/eatAliases.js" />
+        <option value="&lt;d533570c-eb14-42c8-99a2-3cdd33f070b8&gt;/3911/3911.inc" />
+        <option value="&lt;d533570c-eb14-42c8-99a2-3cdd33f070b8&gt;/3913/3913.inc" />
+        <option value="$USER_HOME$/Downloads/projectConf (13).inc" />
+        <option value="&lt;d533570c-eb14-42c8-99a2-3cdd33f070b8&gt;/3894/3894.inc" />
+        <option value="&lt;d533570c-eb14-42c8-99a2-3cdd33f070b8&gt;/3860/3860.inc" />
+        <option value="&lt;d533570c-eb14-42c8-99a2-3cdd33f070b8&gt;/3895/3895.inc" />
+        <option value="&lt;d533570c-eb14-42c8-99a2-3cdd33f070b8&gt;/3921/3921.inc" />
+        <option value="&lt;d533570c-eb14-42c8-99a2-3cdd33f070b8&gt;/3901/3901.inc" />
+        <option value="&lt;d533570c-eb14-42c8-99a2-3cdd33f070b8&gt;/3900/3900.inc" />
+        <option value="&lt;d533570c-eb14-42c8-99a2-3cdd33f070b8&gt;/3922/3922.inc" />
+        <option value="&lt;d533570c-eb14-42c8-99a2-3cdd33f070b8&gt;/3916/3916.inc" />
+        <option value="$PROJECT_DIR$/data/bm/states.json" />
+        <option value="&lt;d533570c-eb14-42c8-99a2-3cdd33f070b8&gt;/3912/3912.inc" />
+        <option value="&lt;d533570c-eb14-42c8-99a2-3cdd33f070b8&gt;/3882/3882.inc" />
+        <option value="&lt;b3c1837b-d593-4040-a933-1ed15872a52d&gt;/dm/rcon.php" />
+        <option value="&lt;b3c1837b-d593-4040-a933-1ed15872a52d&gt;/dm/source_rcon.php" />
+        <option value="&lt;b3c1837b-d593-4040-a933-1ed15872a52d&gt;/dm/hl_rcon.php" />
+        <option value="&lt;b3c1837b-d593-4040-a933-1ed15872a52d&gt;/dm/index.php" />
+        <option value="$PROJECT_DIR$/data/bm/maps.json" />
+        <option value="&lt;88aba07f-63ac-485a-8ea8-743c46d0e160&gt;/data/bm/players.json" />
+        <option value="$PROJECT_DIR$/configbot_release.js" />
+        <option value="&lt;d533570c-eb14-42c8-99a2-3cdd33f070b8&gt;/54/54.inc" />
+        <option value="$PROJECT_DIR$/test log/2.txt" />
+        <option value="$PROJECT_DIR$/controllers/Wiki-craft.js" />
+        <option value="&lt;d533570c-eb14-42c8-99a2-3cdd33f070b8&gt;/3926/3926.inc" />
+        <option value="&lt;d533570c-eb14-42c8-99a2-3cdd33f070b8&gt;/3910/3910.inc" />
+        <option value="&lt;d533570c-eb14-42c8-99a2-3cdd33f070b8&gt;/3920/3920.inc" />
+        <option value="$PROJECT_DIR$/test log/1.txt" />
+        <option value="&lt;d54cef2b-0ae7-42b1-a54b-947272aefa0a&gt;/www/profiresearch.net/tools/docx_generate_paper.php" />
+        <option value="$PROJECT_DIR$/controllers/GlobalControllers/BM_api.js" />
+        <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/controllers/BattleMetrics.js" />
+        <option value="$USER_HOME$/Downloads/projectConf (26).inc" />
+        <option value="$PROJECT_DIR$/configbot.js" />
+        <option value="$USER_HOME$/Downloads/projectConf (27).inc" />
+        <option value="&lt;d533570c-eb14-42c8-99a2-3cdd33f070b8&gt;/46/46.inc" />
+        <option value="&lt;d533570c-eb14-42c8-99a2-3cdd33f070b8&gt;/3904/3904.inc" />
+        <option value="&lt;d533570c-eb14-42c8-99a2-3cdd33f070b8&gt;/3930/3930.inc" />
+        <option value="&lt;d533570c-eb14-42c8-99a2-3cdd33f070b8&gt;/3903/3903.inc" />
+        <option value="&lt;d533570c-eb14-42c8-99a2-3cdd33f070b8&gt;/3941/3941.inc" />
+        <option value="$PROJECT_DIR$/controllers/BM.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="960" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="DiscBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DiscBot" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DiscBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DiscBot" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DiscBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DiscBot" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="GlobalControllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DiscBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DiscBot" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DiscBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DiscBot" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="bm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DiscBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DiscBot" type="462c0819:PsiDirectoryNode" />
+              <item name="test log" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.15.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/controllers" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Владимир\YandexDisk\Работа\GitHub\DiscBot\controllers" />
+      <recent name="C:\Users\Владимир\YandexDisk\Работа\GitHub\DiscBot\data\bm" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Владимир\YandexDisk\Работа\GitHub\DiscBot\controllers\GlobalControllers" />
+      <recent name="C:\Users\Владимир\YandexDisk\Работа\GitHub\DiscBot\data" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="78e569e7-c37a-40b6-933a-75e13f406e7d" name="Default Changelist" comment="" />
+      <created>1550580030206</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1550580030206</updated>
+      <workItem from="1550580031451" duration="12736000" />
+      <workItem from="1550647691965" duration="21952000" />
+      <workItem from="1550733149231" duration="27593000" />
+      <workItem from="1550823368034" duration="1215000" />
+      <workItem from="1550827988936" duration="20754000" />
+      <workItem from="1551078962682" duration="18658000" />
+      <workItem from="1551102122403" duration="8214000" />
+      <workItem from="1551164973179" duration="29331000" />
+      <workItem from="1551252539203" duration="28478000" />
+      <workItem from="1551340082004" duration="27445000" />
+      <workItem from="1551427083855" duration="5026000" />
+      <workItem from="1551432868597" duration="18583000" />
+      <workItem from="1551856681583" duration="16784000" />
+      <workItem from="1551943256598" duration="8418000" />
+      <workItem from="1552289140424" duration="18000" />
+      <workItem from="1552289339620" duration="2416000" />
+      <workItem from="1552379446568" duration="1235000" />
+      <workItem from="1552564039476" duration="14180000" />
+      <workItem from="1552633784884" duration="14117000" />
+      <workItem from="1552657537495" duration="929000" />
+      <workItem from="1552661339448" duration="843000" />
+      <workItem from="1552896180127" duration="24916000" />
+      <workItem from="1552980921578" duration="206000" />
+      <workItem from="1552982716104" duration="25600000" />
+      <workItem from="1553066303187" duration="17487000" />
+      <workItem from="1553084604323" duration="7766000" />
+      <workItem from="1553153756360" duration="16357000" />
+      <workItem from="1553240432692" duration="12400000" />
+      <workItem from="1553499293726" duration="28132000" />
+      <workItem from="1553587575741" duration="16060000" />
+      <workItem from="1553671434320" duration="3500000" />
+      <workItem from="1553759195151" duration="779000" />
+      <workItem from="1553770222153" duration="3377000" />
+      <workItem from="1554105838777" duration="18533000" />
+      <workItem from="1554187790489" duration="20062000" />
+      <workItem from="1554377782233" duration="12264000" />
+      <workItem from="1554707357417" duration="21761000" />
+      <workItem from="1554794067590" duration="24728000" />
+      <workItem from="1554822194347" duration="3376000" />
+      <workItem from="1554880510331" duration="20549000" />
+      <workItem from="1554967701897" duration="3404000" />
+      <workItem from="1554978074619" duration="51000" />
+      <workItem from="1554978325557" duration="393000" />
+      <workItem from="1554978737590" duration="1641000" />
+      <workItem from="1554982392478" duration="5872000" />
+      <workItem from="1555054861950" duration="7018000" />
+      <workItem from="1555083098804" duration="1263000" />
+      <workItem from="1555317143622" duration="20036000" />
+      <workItem from="1555398590145" duration="11057000" />
+      <workItem from="1555486249339" duration="21680000" />
+      <workItem from="1555515429837" duration="1600000" />
+      <workItem from="1555571600586" duration="4802000" />
+      <workItem from="1555576686463" duration="17757000" />
+      <workItem from="1555659612220" duration="23298000" />
+      <workItem from="1555918939026" duration="27731000" />
+      <workItem from="1556003612339" duration="23184000" />
+      <workItem from="1556093743579" duration="23349000" />
+      <workItem from="1556176681350" duration="10418000" />
+      <workItem from="1556188769713" duration="548000" />
+      <workItem from="1556190357411" duration="2780000" />
+      <workItem from="1556195961475" duration="375000" />
+      <workItem from="1556187592834" duration="1762000" />
+      <workItem from="1556193989720" duration="323000" />
+      <workItem from="1556205821944" duration="1073000" />
+      <workItem from="1556262927990" duration="109000" />
+      <workItem from="1556264266286" duration="20799000" />
+      <workItem from="1556521324463" duration="25640000" />
+      <workItem from="1556608248628" duration="24864000" />
+      <workItem from="1557128899735" duration="19306000" />
+      <workItem from="1557213859909" duration="20211000" />
+      <workItem from="1557298923263" duration="19404000" />
+      <workItem from="1557731610934" duration="7702000" />
+      <workItem from="1557740748151" duration="13949000" />
+      <workItem from="1557817652253" duration="13726000" />
+      <workItem from="1557903978454" duration="10571000" />
+      <workItem from="1557990331161" duration="18766000" />
+      <workItem from="1558076444779" duration="25750000" />
+      <workItem from="1558335992522" duration="13286000" />
+      <workItem from="1558422430586" duration="27394000" />
+      <workItem from="1558508639813" duration="27202000" />
+      <workItem from="1558595581980" duration="30137000" />
+      <workItem from="1558682727695" duration="27092000" />
+      <workItem from="1558942345263" duration="16203000" />
+      <workItem from="1559028079854" duration="14577000" />
+      <workItem from="1559114704358" duration="24262000" />
+      <workItem from="1559200036880" duration="20789000" />
+      <workItem from="1559286960900" duration="17424000" />
+      <workItem from="1559545424454" duration="5813000" />
+      <workItem from="1559631232066" duration="3096000" />
+      <workItem from="1559719679435" duration="7580000" />
+      <workItem from="1559742749457" duration="1436000" />
+      <workItem from="1559804586705" duration="4361000" />
+      <workItem from="1559890912473" duration="14911000" />
+      <workItem from="1560149654485" duration="27176000" />
+      <workItem from="1560235571327" duration="21355000" />
+      <workItem from="1560408816125" duration="16593000" />
+      <workItem from="1560495764259" duration="1429000" />
+      <workItem from="1560503547924" duration="619000" />
+      <workItem from="1560496539619" duration="1204000" />
+      <workItem from="1560502475898" duration="1810000" />
+      <workItem from="1560754747013" duration="6409000" />
+      <workItem from="1560841117523" duration="15458000" />
+      <workItem from="1560927836398" duration="21319000" />
+      <workItem from="1561013276994" duration="21095000" />
+      <workItem from="1561100298038" duration="32047000" />
+      <workItem from="1561359535366" duration="17408000" />
+      <workItem from="1561446327281" duration="8148000" />
+      <workItem from="1561539538820" duration="9005000" />
+      <workItem from="1561619721543" duration="14461000" />
+      <workItem from="1561706098720" duration="15642000" />
+      <workItem from="1561966320386" duration="7849000" />
+      <workItem from="1562051554561" duration="25181000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1508761000" />
+  </component>
+  <component name="TodoView" selected-index="1">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4970588" visible="true" weight="0.13957219" />
+      <window_info id="Structure" order="1" sideWeight="0.5029412" side_tool="true" weight="0.1868009" />
+      <window_info id="Favorites" order="2" sideWeight="0.5007899" side_tool="true" weight="0.18541667" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289183" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.31898454" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5005348" side_tool="true" weight="0.2218543" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49946523" visible="true" weight="0.26048565" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="12" weight="0.3289183" />
+      <window_info anchor="bottom" id="File Transfer" order="13" weight="0.3454746" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info active="true" anchor="right" id="Remote Host" order="3" visible="true" weight="0.13529412" />
+      <window_info anchor="right" id="Database" order="4" weight="0.21497326" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4970588" visible="true" weight="0.36800894" />
+      <window_info id="Structure" order="1" sideWeight="0.5029412" side_tool="true" weight="0.1868009" />
+      <window_info id="Favorites" order="2" sideWeight="0.5007899" side_tool="true" weight="0.18541667" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289183" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.31898454" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5005348" side_tool="true" weight="0.2218543" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49946523" visible="true" weight="0.24494383" />
+      <window_info anchor="bottom" id="Command Line Tools Console" order="12" weight="0.3289183" />
+      <window_info anchor="bottom" id="File Transfer" order="13" weight="0.3454746" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" visible="true" weight="0.45302013" />
+      <window_info anchor="right" id="Database" order="4" weight="0.21497326" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/controllers/fooduse.js</url>
+          <line>1527</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/Downloads/projectConf (4).inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="47" column="125" lean-forward="true" selection-start-line="47" selection-start-column="125" selection-end-line="47" selection-end-column="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/projectConf (5).inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4556">
+          <caret line="268" column="6" selection-start-line="24" selection-start-column="4" selection-end-line="268" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/projectConf (3).inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="60" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/projectConf (6).inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="36" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/projectConf (7).inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="42" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/projectConf (8).inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="24" column="4" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="252" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/projectConf (10).inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="43" column="69" lean-forward="true" selection-end-line="420" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aliases/creatureAliases.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4080">
+          <caret line="240" column="30" selection-start-line="240" selection-start-column="30" selection-end-line="240" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aliases/eatAliases.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="56" column="33" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aliases/creatureAliases2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2329">
+          <caret line="137" column="24" selection-start-line="137" selection-start-column="24" selection-end-line="137" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/projectConf (11).inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="127" column="10" lean-forward="true" selection-start-line="127" selection-start-column="10" selection-end-line="127" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/projectConf (12).inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="136" column="29" lean-forward="true" selection-end-line="150" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/projectConf (13).inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170">
+          <caret line="41" column="65" lean-forward="true" selection-start-line="41" selection-start-column="65" selection-end-line="41" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/projectConf (14).inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="60" column="6" lean-forward="true" selection-start-line="60" selection-start-column="6" selection-end-line="74" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/projectConf (15).inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="34" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/projectConf (16).inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="43" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/projectConf (17).inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="201" column="75" selection-end-line="395" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/projectConf (18).inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="42" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/projectConf (19).inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="52" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/projectConf (20).inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="69" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/projectConf (21).inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="465" column="46" lean-forward="true" selection-end-line="482" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/projectConf (22).inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="539" column="52" lean-forward="true" selection-end-line="546" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/Breeding.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-28">
+          <caret line="127" column="62" selection-start-line="127" selection-start-column="62" selection-end-line="127" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/Dododex.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-776">
+          <caret line="241" column="92" selection-start-line="241" selection-start-column="92" selection-end-line="241" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/TranslateCreature.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="33" lean-forward="true" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/wiki/dvdata.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-206">
+          <caret line="18936" column="25" selection-start-line="18936" selection-start-column="25" selection-end-line="18936" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/functions/getDvData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/GetAva.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/GetMap_old.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/GetMap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5678">
+          <caret line="334" column="29" selection-start-line="334" selection-start-column="29" selection-end-line="334" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/source_rcon.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="26" column="22" lean-forward="true" selection-end-line="160" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/hl_rcon.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="179" column="38" lean-forward="true" selection-end-line="191" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/bm/maps.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test log/2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="30" column="9" lean-forward="true" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/projectConf (25).inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="74" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/projectConf (24).inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="454" column="6" lean-forward="true" selection-start-line="454" selection-start-column="6" selection-end-line="468" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/projectConf (23).inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="68" column="10" lean-forward="true" selection-end-line="642" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/bm/states.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="288" selection-start-column="288" selection-end-column="288" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test log/1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="119" column="9" lean-forward="true" selection-start-line="119" selection-start-column="9" selection-end-line="119" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/BattleMetrics.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="385" column="34" lean-forward="true" selection-start-line="385" selection-start-column="34" selection-end-line="385" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/Wiki-craft.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/projectConf (26).inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="401" lean-forward="true" selection-start-line="401" selection-end-line="401" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="51" column="30" lean-forward="true" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/GlobalControllers/BM_api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="51" lean-forward="true" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configbot_release.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="61" column="34" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/configbot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-510">
+          <caret line="84" column="34" lean-forward="true" selection-start-line="84" selection-start-column="34" selection-end-line="84" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/projectConf (27).inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="143" column="67" selection-end-line="669" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/bm/players_test.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="364" selection-start-column="364" selection-end-column="364" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/projectConf (28).inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="104" column="6" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="104" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/projectConf (30).inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="50" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/BM.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="52" column="142" lean-forward="true" selection-start-line="52" selection-start-column="142" selection-end-line="52" selection-end-column="142" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

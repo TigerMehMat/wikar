@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="88aba07f-63ac-485a-8ea8-743c46d0e160" name="Wikark" url="http://176.119.158.179">
+        <fileTransfer host="176.119.158.179" port="22" rootFolder="/root/Wikark" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="119eaf8c-b271-455d-ac67-6fd211780b2e" name="timers" url="http://ftp.s-tiger.ru">
+        <fileTransfer host="ftp.s-tiger.ru" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="b3c1837b-d593-4040-a933-1ed15872a52d" name="stiger" url="http://31.220.20.29">
+        <fileTransfer host="31.220.20.29" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="b6b3df77-1af7-4af8-960a-77b1083e9dc1" name="Wikark_site" url="http://wikark.ru">
+        <fileTransfer host="wikark.ru" port="21" rootFolder="/domains/wikark.ru/public_html">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+      <webServer id="772d1978-b4f6-405f-bc28-9d970c2cd314" name="AllWikark" url="http://176.119.158.179">
+        <fileTransfer host="176.119.158.179" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
