@@ -1,66 +1,83 @@
-const Discord	= require("discord.js");
+const Discord = require("discord.js");
 
 class DE {
-	static fetchAllMessagesByAuthor(channel, author, limit = 50, isPinned = 0, firstID = null){
-		return new Promise( async (resolve, reject) => {
-			let options	= { limit: 100 }, msgs;
-			if(firstID) {
-				options.after	= firstID;
+	/**
+	 * N сообщений автора в канале
+	 * @param channel string ID канала
+	 * @param author string ID автора
+	 * @param limit integer Количество требуемых сообщений
+	 * @param isPinned integer Искать во всех (0) в закрепленных (1) или только в не закрепленных (-1)
+	 * @param firstID string id сообщения, начиная с которого искать (не включает это сообщение)
+	 * @returns {Promise<Array>}
+	 */
+	static fetchAllMessagesByAuthor(channel, author, limit = 50, isPinned = 0, firstID = null) {
+		return new Promise(async (resolve, reject) => {
+			let options = {limit: 100}, msgs;
+			if (firstID) {
+				options.after = firstID;
 			}
-			if(isPinned === 1) {
-				msgs	= await channel.fetchPinnedMessages();
+			if (isPinned === 1) {
+				msgs = await channel.fetchPinnedMessages();
 			} else {
-				msgs	= await channel.fetchMessages(options);
-			}
+				msgs = await channel.fetchMessages(options);
+			}// todo: Найти почему возвращает обернутый массив
 
 			/* Если нет сообщений, возвращаем false */
-			if(!msgs || msgs.size === 0) {
+			if (!msgs || msgs.size === 0) {
 				reject(false);
 				return;
 			}
 
-			let messageFilter			= m => m.author.id === author && !m.system;
-			let messagePinnedFilter		= m => m.author.id === author && !m.system && m.pinned === true;
-			let messageUnpinnedFilter	= m => m.author.id === author && !m.system && m.pinned === false;
+			let messageFilter = m => m.author.id === author && !m.system;
+			let messagePinnedFilter = m => m.author.id === author && !m.system && m.pinned === true;
+			let messageUnpinnedFilter = m => m.author.id === author && !m.system && m.pinned === false;
 
-			if(isPinned === -1)	messageFilter	= messageUnpinnedFilter;
-			if(isPinned === 1)	messageFilter	= messagePinnedFilter;
+			if (isPinned === -1) messageFilter = messageUnpinnedFilter;
+			if (isPinned === 1) messageFilter = messagePinnedFilter;
 
-			let currentMessages	= msgs.filter(messageFilter);
+			let currentMessages = msgs.filter(messageFilter);
 
 			/* Если набрано достаточно сообщений, возвращаем их */
-			if(currentMessages.size >= limit) {
+			if (currentMessages.size >= limit) {
 				resolve(currentMessages.last(limit));
 				return;
 			}
 
-			let moreMessages	= this.fetchAllMessagesByAuthor(channel, author, limit - currentMessages.size, msgs.last().id);
+			let moreMessages = await this.fetchAllMessagesByAuthor(channel, author, limit - currentMessages.size, msgs.last().id);
 
-			if(!moreMessages){
-				resolve(currentMessages);
+			if (!moreMessages) {
+				resolve(currentMessages.array());
 				return;
 			}
-			resolve(new Discord.Collection().concat(currentMessages, moreMessages));
+			currentMessages	= currentMessages.array();
+			currentMessages	= currentMessages.concat(moreMessages);
+			resolve(currentMessages);
 		});
 	}
 
+	/**
+	 * Закрепить все сообщения
+	 * @param messages array Сообщения для закрепления
+	 * @returns {Promise<void>}
+	 */
 	static async pinAllMessages(messages) {
-		for(let message in messages) {
+		for (let message in messages) {
 			await message.pin();
 		}
 	}
 
 	static async fetchMessagesForLog(channel, author, limit = 50) {
-		let pinnedMessages	= this.fetchAllMessagesByAuthor(channel, author, limit, 1);
-		if(pinnedMessages.size < limit) {
-			let newMessages	= this.fetchAllMessagesByAuthor(channel, author, limit, -1);
+		let pinnedMessages = this.fetchAllMessagesByAuthor(channel, author, limit, 1);
+		if (pinnedMessages.size < limit) {
+			let newMessages = this.fetchAllMessagesByAuthor(channel, author, limit, -1);
 			await this.pinAllMessages(newMessages);
-			pinnedMessages	= pinnedMessages.concat(newMessages);
+			pinnedMessages = pinnedMessages.concat(newMessages);
 		}
 		return pinnedMessages;
 	}
 
 	/* Найти первое сообщение в канале */
+
 	/*static fetchFirstMessage(channel, firstID = null) {
 		return new Promise((resolve, reject) => {
 			let options	= { limit: 100 };
@@ -83,21 +100,72 @@ class DE {
 		});
 	}*/
 
-	/* Получить заведомо N сообщений из канала и, если их меньше чем надо, записать. */
+	/**
+	 * Получить заведомо N сообщений из канала и, если их меньше чем надо, отправить в канал и вернуть их id.
+	 * @param channel MessageChannel Объект канала
+	 * @param author string ID автора
+	 * @param quantity number Количество сообщений
+	 * @returns {Promise<array>}
+	 */
 	static async getMessagesForLog(channel, author, quantity) {
-		let pinnedMessages	= await this.fetchAllMessagesByAuthor(channel, author, quantity, 1);
-		console.log(pinnedMessages);
-		console.log(pinnedMessages[0].createdTimestamp);
-		console.log(pinnedMessages[pinnedMessages.length-1].createdTimestamp);
-		console.log(this.getLastMessageId(pinnedMessages));
+
+		let messagesArray = [];
+
+		let pinned	= await this.fetchAllMessagesByAuthor(channel, author, quantity, 1);
+
+		// Находим все закрепленные сообщения
+		messagesArray	= messagesArray.concat(pinned);
+
+		if (messagesArray.length !== 0) {
+			// Находим последнее по времени из закрепленных сообщение
+			let lastMessageId		= this.getLastMessageId(messagesArray);
+			let unpinnedMessages	= await channel.fetchMessages({limit: quantity, before: lastMessageId});
+			unpinnedMessages		= unpinnedMessages.filter(m => m.author.id === author).array();
+			messagesArray			= messagesArray.concat(unpinnedMessages);
+			messagesArray			= messagesArray.slice(0, quantity);
+		}
+
+		if(messagesArray.length === quantity) {
+			return messagesArray;
+		}
+
+		for(let i = 0; i < quantity - messagesArray.length; i++) {
+			let mess	= await channel.send('Message for Bot. Сообщение для Бота.');
+			messagesArray.push(mess);
+			await this.wait(2000);
+		}
+
+		return messagesArray;
 	}
 
+	/**
+	 * Последнее по дате создания сообщение
+	 * @param messages array Массив сообщений
+	 * @returns number|boolean id последнего сообщения или false, если нет такого
+	 */
 	static getLastMessageId(messages) {
-		let lastId			= false;
-		let biggerTimestamp	= 0;
-		messages.forEach((msg) => { if(msg.createdTimestamp > biggerTimestamp) { biggerTimestamp = msg.createdTimestamp; lastId = msg.id } });
+		if (messages.length === 0) return false;
+		let lastId = false;
+		let biggerTimestamp = 0;
+		messages.forEach((msg) => {
+			if (msg.createdTimestamp > biggerTimestamp) {
+				biggerTimestamp = msg.createdTimestamp;
+				lastId = msg.id;
+			}
+		});
 		return lastId;
+	}
+
+	/**
+	 * Подождать N секунд (использовать с await)
+	 * @param time integer Милисекунды
+	 * @returns {Promise<void>}
+	 */
+	static wait(time) {
+		return new Promise((resolve) => {
+			setTimeout(resolve, time);
+		});
 	}
 }
 
-module.exports	= DE;
+module.exports = DE;

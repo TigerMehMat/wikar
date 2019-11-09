@@ -56,39 +56,14 @@ class BM extends bm_api {
 
 			let infoMessages	= await DE.getMessagesForLog(channel, this.client.user.id, serversInfo.length);
 
-			console.log(infoMessages);
 
-			return;
-			// let firstId			= await this.getFirstIdInChannel(channel);
-			//
-			// let infoMessages	= [];
-			//
-			// if(firstId) {
-			// 	let firstMessage = await channel.fetchMessage(firstId);
-			// 	let msgQ = serversInfo.length - (firstMessage.author.id === this.client.user.id);
-			// 	infoMessages = infoMessages.concat(await DE.fetchMessagesForLog(channel, this.client.user.id, msgQ, 1, firstId));
-			// 	if (firstMessage.author.id === this.client.user.id) {
-			// 		infoMessages = infoMessages.concat(firstMessage);
-			// 	}
-			// }
-			//
-			//
-			// if(infoMessages.length < serversInfo.length) {
-			// 	let cu	= serversInfo.length;
-			// 	for(let j=infoMessages.length; j<cu; j++) {
-			// 		infoMessages.unshift(await channel.send('Wikark battle-metrika'));
-			// 		await this.timeout(1000);
-			// 	}
-			// }
-			//
-			//
-			// let names	= await DB_bm.getNamesByDiscordServer(discordServers[i].guild);
-    		// for(let j=0; j<serversInfo.length;j++) {
-			// 	serversInfo[j].current_players	= this.getPlayersState(serversInfo[j].current_players, names);
-			// 	serversInfo[j].last_players		= this.getPlayersState(serversInfo[j].last_players, names);
-    		// 	await this.updateServerInfo(infoMessages[j], serversInfo[j]);
-    		// 	await this.sendServerAlerts(channel, serversInfo[j]);
-			// }
+			let names	= await DB_bm.getNamesByDiscordServer(discordServers[i].guild);
+    		for(let j=0; j<serversInfo.length;j++) {
+				serversInfo[j].current_players	= this.getPlayersState(serversInfo[j].current_players, names);
+				serversInfo[j].last_players		= this.getPlayersState(serversInfo[j].last_players, names);
+    			await this.updateServerInfo(infoMessages[j], serversInfo[j]);
+    			await this.sendServerAlerts(channel, serversInfo[j]);
+			}
 		}
 	}
 
