@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/controllers/DB/db_bm.js" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/controllers/DB/discord_servers.js" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/test log/zvonilka.sql" dialect="MySQL" />
   </component>
 </project>

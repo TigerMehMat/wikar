@@ -1,1 +1,8 @@
+/cash/tame/*
+/cash/breeding/*
+/cash/maps/*
+/.idea/
 /node_modules/
+/test log/
+configbot.js
+configbot_release.js

@@ -42,21 +42,28 @@ const Helper = require('./controllers/GlobalControllers/Helper');
 
 const Breeding = require('./controllers/Breeding');
 
-client.login(config.token);
+const alarm_class   = require('./controllers/GlobalControllers/alarm.js');
 
-
+client.login(config.token)
+    .catch(console.error);
 
 client.on("ready", async () => {
+    global.DiscordAlarm = new alarm_class(client);
+
     console.log("Готов!\n"+client.user.tag);
-    bm = new BM(config.bm_token, client);
-    ark = new ARK(client, db_dis);
+
     try {
-        await ark.update(true);
-        await bm.serversUpdate(true);
+        await DiscordAlarm.send("Готов!\n"+client.user.tag);
     } catch (e) {
-        console.error('error update bm or ark');
+        console.error('Не удалось отправить "Готов!"');
         console.error(e);
     }
+
+    /* Апдейтеры */
+    bm = new BM(config.bm_token, client);
+    ark = new ARK(client, db_dis);
+    ark.updater().catch(console.error);
+    bm.serversUpdater().catch(console.error);
 });
 
 
@@ -155,15 +162,15 @@ client.on('message', async message => {
         case "спи":
         case "plist":
         case "списокигроков":
-            bm.sendPlayersList(message, args);
+            bm.sendPlayersList(message, args, messageAccess);
             break;
         case "помощь":
             Helper.sendHelp(message, args);
             break;
-        case "bmподписка":
-        case "бмподписка":
-            bm.sendLicenseInfo(message);
-            break;
+        // case "bmподписка":
+        // case "бмподписка":
+        //     bm.sendLicenseInfo(message);
+        //     break;
         // case "bm__init":
         //     bm.sendInit(message);
         //     /*

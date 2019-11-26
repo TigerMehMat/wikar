@@ -12,24 +12,41 @@ const DB_bm	= new DB_bm_class();
 const statusColor = [0x666666, 0xFFA61A, 0xFF1D05];
 
 class BM extends bm_api {
+
+	/**
+	 *
+	 * @param {string} token
+	 * @param client
+	 */
     constructor(token, client){
         super(token);
         this.client = client;
     }
 
-    async serversUpdate(firststart = false){
-    	let arrayServers;
-    	let res;
-    	try {
-    		arrayServers	= await DB_bm.getAllActiveBMServers();
-			res				= await this.getPlayersByAllServers(arrayServers);
-			await this.updateServers(res);
-			await this.updateDiscordServers();
-		} catch (e) {
-			console.error(e);
-		}
-		await this.timeout(180000)
-        this.serversUpdate();
+	/**
+	 * Раз в 3 мин + время работы функции обновляет бм
+	 * @returns {Promise<void>}
+	 */
+	serversUpdater() {
+    	return new Promise(async () => {
+			while (1) {
+				try {
+					await this.serversUpdate();
+				} catch (e) {
+					DiscordAlarm.send('Не обновляется логгер BM')
+						.catch(console.error);
+					console.error(e);
+				}
+				await this.timeout(1000 * 60 * 3); // 3 минуты
+			}
+		});
+	}
+
+    async serversUpdate(){
+		let arrayServers	= await DB_bm.getAllActiveBMServers();
+		let res				= await this.getPlayersByAllServers(arrayServers);
+		await this.updateServers(res);
+		await this.updateDiscordServers();
     }
 
     async updateServers(players) {
@@ -162,70 +179,12 @@ class BM extends bm_api {
 				return 'друг';
 			case 2:
 				return 'враг';
+			case 3:
+				return 'нейтрал';
 			default:
 				return 'неверный код';
 		}
 	}
-
-	// getFirstIdInChannel(channel, firstID = null) {
-    // 	return new Promise((resolve, reject) => {
-	// 		let options	= { limit: 100 };
-	// 		if(firstID) {
-	// 			options.before	= firstID;
-	// 		}
-	// 		channel.fetchMessages(options)
-	// 			.then(msgs	=> {
-	// 				if(msgs.size === 0) resolve(false);
-	// 				else {
-	// 					this.getFirstIdInChannel(channel, msgs.last().id)
-	// 						.then(res => {
-	// 							if(!res)	resolve(msgs.last().id);
-	// 							else		resolve(res);
-	// 						})
-	// 						.catch(reject);
-	// 				}
-	// 			})
-	// 			.catch(reject)
-	// 	});
-	// }
-
-	// fetchAllMessagesByAuthor(channel, author, limit = 50, firstID = null){
-    // 	return new Promise((resolve, reject) => {
-    // 		let options	= { limit: 100 };
-    // 		if(firstID) {
-	// 			options.after	= firstID;
-	// 		}
-	// 		channel.fetchMessages(options)
-	// 			.then(msgs	=> {
-	// 				if(msgs.size === 0) {
-	// 					resolve(false);
-	// 					return;
-	// 				}
-	//
-	// 				let currentMessages	= msgs.filter(m => m.author.id === author && !m.system);
-	//
-	// 				if(currentMessages.size >= limit){
-	// 					resolve(currentMessages.last(limit));
-	// 				}
-	// 				else {
-	// 					this.fetchAllMessagesByAuthor(channel, author, limit - currentMessages.size, msgs.last().id)
-	// 						.then(moreMessages	=> {
-	// 							if(!moreMessages){
-	// 								resolve(currentMessages);
-	// 								return;
-	// 							}
-	// 							else {
-	// 								resolve(new Discord.Collection().concat(currentMessages, moreMessages));
-	// 								return;
-	// 							}
-	// 						})
-	// 						.catch(reject);
-	// 				}
-	// 			})
-	// 			.catch(reject);
-	// 	});
-	// }
-
 
     changeState(message, args){
         let clientId = Access.getActualBMKey(message);
@@ -380,6 +339,10 @@ class BM extends bm_api {
 
 	addPlayer() {
 		// todo: Добавление игрока в список
+	}
+
+	sendPlayersList(message, args, messageAccess) {
+		DB_bm.getPlayerListWithStatus();
 	}
 }
 

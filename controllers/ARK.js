@@ -34,25 +34,33 @@ class ARK extends ARK_api {
         this.getChannelsAndMessages();
     }
 
-    update(firstUse = false) {
-        return new Promise((resolve, reject) => {
-            this.check()
-                .then((res)=>{
-                    if(res && !firstUse) {
-                        this.sendLog(res);
-                    }
-                    this.editStats()
-                        .then(() => {
-                            resolve();
-                            setTimeout(() => {
-                                this.update()
-                                    .catch(console.error)
-                            }, 180000);
-                        })
-                        .catch(reject);
-                })
-                .catch(reject);
+    updater() {
+        return new Promise(async () => {
+            while (1) {
+                try {
+                    await this.update();
+                } catch (e) {
+                    DiscordAlarm.send('Не обновляется логгер BM')
+                        .catch(console.error);
+                    console.error(e);
+                }
+                await this.timeout(1000 * 60 * 3); // 3 минуты
+            }
         });
+    }
+
+    update() {
+        return new Promise(async (resolve, reject) => {
+            let checkRes    = await this.check();
+            if(checkRes) {
+                await this.sendLog(checkRes);
+            }
+            await this.editStats();
+        });
+    }
+
+    timeout(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
     }
 
     async getChannelsAndMessages() {
@@ -85,7 +93,7 @@ class ARK extends ARK_api {
         return changedRates;
     }
 
-    sendLog(changedRates){
+    async sendLog(changedRates){
         for (let j in this.info) {
             let guild   = this.client.guilds.get(j);
             let channel = guild.channels.get(this.info[j].channel);
@@ -100,8 +108,8 @@ class ARK extends ARK_api {
                 .setTimestamp(Date.now())
                 .setFooter((new Date()).toTimeString())
                 .setDescription(text);
-            channel.send(roleText, embed)
-                .catch(console.error);
+            await channel.send(roleText, embed);
+            await this.timeout(3000);
         }
     }
 

@@ -56,9 +56,46 @@ class DB_dserver extends DB {
 		});
 	}
 
-	isActiveServer(serverId, channelId) {
+	// isActiveServer(serverId, channelId) {
+	// 	return new Promise((resolve, reject) => {
+	// 		this.query('SELECT `tribe_functions`, `prefix`, `rates`, id FROM `discord_servers` WHERE ark_active_to >= NOW() AND `discord_id`= ? AND (`active_channel`= ? OR `active_channel`="*") LIMIT 1', [serverId, channelId])
+	// 			.then((res)	=> {
+	// 				if(!(res.length > 0)) return false;
+	// 				res	= res[0];
+	// 				res.rates	= JSON.parse(res.rates);
+	// 				res.rates	= this.calcRates(res.rates);
+	// 				resolve(res);
+	// 			})
+	// 			.catch(reject);
+	// 	});
+	// }
+
+	/**
+	 *
+	 * Проверяет, активен ли текущий сервер.
+	 * @param {string} serverId
+	 * @param {string} channelId
+	 * @param {'active'|'bm'} type
+	 * @returns {Promise<array>}
+	 */
+	isActiveServer(serverId, channelId, type = 'active') {
 		return new Promise((resolve, reject) => {
-			this.query('SELECT `tribe_functions`, `prefix`, `rates` FROM `discord_servers` WHERE ark_active_to >= NOW() AND `discord_id`= ? AND (`active_channel`= ? OR `active_channel`="*") LIMIT 1', [serverId, channelId])
+			let field	= '';
+			let where	= '';
+			switch (type) {
+				case 'active':
+					field	= 'ark_active_to';
+					where	= '(`active_channel`= ? OR `active_channel`="*")';
+					break;
+				case 'bm':
+					field	= 'bm_active_to';
+					where	= 'bm_channel = ?';
+					break;
+				default:
+					reject(new Error('Unknown active type'));
+					return;
+			}
+			this.query('SELECT `tribe_functions`, `prefix`, `rates`, id FROM `discord_servers` WHERE '+field+' >= NOW() AND `discord_id`= ? AND '+where+' LIMIT 1', [serverId, channelId])
 				.then((res)	=> {
 					if(!(res.length > 0)) return false;
 					res	= res[0];

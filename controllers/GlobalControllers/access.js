@@ -1,6 +1,12 @@
 const config = require('../../configbot');
 
 class Access {
+	/**
+	 *
+	 * @param {object} messageAccess
+	 * @param {'normal'|'tribe'} type
+	 * @returns {boolean}
+	 */
     static isAccess(messageAccess, type = 'normal'){
 		switch (type) {
 			case 'normal':

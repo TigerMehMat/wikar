@@ -97,6 +97,17 @@ class DB_bm extends DB {
 				.catch(reject);
 		});
 	}
+
+	getPlayerListWithStatus(discord_id) {
+		return new Promise((resolve, reject) => {
+			this.query('select ap.steam_name, apsn.state_name from ark_players_state aps\n' +
+				'left join ark_players ap on ap.id = aps.player_id\n' +
+				'left join ark_players_state_names apsn on apsn.id_state = aps.state\n' +
+				'where aps.discord_id = ?', [discord_id])
+				.then(resolve)
+				.catch(reject);
+		});
+	}
 }
 
 module.exports	= DB_bm;
