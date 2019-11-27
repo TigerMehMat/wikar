@@ -62,6 +62,9 @@ client.on("ready", async () => {
     /* Апдейтеры */
     bm = new BM(config.bm_token, client);
     ark = new ARK(client, db_dis);
+
+    await ark.start();
+
     ark.updater().catch(console.error);
     bm.serversUpdater().catch(console.error);
 });

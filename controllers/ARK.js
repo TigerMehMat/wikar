@@ -5,20 +5,18 @@ const access    = require('./GlobalControllers/access');
 const DB_disc        = require('./DB/discord_servers');
 const db_dis        = new DB_disc();
 
+
+const db_global_vars_class = require('./DB/db_global_vars');
+const db_global_vars    = new db_global_vars_class();
+
 class ARK extends ARK_api {
     constructor(client){
         super();
         this.client = client;
-        this.rates = {
-            TamingSpeedMultiplier: '1.0',
-            HarvestAmountMultiplier: '1.0',
-            XPMultiplier: '1.0',
-            MatingIntervalMultiplier: '1.0',
-            BabyMatureSpeedMultiplier: '1.0',
-            EggHatchSpeedMultiplier: '1.0',
-            CropGrowthSpeedMultiplier: '1.0',
-            CustomRecipeEffectivenessMultiplier: '1.0'
-        };
+    }
+
+    async start() {
+        this.rates = JSON.parse(await db_global_vars.getItem('rates'));
 
         this.rateByType = {
             TamingSpeedMultiplier: 'Приручение',
@@ -30,8 +28,7 @@ class ARK extends ARK_api {
             CropGrowthSpeedMultiplier: 'Скорость роста овощей и ягоды',
             CustomRecipeEffectivenessMultiplier: 'Эффективность пользовательских рецептов'
         };
-
-        this.getChannelsAndMessages();
+        await this.getChannelsAndMessages();
     }
 
     updater() {
@@ -82,6 +79,7 @@ class ARK extends ARK_api {
         }
         let changedRates = {};
         let changes = 0;
+        db_global_vars.setItem('rates', JSON.stringify(newRates)).catch(console.error);
         for(let rate in this.rates) {
             if(newRates[rate] !== this.rates[rate]){
                 changedRates[rate] = {"old": this.rates[rate], "new": newRates[rate]};
@@ -136,12 +134,16 @@ class ARK extends ARK_api {
                 .setTimestamp(Date.now())
                 .setFooter((new Date()).toTimeString())
                 .setDescription(text);
-            if(res) {
-                res.edit(embed)
-                    .catch(console.error);
-            } else {
-                channel.send(embed)
-                    .catch(console.error);
+            try {
+                if (res) {
+                    await res.edit(embed)
+                        .catch(console.error);
+                } else {
+                    await channel.send(embed)
+                        .catch(console.error);
+                }
+            } catch (e) {
+                console.error(e);
             }
         }
     }
