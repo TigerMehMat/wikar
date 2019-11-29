@@ -24,7 +24,9 @@ class DB {
 	async query(queryString, values	= []) {
 		return new Promise((resolve, reject) => {
 			poll.query(queryString, values, function(error, results, fields){
-				if(error) reject(error);
+				if(error){
+					console.log(error);
+				}
 				else {
 					resolve(results);
 				}
