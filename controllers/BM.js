@@ -37,7 +37,7 @@ class BM extends bm_api {
 						.catch(console.error);
 					console.error(e);
 				}
-				await this.timeout(1000 * 60 * 3); // 3 минуты
+				await this.timeout(1000 * 60 * 5); // 5 минут
 			}
 		});
 	}
