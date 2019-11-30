@@ -160,12 +160,22 @@ class Dododex extends Tame {
 		let maxUnits = array.bs.t.b + (array.bs.t.w * (level - 1));
 		maxUnits = parseFloat(maxUnits.toFixed(3));
 		let totalUnits = maxUnits;
-		let constantSeconds = (totalUnits / rate);
-		let totalSeconds = constantSeconds;
+		let totalSeconds = (totalUnits / rate);
 
 		res += '-' + (Math.round(rate * 100) / 100) + '/с, полное оглушение спадет за ' + this.timeFormat(totalSeconds, true);
 
+		res += '\nВсего оглушения: ' + maxUnits;
+		res += '\n\n**Для полного поднятия оглушения надо: **';
+		res += '\n' + this.addTorporInfo(getIcon('Наркоберри'), maxUnits, totalSeconds, 4, 3);
+		res += '\n' + this.addTorporInfo(getIcon('Наркотик'), maxUnits, totalSeconds, 40, 8);
+		res += '\n' + this.addTorporInfo(getIcon('Биотоксин'), maxUnits, totalSeconds, 80, 16);
+
 		return res;
+	}
+
+	addTorporInfo(icon, totalTorpor, totalSeconds, addTorpor, addTime) {
+		let quantity = Math.ceil(totalTorpor / addTorpor);
+		return quantity + icon + ' (' + this.timeFormat(quantity * addTime, true) + ' / ' + this.timeFormat(quantity * addTime + totalSeconds, true) + ')';
 	}
 
 	getTorporArray(text) {

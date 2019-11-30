@@ -37,7 +37,7 @@ class ARK extends ARK_api {
                 try {
                     await this.update();
                 } catch (e) {
-                    DiscordAlarm.send('Не обновляется логгер BM')
+                    DiscordAlarm.send('Не обновляется логгер ARK')
                         .catch(console.error);
                     console.error(e);
                 }
@@ -53,6 +53,7 @@ class ARK extends ARK_api {
                 await this.sendLog(checkRes);
             }
             await this.editStats();
+            resolve();
         });
     }
 

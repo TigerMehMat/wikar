@@ -266,6 +266,11 @@ class GetMap {
                                         return;
                                     }
                                     else {
+                                        try {
+                                            fs.readdirSync(path.resolve(__dirname, '../cash/maps'));
+                                        } catch (e) {
+                                            fs.mkdirSync(path.resolve(__dirname, '../cash/maps'));
+                                        }
                                         fs.writeFileSync(path.resolve(__dirname, '../cash/maps/' + cname + '-' + map + '.jpg'), info);
                                         msg.delete()
                                             .then(()=>{
