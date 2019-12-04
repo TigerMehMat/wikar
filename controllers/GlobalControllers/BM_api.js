@@ -40,7 +40,7 @@ class BM_api {
             if(!data) console.error("Empty data");
             result[serverList[i]] = [];
             for(let j = 0; j < data.included.length; j++) {
-                result[serverList[i]].push({"name": data.included[j].attributes.name.replace('[', '\\['), "id": data.included[j].id});
+                result[serverList[i]].push({"name": data.included[j].attributes.name, "id": data.included[j].id});
             }
             await setTimeout(() => {}, config.bm_duration_time);
         }

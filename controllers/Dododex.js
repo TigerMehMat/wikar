@@ -31,7 +31,7 @@ class Dododex extends Tame {
 
 	getInfo(callback) {
 		//if(this.aliases[this.data.name]) this.data.name = this.aliases[this.data.name];
-		if (this.data.name.search(/[а-я]/) !== -1) {
+		if (this.data.name.search(/[а-яё]/) !== -1) {
 			callback(0);
 			return;
 		}
@@ -175,7 +175,7 @@ class Dododex extends Tame {
 
 	addTorporInfo(icon, totalTorpor, totalSeconds, addTorpor, addTime) {
 		let quantity = Math.ceil(totalTorpor / addTorpor);
-		return quantity + icon + ' (' + this.timeFormat(quantity * addTime, true) + ' / ' + this.timeFormat(quantity * addTime + totalSeconds, true) + ')';
+		return quantity + ' ' + icon + ' (' + this.timeFormat(quantity * addTime, true) + ' / ' + this.timeFormat(quantity * addTime + totalSeconds, true) + ')';
 	}
 
 	getTorporArray(text) {
