@@ -6,15 +6,18 @@ const creatureAliasesDvData	= require('./../aliases/creatureAliasesDvData');
 const Timer		= require('./GlobalControllers/Timer');
 const getIcon	= require('./functions/getIcon');
 
-const db_badRequests_class	= require('./DB/bad_requests');
-const db_badRequests	= new db_badRequests_class();
+const BadRequestsModel  = new (require('../Models/BadRequestsModel'));
 
 class Breeding {
 
 	static controller(message, args, messageAccess) {
 		if(!Access.isAccess(messageAccess)) return;
+		message.channel.startTyping();
 		if(args.length === 0) {
 			message.channel.send('Эта команда не вызывается без параметров. Для справки используйте ``!помощь разведение``')
+				.then(() => {
+					message.channel.stopTyping();
+				})
 				.catch(console.error);
 			return;
 		}
@@ -45,7 +48,8 @@ class Breeding {
 		if(!enName || enName.search(/[А-Яа-яЁё]/) !== -1) {
 			message.channel.send("Тушканчикам не удалось найти существо **``"+Discord.Util.escapeMarkdown(name, false, true)+"``** в нашей базе.")
 				.then((res)=> {
-					db_badRequests.putRequest(message, 'breeding', 'Нет существа в базе алиасов: '+name, res.id)
+					message.channel.stopTyping();
+					BadRequestsModel.putRequest(message, 'breeding', 'Нет существа в базе алиасов: '+name, res.id)
 						.catch(console.error);
 				})
 				.catch(console.error);
@@ -55,7 +59,8 @@ class Breeding {
 			console.log(enName.toLowerCase().replace('_', ''));
 			message.channel.send("Тушканчикам не удалось найти существо **``"+Discord.Util.escapeMarkdown(name, false, true)+"``** в базе данных. Они очень старались.")
 				.then((res)	=> {
-					db_badRequests.putRequest(message, 'breeding', 'Нет существа в базе DvData: '+name, res.id, 1)
+					message.channel.stopTyping();
+					BadRequestsModel.putRequest(message, 'breeding', 'Нет существа в базе DvData: '+name, res.id, 1)
 						.catch(console.error);
 				})
 				.catch(console.error);
@@ -168,6 +173,9 @@ class Breeding {
 		embed.setFooter('Рост '+rateMat+' • Инкубация '+rateInc);
 
 		message.channel.send(embed)
+			.then(() => {
+				message.channel.stopTyping();
+			})
 			.catch(console.error);
 	}
 
@@ -175,14 +183,6 @@ class Breeding {
 		if(isNaN(time)) return '&nbsp;';
 		time = Math.floor(time);
 		if(time < 1) return '< 1 сек';
-		// let days	= Math.floor(time / 86400);
-		// let hours	= Math.floor((time - days * 86400) / 3600);
-		// let minutes	= Math.floor((time - days * 86400 - 3600 * hours)/60);
-		// let seconds	= time - days * 86400 - 3600 * hours - 60 * minutes;
-		// return ((days) ? days + ' д. ' : '' ) +
-		// 	((hours) ? hours + ' ч. ' : '' ) +
-		// 	((minutes) ? minutes + ' м. ' : '' ) +
-		// 	((seconds) ? seconds + ' с. ' : '' );
 		return Timer.timeFormat(time, false);
 	}
 

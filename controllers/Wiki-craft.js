@@ -5,8 +5,7 @@ const itemLink  = require('./functions/itemLink');
 const getIcon   = require('./functions/getIcon');
 const numberFormat  = require("./functions/numberFormat");
 
-const db_badRequests_class	= require('./DB/bad_requests');
-const db_badRequests	= new db_badRequests_class();
+const BadRequestsModel  = new (require('../Models/BadRequestsModel'));
 
 class Wiki_craft extends Wiki {
     static async sendCraft(message, args, messageConf) {
@@ -15,20 +14,9 @@ class Wiki_craft extends Wiki {
             message.channel.send('Эта команда не вызывается без параметров. Для справки используйте ``!помощь викикрафт``');
             return;
         }
-        let name = '';
         let quantity;
         let rate;
-        //let waitMessage;
-
-        try {
-            //waitMessage = await message.channel.send(GetPhrases.getWait());
-            let emoji   = message.guild.emojis.find(val => val.name === 'mytime');
-            emoji       = emoji ? emoji : '⏲';
-            await message.react(emoji);
-        } catch (e) {
-            console.error(e);
-            return;
-        }
+        message.channel.startTyping();
 
         rate = args.pop();
         if(isNaN(+rate)) {
@@ -66,18 +54,13 @@ class Wiki_craft extends Wiki {
         catch (e) {
             if(e.response) {
                 if(e.response.status === 404) {
-                    message.clearReactions()
-                        .then(function(){
-                            message.channel.send(`Мы не нашли страницы **${decodeURIComponent(link).replace(/_/g, '\\_')}** на википедии...`)
-                                .then(function (msg) {
-                                    db_badRequests.putRequest(message, 'craft', 'На вики нет страницы: '+decodeURIComponent(link).replace(/_/g, '\_'), msg.id)
-                                        .catch(console.error);
-                                })
+                    message.channel.stopTyping();
+                    message.channel.send(`Мы не нашли страницы **${decodeURIComponent(link).replace(/_/g, '\\_')}** на википедии...`)
+                        .then(function (msg) {
+                            BadRequestsModel.putRequest(message, 'craft', 'На вики нет страницы: '+decodeURIComponent(link).replace(/_/g, '\_'), msg.id)
                                 .catch(console.error);
                         })
                         .catch(console.error);
-                    /*waitMessage.edit(`Мы не нашли страницы **${decodeURIComponent(link).replace(/_/g, '\\_')}** на википедии...`)
-                        .catch(console.error);*/
                     return;
                 }
                 console.error(e.response);
@@ -90,18 +73,13 @@ class Wiki_craft extends Wiki {
 
 
         if(!arr_craft || arr_craft.length === 0) {
-            message.clearReactions()
-                .then(function(){
-                    message.channel.send(`На странице вики **${title}** нет информации о крафте`)
-                        .then(function (msg) {
-                            db_badRequests.putRequest(message, 'craft', 'Нет информации о крафте: '+title, msg.id)
-                                .catch(console.error);
-                        })
+            message.channel.stopTyping();
+            message.channel.send(`На странице вики **${title}** нет информации о крафте`)
+                .then(function (msg) {
+                    BadRequestsModel.putRequest(message, 'craft', 'Нет информации о крафте: '+title, msg.id)
                         .catch(console.error);
                 })
                 .catch(console.error);
-            /*waitMessage.edit(`На странице вики **${title}** нет информации о крафте`)
-                .catch(console.error);*/
             return;
         }
 
@@ -138,20 +116,13 @@ class Wiki_craft extends Wiki {
 
         let footer = [];
         if(curlvl) {
-            //embed.addField('Открывается на уровне', curlvl);
             footer.push(curlvl + ' уровень');
         }
         footer.push(numberFormat(quantity) + ' шт');
         embed.setFooter(footer.join(' • '));
-
-        message.clearReactions()
-            .then(function(){
-                message.channel.send(embed)
-                    .catch(console.error);
-            })
+        message.channel.stopTyping();
+        message.channel.send(embed)
             .catch(console.error);
-        /*waitMessage.edit(embed)
-            .catch(console.error);*/
     }
 }
 

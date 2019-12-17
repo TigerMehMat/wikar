@@ -25,21 +25,18 @@ class GetAva {
     }
 
     static sendImageByUser(message, usr){
-
+        message.channel.startTyping();
         let mentionUserAva = usr.avatarURL;
         let avaExt = mentionUserAva.substr(mentionUserAva.lastIndexOf('.'));
         avaExt = avaExt.replace(/\?.*/, '');
         const attachment = new Discord.Attachment(mentionUserAva, "аватарка"+avaExt);
-        message.channel.send("Загружаю…")
-            .then(msg => {
-                message.channel.send(attachment)
-                    .then(() => {
-                        msg.delete();
-                    })
-                    .catch(() => {
-                        msg.delete();
-                        message.channel.send('Не удалось загрузить изображение…');
-                    });
+        message.channel.send(attachment)
+            .then(() => {
+                message.channel.stopTyping();
+            })
+            .catch(() => {
+                message.channel.stopTyping();
+                message.channel.send('Не удалось загрузить изображение…');
             });
     }
 }

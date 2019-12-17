@@ -4,8 +4,7 @@ const kibbles = require("../data/kibble/kibbles.js");
 const itemLink   = require("./functions/itemLink");
 const numberFormat  = require("./functions/numberFormat");
 
-const db_badRequests_class	= require('./DB/bad_requests');
-const db_badRequests	= new db_badRequests_class();
+const BadRequestsModel  = new (require('../Models/BadRequestsModel'));
 
 
 class Kibble {
@@ -13,7 +12,10 @@ class Kibble {
     static controller(message, args, messageAccess){
         if(!access.isAccess(messageAccess)) return;
 
+        message.channel.startTyping();
+
         if(args.length === 0) {
+            message.channel.stopTyping();
             message.channel.send('Эта команда не вызывается без параметров. Для справки используйте ``!помощь корм``')
                 .catch(console.error);
             return;
@@ -26,9 +28,10 @@ class Kibble {
 
         let kb = Kibble.getKibbleInfo(name);
         if (!kb) {
+            message.channel.stopTyping();
             message.channel.send("В нашей базе нет корма ``"+Discord.Util.escapeMarkdown(name, false, true)+"``")
                 .then((msg) => {
-                    db_badRequests.putRequest(message, 'kibble', 'Нет корма в базе: '+name, msg.id)
+                    BadRequestsModel.putRequest(message, 'kibble', 'Нет корма в базе: '+name, msg.id)
                         .catch(console.error);
                 })
                 .catch(console.error);
@@ -96,6 +99,7 @@ class Kibble {
             .setColor(kibble.colorHEX);
         let content = this.getContentByArray(kibble.craft, quantity);
         embed.setDescription(content);
+        message.channel.stopTyping();
         message.channel.send(embed)
             .then((msg) => {
                 if(kibble.fullCraft) {
@@ -110,6 +114,7 @@ class Kibble {
                             }, 60000);
                             msg.awaitReactions(reactionFilter, {max: 1, time: 60000, errors: ['time']})
                                 .then(() => {
+                                    message.channel.startTyping();
                                     msg.clearReactions()
                                         .then(() => {
                                             let embed = new Discord.RichEmbed()
@@ -120,6 +125,7 @@ class Kibble {
                                                 .setColor(kibble.colorHEX);
                                             let content = Kibble.getContentByArray(kibble.fullCraft, quantity);
                                             embed.setDescription(content);
+                                            message.channel.stopTyping();
                                             msg.edit(embed)
                                         })
                                         .catch(console.error);

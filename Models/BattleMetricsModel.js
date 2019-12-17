@@ -1,6 +1,6 @@
-const DB	= require('./DB');
+const MainModel = require('./MainModel');
 
-class DB_bm extends DB {
+class BattleMetricsModel extends MainModel {
 	constructor(){
 		super();
 	}
@@ -108,6 +108,20 @@ class DB_bm extends DB {
 				.catch(reject);
 		});
 	}
+
+	getStates() {
+		return new Promise(((resolve, reject) => {
+			this.query('SELECT * FROM ark_players_state_names')
+				.then((res) => {
+					let result = [];
+					res.forEach(function(i){
+						result[i.id_state] = i.state_name;
+					});
+					resolve(result);
+				})
+				.catch(reject);
+		}));
+	}
 }
 
-module.exports	= DB_bm;
+module.exports = BattleMetricsModel;

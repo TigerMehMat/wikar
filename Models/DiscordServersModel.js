@@ -1,9 +1,9 @@
-const DB	= require('./DB');
+const MainModel = require('./MainModel');
 
-class DB_dserver extends DB {
-	constructor(){
-		super();
-	}
+class DiscordServersModel extends MainModel {
+        constructor() {
+                super();
+        }
 
 	getServers(servers = null) {
 		return new Promise((resolve, reject) => {
@@ -138,4 +138,4 @@ class DB_dserver extends DB {
 	}
 }
 
-module.exports	= DB_dserver;
+module.exports = DiscordServersModel;

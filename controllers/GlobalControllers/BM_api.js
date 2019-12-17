@@ -14,7 +14,7 @@ class BM_api {
     }
 
     getPlayers(server){
-        return new Promise((resolve) => {
+        return new Promise((resolve, reject) => {
             this.instance.get('/servers/'+server, {
                 params: {
                     'fields[player]': 'name',
@@ -25,6 +25,7 @@ class BM_api {
                 resolve(res.data);
             }).catch((error) => {
                 console.error('Обращение к BattleMetrics API провалено: ' + error.status + ' (' + error.statusText + ')');
+                reject(error);
             });
         });
     }

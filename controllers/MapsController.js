@@ -8,10 +8,8 @@ const http = require('https'),
 const fs = require('fs');
 const path = require('path');
 
-
-
-const db_badRequests_class	= require('./DB/bad_requests');
-const db_badRequests	= new db_badRequests_class();
+const BadRequestsModel  = new (require('../Models/BadRequestsModel'));
+const MapsModel         = new (require('../Models/MapsModel'));
 
 let allreactions = [
     '557553943572643862',
@@ -32,18 +30,21 @@ let allmaps = [
     'Valguero'
 ];
 
-class GetMap {
+class MapsController {
 
     static controller(message, args, messageAccess){
         if(!access.isAccess(messageAccess)) return;
 
+        message.channel.startTyping();
+
         if(args.length === 0) {
+            message.channel.stopTyping();
             message.channel.send('Эта команда не вызывается без параметров. Для справки используйте ``!помощь карта``')
                 .catch(console.error);
             return;
         }
         let ismap = args.pop();
-        let map = GetMap.getMapName(ismap);
+        let map = MapsController.getMapName(ismap);
 
         let name = args.join('');
 
@@ -54,6 +55,7 @@ class GetMap {
                 .setTitle('Карта ' + map.replace('_', ' '))
                 .attachFile(attachment)
                 .setImage('attachment://map.jpg');
+            message.channel.stopTyping();
             message.channel.send(embed)
                 .catch(console.error);
             return;
@@ -61,18 +63,19 @@ class GetMap {
 
         if(!map){
             name = name+ismap;
-            GetMap.getMapList(message, TranslateCreature.getENCreature_map(name), async function(err, res, msg) {
-                let maps = GetMap.getMapsIcons(res);
+            MapsController.getMapList(message, TranslateCreature.getENCreature_map(name), async function(err, res, msg) {
+                let maps = MapsController.getMapsIcons(res);
                 if(maps.length > 1) {
                     if(!msg) {
                         msg = await message.channel.send('Это существо есть на нескольких картах... Загружаю список карт...');
-                        GetMap.sendAllReactions(msg, maps, () => {
+                        MapsController.sendAllReactions(msg, maps, () => {
+                            message.channel.stopTyping();
                             msg.edit('Это существо есть на нескольких картах.');
                         });
                     } else {
                         msg.edit('Это существо есть на нескольких картах... Загружаю список карт...')
                             .then(() => {
-                                GetMap.sendAllReactions(msg, maps, () => {
+                                MapsController.sendAllReactions(msg, maps, () => {
                                     msg.edit('Это существо есть на нескольких картах.');
                                 });
                             })
@@ -87,7 +90,7 @@ class GetMap {
                                 .then(() => {
                                     /*msg.edit(GetPhrases.getWait())
                                         .then(() => {*/
-                                            GetMap.getResult(message, name, allmaps[allreactions.indexOf(collected.first().emoji.id)]);
+                                            MapsController.getResult(message, name, allmaps[allreactions.indexOf(collected.first().emoji.id)]);
                                         /*})
                                         .catch(console.error);*/
                                 })
@@ -103,19 +106,19 @@ class GetMap {
                         });
                 } else if(maps.length === 1){
                     if(msg) msg.delete();
-                    GetMap.getResult(message, name, res[0]);
+                    MapsController.getResult(message, name, res[0]);
                 } else {
                     if(msg)
                         msg.edit('Карт для существа ``'+TranslateCreature.getENCreature_map(name)+'`` не нашлось.')
                             .then(()    => {
-                                db_badRequests.putRequest(message, 'map', 'Нет карты: '+TranslateCreature.getENCreature_map(name), msg.id)
+                                BadRequestsModel.putRequest(message, 'map', 'Нет карты: '+TranslateCreature.getENCreature_map(name), msg.id)
                                     .catch(console.error);
                             })
                             .catch(err => console.error(err));
                     else
                         msg.channel.send('Карт для этого существа не нашлось.')
                             .then((msg)    => {
-                                db_badRequests.putRequest(message, 'map', 'Нет карты: '+TranslateCreature.getENCreature_map(name), msg.id)
+                                BadRequestsModel.putRequest(message, 'map', 'Нет карты: '+TranslateCreature.getENCreature_map(name), msg.id)
                                     .catch(console.error);
                             })
                             .catch(err => console.error(err));
@@ -125,11 +128,11 @@ class GetMap {
             return;
         }
 
-        GetMap.getResult(message, name, map);
+        MapsController.getResult(message, name, map);
     }
 
     static getResult(message, name, map){
-        GetMap.getMap(message, name, map, (err, res) => {
+        MapsController.getMap(message, name, map, (err, res) => {
             if(err) {
                 console.error(err);
                 return;
@@ -157,7 +160,7 @@ class GetMap {
             message.channel.send(GetPhrases.getWait())
                 .then((msg) => {let maps = allmaps.slice();
                     let resultMaps = [];
-                    GetMap.getAllMapList(maps, cname, resultMaps, (err, res) => {
+                    MapsController.getAllMapList(maps, cname, resultMaps, (err, res) => {
                         if(res.length !== 0) {
                             mapsCashObj[cname] = res;
                             fs.writeFileSync(path.resolve(__dirname, '../data/map/spawnonmaps.json'), JSON.stringify(mapsCashObj));
@@ -177,9 +180,9 @@ class GetMap {
         }
         let currentMap = maps.shift();
 
-        http.get(GetMap.getMapLink(cname, currentMap), (res) => {
+        http.get(MapsController.getMapLink(cname, currentMap), (res) => {
             if(res.statusCode === 200) resultMaps.push(currentMap);
-            GetMap.getAllMapList(maps, cname, resultMaps, callback);
+            MapsController.getAllMapList(maps, cname, resultMaps, callback);
         });
     }
 
@@ -203,7 +206,7 @@ class GetMap {
             let rawData = '';
             res.on('data', (chunk) => rawData += chunk);
             res.on('end', () => {
-                let imageLink = GetMap.getActualLink(rawData);
+                let imageLink = MapsController.getActualLink(rawData);
                 if(!imageLink) {
                     callback(400);
                     return;
@@ -242,11 +245,11 @@ class GetMap {
             if(err) {
                 message.channel.send(GetPhrases.getWait())
                     .then((msg) => {
-                        GetMap.getWikiImageByName(cname, map, (err, res) => {
+                        MapsController.getWikiImageByName(cname, map, (err, res) => {
                             if (err) {
                                 msg.edit('Не удалось найти карту для существа *``' + TranslateCreature.getRUCreature(TranslateCreature.getENCreature(cname_or)) + '``*, возможно оно не водится на карте *``' + map + '``*.')
                                     .then(()    => {
-                                        db_badRequests.putRequest(message, 'map', 'Нет карты: '+TranslateCreature.getRUCreature(TranslateCreature.getENCreature(cname_or)) + ' для карты '+map, msg.id)
+                                        BadRequestsModel.putRequest(message, 'map', 'Нет карты: '+TranslateCreature.getRUCreature(TranslateCreature.getENCreature(cname_or)) + ' для карты '+map, msg.id)
                                             .catch(console.error);
                                     })
                                     .catch(err => console.error(err));
@@ -383,4 +386,4 @@ class GetMap {
     }
 }
 
-module.exports = GetMap;
+module.exports = MapsController;

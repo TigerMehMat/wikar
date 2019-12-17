@@ -9,8 +9,7 @@ const kibblesArr = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../data/k
 const access = require('./GlobalControllers/access');
 // const Discord       = require("discord.js");
 
-const db_badRequests_class = require('./DB/bad_requests');
-const db_badRequests = new db_badRequests_class();
+const BadRequestsModel  = new (require('../Models/BadRequestsModel'));
 
 
 class Dododex extends Tame {
@@ -271,69 +270,69 @@ class Dododex extends Tame {
 		let actualCache = this.getActualCache(this.data);
 		if (!actualCache) {
 			let thisClass = this;
-			message.channel.send(GetPhrases.getWait())
-				.then(msg => {
-					this.getInfo(function (e) {
-						let embed;
-						let errorCode = false;
-						/*
-						* False - Ошибки нет
-						* 1     - Нет такого существа в нашей базе
-						* 2     - Нет такого существа на дододексе
-						* 3     - Дододекс недоступен
-						 */
-						if (!isNaN(e) && e !== 0) {
-							if (e === 404) {
-								embed = "На Dododex'е нет существа ``" + thisClass.data.name + "``";
-								errorCode = 2;
-							} else {
-								embed = "Dododex недоступен, код ошибки - " + e;
-								errorCode = 3;
-							}
-						} else if (e === 0) {
-							embed = "В нашей базе данных нет такого существа. Вы можете попробовать ввести его на английском.";
-							errorCode = 1;
-						} else {
+			message.channel.startTyping();
+			this.getInfo(function (e) {
+				let embed;
+				let errorCode = false;
+				/*
+				* False - Ошибки нет
+				* 1     - Нет такого существа в нашей базе
+				* 2     - Нет такого существа на дододексе
+				* 3     - Дододекс недоступенw
+				 */
+				if (!isNaN(e) && e !== 0) {
+					if (e === 404) {
+						embed = "На Dododex'е нет существа ``" + thisClass.data.name + "``";
+						errorCode = 2;
+					} else {
+						embed = "Dododex недоступен, код ошибки - " + e;
+						errorCode = 3;
+					}
+				} else if (e === 0) {
+					embed = "В нашей базе данных нет такого существа. Вы можете попробовать ввести его на английском.";
+					errorCode = 1;
+				} else {
 
-							thisClass.data.res = e;
+					thisClass.data.res = e;
 
-							embed = thisClass.senderResult(message);
+					embed = thisClass.senderResult(message);
 
+				}
+				message.channel.stopTyping();
+				message.channel.send(embed)
+					.then((msg)	=> {
+						if(!errorCode) return;
+						let errorMessage;
+						switch (errorCode) {
+							case 1:
+								errorMessage	= 'Нет такого существа в нашей базе';
+								break;
+							case 2:
+								errorMessage	= 'Нет такого существа на дододексе';
+								break;
+							case 3:
+								errorMessage	= 'Дододекс недоступен ('+e+')';
+								break;
+							default:
+								errorMessage	= 'Неизвестная ошибка';
+								break;
 						}
-						msg.edit(embed)
-							.then((msg)	=> {
-								if(!errorCode) return;
-								let errorMessage;
-								switch (errorCode) {
-									case 1:
-										errorMessage	= 'Нет такого существа в нашей базе';
-										break;
-									case 2:
-										errorMessage	= 'Нет такого существа на дододексе';
-										break;
-									case 3:
-										errorMessage	= 'Дододекс недоступен ('+e+')';
-										break;
-									default:
-										errorMessage	= 'Неизвестная ошибка';
-										break;
-								}
-								db_badRequests.putRequest(message, 'dododex', errorMessage, msg.id)
-									.catch(console.error);
-							})
+						BadRequestsModel.putRequest(message, 'dododex', errorMessage, msg.id)
 							.catch(console.error);
-						if (thisClass.data.res)
-							thisClass.putCache(thisClass.data);
-						thisClass.clearParams();
-					});
-				})
-				.catch(console.error);
+					})
+					.catch(console.error);
+				if (thisClass.data.res)
+					thisClass.putCache(thisClass.data);
+				thisClass.clearParams();
+			});
 		} else {
 			let limit = this.data.lines;
 			this.data = actualCache;
 			this.data.lines = limit;
 			let embed = this.senderResult(message);
-			message.channel.send(embed);
+			message.channel.stopTyping();
+			message.channel.send(embed)
+				.catch(console.error);
 			this.clearParams();
 		}
 	}

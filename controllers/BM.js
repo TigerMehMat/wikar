@@ -6,8 +6,7 @@ const path		= require('path');
 const Access	= require('./GlobalControllers/access');
 const DE		= require('./GlobalControllers/discord_expansion');
 
-const DB_bm_class	= require('./DB/db_bm');
-const DB_bm	= new DB_bm_class();
+const BattleMetricsModel	= new (require('../Models/BattleMetricsModel'));
 
 const statusColor = [0x666666, 0xFFA61A, 0xFF1D05];
 
@@ -43,7 +42,7 @@ class BM extends bm_api {
 	}
 
     async serversUpdate(){
-		let arrayServers	= await DB_bm.getAllActiveBMServers();
+		let arrayServers	= await BattleMetricsModel.getAllActiveBMServers();
 		let res				= await this.getPlayersByAllServers(arrayServers);
 		await this.updateServers(res);
 		await this.updateDiscordServers();
@@ -51,12 +50,12 @@ class BM extends bm_api {
 
     async updateServers(players) {
     	for(let k in players) {
-			await DB_bm.updateServerOnline(k, players[k]);
+			await BattleMetricsModel.updateServerOnline(k, players[k]);
 		}
 	}
 
 	async updateDiscordServers(firstStart	= false) {
-    	let discordServers	= await DB_bm.getAllActiveDiscordServers();
+    	let discordServers	= await BattleMetricsModel.getAllActiveDiscordServers();
     	for(let i=0; i<discordServers.length; i++) {
 			let guild   = this.client.guilds.get(discordServers[i].guild);
 			if(!guild) {
@@ -69,12 +68,12 @@ class BM extends bm_api {
 				continue;
 			}
 
-    		let serversInfo		= await DB_bm.getServersInfoByDiscordServer(discordServers[i].guild);
+    		let serversInfo		= await BattleMetricsModel.getServersInfoByDiscordServer(discordServers[i].guild);
 
 			let infoMessages	= await DE.getMessagesForLog(channel, this.client.user.id, serversInfo.length);
 
 
-			let names	= await DB_bm.getNamesByDiscordServer(discordServers[i].guild);
+			let names	= await BattleMetricsModel.getNamesByDiscordServer(discordServers[i].guild);
     		for(let j=0; j<serversInfo.length;j++) {
 				serversInfo[j].current_players	= this.getPlayersState(serversInfo[j].current_players, names);
 				serversInfo[j].last_players		= this.getPlayersState(serversInfo[j].last_players, names);
@@ -90,7 +89,7 @@ class BM extends bm_api {
 			.setURL('https://www.battlemetrics.com/servers/ark/'+serverInfo.bm_id+'/')
 			.setTimestamp(Date.now())
 			.setColor(statusColor[serverInfo.state]);
-		let text	= this.text__nameList(serverInfo.current_players);
+		let text	= await this.text__nameList(serverInfo.current_players);
 		if(text === '') text = '*сервер пуст*';
 		embed.setDescription(text);
 		await message.edit(embed);
@@ -137,10 +136,11 @@ class BM extends bm_api {
 
 		let text = '';
 		if(change_in.length > 0) {
-			text += this.text__nameList(change_in, 1, ' зашел(ла) сервер');
+			text += await this.text__nameList(change_in, 1, ' зашел(ла) сервер');
 		}
 		if(change_out.length > 0) {
-			text += this.text__nameList(change_out, 1, ' покинул(а) сервер');
+			text += await this.text__nameList(change_out, 1, ' покинул(а) сервер');
+			text += await this.text__nameList(change_out, 1, ' покинул(а) сервер');
 		}
 
 
@@ -171,18 +171,18 @@ class BM extends bm_api {
 		return res;
 	}
 
-	getPlayerStateByCode(code) {
-    	switch (code) {
-			case 0:
-				return '?';
-			case 1:
-				return 'друг';
-			case 2:
-				return 'враг';
-			case 3:
-				return 'нейтрал';
-			default:
-				return 'неверный код';
+	async getPlayerStateByCode(code) {
+		let states = await this.getStates();
+		return (typeof states[code] !== "undefined") ? states[code] : 'Неизвестный тип';
+	}
+
+	async getStates() {
+		if(typeof this.lastUpdateStates !== "undefined" && this.lastUpdateStates - (Date.now() - 1000 * 60 * 10) > 0) {
+			return this.lastStates;
+		} else {
+			this.lastStates = await BattleMetricsModel.getStates();
+			this.lastUpdateStates = Date.now();
+			return this.lastStates;
 		}
 	}
 
@@ -289,20 +289,20 @@ class BM extends bm_api {
 
 
 
-	text__nameList(arrPlayers, type = 0, postfix = '') {
+	async text__nameList(arrPlayers, type = 0, postfix = '') {
 		let text	= '';
-		arrPlayers.forEach(player => {
-			text += this.text__player(player, type, postfix);
-		});
+		for(let i = 0; i < arrPlayers.length; i++) {
+			text += await this.text__player(arrPlayers[i], type, postfix);
+		}
 		return text;
 	}
 
-	text__player(player, type = 0, postfix2 = '') {
+	async text__player(player, type = 0, postfix2 = '') {
 		let postfix	= '';
 		if(type === 0) {
-			postfix = ' - ' + this.getPlayerStateByCode(player.state);
+			postfix = ' - ' + await this.getPlayerStateByCode(player.state);
 		} else if(type === 1) {
-			postfix = ' (' + this.getPlayerStateByCode(player.state) + ')';
+			postfix = ' (' + await this.getPlayerStateByCode(player.state) + ')';
 		}
 		return '[``' + Discord.Util.escapeMarkdown(player.name, false, true) + '``](https://www.battlemetrics.com/players/'+player.id+')' + postfix + postfix2 + '\n';
 	}
@@ -342,7 +342,7 @@ class BM extends bm_api {
 	}
 
 	sendPlayersList(message, args, messageAccess) {
-		DB_bm.getPlayerListWithStatus();
+		BattleMetricsModel.getPlayerListWithStatus();
 	}
 }
 

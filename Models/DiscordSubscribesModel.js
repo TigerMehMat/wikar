@@ -1,0 +1,20 @@
+const MainModel = require('./MainModel');
+
+class DiscordSubscribesModel extends MainModel {
+        constructor() {
+                super();
+        }
+
+        getSubscribes() {
+                return new Promise((resolve, reject) => {
+                        this.query('SELECT ds.discord_id guild, dsub.channel, dsub.message, dsub.emogi, dsub.role_id\n' +
+                                'FROM discord_subscribe dsub\n' +
+                                         'LEFT JOIN discord_servers ds on dsub.guild = ds.id\n' +
+                                'WHERE dsub.is_bad = 0')
+                                .then(resolve)
+                                .catch(reject);
+                });
+        }
+}
+
+module.exports = DiscordSubscribesModel;

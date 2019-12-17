@@ -2,21 +2,17 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 
 
-const DB_disc        = require('./controllers/DB/discord_servers');
-const db_dis        = new DB_disc();
+const DiscordServersModel   = new (require('./Models/DiscordServersModel'));
 
-const VoiceLogger = require("./controllers/VoiceLogger");
-const voiceLogger = new VoiceLogger();
+const VoiceLogger = new (require("./controllers/VoiceLogger"));
 
 const Kibble = require("./controllers/kibble");
 
 const Dododex = require("./controllers/Dododex");
 
-// const WikiTame = require("./controllers/WikiTame");
-
 const config = require("./configbot.js");
 
-const GetMap = require('./controllers/GetMap');
+const MapsController = require('./controllers/MapsController');
 
 const GetAva = require('./controllers/GetAva');
 
@@ -38,11 +34,13 @@ const Wiki_Craft = require('./controllers/Wiki-craft');
 
 const Helper = require('./controllers/GlobalControllers/Helper');
 
- const access = require('./controllers/GlobalControllers/access');
+const access = require('./controllers/GlobalControllers/access');
 
 const Breeding = require('./controllers/Breeding');
 
 const alarm_class   = require('./controllers/GlobalControllers/alarm.js');
+
+const SubscribeController = new (require('./controllers/SubscribeController'));
 
 client.login(config.token)
     .catch(console.error);
@@ -59,9 +57,11 @@ client.on("ready", async () => {
         console.error(e);
     }
 
+    SubscribeController.activate();
+
     /* Апдейтеры */
     bm = new BM(config.bm_token, client);
-    ark = new ARK(client, db_dis);
+    ark = new ARK(client, DiscordServersModel);
 
     await ark.start();
 
@@ -79,7 +79,7 @@ client.on('message', async message => {
         return;
     }
 
-    const messageAccess = await access.getMainCheck(message, db_dis);
+    const messageAccess = await access.getMainCheck(message, DiscordServersModel);
     if(messageAccess === false) return;
 
     /* Начало обработчика команд */
@@ -117,7 +117,7 @@ client.on('message', async message => {
             Kibble.controller(message, args, messageAccess);
             break;
         case "карта":
-            GetMap.controller(message, args, messageAccess);
+            MapsController.controller(message, args, messageAccess);
             break;
         case "ава":
         case "покажиаву":
@@ -190,7 +190,7 @@ client.on('message', async message => {
 
 
 client.on("voiceStateUpdate", (oldMember, newMember) => {
-    voiceLogger.voiceChanged(oldMember, newMember);
+    VoiceLogger.voiceChanged(oldMember, newMember);
 });
 
 client.on('error', (e)=> {

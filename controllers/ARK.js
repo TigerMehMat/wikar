@@ -2,12 +2,8 @@ const ARK_api = require('./GlobalControllers/ARK_api');
 const Discord = require('discord.js');
 const access    = require('./GlobalControllers/access');
 
-const DB_disc        = require('./DB/discord_servers');
-const db_dis        = new DB_disc();
-
-
-const db_global_vars_class = require('./DB/db_global_vars');
-const db_global_vars    = new db_global_vars_class();
+const GlobalVarsModel       = new (require('../Models/GlobalVarsModel'));
+const DiscordServersModel   = new (require('../Models/DiscordServersModel'));
 
 class ARK extends ARK_api {
     constructor(client){
@@ -16,7 +12,7 @@ class ARK extends ARK_api {
     }
 
     async start() {
-        this.rates = JSON.parse(await db_global_vars.getItem('rates'));
+        this.rates = JSON.parse(await GlobalVarsModel.getItem('rates'));
 
         this.rateByType = {
             TamingSpeedMultiplier: 'Приручение',
@@ -62,7 +58,7 @@ class ARK extends ARK_api {
     }
 
     async getChannelsAndMessages() {
-        const currentInfo   = await db_dis.getRatesChannels();
+        const currentInfo   = await DiscordServersModel.getRatesChannels();
         this.info           = {};
         for(let i=0; i < currentInfo.length; i++) {
             this.info[currentInfo[i][0]]    = {channel: currentInfo[i][1]};
@@ -80,7 +76,7 @@ class ARK extends ARK_api {
         }
         let changedRates = {};
         let changes = 0;
-        db_global_vars.setItem('rates', JSON.stringify(newRates)).catch(console.error);
+        GlobalVarsModel.setItem('rates', JSON.stringify(newRates)).catch(console.error);
         for(let rate in this.rates) {
             if(newRates[rate] !== this.rates[rate]){
                 changedRates[rate] = {"old": this.rates[rate], "new": newRates[rate]};
