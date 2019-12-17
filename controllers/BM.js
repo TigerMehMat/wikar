@@ -304,7 +304,7 @@ class BM extends bm_api {
 		} else if(type === 1) {
 			postfix = ' (' + await this.getPlayerStateByCode(player.state) + ')';
 		}
-		return '[``' + Discord.Util.escapeMarkdown(player.name, false, true) + '``](https://www.battlemetrics.com/players/'+player.id+')' + postfix + postfix2 + '\n';
+		return '[``' + Discord.Util.escapeMarkdown(player.name, false, true).replace('[', '\\[') + '``](https://www.battlemetrics.com/players/'+player.id+')' + postfix + postfix2 + '\n';
 	}
 
 
