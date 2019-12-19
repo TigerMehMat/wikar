@@ -6,5 +6,5 @@
 /test log/
 configbot.js
 configbot_release.js
-/data/ls/
-/data/map/
+/data/ls/*
+/data/map/*
