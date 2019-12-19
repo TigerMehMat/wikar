@@ -140,7 +140,6 @@ class BM extends bm_api {
 		}
 		if(change_out.length > 0) {
 			text += await this.text__nameList(change_out, 1, ' покинул(а) сервер');
-			text += await this.text__nameList(change_out, 1, ' покинул(а) сервер');
 		}
 
 
