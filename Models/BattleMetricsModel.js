@@ -122,6 +122,14 @@ class BattleMetricsModel extends MainModel {
 				.catch(reject);
 		}));
 	}
+
+	/**
+	 * Обновить имена стима в базе
+	 * @param {Object} steamNames Объект с именами стима вида {'steamID':'steamName'}
+	 */
+	updateSteamNames(steamNames) {
+		let query = '';
+	}
 }
 
 module.exports = BattleMetricsModel;

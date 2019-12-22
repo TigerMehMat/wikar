@@ -42,6 +42,13 @@ const alarm_class   = require('./controllers/GlobalControllers/alarm.js');
 
 const SubscribeController = new (require('./controllers/SubscribeController'));
 
+const SteamController = new (require('./controllers/SteamController'));
+SteamController.getUsersByIds(['76561198071789245'])
+        .then((res) => {
+            console.log(SteamController.getNames(res));
+        });
+
+
 client.login(config.token)
     .catch(console.error);
 
