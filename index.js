@@ -65,8 +65,12 @@ client.on("ready", async () => {
 
     await ark.start();
 
-    ark.updater().catch(console.error);
-    bm.serversUpdater().catch(console.error);
+    ark.updater().catch((e) => {
+        DiscordAlarm.send('Логгер ARK окончательно завершил свою работу!');
+    });
+    bm.serversUpdater().catch((e) => {
+        DiscordAlarm.send('Логгер BM окончательно завершил свою работу!');
+    });
 });
 
 
