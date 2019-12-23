@@ -48,6 +48,9 @@ SteamController.getUsersByIds(['76561198071789245'])
             console.log(SteamController.getNames(res));
         });
 
+const BattleMetricsModel = new (require('./Models/BattleMetricsModel'));
+BattleMetricsModel.updateSteamNames({"sTiger":"76561198071789245"});
+
 
 client.login(config.token)
     .catch(console.error);

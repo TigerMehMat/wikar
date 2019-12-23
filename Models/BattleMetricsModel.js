@@ -128,7 +128,11 @@ class BattleMetricsModel extends MainModel {
 	 * @param {Object} steamNames Объект с именами стима вида {'steamID':'steamName'}
 	 */
 	updateSteamNames(steamNames) {
-		let query = '';
+		let query = 'SELECT * FROM ark_players WHERE steam_id IS NOT NULL';
+		this.query(query)
+			.then(res => {
+				console.log(res);
+			});
 	}
 }
 
