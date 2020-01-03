@@ -1,8 +1,33 @@
-const ARK_api = require('./controllers/GlobalControllers/ARK_api');
-async function start(){
-    let res = await ARK_api.getRates();
+let a = function () {
+        return new Promise((resolve, reject) => {
+                resolve();
+        });
+};
 
-    console.log(res);
-}
+let b = function () {
+        return new Promise((resolve, reject) => {
+                resolve();
+        })
+};
 
-start();
+let c = function () {
+        return new Promise((resolve, reject) => {
+                reject();
+        })
+};
+
+a()
+        .then(() => {
+            console.log(1);
+            return b();
+        })
+        .then(() => {
+            console.log(123);
+            return c();
+        })
+        .catch(() => {
+            console.log(2);
+        })
+        .then(() => {
+            console.log(3);
+        });
