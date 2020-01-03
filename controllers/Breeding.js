@@ -56,7 +56,6 @@ class Breeding {
 			return;
 		}
 		if(typeof DvData[enName.toLowerCase().replace('_', '')] === 'undefined') {
-			console.log(enName.toLowerCase().replace('_', ''));
 			message.channel.send("Тушканчикам не удалось найти существо **``"+Discord.Util.escapeMarkdown(name, false, true)+"``** в базе данных. Они очень старались.")
 				.then((res)	=> {
 					message.channel.stopTyping();

@@ -42,6 +42,7 @@ const alarm_class   = require('./controllers/GlobalControllers/alarm.js');
 
 const SubscribeController = new (require('./controllers/SubscribeController'));
 
+
 client.login(config.token)
     .catch(console.error);
 
