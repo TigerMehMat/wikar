@@ -30,7 +30,6 @@ class WikiTame extends Tame {
 			callback(0);
 			return;
 		}
-		console.log(tamingCreatures[this.data.name]);
 		let affinityNeeded		= 0;
 		let totalTorpor			= 0;
 		let torporDeplPS		= 0;
@@ -68,7 +67,6 @@ class WikiTame extends Tame {
 			} else {
 				torporDeplPS = 0;
 			}
-			console.log(torporDeplPS);
 		}
 
 

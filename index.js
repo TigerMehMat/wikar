@@ -58,7 +58,7 @@ client.on("ready", async () => {
         console.error(e);
     }
 
-    SubscribeController.activate();
+    SubscribeController.activate(client);
 
     /* Апдейтеры */
     bm = new BM(config.bm_token, client);
