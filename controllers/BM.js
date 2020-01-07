@@ -291,9 +291,21 @@ class BM extends bm_api {
 	async text__nameList(arrPlayers, type = 0, postfix = '') {
 		let text	= '';
 		for(let i = 0; i < arrPlayers.length; i++) {
-			text += await this.text__player(arrPlayers[i], type, postfix);
+			let newAdd = await this.text__player(arrPlayers[i], type, postfix);
+			if((text + newAdd).length >= 1900) {
+				text += '*И ещё ' + (arrPlayers.length - i) + ' ' + this.getNamePlayers(arrPlayers.length - i) + '*';
+				break;
+			} else {
+				text += newAdd;
+			}
 		}
 		return text;
+	}
+
+	getNamePlayers(q) {
+		if((q % 10 >= 5 && q % 10 <= 9) || q % 10 === 0 || (q > 10 && q < 20)) return 'игроков';
+		if(q % 10 >= 2 && q % 10 <= 4) return 'игрока';
+		if(q % 10 === 1) return 'игрок';
 	}
 
 	async text__player(player, type = 0, postfix2 = '') {
