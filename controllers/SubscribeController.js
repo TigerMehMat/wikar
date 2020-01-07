@@ -83,6 +83,12 @@ class SubscribeController {
                 })
         }
 
+        /**
+         * Подписать
+         * @param message Объект сообщения
+         * @param user Юзер
+         * @param {string} role Название роли
+         */
         subscribe(message, user, role) {
                 let member = message.guild.member(user);
                 if(member) {
