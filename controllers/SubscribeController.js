@@ -1,5 +1,4 @@
 const DiscordSubscribesModel = new (require('../Models/DiscordSubscribesModel'));
-const Discord = require('discord.js');
 
 class SubscribeController {
         /**
@@ -15,6 +14,10 @@ class SubscribeController {
                         .catch(console.error);
         }
 
+        /**
+         * Активация подписок
+         * @param client
+         */
         activate(client) {
                 this.client = client;
                 if (!this.subscribeInfo) this.runAfterLoad = true;
@@ -66,6 +69,14 @@ class SubscribeController {
                 });
         }
 
+        /**
+         * Отписать
+         * @param message Сообщение
+         * @param user Юзер
+         * @param emoji Эмоция
+         * @param role Роль
+         * @return {Promise<unknown>}
+         */
         unsubscribe(message, user, emoji, role) {
                 return new Promise((resolve, reject) => {
                         let currentReaction = message.reactions.find(reaction => reaction.emoji.name === emoji);
