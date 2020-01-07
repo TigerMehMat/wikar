@@ -85,8 +85,10 @@ class SubscribeController {
 
         subscribe(message, user, role) {
                 let member = message.guild.member(user);
-                member.addRole(role)
-                        .catch(console.error);
+                if(member) {
+                        member.addRole(role)
+                                .catch(console.error);
+                }
         }
 
         /**
