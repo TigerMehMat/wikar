@@ -7,7 +7,7 @@ const fs = require('fs');
 const path = require('path');
 const kibblesArr = JSON.parse(fs.readFileSync(path.resolve(__dirname, '../data/kibble/eggs.json'), 'utf-8'));
 const access = require('./GlobalControllers/access');
-// const Discord       = require("discord.js");
+const Timer = require('./GlobalControllers/Timer');
 
 const BadRequestsModel  = new (require('../Models/BadRequestsModel'));
 
@@ -246,11 +246,8 @@ class Dododex extends Tame {
 		let h = parseInt(text.substr(0, 2)),
 			m = parseInt(text.substr(3, 2)),
 			s = parseInt(text.substr(6, 2)),
-			res = '';
-		if (h) res += h + 'ч ';
-		if (m) res += m + 'м ';
-		if (s) res += s + 'с ';
-		return res.trim();
+			sec = s + m * 60 + h * 60 * 60;
+		return Timer.timeFormat(sec);
 	}
 
 	send(message, args) {

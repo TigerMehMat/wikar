@@ -47,11 +47,17 @@ class Tame {
         delete obj['lines'];
         obj['cashTime'] = Date.now();
         let text = JSON.stringify(obj);
-        let dn = path.resolve(__dirname, '../../cash/tame/x'+obj.rates);
+        let dn = path.resolve(__dirname, '../../cash/tame');
+
+        if(!fs.existsSync(dn)) fs.mkdirSync(dn);
+        dn = path.join(dn,'/x' + obj.rates);
+
         if(!fs.existsSync(dn)) fs.mkdirSync(dn);
         dn = path.join(dn,obj.name);
+
         if(!fs.existsSync(dn)) fs.mkdirSync(dn);
         dn = path.join(dn,obj.lvl+'.json');
+
         if(fs.existsSync(dn)) fs.unlinkSync(dn);
         fs.writeFileSync(dn, text);
     }
@@ -59,12 +65,18 @@ class Tame {
     getActualCache(obj){
         let cashMaxDiff = 60*60*24*3*100;
 
-        let dn = path.resolve(__dirname, '../../cash/tame/x'+obj.rates);
+        let dn = path.resolve(__dirname, '../../cash/tame');
         if(!fs.existsSync(dn)) return false;
+
+        dn  = path.join(dn, '/x'+obj.rates);
+        if(!fs.existsSync(dn)) return false;
+
         dn  = path.join(dn, '/'+obj.name);
         if(!fs.existsSync(dn)) return false;
+
         dn  = path.join(dn,obj.lvl+'.json');
         if(!fs.existsSync(dn)) return false;
+
         let res = fs.readFileSync(dn, 'utf-8');
         res = JSON.parse(res);
         if(Date.now() - res.cashTime > cashMaxDiff) return false;
