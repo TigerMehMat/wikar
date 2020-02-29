@@ -22,10 +22,10 @@ class DiscordServersModel extends MainModel {
 
 	getRatesChannels() {
 		return new Promise((resolve, reject) => {
-			this.query('SELECT `off_rates_channel`,`discord_id` FROM `discord_servers` WHERE `off_rates_channel` IS NOT NULL AND `off_rates_channel` <> "DELETED"')
+			this.query('SELECT off_rates_channel,discord_id FROM discord_servers WHERE off_rates_channel IS NOT NULL AND off_rates_channel <> \'DELETED\'')
 				.then((res)	=> {
 					let rs	= [];
-					res.forEach((el, i)	=> {
+					res.rows.forEach((el, i)	=> {
 						let curRes	= el.off_rates_channel.split(',');
 						curRes.unshift(el.discord_id);
 						rs.push(curRes);
@@ -85,18 +85,19 @@ class DiscordServersModel extends MainModel {
 			switch (type) {
 				case 'active':
 					field	= 'ark_active_to';
-					where	= '(`active_channel`= ? OR `active_channel`="*")';
+					where	= '(active_channel= $2 OR active_channel=\'*\')';
 					break;
 				case 'bm':
 					field	= 'bm_active_to';
-					where	= 'bm_channel = ?';
+					where	= 'bm_channel = $2';
 					break;
 				default:
 					reject(new Error('Unknown active type'));
 					return;
 			}
-			this.query('SELECT `tribe_functions`, `prefix`, `rates`, id FROM `discord_servers` WHERE '+field+' >= NOW() AND `discord_id`= ? AND '+where+' LIMIT 1', [serverId, channelId])
+			this.query('SELECT tribe_functions, prefix, rates, id FROM discord_servers WHERE '+field+' >= NOW() AND discord_id= $1 AND '+where+' LIMIT 1', [serverId, channelId])
 				.then((res)	=> {
+					res = res.rows;
 					if(!(res.length > 0)) return false;
 					res	= res[0];
 					res.rates	= JSON.parse(res.rates);

@@ -1,7 +1,7 @@
 /cash/tame/*
 /cash/breeding/*
 /cash/maps/*
-/.idea/
+.idea/
 /node_modules/
 /test log/
 configbot.js

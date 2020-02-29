@@ -10,8 +10,8 @@ class GlobalVarsModel extends MainModel {
          * @param {string} name Название параметра
          */
         async getItem(name) {
-                let res = await this.query('SELECT `value` FROM global_vars WHERE name = ?', [name]);
-                return res[0]['value'];
+                let res = await this.query('SELECT * FROM global_vars WHERE name = $1', [name]);
+                return res.rows[0]['value'];
         }
 
         /**
@@ -21,7 +21,7 @@ class GlobalVarsModel extends MainModel {
          * @returns {Promise<void>}
          */
         async setItem(name, value) {
-                await this.query('UPDATE global_vars SET value = ? WHERE name = ?', [value, name]);
+                await this.query('UPDATE global_vars SET value = $1 WHERE name = $2', [value, name]);
         }
 }
 

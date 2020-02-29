@@ -1,10 +1,10 @@
-const mysql = require("mysql");
+const {Pool} = require("pg");
 const config = require("../configbot");
-
-const poll	= mysql.createPool(config.mysql);
+const pool = new Pool(config.postgresql);
 
 class MainModel {
-        constructor() {}
+        constructor() {
+        }
 
         /**
          * Запрос к БД
@@ -13,15 +13,39 @@ class MainModel {
          * @return {Promise<Array>}
          */
         async query(queryString, values = []) {
-                return new Promise((resolve, reject) => {
-                        poll.query(queryString, values, function (error, results, fields) {
-                                if (error) {
-                                        reject(error);
-                                } else {
-                                        resolve(results);
-                                }
-                        });
-                });
+                // return new Promise((resolve, reject) => {
+                //         let pool = new Pool(config.postgresql);
+                //         let result;
+                //         pool.connect()
+                //                 .then((client) => {
+                //                         console.log(1);
+                //                         client.query("SET search_path TO 'test';")
+                //                                 .then(() => {
+                //                                         console.log(2);
+                //                                         return client.query(queryString, values);
+                //                                 })
+                //                                 .then(async (res) => {
+                //                                         console.log(3);
+                //                                         result = res;
+                //                                         client.release();
+                //                                         resolve(res.rows);
+                //                                 })
+                //                                 .catch(reject)
+                //                 })
+                //                 .catch(reject);
+                // });
+
+                const client = await pool.connect();
+                let res;
+                try {
+                        await client.query("SET search_path TO 'test';");
+                        res = await client.query(queryString, values);
+                } finally {
+                        // Make sure to release the client before any error handling,
+                        // just in case the error handling itself throws an error.
+                        client.release();
+                }
+                return res;
         }
 }
 

@@ -1,6 +1,6 @@
 const config = require('../../configbot');
 
-class Access {
+class Access_old {
 	/**
 	 *
 	 * @param {object} messageAccess
@@ -58,6 +58,11 @@ class Access {
 			}
 		}
 		return false;
+	}
+}
+
+class Access {
+	constructor() {
 	}
 }
 

@@ -8,7 +8,7 @@ class SubscribeController {
                 let instance = this;
                 DiscordSubscribesModel.getSubscribes()
                         .then((res) => {
-                                instance.subscribeInfo = res;
+                                instance.subscribeInfo = res.rows;
                                 if (instance.runAfterLoad) instance.activateNow();
                         })
                         .catch(console.error);

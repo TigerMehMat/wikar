@@ -19,16 +19,16 @@ class BattleMetricsModel extends MainModel {
 
 	getAllActiveBMServers() {
 		return new Promise((resolve, reject)	=> {
-			this.query('select `as`.bm_id\n' +
-				'from bm_states bm_s\n' +
-				'         inner join discord_servers ds on ds.id = bm_s.discord\n' +
-				'         inner join ark_servers `as` on `as`.id = bm_s.server_id\n' +
-				'where ds.bm_active_to > NOW() and ds.bm_channel is not NULL\n' +
-				'group by `as`.bm_id\n' +
-				'order by `as`.bm_id\n')
+			this.query('SELECT "as".bm_id\n' +
+				'FROM bm_states bm_s\n' +
+				'         INNER JOIN discord_servers ds ON ds.id = bm_s.discord\n' +
+				'         INNER JOIN ark_servers "as" ON "as".id = bm_s.server_id\n' +
+				'WHERE ds.bm_active_to > NOW() AND ds.bm_channel IS NOT NULL\n' +
+				'GROUP BY "as".bm_id\n' +
+				'ORDER BY "as".bm_id\n')
 				.then((res)	=> {
 					let result	= [];
-					res.forEach((el)	=> {
+					res.rows.forEach((el)	=> {
 						result.push(el.bm_id);
 					});
 					resolve(result);
