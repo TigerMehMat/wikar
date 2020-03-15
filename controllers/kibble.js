@@ -49,10 +49,6 @@ class Kibble {
         return this;
     }
 
-    setAccess(accessMessage) {
-
-    }
-
     /**
      * Валидация входных данных перед процессом
      * @return {Kibble}

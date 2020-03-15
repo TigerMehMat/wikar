@@ -34,7 +34,7 @@ const Wiki_Craft = require('./controllers/Wiki-craft');
 
 const Helper = require('./controllers/GlobalControllers/Helper');
 
-const access = require('./controllers/GlobalControllers/access');
+const Access = require('./controllers/GlobalControllers/access');
 
 const Breeding = require('./controllers/Breeding');
 
@@ -86,11 +86,15 @@ client.on('message', async message => {
                 return;
         }
 
-        const messageAccess = await access.getMainCheck(message, DiscordServersModel);
-        if (!messageAccess) return;
+        let access = (new Access(message.guild.id, message.channel.id)).validate();
+        let access_parameters = await access.getAccessParameters();
+
+        if(!access_parameters) {
+                return;
+        }
 
         /* Начало обработчика команд */
-        const prefix = messageAccess.prefix;
+        const prefix = access_parameters.prefix;
 
         if (!message.content.startsWith(prefix) || message.author.bot) return;
 
@@ -109,9 +113,6 @@ client.on('message', async message => {
                 case "тамление":
                         Dododex.controller(message, args, messageAccess);
                         break;
-                // case "п2":
-                //     WikiTame.controller(message, args);
-                //     break;
                 case "инкубация":
                 case "беременность":
                 case "разведение":
@@ -121,7 +122,6 @@ client.on('message', async message => {
                         break;
                 case "корм":
                 case "к":
-                        //Kibble.controller(message, args, messageAccess);
                         (new Kibble())
                                 .setMessage(message)
                                 .setArgs(args)
@@ -155,9 +155,6 @@ client.on('message', async message => {
                 case "таймер":
                         Timer.controller(message, args);
                         break;
-                /*case "bm":
-                    BM.controller(message, args);
-                    break;*/
                 case "сс":
                 case "статуссервера":
                         bm.changeState(message, args);
@@ -170,9 +167,6 @@ client.on('message', async message => {
                         Wiki_Craft.sendCraft(message, args, messageAccess)
                                 .catch(console.error);
                         break;
-                // case "множители":
-                // 	ARK.getRoleToMe(message, args);
-                // 	break;
 
                 /* Баттл Метрика */
                 case "спи":
@@ -190,21 +184,6 @@ client.on('message', async message => {
                 case "помощь":
                         Helper.sendHelp(message, args);
                         break;
-                // case "bmподписка":
-                // case "бмподписка":
-                //     bm.sendLicenseInfo(message);
-                //     break;
-                // case "bm__init":
-                //     bm.sendInit(message);
-                //     /*
-                //     channel.send('hi, it message is only for bot.\nку, это сообщение только для бота');
-                //     channel.send('hi, it message is only for bot.\nку, это сообщение только для бота');
-                //     channel.send('hi, it message is only for bot.\nку, это сообщение только для бота');
-                //     channel.send('hi, it message is only for bot.\nку, это сообщение только для бота');
-                //     channel.send('hi, it message is only for bot.\nку, это сообщение только для бота');
-                //     channel.send('hi, it message is only for bot.\nку, это сообщение только для бота');
-                //     channel.send('hi, it message is only for bot.\nку, это сообщение только для бота');*/
-                //     break;
         }
 });
 

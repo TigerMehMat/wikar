@@ -1,0 +1,10 @@
+{
+  "commands": {
+    "taming": ["t","tame", "taming"],
+    "kibble": ["k", "kibble"],
+    "breeding": ["b", "breeding", "breed", "incubation"],
+    "map": ["m", "map"],
+    "bug": ["bug"],
+    "item": ["i","item"]
+  }
+}

@@ -10,6 +10,23 @@ const BadRequestsModel  = new (require('../Models/BadRequestsModel'));
 
 class Breeding {
 
+	constructor(message, args) {
+		this.message = message;
+
+		this.name = null;
+		this.rates_maturation = 1;
+		this.rates_incubation = 1;
+	}
+
+	setBasicRates(rates_maturation, rates_incubation) {
+		this.rates_maturation = rates_maturation;
+		this.rates_incubation = rates_incubation;
+	}
+
+	setArgs(args) {
+		let name = '';
+	}
+
 	static controller(message, args, messageAccess) {
 		if(!Access.isAccess(messageAccess)) return;
 		message.channel.startTyping();
@@ -166,8 +183,8 @@ class Breeding {
 			embed.addField('Иммунитет к оглушению', (Data['taming']['torporimmune'] === 'Yes') ? 'Да' : 'Нет', true);
 
 		//embed.addBlankField();
-		rateMat = rateMat === Infinity ? '∞' : 'x'+rateMat;
-		rateInc = rateInc === Infinity ? '∞' : 'x'+rateInc;
+		rateMat = rateMat === Infinity ? '∞' : 'x' + rateMat;
+		rateInc = rateInc === Infinity ? '∞' : 'x' + rateInc;
 		//embed.addField('Примененные множители', 'Скорость роста: '+rateMat+'\nСкорость инкубации: '+rateInc);
 		embed.setFooter('Рост '+rateMat+' • Инкубация '+rateInc);
 
