@@ -22,7 +22,9 @@ class CreaturesModel extends MainModel {
                                 "OR ca.ru_name_mn ~* $1\n" +
                                 "OR car.alias_mn ~* $1\n" +
                                 "ORDER BY ca.srt, ca.id", [searchName, '.* ' + creatureName + '.*'])
-                                .then(resolve)
+                                .then(res => {
+                                        resolve(res.rows);
+                                })
                                 .catch(reject);
                 });
         }

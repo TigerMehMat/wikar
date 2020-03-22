@@ -76,12 +76,36 @@ class Access {
 	}
 
 	async getAccessParameters() {
-		let res = await this.discord_model.isActiveServer(this.guild_id, this.channel_id, 'active');
-		return res;
+		return await this.discord_model.isActiveServer(this.guild_id, this.channel_id, 'active');
 	}
 
 	async isAccessBM() {
 		return await this.discord_model.isActiveServer(this.guild_id, this.channel_id, 'bm');
+	}
+
+	/**
+	 * Аналог - getAccessParameters
+	 * @deprecated
+	 * @return {Promise<void>}
+	 */
+	async getMainCheck() {
+		return this.discord_model.isActiveServer(this.guild_id, this.channel_id);
+	}
+
+	/**
+	 * @deprecated
+	 * @param messageAccess
+	 * @param type
+	 * @return {boolean}
+	 */
+	static isAccess(messageAccess, type = 'normal') {
+		switch (type) {
+			case 'normal':
+				return true;
+			case 'tribe':
+				return !!messageAccess.tribe_functions;
+		}
+		return false;
 	}
 }
 

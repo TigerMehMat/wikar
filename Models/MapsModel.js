@@ -12,10 +12,12 @@ class MapsModel extends MainModel {
          * @return {Promise<Object>}
          */
         searchMap(mapName, releaseOnly = false) {
-                let releaseRule = releaseOnly ? ' AND `release` <= NOW()' : '';
+                let releaseRule = releaseOnly ? ' AND release <= NOW()' : '';
                 return new Promise((resolve, reject) => {
-                        this.query('SELECT id,name,url,reaction,aliases FROM ark_maps WHERE name LIKE ? OR aliases LIKE ? OR aliases LIKE ?' + releaseRule, [mapName + '%',mapName + '%', '%,' + mapName + '%'])
-                                .then(resolve)
+                        this.query('SELECT id,name,url,reaction,aliases FROM ark_maps WHERE name ~* $1 OR aliases ~* $1 OR aliases ~* $2' + releaseRule, ['^' + mapName, ',' + mapName])
+                                .then(res => {
+                                        resolve(res.rows);
+                                })
                                 .catch(reject);
                 });
         }
@@ -25,10 +27,27 @@ class MapsModel extends MainModel {
          * @return {Promise<Object>}
          */
         getAllMaps(releaseOnly = false) {
-                let releaseRule = releaseOnly ? ' WHERE `release` <= NOW()' : '';
+                let releaseRule = releaseOnly ? ' WHERE release <= NOW()' : '';
                 return new Promise((resolve, reject) => {
                         this.query('SELECT * FROM ark_maps' + releaseRule)
-                                .then(resolve)
+                                .then(res => {
+                                        resolve(res.rows);
+                                })
+                                .catch(reject);
+                });
+        }
+
+        /**
+         * Получаем список карт по их названиям
+         * @param maps
+         * @return {Promise<unknown>}
+         */
+        getInfoByMaps(maps) {
+                return new Promise((resolve, reject) => {
+                        this.query('SELECT * FROM ark_maps WHERE name IN (\'' + maps.join('\',\'') + '\')')
+                                .then(res => {
+                                        resolve(res.rows);
+                                })
                                 .catch(reject);
                 });
         }

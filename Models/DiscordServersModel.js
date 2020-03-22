@@ -93,7 +93,6 @@ class DiscordServersModel extends MainModel {
                                         res = res[0];
                                         res.rates = JSON.parse(res.rates);
                                         res.rates = this.calcRates(res.rates);
-                                        console.log(res);
                                         resolve(res);
                                 })
                                 .catch(reject);

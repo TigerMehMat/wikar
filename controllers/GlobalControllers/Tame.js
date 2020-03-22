@@ -28,7 +28,6 @@ class Tame {
                 this.data.name = this.data.name.trim();
 
                 let creature = await CreaturesModel.search(this.data.name);
-                console.log(creature);
 
                 if(!creature.length) return this.data.name;
                 this.data.name = (creature[0]['dododex_alias']) ? creature[0]['dododex_alias'] : creature[0]['en_name'];

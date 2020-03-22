@@ -89,6 +89,10 @@ client.on('message', async message => {
         let access = (new Access(message.guild.id, message.channel.id)).validate();
         let access_parameters = await access.getAccessParameters();
 
+        /** @var {Object} Неведомый костыль, убрать когда переделаю верефикацию. */
+        const messageAccess = await access.getMainCheck();
+        if (!messageAccess) return;
+
         if(!access_parameters) {
                 return;
         }
@@ -111,7 +115,8 @@ client.on('message', async message => {
                 case "приручение":
                 case "п":
                 case "тамление":
-                        Dododex.controller(message, args, messageAccess);
+                        Dododex.controller(message, args, messageAccess)
+                                .catch(console.error);
                         break;
                 case "инкубация":
                 case "беременность":
@@ -130,7 +135,12 @@ client.on('message', async message => {
                                 .catch(console.error);
                         break;
                 case "карта":
-                        MapsController.controller(message, args, messageAccess);
+                        let controller = (new MapsController());
+                        await controller.setMessage(message);
+                        await controller.setArgs(args);
+                        await controller.validate();
+                        await controller.process();
+                        //MapsController.controller(message, args, messageAccess);
                         break;
                 case "ава":
                 case "покажиаву":
