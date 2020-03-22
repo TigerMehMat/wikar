@@ -6,7 +6,6 @@ class CreaturesModel extends MainModel {
         }
 
         search(creatureName) {
-                let searchName = '^' + creatureName + '.*';
                 return new Promise((resolve, reject) => {
                         this.query("SELECT DISTINCT ca.id, ca.en_name, ca.en_dv_alias, ca.ru_name, ca.ru_name_mn, ca.ru_name_rp, ca.sex, cad.alias AS dododex_alias, ca.srt, ca.id\n" +
                                 "FROM creatures ca\n" +
@@ -19,9 +18,11 @@ class CreaturesModel extends MainModel {
                                 "OR ca.en_name ~* $2\n" +
                                 "OR cae.alias ~* $1\n" +
                                 "OR car.alias ~* $1\n" +
+                                "OR car.alias ~* $2\n" +
                                 "OR ca.ru_name_mn ~* $1\n" +
                                 "OR car.alias_mn ~* $1\n" +
-                                "ORDER BY ca.srt, ca.id", [searchName, '.* ' + creatureName + '.*'])
+                                "OR car.alias_mn ~* $2\n" +
+                                "ORDER BY ca.srt, ca.id", ['^' + creatureName, ' ' + creatureName])
                                 .then(res => {
                                         resolve(res.rows);
                                 })
