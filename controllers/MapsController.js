@@ -10,8 +10,14 @@ const path = require('path');
 const BadRequestsModel = new (require('../Models/BadRequestsModel'));
 const MapsModel = new (require('../Models/MapsModel'));
 
+/**
+ * Класс, отвечающий за ответ на команду !карта
+ */
 class MapsController {
 
+        /**
+         * Конструктор
+         */
         constructor() {
                 this.map = undefined;
                 this.creature = undefined;
@@ -19,7 +25,7 @@ class MapsController {
         }
 
         /**
-         *
+         * Установить данные по аргументам
          * @param {string[]} args
          * @return {Promise<MapsController>}
          */
@@ -56,7 +62,9 @@ class MapsController {
         async process() {
                 this.message.channel.startTyping();
 
-                if (this.map && !this.creature) {
+                if (this.map && this.creature === null) {
+                        await this.message.channel.send('В нашей базе не нашлось такого существа.');
+                } else if (this.map && !this.creature) {
                         await this.processOnlyMap();
                 } else if (this.creature && !this.map) {
                         await this.processCreature();

@@ -155,6 +155,7 @@ class Dododex extends Tame {
                 let maxUnits = array.bs.t.b + (array.bs.t.w * (level - 1));
                 maxUnits = parseFloat(maxUnits.toFixed(3));
                 let totalUnits = maxUnits;
+                this.data.torporUnits = totalUnits;
                 let totalSeconds = (totalUnits / rate);
 
                 res += '-' + (Math.round(rate * 100) / 100) + '/с, полное оглушение спадет за ' + this.timeFormat(totalSeconds, true);
