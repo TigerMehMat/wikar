@@ -39,7 +39,9 @@ class MapsController {
                         this.map = map[0];
                 }
                 if (args.length > 0) {
-                        let creature = await (new CreaturesModel()).search(args.join(' '));
+                        let creature = await (new CreaturesModel())
+                                .setCreatureName(args.join(' '))
+                                .search();
                         this.creature = creature.length > 0 ? creature[0] : null;
                 }
                 return this;
@@ -79,11 +81,11 @@ class MapsController {
 
         async processMapAndCreature() {
                 let map = await this.getMap();
-                const attachment = new Discord.Attachment(map, "map.jpg");
-                let embed = new Discord.RichEmbed()
+                const attachment = new Discord.MessageAttachment(map, "map.jpg");
+                let embed = new Discord.MessageEmbed()
                         .setAuthor(this.message.author.username, this.message.author.avatarURL)
                         .setTitle(this.creature.ru_name_mn + ' на карте ' + this.map.name)
-                        .attachFile(attachment)
+                        .attachFiles([attachment])
                         .addField('<:cave:557481898088333342> - Пещеры', '\u200B', true)
                         .addField('<:untamed:557480015533441024> - Неприручаемые', '\u200B', true)
                         .setImage('attachment://map.jpg');
@@ -175,11 +177,11 @@ class MapsController {
          * @return {Promise<void>}
          */
         async processOnlyMap() {
-                const attachment = new Discord.Attachment('./maps/' + this.map.url + '.jpg', "map.jpg");
-                let embed = new Discord.RichEmbed()
+                const attachment = new Discord.MessageAttachment('./maps/' + this.map.url + '.jpg', "map.jpg");
+                let embed = new Discord.MessageEmbed()
                         .setAuthor(this.message.author.username, this.message.author.avatarURL)
                         .setTitle('Карта ' + this.map.name)
-                        .attachFile(attachment)
+                        .attachFiles([attachment])
                         .setImage('attachment://map.jpg');
                 this.message.channel.stopTyping();
                 await this.message.channel.send(embed);
@@ -201,7 +203,7 @@ class MapsController {
                                 errors: ['time']
                         })
                                 .then((collected) => {
-                                        this.message.clearReactions()
+                                        this.message.reactions.removeAll()
                                                 .then(() => {
                                                         this.map = maps.find(el => el.reaction === collected.first().emoji.id);
                                                         this.processMapAndCreature();
@@ -211,7 +213,7 @@ class MapsController {
                                 })
                                 .catch((res) => {
                                         if (res instanceof Discord.Collection) {
-                                                this.message.clearReactions()
+                                                this.message.reactions.removeAll()
                                                         .catch(console.error);
                                                 this.message.channel.send("Вы не указали карту для этого существа.")
                                                         .catch(console.error);

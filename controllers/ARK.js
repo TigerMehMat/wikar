@@ -98,7 +98,7 @@ class ARK extends ARK_api {
             }
             let roleId = ARK.getRoleId(guild);
             let roleText = roleId ? '<@&' + roleId + '>' : '';
-            let embed = new Discord.RichEmbed()
+            let embed = new Discord.MessageEmbed()
                 .setTitle('Изменение множителей')
                 .setTimestamp(Date.now())
                 .setFooter((new Date()).toTimeString())

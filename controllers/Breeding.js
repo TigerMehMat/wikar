@@ -102,7 +102,7 @@ class Breeding {
 			breeding = true;
 		}
 
-		let embed = new Discord.RichEmbed()
+		let embed = new Discord.MessageEmbed()
 			.setTitle(ruName)
 			.setAuthor(message.author.username, message.author.avatarURL)
 			.setDescription(text);

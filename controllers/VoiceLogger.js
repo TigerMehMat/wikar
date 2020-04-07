@@ -37,7 +37,7 @@ class VoiceLogger {
                 message = this.wrapperUser(this.getUserName(newMember))+(statusDeaf < 0 ? " включил(а)" : " отключил(а)")+messmin;
         }
         if(message){
-            let embed = new Discord.RichEmbed()
+            let embed = new Discord.MessageEmbed()
                 .setTimestamp(Date())
                 .setTitle(message);
             if(!this.isLastUser(newMember)){

@@ -10,7 +10,7 @@ class MessageGun {
 	/**
 	 * Лениво отправляет сообщения
 	 * @param {function} func
-	 * @param {string|Discord<RichEmbed>} message
+	 * @param {string|Discord<MessageEmbed>} message
 	 * @param {'normal'|'high'} priority
 	 * @param {'last','first'} place
 	 * @returns {Promise<unknown>}

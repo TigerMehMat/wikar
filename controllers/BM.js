@@ -84,7 +84,7 @@ class BM extends bm_api {
 	}
 
 	async updateServerInfo(message, serverInfo) {
-		let embed	= new Discord.RichEmbed()
+		let embed	= new Discord.MessageEmbed()
 			.setTitle(serverInfo.name)
 			.setURL('https://www.battlemetrics.com/servers/ark/'+serverInfo.bm_id+'/')
 			.setTimestamp(Date.now())
@@ -128,7 +128,7 @@ class BM extends bm_api {
 
 
 
-		let embed	= new Discord.RichEmbed()
+		let embed	= new Discord.MessageEmbed()
 			.setTitle(serverInfo.name)
 			.setURL('https://www.battlemetrics.com/servers/ark/'+serverInfo.bm_id+'/')
 			.setTimestamp(Date.now())

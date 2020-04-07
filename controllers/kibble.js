@@ -85,17 +85,18 @@ class Kibble {
                             };
                             setTimeout(() => {
                                 if(this.bot_message.deleted) return;
-                                this.bot_message.clearReactions().catch(console.error);
+                                this.bot_message.reactions.removeAll().catch(console.error);
                             }, 60000);
                             return this.bot_message.awaitReactions(reactionFilter, {max: 1, time: 60000, errors: ['time']});
                     })
                     .then(() => {
                         this.message.channel.startTyping();
-                        return this.bot_message.clearReactions();
+                        return this.bot_message.reactions.removeAll();
                     })
                     .then(() => {
                         let embed = this.getEmbed(true);
-                        this.bot_message.edit(embed);
+                        this.bot_message.edit(embed)
+                                .catch(reject);
                         this.message.channel.stopTyping();
                     })
                     .catch(error => {
@@ -117,11 +118,11 @@ class Kibble {
     /**
      * Получаем подготовленные данные для отправки
      * @param fullCraft
-     * @return {module:"discord.js".RichEmbed}
+     * @return {module:"discord.js".MessageEmbed}
      */
     getEmbed(fullCraft = false) {
         let kibble = this.getKibble();
-        let embed = new Discord.RichEmbed()
+        let embed = new Discord.MessageEmbed()
             .setTitle(itemLink(kibble.ruName + " Корм", false)+" (" + kibble.name + " kibble)")
             .setAuthor(this.message.author.username, this.message.author.avatarURL)
             .setURL("https://ark-ru.gamepedia.com/"+encodeURIComponent(kibble.wikiLink))

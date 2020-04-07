@@ -29,7 +29,7 @@ class GetAva {
         let mentionUserAva = usr.avatarURL;
         let avaExt = mentionUserAva.substr(mentionUserAva.lastIndexOf('.'));
         avaExt = avaExt.replace(/\?.*/, '');
-        const attachment = new Discord.Attachment(mentionUserAva, "аватарка"+avaExt);
+        const attachment = new Discord.MessageAttachment(mentionUserAva, "аватарка"+avaExt);
         message.channel.send(attachment)
             .then(() => {
                 message.channel.stopTyping();

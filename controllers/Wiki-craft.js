@@ -105,7 +105,7 @@ class Wiki_craft extends Wiki {
             emtitle = emtitle.substr(0,250) + '…';
         }
 
-        let embed = new Discord.RichEmbed()
+        let embed = new Discord.MessageEmbed()
             .setTitle(emtitle)
             .setAuthor(message.author.username, message.author.avatarURL)
             .setURL('https://ark-ru.gamepedia.com/' + link)

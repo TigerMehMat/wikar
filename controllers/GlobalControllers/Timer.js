@@ -42,7 +42,7 @@ class Timer {
                                         }).users.last().username + ' отменил таймер "' + options.title + '"', timerMessage, false, () => {
                                                 return;
                                         });
-                                        timerMessage.clearReactions()
+                                        timerMessage.reactions.removeAll()
                                                 .catch(console.error);
                                 })
                                 .catch((res) => {
@@ -68,7 +68,7 @@ class Timer {
         }
 
         static sendMessage(title, text, msg, newMessage, callback) {
-                let embed = new Discord.RichEmbed()
+                let embed = new Discord.MessageEmbed()
                         .setTitle(title)
                         .setDescription(text);
                 if (newMessage) {
