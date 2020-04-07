@@ -70,7 +70,7 @@ const functionsConf = {
         "example": "!множители",
         "exampleComment": "Поставит роль 'множители', если её нет, и снимет, если она есть.",
         "access": function(message){
-            let isRole  = message.member.roles.find(value => value.name === "множители");
+            let isRole  = message.member.roles.cache.find(value => value.name === "множители");
             return !!isRole;
         }
     }

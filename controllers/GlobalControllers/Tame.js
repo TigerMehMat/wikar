@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const Timer = require("./Timer");
 const Discord = require("discord.js");
-const CreaturesModel = new (require("../../Models/CreaturesModel"))();
+const CreaturesModel = require("../../Models/CreaturesModel");
 
 class Tame {
         get cacheTime() {
@@ -31,7 +31,7 @@ class Tame {
                 if (arr.length - i > 2 && !isNaN(arr[i + 2])) this.data.lines = parseInt(arr[i + 2]);
                 this.data.name = this.data.name.trim();
 
-                let creature = await CreaturesModel.search(this.data.name);
+                let creature = await (new CreaturesModel()).setCreatureName(this.data.name).search();
 
                 if(!creature.length) return this.data.name;
                 this.data.name = (creature[0]['dododex_alias']) ? creature[0]['dododex_alias'] : creature[0]['en_name'];
@@ -78,9 +78,7 @@ class Tame {
         }
 
         senderResult(message) {
-
-
-                let embed = new Discord.RichEmbed()
+                let embed = new Discord.MessageEmbed()
                         .setTitle(this.data.runame)
                         .setAuthor(message.author.username, message.author.avatarURL)
                         .setURL(this.data.res.link);

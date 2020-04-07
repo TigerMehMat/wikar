@@ -110,13 +110,13 @@ class ARK extends ARK_api {
 
     async editStats(){
         for(let j in this.info) {
-            let guild   = this.client.guilds.get(j);
+            let guild   = this.client.guilds.cache.get(j);
             if(!guild) {
                 console.error("Guild "+j+" not found for ARK api");
                 continue;
             }
 
-            let channel = guild.channels.get(this.info[j].channel);
+            let channel = guild.channels.cache.get(this.info[j].channel);
             if(!channel) return;
             let messages    = await this.fetchAllMessagesByAuthor(channel, this.client.user.id, 1);
 
@@ -126,18 +126,16 @@ class ARK extends ARK_api {
             for (let i in this.rates) {
                 text += this.rateByType[i] + ' = ' + this.rates[i] + '\n';
             }
-            let embed = new Discord.RichEmbed()
+            let embed = new Discord.MessageEmbed()
                 .setTitle('Множители официальных серверов')
                 .setTimestamp(Date.now())
                 .setFooter((new Date()).toTimeString())
                 .setDescription(text);
             try {
                 if (res) {
-                    await res.edit(embed)
-                        .catch(console.error);
+                    await res.edit(embed);
                 } else {
-                    await channel.send(embed)
-                        .catch(console.error);
+                    await channel.send(embed);
                 }
             } catch (e) {
                 console.error(e);
@@ -172,7 +170,7 @@ class ARK extends ARK_api {
             if(firstID) {
                 options.after	= firstID;
             }
-            channel.fetchMessages(options)
+            channel.messages.fetch(options)
                 .then(msgs	=> {
                     if(msgs.size === 0) resolve(false);
                     let currentMessages	= msgs.filter(m => m.author.id === author && !m.system);

@@ -30,9 +30,9 @@ class SubscribeController {
         activateNow() {
                 let instance = this;
                 this.subscribeInfo.forEach((el) => {
-                        let guild = this.client.guilds.get(el.guild);
-                        let channel = guild.channels.get(el.channel);
-                        channel.fetchMessage(el.message)
+                        let guild = this.client.guilds.cache.get(el.guild);
+                        let channel = guild.channels.cache.get(el.channel);
+                        channel.messages.fetch(el.message)
                                 .then(message => {
                                         // Вешаем события
                                         let filter = instance.getFinder([el.emoji, '❌']);
@@ -53,9 +53,9 @@ class SubscribeController {
                                                 .catch(console.error);
 
                                         // Удаляем подписки, если они накопились
-                                        let closeReaction = message.reactions.find(reaction => reaction.emoji.name === '❌');
+                                        let closeReaction = message.reactions.cache.find(reaction => reaction.emoji.name === '❌');
                                         if(closeReaction) {
-                                                closeReaction.fetchUsers()
+                                                closeReaction.users.fetch()
                                                         .then(res => {
                                                                 res = res.filter(user => user.bot === false);
                                                                 res.forEach((user) => {

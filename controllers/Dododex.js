@@ -261,11 +261,9 @@ class Dododex extends Tame {
 
                 if(errorMessage !== "") {
                         message.channel.stopTyping();
-                        message.channel.send(errorMessage)
-                                .catch(console.error);
-                        return;
+                        await message.channel.send(errorMessage);
+                        return this;
                 }
-
 
                 let actualCache = this.getActualCache(this.data);
                 if (!actualCache) {

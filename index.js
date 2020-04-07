@@ -48,8 +48,10 @@ const ItemsController = require('./controllers/ItemsController');
 client.login(config.token)
         .catch(console.error);
 
+global.DiscordAlarm = new alarm_class();
+
 client.on("ready", async () => {
-        global.DiscordAlarm = new alarm_class(client);
+        await DiscordAlarm.setClient(client);
 
         console.log("Готов!\n" + client.user.tag);
 

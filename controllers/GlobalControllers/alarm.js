@@ -2,12 +2,20 @@ const Discord	= require('discord.js');
 
 
 class DiscordAlarm {
+	constructor() {
+	}
+
 	/**
-	 *
-	 * @param {Discord/Client} clientObject запущенный клиент
+	 * Устанавливаем запущенный клиент
+	 * @param clientObject
+	 * @return {Promise<DiscordAlarm>}
 	 */
-	constructor(clientObject) {
-		this.alarmUser	= clientObject.users.find(user => user.id === '271339139679387648');
+	async setClient(clientObject) {
+		this.alarmUser	= await clientObject.users.fetch('271339139679387648');
+		if(!this.alarmUser) {
+			console.error('Не удалось получить юзера-администратора');
+		}
+		return this;
 	}
 
 	/**

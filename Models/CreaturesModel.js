@@ -1,31 +1,64 @@
 const MainModel = require('./MainModel');
 
 class CreaturesModel extends MainModel {
+
         constructor() {
                 super();
+                this.query_where = '';
+                this.joins = [];
+                this.creature_name = '';
         }
 
-        search(creatureName) {
+        prepareWhere() {
+                this.query_where = "WHERE ca.ru_name ~* $1\n" +
+                        "OR ca.ru_name ~* $2\n" +
+                        "OR ca.en_name ~* $1\n" +
+                        "OR ca.en_name ~* $2\n" +
+                        "OR cae.alias ~* $1\n" +
+                        "OR car.alias ~* $1\n" +
+                        "OR car.alias ~* $2\n" +
+                        "OR ca.ru_name_mn ~* $1\n" +
+                        "OR car.alias_mn ~* $1\n" +
+                        "OR car.alias_mn ~* $2\n";
+                return this;
+        }
+
+        prepareSearchJoins() {
+                this.joins = this.joins.concat([
+                        "LEFT JOIN creatures_aliases_en cae on ca.id = cae.creature_id",
+                        "LEFT JOIN creatures_aliases_ru car on ca.id = car.creature_id",
+                        "LEFT JOIN creatures_aliases_dododex cad on ca.id = cad.creature_id",
+                        "LEFT JOIN creature_aliases_map cam on ca.id = cam.creature_id" // Для карт
+                ]);
+                return this;
+        }
+
+        execute() {
                 return new Promise((resolve, reject) => {
-                        this.query("SELECT DISTINCT ca.id, ca.en_name, ca.en_dv_alias, ca.ru_name, ca.ru_name_mn, ca.ru_name_rp, ca.sex, cad.alias AS dododex_alias, ca.srt, ca.id\n" +
+                        let query = "SELECT DISTINCT ca.id, ca.en_name, COALESCE(ca.en_dv_alias, ca.en_name) AS dv_alias, ca.ru_name, ca.ru_name_mn, ca.ru_name_rp, ca.sex, COALESCE(cad.alias, ca.en_name) AS dododex_alias, COALESCE(cam.alias, ca.en_name) AS map_alias, ca.srt, ca.id\n" +
                                 "FROM creatures ca\n" +
-                                "LEFT JOIN creatures_aliases_en cae on ca.id = cae.creature_id\n" +
-                                "LEFT JOIN creatures_aliases_ru car on ca.id = car.creature_id\n" +
-                                "LEFT JOIN creatures_aliases_dododex cad on ca.id = cad.creature_id\n" +
-                                "WHERE ca.ru_name ~* $1\n" +
-                                "OR ca.ru_name ~* $2\n" +
-                                "OR ca.en_name ~* $1\n" +
-                                "OR ca.en_name ~* $2\n" +
-                                "OR cae.alias ~* $1\n" +
-                                "OR car.alias ~* $1\n" +
-                                "OR car.alias ~* $2\n" +
-                                "OR ca.ru_name_mn ~* $1\n" +
-                                "OR car.alias_mn ~* $1\n" +
-                                "OR car.alias_mn ~* $2\n" +
-                                "ORDER BY ca.srt, ca.id", ['^' + creatureName, ' ' + creatureName])
+                                this.joins.join('\n') + "\n" +
+                                this.query_where + "\n" +
+                                "ORDER BY ca.srt, ca.id";
+                        this.query(query, ['^' + this.creature_name, ' ' + this.creature_name])
                                 .then(res => {
                                         resolve(res.rows);
                                 })
+                                .catch(reject);
+                });
+        }
+
+        setCreatureName(creature_name) {
+                this.creature_name = creature_name;
+                return this;
+        }
+
+        search() {
+                return new Promise((resolve, reject) => {
+                        this.prepareWhere();
+                        this.prepareSearchJoins();
+                        this.execute()
+                                .then(resolve)
                                 .catch(reject);
                 });
         }
@@ -42,7 +75,7 @@ class CreaturesModel extends MainModel {
                         let parcedValues = [];
                         let templates = [];
                         let to_update = [];
-                        for(let val in options) {
+                        for (let val in options) {
                                 parcedValues.push(options[val]);
                                 templates.push('$' + parcedValues.length);
                                 to_update.push(val + '=' + 'EXCLUDED.' + val);
@@ -51,8 +84,8 @@ class CreaturesModel extends MainModel {
                         this.query("INSERT INTO t_items (" + parcedColumns + ") " +
                                 "VALUES (" + templates.join(", ") + ") " +
                                 "ON CONFLICT (name) DO UPDATE SET " + to_update.join(', ') + " RETURNING id", parcedValues)
-                                .then((res)=>{
-                                        if(res.rows.length === 0) resolve(null);
+                                .then((res) => {
+                                        if (res.rows.length === 0) resolve(null);
                                         resolve(res.rows[0].id);
                                 })
                                 .catch(reject);
@@ -67,11 +100,11 @@ class CreaturesModel extends MainModel {
         filterToAdd(toFilterObject, allowedFields) {
 
                 return Object.keys(toFilterObject)
-                                .filter(key => allowedFields.includes(key))
-                                .reduce((obj, key) => {
-                                        obj[key] = toFilterObject[key];
-                                        return obj;
-                                }, {});
+                        .filter(key => allowedFields.includes(key))
+                        .reduce((obj, key) => {
+                                obj[key] = toFilterObject[key];
+                                return obj;
+                        }, {});
         }
 
         /**
@@ -80,8 +113,8 @@ class CreaturesModel extends MainModel {
         getFolder(folder_name) {
                 return new Promise((resolve, reject) => {
                         this.query('SELECT folder_id FROM t_items_folders WHERE name = $1', [folder_name])
-                                .then((res)=>{
-                                        if(res.rows.length === 0) resolve(null);
+                                .then((res) => {
+                                        if (res.rows.length === 0) resolve(null);
                                         resolve(res.rows[0].folder_id);
                                 })
                                 .catch(reject);
@@ -96,8 +129,8 @@ class CreaturesModel extends MainModel {
         addFolder(folder_name) {
                 return new Promise((resolve, reject) => {
                         this.query('INSERT INTO t_items_folders (name) VALUES ($1) RETURNING folder_id', [folder_name])
-                                .then((res)=>{
-                                        if(res.rows.length === 0) resolve(null);
+                                .then((res) => {
+                                        if (res.rows.length === 0) resolve(null);
                                         resolve(res.rows[0].folder_id);
                                 })
                                 .catch(reject);
