@@ -98,7 +98,7 @@ class MapsController {
                 return new Promise(async (resolve, reject) => {
                         let buffer;
                         try {
-                                buffer = fs.readFileSync(path.resolve(__dirname, '../cash/maps/' + this.creature.en_name + '-' + this.map.name + '.jpg'));
+                                buffer = fs.readFileSync(path.resolve(__dirname, '../cash/maps/' + this.creature.map_alias + '-' + this.map.name + '.jpg'));
                                 resolve(buffer);
                         } catch (e) {
                                 let res = await this.getWikiImage();
@@ -107,7 +107,7 @@ class MapsController {
                                 res = res.replace('</style>', 'rect { stroke: #000; stroke-width: 0.5px; stroke-linejoin: round }</style>');
                                 res = res.replace(/<rect/g, '<rect rx="1" ry="1"');
                                 sharp('./maps/' + this.map.url + '.jpg')
-                                        .overlayWith(Buffer.from(res))
+                                        .composite([{'input': Buffer.from(res)}])
                                         .jpeg({"quality": 70, nearLossless: true})
                                         .toBuffer((err, info) => {
                                                 if (err) {
@@ -119,7 +119,7 @@ class MapsController {
                                                         } catch (e) {
                                                                 fs.mkdirSync(path.resolve(__dirname, '../cash/maps'));
                                                         }
-                                                        fs.writeFileSync(path.resolve(__dirname, '../cash/maps/' + this.creature.en_name + '-' + this.map.name + '.jpg'), info);
+                                                        fs.writeFileSync(path.resolve(__dirname, '../cash/maps/' + this.creature.map_alias + '-' + this.map.name + '.jpg'), info);
                                                         resolve(info);
                                                 }
                                         });
@@ -232,14 +232,14 @@ class MapsController {
                 let mapsCash = fs.readFileSync(path.resolve(__dirname, '../data/map/spawnonmaps.json'), 'utf-8');
                 let mapsCashObj = JSON.parse(mapsCash);
 
-                if (typeof mapsCashObj[this.creature.en_name] !== 'undefined') {
-                        return await MapsModel.getInfoByMaps(mapsCashObj[this.creature.en_name]);
+                if (typeof mapsCashObj[this.creature.map_alias] !== 'undefined') {
+                        return await MapsModel.getInfoByMaps(mapsCashObj[this.creature.map_alias]);
                 } else {
                         let maps = await MapsModel.getAllMaps(true);
                         /** @var {Array} */
                         let all_maps = await this.getAllMapsListForCreature(maps);
                         if (all_maps.length !== 0) {
-                                mapsCashObj[this.creature.en_name] = all_maps.map(el => el.name);
+                                mapsCashObj[this.creature.map_alias] = all_maps.map(el => el.name);
                                 fs.writeFileSync(path.resolve(__dirname, '../data/map/spawnonmaps.json'), JSON.stringify(mapsCashObj));
                         }
                         return all_maps;
@@ -262,7 +262,7 @@ class MapsController {
 
         generateLink(map) {
                 if (map.name === 'Genesis') map.url = 'Genesis_Part_1';
-                return "https://ark.gamepedia.com/File:Spawning_" + encodeURIComponent(this.creature.en_name) + "_" + map.url + ".svg";
+                return "https://ark.gamepedia.com/File:Spawning_" + encodeURIComponent(this.creature.map_alias) + "_" + map.url + ".svg";
         }
 
         getActualLink(text) {
