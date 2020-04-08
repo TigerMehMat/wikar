@@ -7,7 +7,7 @@ class VoiceLogger {
 
     voiceChanged(oldMember, newMember){
         let message = '';
-        let channel = newMember.guild.channels.find(ch => { return ch.name === 'лог'; });
+        let channel = newMember.guild.channels.cache.find(ch => { return ch.name === 'лог'; });
         if(!channel) return;
         if(oldMember.voiceChannelID!==newMember.voiceChannelID){
 
