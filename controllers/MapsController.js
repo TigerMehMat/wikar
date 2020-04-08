@@ -65,7 +65,7 @@ class MapsController {
                 this.message.channel.startTyping();
 
                 if (this.map && this.creature === null) {
-                        await this.message.channel.send('В нашей базе не нашлось такого существа.');
+                        await this.message.channel.send('В нашей базе не нашлось существа.');
                 } else if (this.map && !this.creature) {
                         await this.processOnlyMap();
                 } else if (this.creature && !this.map) {
@@ -83,7 +83,7 @@ class MapsController {
                 let map = await this.getMap();
                 const attachment = new Discord.MessageAttachment(map, "map.jpg");
                 let embed = new Discord.MessageEmbed()
-                        .setAuthor(this.message.author.username, this.message.author.avatarURL)
+                        .setAuthor(this.message.author.username, this.message.author.avatarURL())
                         .setTitle(this.creature.ru_name_mn + ' на карте ' + this.map.name)
                         .attachFiles([attachment])
                         .addField('<:cave:557481898088333342> - Пещеры', '\u200B', true)
@@ -179,7 +179,7 @@ class MapsController {
         async processOnlyMap() {
                 const attachment = new Discord.MessageAttachment('./maps/' + this.map.url + '.jpg', "map.jpg");
                 let embed = new Discord.MessageEmbed()
-                        .setAuthor(this.message.author.username, this.message.author.avatarURL)
+                        .setAuthor(this.message.author.username, this.message.author.avatarURL())
                         .setTitle('Карта ' + this.map.name)
                         .attachFiles([attachment])
                         .setImage('attachment://map.jpg');
@@ -226,7 +226,14 @@ class MapsController {
                         await DiscordHelper.sendAllReactions(this.message, reactions);
                         this.message.channel.stopTyping();
                 } else {
-                        await this.message.channel.send("Не получилось найти карту для " + this.creature.ru_name_rp);
+                        let message_to_send = (this.creature.map_comment)
+                                ? this.creature.map_comment
+                                : "Не получилось найти карту для этого существа";
+                        let embed = (new Discord.MessageEmbed())
+                                .setAuthor(this.message.author.username, this.message.author.avatarURL())
+                                .setTitle(this.creature.ru_name)
+                                .setDescription(message_to_send);
+                        await this.message.channel.send(embed);
                 }
         }
 

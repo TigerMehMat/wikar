@@ -35,7 +35,7 @@ class CreaturesModel extends MainModel {
 
         execute() {
                 return new Promise((resolve, reject) => {
-                        let query = "SELECT DISTINCT ca.id, ca.en_name, COALESCE(ca.en_dv_alias, ca.en_name) AS dv_alias, ca.ru_name, ca.ru_name_mn, ca.ru_name_rp, ca.sex, COALESCE(cad.alias, ca.en_name) AS dododex_alias, REPLACE(COALESCE(cam.alias, ca.en_name), ' ', '_') AS map_alias, ca.srt, ca.id\n" +
+                        let query = "SELECT DISTINCT ca.id, ca.en_name, COALESCE(ca.en_dv_alias, ca.en_name) AS dv_alias, ca.ru_name, ca.ru_name_mn, ca.ru_name_rp, ca.sex, COALESCE(cad.alias, ca.en_name) AS dododex_alias, REPLACE(COALESCE(cam.alias, ca.en_name), ' ', '_') AS map_alias, cam.comment AS map_comment, ca.srt, ca.id\n" +
                                 "FROM creatures ca\n" +
                                 this.joins.join('\n') + "\n" +
                                 this.query_where + "\n" +

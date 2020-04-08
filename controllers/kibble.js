@@ -124,7 +124,7 @@ class Kibble {
         let kibble = this.getKibble();
         let embed = new Discord.MessageEmbed()
             .setTitle(itemLink(kibble.ruName + " Корм", false)+" (" + kibble.name + " kibble)")
-            .setAuthor(this.message.author.username, this.message.author.avatarURL)
+            .setAuthor(this.message.author.username, this.message.author.avatarURL())
             .setURL("https://ark-ru.gamepedia.com/"+encodeURIComponent(kibble.wikiLink))
             .setFooter(numberFormat(this.quantity)+" шт")
             .setColor(kibble.colorHEX);

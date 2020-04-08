@@ -80,7 +80,7 @@ class Tame {
         senderResult(message) {
                 let embed = new Discord.MessageEmbed()
                         .setTitle(this.data.runame)
-                        .setAuthor(message.author.username, message.author.avatarURL)
+                        .setAuthor(message.author.username, message.author.avatarURL())
                         .setURL(this.data.res.link);
 
                 let footerInfo = [this.data.runame, this.data.lvl + ' ур.', 'x' + this.data.rates];
