@@ -5,24 +5,24 @@ class VoiceLogger {
         this.lastVoiceUser = {};
     }
 
-    voiceChanged(oldMember, newMember){
+    voiceChanged(oldState, newState){
         let message = '';
-        let channel = newMember.guild.channels.cache.find(ch => { return ch.name === 'лог'; });
+        let channel = newState.guild.channels.cache.find(ch => { return ch.name === 'лог'; });
         if(!channel) return;
-        if(oldMember.voiceChannelID!==newMember.voiceChannelID){
+        if(oldState.channelID!==newState.channelID){
 
-            if(!oldMember.voiceChannelID){
-                message = this.messageAddInChannel(oldMember, newMember);
-            } else if(!newMember.voiceChannelID){
-                message = this.messageOutChannel(oldMember, newMember);
+            if(!oldState.channelID){
+                message = this.messageAddInChannel(oldState, newState);
+            } else if(!newState.channelID){
+                message = this.messageOutChannel(oldState, newState);
             } else {
-                message = this.messageChangeChannel(oldMember, newMember);
+                message = this.messageChangeChannel(oldState, newState);
             }
 
-        } else if(oldMember.selfDeaf !== newMember.selfDeaf) {
-            // oldMember.selfMute !== newMember.selfMute
-            let statusMute = -oldMember.selfMute +newMember.selfMute;
-            let statusDeaf = -oldMember.selfDeaf +newMember.selfDeaf;
+        } else if(oldState.selfDeaf !== newState.selfDeaf) {
+            // oldState.selfMute !== newState.selfMute
+            let statusMute = -oldState.selfMute +newState.selfMute;
+            let statusDeaf = -oldState.selfDeaf +newState.selfDeaf;
             let messmin = '';
             if(statusDeaf === statusMute) {
                 messmin = ' звук и микрофон';
@@ -32,22 +32,23 @@ class VoiceLogger {
                 messmin = ' микрофон';
             }
             if(statusMute !== 0)
-                message = this.wrapperUser(this.getUserName(newMember))+(statusMute < 0 ? " включил(а)" : " отключил(а)")+messmin;
+                message = this.wrapperUser(this.getUserName(newState))+(statusMute < 0 ? " включил(а)" : " отключил(а)")+messmin;
             else
-                message = this.wrapperUser(this.getUserName(newMember))+(statusDeaf < 0 ? " включил(а)" : " отключил(а)")+messmin;
+                message = this.wrapperUser(this.getUserName(newState))+(statusDeaf < 0 ? " включил(а)" : " отключил(а)")+messmin;
         }
         if(message){
             let embed = new Discord.MessageEmbed()
-                .setTimestamp(Date())
+                .setTimestamp(Date.now())
                 .setTitle(message);
-            if(!this.isLastUser(newMember)){
-                embed.setAuthor(this.getUserName(newMember), newMember.user.avatarURL);
+            if(!this.isLastUser(newState)){
+                embed.setAuthor(this.getUserName(newState), newState.member.user.avatarURL());
             }
             channel.send(embed);
         }
     }
 
-    getUserName(member){
+    getUserName(state){
+        let member = state.member;
         if(member.displayName === member.user.username) {
             return member.displayName;
         } else {
@@ -55,7 +56,8 @@ class VoiceLogger {
         }
     }
 
-    isLastUser(member){
+    isLastUser(state){
+        let member = state.member;
         if(this.lastVoiceUser[member.guild.id]){
             if(this.lastVoiceUser[member.guild.id] === member.user.id) return true;
             else {
@@ -68,16 +70,16 @@ class VoiceLogger {
         }
     }
 
-    messageAddInChannel(oldMember, newMember){
-        return this.wrapperUser(this.getUserName(newMember))+" подключился к каналу "+this.wrapperChannel(newMember.voiceChannel.name)+"!";
+    messageAddInChannel(oldState, newState){
+        return this.wrapperUser(this.getUserName(newState))+" подключился к каналу "+this.wrapperChannel(newState.channel.name)+"!";
     }
 
-    messageOutChannel(oldMember, newMember){
-        return this.wrapperUser(this.getUserName(newMember))+" отключился от канала "+this.wrapperChannel(oldMember.voiceChannel.name)+"!";
+    messageOutChannel(oldState, newState){
+        return this.wrapperUser(this.getUserName(newState))+" отключился от канала "+this.wrapperChannel(oldState.channel.name)+"!";
     }
 
-    messageChangeChannel(oldMember, newMember){
-        return this.wrapperUser(this.getUserName(newMember))+" перешел из канала "+this.wrapperChannel(oldMember.voiceChannel.name)+" в канал "+this.wrapperChannel(newMember.voiceChannel.name)+"!";
+    messageChangeChannel(oldState, newState){
+        return this.wrapperUser(this.getUserName(newState))+" перешел из канала "+this.wrapperChannel(oldState.channel.name)+" в канал "+this.wrapperChannel(newState.channel.name)+"!";
     }
 
     wrapperUser(text){
