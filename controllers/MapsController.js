@@ -81,14 +81,21 @@ class MapsController {
 
         async processMapAndCreature() {
                 let map = await this.getMap();
-                const attachment = new Discord.MessageAttachment(map, "map.jpg");
                 let embed = new Discord.MessageEmbed()
                         .setAuthor(this.message.author.username, this.message.author.avatarURL())
-                        .setTitle(this.creature.ru_name_mn + ' на карте ' + this.map.name)
-                        .attachFiles([attachment])
-                        .addField('<:cave:557481898088333342> - Пещеры', '\u200B', true)
-                        .addField('<:untamed:557480015533441024> - Неприручаемые', '\u200B', true)
-                        .setImage('attachment://map.jpg');
+                        .setTitle(this.creature.ru_name_mn + ' на карте ' + this.map.name);
+                if(map) {
+                        const attachment = new Discord.MessageAttachment(map, "map.jpg");
+                        embed
+                                .attachFiles([attachment])
+                                .addField('<:cave:557481898088333342> - Пещеры', '\u200B', true)
+                                .addField('<:untamed:557480015533441024> - Неприручаемые', '\u200B', true)
+                                .setImage('attachment://map.jpg');
+                }
+                if (this.creature.map_comment) {
+                        embed
+                                .setDescription(this.creature.map_comment);
+                }
                 this.message.channel.stopTyping();
                 this.message.channel.send(embed)
                         .catch(console.error);
@@ -101,7 +108,13 @@ class MapsController {
                                 buffer = fs.readFileSync(path.resolve(__dirname, '../cash/maps/' + this.creature.map_alias + '-' + this.map.name + '.jpg'));
                                 resolve(buffer);
                         } catch (e) {
-                                let res = await this.getWikiImage();
+                                let res;
+                                try {
+                                        res = await this.getWikiImage();
+                                } catch (e1) {
+                                        resolve(false);
+                                        return;
+                                }
                                 res = res.replace(' filter="url(#blur)"', '');
                                 res = res.replace('opacity="0.7"', 'opacity="0.9"');
                                 res = res.replace('</style>', 'rect { stroke: #000; stroke-width: 0.5px; stroke-linejoin: round }</style>');
