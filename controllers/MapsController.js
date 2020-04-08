@@ -84,7 +84,12 @@ class MapsController {
                 let embed = new Discord.MessageEmbed()
                         .setAuthor(this.message.author.username, this.message.author.avatarURL())
                         .setTitle(this.creature.ru_name_mn + ' на карте ' + this.map.name);
-                if(map) {
+                if (!map && !this.creature.map_comment) {
+                        embed
+                                .setTitle(this.creature.ru_name)
+                                .setDescription('Скорее всего не водится на карте ' + this.map.name);
+                }
+                if (map) {
                         const attachment = new Discord.MessageAttachment(map, "map.jpg");
                         embed
                                 .attachFiles([attachment])
