@@ -215,7 +215,9 @@ class MapsController {
                                         if (res instanceof Discord.Collection) {
                                                 this.message.reactions.removeAll()
                                                         .catch(console.error);
-                                                this.message.channel.send("Вы не указали карту для этого существа.")
+                                                let embed = new Discord.MessageEmbed()
+                                                        .setDescription("Вы не указали карту для " + this.creature.ru_name_rp + " в [сообщении](" + this.message.url + ").");
+                                                this.message.channel.send(embed)
                                                         .catch(console.error);
                                         } else {
                                                 console.error(res + ' error instanceof');

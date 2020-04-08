@@ -90,8 +90,8 @@ class ARK extends ARK_api {
 
     async sendLog(changedRates){
         for (let j in this.info) {
-            let guild   = this.client.guilds.get(j);
-            let channel = guild.channels.get(this.info[j].channel);
+            let guild   = this.client.guilds.cache.get(j);
+            let channel = guild.channels.cache.get(this.info[j].channel);
             let text = '';
             for (let i in changedRates) {
                 text += this.rateByType[i] + ': ' + changedRates[i].old + ' → ' + changedRates[i].new + '\n';

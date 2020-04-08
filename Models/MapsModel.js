@@ -29,7 +29,7 @@ class MapsModel extends MainModel {
         getAllMaps(releaseOnly = false) {
                 let releaseRule = releaseOnly ? ' WHERE release <= NOW()' : '';
                 return new Promise((resolve, reject) => {
-                        this.query('SELECT * FROM ark_maps' + releaseRule)
+                        this.query('SELECT * FROM ark_maps' + releaseRule + ' ORDER BY release')
                                 .then(res => {
                                         resolve(res.rows);
                                 })
