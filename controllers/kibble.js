@@ -65,7 +65,7 @@ class Kibble {
         return new Promise((resolve, reject) => {
             if(!this.is_validate) {
                 this.message.channel.send("Пожалуйста, укажите название корма");
-                reject(new Error('Название корма не введено'));
+                resolve();
             }
             this.message.channel.startTyping();
             let embed = this.getEmbed();
