@@ -78,8 +78,8 @@ class SubscribeController {
          */
         unsubscribe(message, user, emoji, role) {
                 return new Promise((resolve, reject) => {
-                        let currentReaction = message.reactions.find(reaction => reaction.emoji.name === emoji);
-                        let deleteReaction = message.reactions.find(reaction => reaction.emoji.name === '❌');
+                        let currentReaction = message.reactions.cache.find(reaction => reaction.emoji.name === emoji);
+                        let deleteReaction = message.reactions.cache.find(reaction => reaction.emoji.name === '❌');
                         let member = message.guild.member(user);
                         member.removeRole(role)
                                 .then(() => {
