@@ -128,8 +128,6 @@ class Breeding {
 		if (Data['breeding']['mintemp'] && Data['breeding']['maxtemp'])
 			embed.addField('Диапазон инкубации', Data['breeding']['mintemp'] + ' - ' + Data['breeding']['maxtemp'] + ' °C', true);
 
-		embed.addBlankField();
-
 		if (Data['breeding']['babytime'])
 			embed.addField('Детёныш', this.getTime(parseInt(Data['breeding']['babytime']) / rateMat), true);
 
@@ -138,8 +136,6 @@ class Breeding {
 
 		if (Data['breeding']['adolescenttime'])
 			embed.addField('Юный', this.getTime(parseInt(Data['breeding']['adolescenttime']) / rateMat), true);
-
-		embed.addBlankField();
 	}
 
 		if(Data['diet']) {
