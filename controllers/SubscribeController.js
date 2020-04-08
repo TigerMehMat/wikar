@@ -83,10 +83,10 @@ class SubscribeController {
                         let member = message.guild.member(user);
                         member.roles.remove(role)
                                 .then(() => {
-                                        return currentReaction.remove(user.id);
+                                        return currentReaction.users.remove(user.id);
                                 })
                                 .then(() => {
-                                        return deleteReaction.remove(user.id);
+                                        return deleteReaction.users.remove(user.id);
                                 })
                                 .then(resolve)
                                 .catch(reject);
@@ -102,7 +102,7 @@ class SubscribeController {
         subscribe(message, user, role) {
                 let member = message.guild.member(user);
                 if(member) {
-                        member.addRole(role)
+                        member.roles.add(role)
                                 .catch(console.error);
                 }
         }
