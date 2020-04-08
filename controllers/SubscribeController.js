@@ -37,8 +37,7 @@ class SubscribeController {
                                         // Вешаем события
                                         let filter = instance.getFinder([el.emoji, '❌']);
                                         let collector = message.createReactionCollector(filter);
-                                        collector.on('collect', (res) => {
-                                                let user = res.users.last();
+                                        collector.on('collect', (res, user) => {
                                                 if (res.emoji.name === '❌') {
                                                         instance.unsubscribe(message, user, el.emoji, el.role_id);
                                                 } else {
