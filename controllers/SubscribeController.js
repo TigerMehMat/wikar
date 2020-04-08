@@ -81,7 +81,7 @@ class SubscribeController {
                         let currentReaction = message.reactions.cache.find(reaction => reaction.emoji.name === emoji);
                         let deleteReaction = message.reactions.cache.find(reaction => reaction.emoji.name === '❌');
                         let member = message.guild.member(user);
-                        member.role.remove(role)
+                        member.roles.remove(role)
                                 .then(() => {
                                         return currentReaction.remove(user.id);
                                 })
