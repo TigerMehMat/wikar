@@ -244,10 +244,10 @@ class MapsController {
                                         }
                                 });
                         this.reactions_sender = DiscordHelper.reactionsSender();
-                        this.reactions_sender
+                        await (this.reactions_sender
                                 .setMessage(this.message)
                                 .setReactions(reactions)
-                                .execute();
+                                .execute());
 
                         this.message.channel.stopTyping();
                 } else {
