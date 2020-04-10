@@ -15,7 +15,10 @@ class SavedParametersModel extends MainModel {
         }
 
         load() {
-
+                let query = "SELECT * FROM t_saved_parameters tsp\n" +
+                        "INNER JOIN discord_servers ds on tsp.discord_id = ds.id\n" +
+                        "WHERE ds.discord_id = $1\n" +
+                        "AND tsp.\"user\" = $2;";
         }
 }
 

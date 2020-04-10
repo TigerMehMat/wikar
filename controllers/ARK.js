@@ -193,38 +193,10 @@ class ARK extends ARK_api {
 
     static getRoleId(guild) {
         let roles = guild.roles;
-        let myRole  = roles.find(val => val.name === 'множители');
+        let myRole  = roles.cache.find(val => val.name === 'множители');
         if(myRole) return myRole.id;
         return false;
     }
-
-    static getRoleToMe(message, args){
-        if(!access.isAccess(message)) return;
-        let roleId  = this.getRoleId(message.guild);
-        if(!roleId) return;
-        let isRole  = !('roles' in message.member) ? false : message.member.roles.find(value => value.id === roleId);
-        if(isRole) {
-            message.member.removeRole(isRole)
-                .then(function(){ message.reply('Роль для оповещения о множителях была с Вас снята, Вас более не будут упоминать при изменении множителей.'); })
-                .catch(function(){console.error("Роль не может быть удалена")})
-        } else {
-            message.member.addRole(roleId)
-                .then(function(){ message.reply('Роль для оповещения о множителях была Вам присвоена, теперь Вы получите оповещение при изменении множителей на __официальных серверах__.'); })
-                .catch(function(){console.error("Роль не может быть поставлена")})
-        }
-    }
-
-    async initGetRates() {
-        let messages    = this.fetchAllMessagesByAuthor(channel, this.client.user.id, 2);
-
-    }
-/*
-    firstStart(){
-        let guild = this.client.guilds.get('304855554705063936');
-        guild.channels.get('566280273398988832').send('Hi!');
-    }
-
-*/
 }
 
 module.exports = ARK;
