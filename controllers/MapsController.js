@@ -221,9 +221,11 @@ class MapsController {
                                 errors: ['time']
                         })
                                 .then((collected) => {
+                                        this.reactions_sender.stop();
                                         this.message.reactions.removeAll()
                                                 .then(() => {
                                                         this.map = maps.find(el => el.reaction === collected.first().emoji.id);
+                                                        this.message.react(this.map.reaction);
                                                         this.processMapAndCreature();
 
                                                 })
@@ -241,7 +243,12 @@ class MapsController {
                                                 console.error(res + ' error instanceof');
                                         }
                                 });
-                        await DiscordHelper.sendAllReactions(this.message, reactions);
+                        this.reactions_sender = DiscordHelper.reactionsSender();
+                        this.reactions_sender
+                                .setMessage(this.message)
+                                .setReactions(reactions)
+                                .execute();
+
                         this.message.channel.stopTyping();
                 } else {
                         let message_to_send = (this.creature.map_comment)
