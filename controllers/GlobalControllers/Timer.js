@@ -81,6 +81,12 @@ class Timer {
                 }
         }
 
+        /**
+         * Форматирование даты
+         * @param {number} sec
+         * @param {boolean} nules
+         * @return {string}
+         */
         static timeFormat(sec, nules = true) {
                 let y = Math.floor(sec / 31536000);
                 let d = Math.floor((sec - y * 31536000) / 86400);
@@ -104,10 +110,6 @@ class Timer {
                         res += s + " сек. ";
                 }
                 return res;
-                /*if(nules) {
-                    return d + " дн. " + (h < 10 ? "0" + h : h) + " ч. " + (m < 10 ? "0" + m : m) + " мин. " + (s < 10 ? "0" + s : s) + " сек.";
-                }
-                return d + " дн. " + h + " ч. " + m + " мин. " + s + " сек.";*/
         }
 }
 

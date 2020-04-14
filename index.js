@@ -125,7 +125,11 @@ client.on('message', async message => {
                 case "разведение":
                 case "рост":
                 case "р":
-                        Breeding.controller(message, args, messageAccess);
+                        // Breeding.controller(message, args, messageAccess);
+                        const breed_controller = (new Breeding());
+                        await breed_controller.setMessage(message);
+                        await breed_controller.setArgs(args);
+                        await breed_controller.process();
                         break;
                 case "корм":
                 case "к":

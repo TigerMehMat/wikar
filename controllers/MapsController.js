@@ -1,8 +1,8 @@
-const http = require('https'),
-        sharp = require('sharp'),
-        CreaturesModel = require('../Models/CreaturesModel'),
-        Discord = require('discord.js'),
-        DiscordHelper = require('./GlobalControllers/DiscordHelper');
+const http = require('https');
+const sharp = require('sharp');
+const CreaturesModel = require('../Models/CreaturesModel');
+const Discord = require('discord.js');
+const DiscordHelper = require('./GlobalControllers/DiscordHelper');
 
 const fs = require('fs');
 const path = require('path');
@@ -39,10 +39,9 @@ class MapsController {
                         this.map = map[0];
                 }
                 if (args.length > 0) {
-                        let creature = await (new CreaturesModel())
+                        this.creature = await (new CreaturesModel())
                                 .setCreatureName(args.join(' '))
-                                .search();
-                        this.creature = creature.length > 0 ? creature[0] : null;
+                                .searchOne();
                 }
                 return this;
         }

@@ -1,5 +1,20 @@
 const MainModel = require('./MainModel');
 
+/**
+ * @typedef CreatureModel
+ * @property {number} id
+ * @property {string} en_name
+ * @property {string} dv_alias
+ * @property {string} ru_name
+ * @property {string} ru_name_mn
+ * @property {string} ru_name_rp
+ * @property {string} sex
+ * @property {string} dododex_alias
+ * @property {string} map_alias
+ * @property {?string} map_comment
+ * @property {number} srt
+ */
+
 class CreaturesModel extends MainModel {
 
         constructor() {
@@ -7,6 +22,12 @@ class CreaturesModel extends MainModel {
                 this.query_where = '';
                 this.joins = [];
                 this.creature_name = '';
+                this.limit = null;
+        }
+
+        setLimit(limit) {
+                this.limit = limit;
+                return this;
         }
 
         prepareWhere() {
@@ -35,11 +56,12 @@ class CreaturesModel extends MainModel {
 
         execute() {
                 return new Promise((resolve, reject) => {
-                        let query = "SELECT DISTINCT ca.id, ca.en_name, COALESCE(ca.en_dv_alias, ca.en_name) AS dv_alias, ca.ru_name, ca.ru_name_mn, ca.ru_name_rp, ca.sex, COALESCE(cad.alias, ca.en_name) AS dododex_alias, REPLACE(COALESCE(cam.alias, ca.en_name), ' ', '_') AS map_alias, cam.comment AS map_comment, ca.srt, ca.id\n" +
+                        let query = "SELECT DISTINCT ca.id, ca.en_name, REPLACE(LOWER(COALESCE(ca.en_dv_alias, ca.en_name)), ' ', '') AS dv_alias, ca.ru_name, ca.ru_name_mn, ca.ru_name_rp, ca.sex, COALESCE(cad.alias, ca.en_name) AS dododex_alias, REPLACE(COALESCE(cam.alias, ca.en_name), ' ', '_') AS map_alias, cam.comment AS map_comment, ca.srt, ca.id\n" +
                                 "FROM creatures ca\n" +
                                 this.joins.join('\n') + "\n" +
                                 this.query_where + "\n" +
-                                "ORDER BY ca.srt, ca.id";
+                                "ORDER BY ca.srt, ca.id\n" +
+                                ((this.limit) ? "LIMIT "+ this.limit : "");
                         this.query(query, ['^' + this.creature_name, ' ' + this.creature_name])
                                 .then(res => {
                                         resolve(res.rows);
@@ -53,12 +75,33 @@ class CreaturesModel extends MainModel {
                 return this;
         }
 
+        /**
+         * Возвращаем массив всех найденных существ
+         * @return {Promise<CreatureModel[]>}
+         */
         search() {
                 return new Promise((resolve, reject) => {
                         this.prepareWhere();
                         this.prepareSearchJoins();
                         this.execute()
                                 .then(resolve)
+                                .catch(reject);
+                });
+        }
+
+        /**
+         * Получаем первое существо которое смогли найти
+         * @return {Promise<CreatureModel|null>}
+         */
+        searchOne() {
+                return new Promise((resolve, reject) => {
+                        this.prepareWhere();
+                        this.prepareSearchJoins();
+                        this.setLimit(1);
+                        this.execute()
+                                .then(res => {
+                                        resolve(res.length > 0 ? res[0] : null);
+                                })
                                 .catch(reject);
                 });
         }

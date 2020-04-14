@@ -1,208 +1,168 @@
-const DvData	= require('./functions/getDvData')();
-const Access	= require('./GlobalControllers/access');
-const Discord	= require('discord.js');
-const TranslateCreature	= require('./TranslateCreature');
-const creatureAliasesDvData	= require('./../aliases/creatureAliasesDvData');
-const Timer		= require('./GlobalControllers/Timer');
-const getIcon	= require('./functions/getIcon');
+const DvData = require('./functions/getDvData')();
+const Discord = require('discord.js');
+const DiscordHelper = require('./GlobalControllers/DiscordHelper');
+const getIcon = require('./functions/getIcon');
 
-const BadRequestsModel  = new (require('../Models/BadRequestsModel'));
+const BadRequestsModel = new (require('../Models/BadRequestsModel'));
+
+const CreaturesModel = require('../Models/CreaturesModel');
 
 class Breeding {
 
-	constructor(message, args) {
-		this.message = message;
+        constructor() {
+                this.message = null;
+                /**
+                 * @type {CreatureModel | null}
+                 */
+                this.creature = null;
+                this.multipliers = {
+                        mature: null,
+                        incubation: null
+                };
+        }
 
-		this.name = null;
-		this.rates_maturation = 1;
-		this.rates_incubation = 1;
-	}
+        /**
+         * @param message
+         * @return {Breeding}
+         */
+        setMessage(message) {
+                this.message = message;
+                return this;
+        }
 
-	setBasicRates(rates_maturation, rates_incubation) {
-		this.rates_maturation = rates_maturation;
-		this.rates_incubation = rates_incubation;
-	}
+        /**
+         * Устанавливаем данные из аргументов вызова
+         * @param {Array} args
+         */
+        async setArgs(args) {
+                if (args.length === 0) return;
 
-	setArgs(args) {
-		let name = '';
-	}
+                let data = args.pop();
+                if (isNaN(data)) {
+                        args.push(data);
+                        this.multipliers.mature = 1;
+                        this.multipliers.incubation = 1;
+                } else {
+                        let data2 = args.pop();
 
-	static controller(message, args, messageAccess) {
-		if(!Access.isAccess(messageAccess)) return;
-		message.channel.startTyping();
-		if(args.length === 0) {
-			message.channel.send('Эта команда не вызывается без параметров. Для справки используйте ``!помощь разведение``')
-				.then(() => {
-					message.channel.stopTyping();
-				})
-				.catch(console.error);
-			return;
-		}
+                        if (isNaN(data2)) {
+                                this.multipliers.mature = this.multipliers.incubation = data;
+                        } else {
+                                this.multipliers.mature = data2;
+                                this.multipliers.incubation = data;
+                        }
+                }
 
-		let i;
-		let name	= '';
-		let rateMat	= messageAccess.rates.BabyMatureSpeedMultiplier;
-		let rateInc	= messageAccess.rates.EggHatchSpeedMultiplier;
-		for(i=0;i<args.length;i++){
-			if(!isNaN(args[i])) break;
-			else name += args[i].toLowerCase();
-		}
-		if(name.search('тек')===0) name = name.substr(3);
-		if(name.search('аберрантн')===0) name = name.substr(11);
-		if(args.length-i>0&&!isNaN(args[i])) {
-			rateMat = parseFloat(args[i]);
-			rateInc = rateMat;
-		}
-		if(args.length-i>1&&!isNaN(args[i+1])) rateInc = parseFloat(args[i+1]);
+                let creature_name = args.join(' ');
+                this.creature = await ((new CreaturesModel())
+                        .setCreatureName(creature_name)
+                        .searchOne());
+        }
 
-		rateMat = this.getTrueValue(rateMat);
-		rateInc = this.getTrueValue(rateInc);
+        async process() {
+                let data = DvData[this.creature.dv_alias];
+                /* --- Вытащили нужное существо --- */
+                let text;
+                let breeding;
+                if (!data['breeding'] || !data['breeding']['maturationtime']) {
+                        text = '🚫 Неразводимое существо';
+                        breeding = false;
+                } else {
+                        text = '✅ Разводимое существо';
+                        if (this.creature.dv_alias === 'reaper')
+                                text += '\n*Единственный способ "размножения" был бы через оплодотворение от королевы, но размножение технически невозможно из-за гендерной механики Жнеца.*';
+                        if (this.creature.dv_alias === 'rockdrake')
+                                text += '\n*Может быть выращен из дикого яйца, но взрослые особи спариваться не могут.*';
+                        if (this.creature.dv_alias === 'wyvern')
+                                text += '\n*Может быть выращена из дикого яйца, но взрослые особи спариваться не могут.*';
+                        breeding = true;
+                }
 
-		let enName = TranslateCreature.getENCreature(name);
-		let ruName = TranslateCreature.getRUCreature(enName);
-		enName = (creatureAliasesDvData[enName]) ? creatureAliasesDvData[enName] : enName;
+                let embed = new Discord.MessageEmbed()
+                        .setTitle(this.creature.ru_name)
+                        .setAuthor(this.message.author.username, this.message.author.avatarURL())
+                        .setDescription(text);
 
-		if(!enName || enName.search(/[А-Яа-яЁё]/) !== -1) {
-			message.channel.send("Тушканчикам не удалось найти существо **``"+Discord.Util.escapeMarkdown(name, false, true)+"``** в нашей базе.")
-				.then((res)=> {
-					message.channel.stopTyping();
-					BadRequestsModel.putRequest(message, 'breeding', 'Нет существа в базе алиасов: '+name, res.id)
-						.catch(console.error);
-				})
-				.catch(console.error);
-			return;
-		}
-		if(typeof DvData[enName.toLowerCase().replace('_', '')] === 'undefined') {
-			message.channel.send("Тушканчикам не удалось найти существо **``"+Discord.Util.escapeMarkdown(name, false, true)+"``** в базе данных. Они очень старались.")
-				.then((res)	=> {
-					message.channel.stopTyping();
-					BadRequestsModel.putRequest(message, 'breeding', 'Нет существа в базе DvData: '+name, res.id, 1)
-						.catch(console.error);
-				})
-				.catch(console.error);
-			return;
-		}
-		let Data = DvData[enName.toLowerCase().replace('_', '')];
+                if (breeding) {
+                        if (data['breeding']['maturationtime']) {
+                                embed.addField('Общее время роста', DiscordHelper.getTime(parseInt(data['breeding']['maturationtime']) / this.multipliers.mature), true);
+                        }
+
+                        if (data['breeding']['gestationtime'])
+                                embed.addField('Время беременности', DiscordHelper.getTime(parseInt(data['breeding']['gestationtime']) / this.multipliers.incubation), true);
+
+                        if (data['breeding']['incubationtime'])
+                                embed.addField('Время инкубации', DiscordHelper.getTime(parseInt(data['breeding']['incubationtime']) / this.multipliers.incubation), true);
+
+                        if (data['breeding']['mintemp'] && data['breeding']['maxtemp'])
+                                embed.addField('Диапазон инкубации', data['breeding']['mintemp'] + ' - ' + data['breeding']['maxtemp'] + ' °C', true);
 
 
-		/* --- Вытащили нужное существо --- */
-		let text = '';
-		let breeding;
-		if(!Data['breeding']||!Data['breeding']['maturationtime']) {
-			text = '🚫 Неразводимое существо';
-			breeding = false;
-		} else {
-			text = '✅ Разводимое существо';
-			if(enName === 'reaper')
-				text += '\n*Единственный способ "размножения" был бы через оплодотворение от королевы, но размножение технически невозможно из-за гендерной механики Жнеца.*';
-			if(enName === 'rockdrake')
-				text += '\n*Может быть выращен из дикого яйца, но взрослые особи спариваться не могут.*';
-			if(enName === 'wyvern')
-				text += '\n*Может быть выращена из дикого яйца, но взрослые особи спариваться не могут.*';
-			breeding = true;
-		}
+                		embed.addField('\u200B', '\u200B');
 
-		let embed = new Discord.MessageEmbed()
-			.setTitle(ruName)
-			.setAuthor(message.author.username, message.author.avatarURL())
-			.setDescription(text);
+                        if (data['breeding']['babytime'])
+                                embed.addField('Детёныш', DiscordHelper.getTime(parseInt(data['breeding']['babytime']) / this.multipliers.mature), true);
 
-		// if(Data['passengerweightmultiplier'])
-		// 	embed.addField('Множитель веса наездника', Data['passengerweightmultiplier']);
-		//
-		// if(Data['grabweightthreshold'])
-		// 	embed.addField('Порог перегруза', Data['grabweightthreshold']);
+                        if (data['breeding']['juveniletime'])
+                                embed.addField('Юнец', DiscordHelper.getTime(parseInt(data['breeding']['juveniletime']) / this.multipliers.mature), true);
 
-		//console.log(Data['breeding']);
-	if(breeding) {
-		if (Data['breeding']['maturationtime']) {
-			embed.addField('Общее время роста', this.getTime(parseInt(Data['breeding']['maturationtime']) / rateMat), true);
-		}
+                        if (data['breeding']['adolescenttime'])
+                                embed.addField('Юный', DiscordHelper.getTime(parseInt(data['breeding']['adolescenttime']) / this.multipliers.mature), true);
+                }
 
-		if (Data['breeding']['gestationtime'])
-			embed.addField('Время беременности', this.getTime(parseInt(Data['breeding']['gestationtime']) / rateInc), true);
+                embed.addField('\u200B', '\u200B');
 
-		if (Data['breeding']['incubationtime'])
-			embed.addField('Время инкубации', this.getTime(parseInt(Data['breeding']['incubationtime']) / rateInc), true);
+                if (data['diet']) {
+                        let diet;
+                        switch (data['diet']) {
+                                case 'Herbivore':
+                                        diet = getIcon('Ягоды') + 'Травоядное';
+                                        break;
+                                case 'Carnivore':
+                                        diet = getIcon('Сырое Мясо') + 'Хищник';
+                                        break;
+                                case 'Omnivore':
+                                        diet = 'Всеядное';
+                                        break;
+                                case 'Piscivore':
+                                        diet = getIcon('Сырая Рыба') + 'Рыбоядный';
+                                        break;
+                                case 'Carrion-Feeder':
+                                        diet = getIcon('Сырое Мясо') + 'Падаль (мясо)';
+                                        break;
+                                case 'Coprophagic':
+                                        diet = getIcon('Протухшее Мясо') + 'Копрофаг';
+                                        break;
+                                case 'Minerals':
+                                        diet = getIcon('Камень') + 'Минералы';
+                                        break;
+                                case 'Flame Eater':
+                                        diet = 'Пожиратель Пламени';
+                                        break;
+                                default:
+                                        diet = data['diet'];
+                                        break;
+                        }
+                        embed.addField('Питание', diet, true);
+                }
 
-		if (Data['breeding']['mintemp'] && Data['breeding']['maxtemp'])
-			embed.addField('Диапазон инкубации', Data['breeding']['mintemp'] + ' - ' + Data['breeding']['maxtemp'] + ' °C', true);
+                if (data['stats'] && data['stats']['cansuffocate'])
+                        embed.addField('Может задохнуться', (data['stats']['cansuffocate'] === 'Yes') ? 'Да' : 'Нет', true);
 
-		if (Data['breeding']['babytime'])
-			embed.addField('Детёныш', this.getTime(parseInt(Data['breeding']['babytime']) / rateMat), true);
+                if (data['taming'] && data['taming']['torporimmune'])
+                        embed.addField('Иммунитет к оглушению', (data['taming']['torporimmune'] === 'Yes') ? 'Да' : 'Нет', true);
 
-		if (Data['breeding']['juveniletime'])
-			embed.addField('Юнец', this.getTime(parseInt(Data['breeding']['juveniletime']) / rateMat), true);
+                embed.setFooter('Рост х' + this.multipliers.mature + ' • Инкубация х' + this.multipliers.incubation);
 
-		if (Data['breeding']['adolescenttime'])
-			embed.addField('Юный', this.getTime(parseInt(Data['breeding']['adolescenttime']) / rateMat), true);
-	}
+                await this.message.channel.send(embed);
+				this.message.channel.stopTyping();
+        }
 
-		if(Data['diet']) {
-			let diet;
-			switch (Data['diet']) {
-				case 'Herbivore':
-					diet = getIcon('Ягоды')+'Травоядное';
-					break;
-				case 'Carnivore':
-					diet = getIcon('Сырое Мясо')+'Хищник';
-					break;
-				case 'Omnivore':
-					diet = 'Всеядное';
-					break;
-				case 'Piscivore':
-					diet = getIcon('Сырая Рыба')+'Рыбоядный';
-					break;
-				case 'Carrion-Feeder':
-					diet = getIcon('Сырое Мясо')+'Падаль (мясо)';
-					break;
-				case 'Coprophagic':
-					diet = getIcon('Протухшее Мясо')+'Копрофаг';
-					break;
-				case 'Minerals':
-					diet = getIcon('Камень')+'Минералы';
-					break;
-				case 'Flame Eater':
-					diet = 'Пожиратель Пламени';
-					break;
-				default:
-					diet = Data['diet'];
-					break;
-			}
-			embed.addField('Питание', diet, true);
-		}
-
-		if(Data['stats'] && Data['stats']['cansuffocate'])
-			embed.addField('Может задохнуться', (Data['stats']['cansuffocate'] === 'Yes') ? 'Да' : 'Нет', true);
-
-		if(Data['taming'] && Data['taming']['torporimmune'])
-			embed.addField('Иммунитет к оглушению', (Data['taming']['torporimmune'] === 'Yes') ? 'Да' : 'Нет', true);
-
-		//embed.addBlankField();
-		rateMat = rateMat === Infinity ? '∞' : 'x' + rateMat;
-		rateInc = rateInc === Infinity ? '∞' : 'x' + rateInc;
-		//embed.addField('Примененные множители', 'Скорость роста: '+rateMat+'\nСкорость инкубации: '+rateInc);
-		embed.setFooter('Рост '+rateMat+' • Инкубация '+rateInc);
-
-		message.channel.send(embed)
-			.then(() => {
-				message.channel.stopTyping();
-			})
-			.catch(console.error);
-	}
-
-	static getTime(time) {
-		if(isNaN(time)) return '&nbsp;';
-		time = Math.floor(time);
-		if(time < 1) return '< 1 сек';
-		return Timer.timeFormat(time, false);
-	}
-
-	static getTrueValue(value) {
-		if(value > 1000) value = 1000;
-		if(value < 0.001) value = 0.001;
-		return Math.ceil(value * 1000) / 1000;
-	}
+        getTrueValue(value) {
+                if (value > 1000) value = 1000;
+                if (value < 0.001) value = 0.001;
+                return Math.ceil(value * 1000) / 1000;
+        }
 }
 
 

@@ -1,3 +1,5 @@
+const Timer = require('./Timer');
+
 class SenderReactions {
         constructor() {
                 this.stoped = false;
@@ -198,6 +200,19 @@ class DiscordHelper {
                 return new Promise((resolve) => {
                         setTimeout(resolve, time);
                 });
+        }
+
+
+        /**
+         *
+         * @param {number} time
+         * @return {string}
+         */
+        static getTime(time) {
+                if (isNaN(time)) return '&nbsp;';
+                time = Math.floor(time);
+                if (time < 1) return '< 1 сек';
+                return Timer.timeFormat(time, false);
         }
 }
 
