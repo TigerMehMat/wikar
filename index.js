@@ -95,7 +95,7 @@ client.on('message', async message => {
         const messageAccess = await access.getMainCheck();
         if (!messageAccess) return;
 
-        if(!access_parameters) {
+        if (!access_parameters) {
                 return;
         }
 
@@ -125,7 +125,6 @@ client.on('message', async message => {
                 case "разведение":
                 case "рост":
                 case "р":
-                        // Breeding.controller(message, args, messageAccess);
                         const breed_controller = (new Breeding());
                         await breed_controller.setMessage(message);
                         await breed_controller.setArgs(args);

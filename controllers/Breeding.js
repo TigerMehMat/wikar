@@ -35,7 +35,6 @@ class Breeding {
          * @param {Array} args
          */
         async setArgs(args) {
-                if (args.length === 0) return;
 
                 let data = args.pop();
                 if (isNaN(data)) {
@@ -46,10 +45,10 @@ class Breeding {
                         let data2 = args.pop();
 
                         if (isNaN(data2)) {
-                                this.multipliers.mature = this.multipliers.incubation = data;
+                                this.multipliers.mature = this.multipliers.incubation = this.getTrueValue(data);
                         } else {
                                 this.multipliers.mature = data2;
-                                this.multipliers.incubation = data;
+                                this.multipliers.incubation = this.getTrueValue(data);
                         }
                 }
 
@@ -137,7 +136,7 @@ class Breeding {
                                         diet = getIcon('Камень') + 'Минералы';
                                         break;
                                 case 'Flame Eater':
-                                        diet = 'Пожиратель Пламени';
+                                        diet = '🔥 Пожиратель Пламени';
                                         break;
                                 default:
                                         diet = data['diet'];

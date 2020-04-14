@@ -19,11 +19,6 @@ class Dododex extends Tame {
 
         static async controller(message, args, messageAccess) {
                 if (!access.isAccess(messageAccess)) return;
-                if (args.length === 0) {
-                        message.channel.send('Эта команда не вызывается без параметров. Для справки используйте ``!помощь приручение``')
-                                .catch(console.error);
-                        return;
-                }
                 let dododex = new Dododex(messageAccess);
                 await dododex.send(message, args);
         }
