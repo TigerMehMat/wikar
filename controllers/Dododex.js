@@ -1,6 +1,5 @@
 const http = require("https");
 const Tame = require("./GlobalControllers/Tame");
-const GetPhrases = require('./GetPhrases');
 const cheerio = require('cheerio');
 const getIcon = require('./functions/getIcon');
 const fs = require('fs');
@@ -47,9 +46,9 @@ class Dododex extends Tame {
                                         result["link"] = link;
                                         result["tranqList"] = this.getTranqList($);
 
-                                        let mainImage = $("#mainImage");
-                                        if (mainImage.length !== 0) {
-                                                result["mainImage"] = 'https://www.dododex.com' + $("#mainImage").attr("src");
+                                        let $mainImage = $("#mainImage");
+                                        if ($mainImage.length !== 0) {
+                                                result["mainImage"] = 'https://www.dododex.com' + $mainImage.attr("src");
                                         } else {
                                                 result["mainImage"] = false;
                                         }
