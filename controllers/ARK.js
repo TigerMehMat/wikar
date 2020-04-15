@@ -7,6 +7,20 @@ const GlobalVarsModel = new (require('../Models/GlobalVarsModel'));
 const DiscordServersModel = new (require('../Models/DiscordServersModel'));
 
 class ARK extends ARK_api {
+        rates;
+        current_version;
+
+        rateByType = {
+                TamingSpeedMultiplier: 'Приручение',
+                HarvestAmountMultiplier: 'Сбор ресурсов',
+                XPMultiplier: 'Опыт',
+                MatingIntervalMultiplier: 'Интервал спаривания',
+                BabyMatureSpeedMultiplier: 'Скорость взросления',
+                EggHatchSpeedMultiplier: 'Скорость инкубации / беременности',
+                CropGrowthSpeedMultiplier: 'Скорость роста овощей и ягоды',
+                CustomRecipeEffectivenessMultiplier: 'Эффективность пользовательских рецептов'
+        };
+
         constructor(client) {
                 super();
                 this.client = client;
@@ -14,17 +28,8 @@ class ARK extends ARK_api {
 
         async start() {
                 this.rates = JSON.parse(await GlobalVarsModel.getItem('rates'));
+                this.current_version = await GlobalVarsModel.getItem('game_version');
 
-                this.rateByType = {
-                        TamingSpeedMultiplier: 'Приручение',
-                        HarvestAmountMultiplier: 'Сбор ресурсов',
-                        XPMultiplier: 'Опыт',
-                        MatingIntervalMultiplier: 'Интервал спаривания',
-                        BabyMatureSpeedMultiplier: 'Скорость взросления',
-                        EggHatchSpeedMultiplier: 'Скорость инкубации / беременности',
-                        CropGrowthSpeedMultiplier: 'Скорость роста овощей и ягоды',
-                        CustomRecipeEffectivenessMultiplier: 'Эффективность пользовательских рецептов'
-                };
                 await this.getChannelsAndMessages();
         }
 
@@ -45,11 +50,19 @@ class ARK extends ARK_api {
 
         update() {
                 return new Promise(async (resolve, reject) => {
-                        let checkRes = await this.check();
-                        if (checkRes) {
-                                await this.sendLog(checkRes);
+                        let checkResults = await this.check();
+                        if (checkResults.changedRates) {
+                                await this.sendRatesLog(checkResults.changedRates);
+                        }
+                        if (checkResults.current_version != this.current_version) {
+                                let embed = (new Discord.MessageEmbed())
+                                        .setDescription('Изменилась версия игры: ' + this.current_version + ' → ' + checkResults.current_version);
+                                this.current_version = checkResults.current_version;
+                                await GlobalVarsModel.setItem('game_version', this.current_version);
+                                await this.sendLog(embed);
                         }
                         await this.editStats();
+                        let current_version = '';
                         resolve();
                 });
         }
@@ -68,12 +81,14 @@ class ARK extends ARK_api {
 
         async check() {
                 let newRates;
+                let current_version;
                 try {
                         newRates = await ARK_api.getRates();
+                        current_version = await ARK_api.getCurrentVersion();
                 } catch (e) {
                         console.error('Error get ark_api');
                         console.error(e);
-                        return;
+                        return {};
                 }
                 let changedRates = {};
                 let changes = 0;
@@ -84,12 +99,16 @@ class ARK extends ARK_api {
                                 changes++;
                         }
                 }
-                if (changes === 0) return false;
+                if (changes === 0) changedRates = false;
                 this.rates = newRates;
-                return changedRates;
+                let res = {
+                        'changedRates': changedRates,
+                        'current_version': current_version
+                };
+                return res;
         }
 
-        async sendLog(changedRates) {
+        async sendRatesLog(changedRates) {
                 for (let j in this.info) {
                         let guild = this.client.guilds.cache.get(j);
                         let channel = guild.channels.cache.get(this.info[j].channel);
@@ -105,6 +124,15 @@ class ARK extends ARK_api {
                                 .setFooter((new Date()).toTimeString())
                                 .setDescription(text);
                         await channel.send(roleText, embed);
+                        await this.timeout(3000);
+                }
+        }
+
+        async sendLog(...params) {
+                for (let j in this.info) {
+                        let guild = this.client.guilds.cache.get(j);
+                        let channel = guild.channels.cache.get(this.info[j].channel);
+                        await channel.send(...params);
                         await this.timeout(3000);
                 }
         }
