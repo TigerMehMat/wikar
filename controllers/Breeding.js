@@ -51,6 +51,7 @@ class Breeding {
 
                         if (isNaN(data2)) {
                                 this.multipliers.mature = this.multipliers.incubation = this.getTrueValue(data);
+                                args.push(data2);
                         } else {
                                 this.multipliers.mature = data2;
                                 this.multipliers.incubation = this.getTrueValue(data);
@@ -77,7 +78,6 @@ class Breeding {
                 let comment = '';
 
                 if(typeof data === "undefined") {
-                        console.log();
                         if(this.creature.parent) {
                                 comment = 'Нам не удалось найти информацию о разведении ' + this.creature.ru_name_rp + ', но скорее всего, у этого существа схожие параметры.\n\n';
                                 this.creature = await (new CreaturesModel()).getCreatureByID(this.creature.parent);
@@ -91,7 +91,6 @@ class Breeding {
                 /* --- Вытащили нужное существо --- */
                 let text;
                 let breeding;
-                console.log(data);
 
                 if (!data['breeding'] || !data['breeding']['maturationtime']) {
                         text = '🚫 Неразводимое существо';
