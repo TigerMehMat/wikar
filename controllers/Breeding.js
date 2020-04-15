@@ -9,16 +9,21 @@ const CreaturesModel = require('../Models/CreaturesModel');
 
 class Breeding {
 
+        message = null;
+
+        /**
+         * @type {CreatureModel | null}
+         */
+        creature = null;
+
+        multipliers = {
+                mature: null,
+                incubation: null
+        };
+
+        creature_name = '';
+
         constructor() {
-                this.message = null;
-                /**
-                 * @type {CreatureModel | null}
-                 */
-                this.creature = null;
-                this.multipliers = {
-                        mature: null,
-                        incubation: null
-                };
         }
 
         /**
@@ -52,17 +57,42 @@ class Breeding {
                         }
                 }
 
-                let creature_name = args.join(' ');
+                this.creature_name = args.join(' ');
                 this.creature = await ((new CreaturesModel())
-                        .setCreatureName(creature_name)
+                        .setCreatureName(this.creature_name)
                         .searchOne());
         }
 
         async process() {
-                let data = DvData[this.creature.dv_alias];
+                // Если не удалось найти существо
+                if(!this.creature) {
+                        const embed = (new Discord.MessageEmbed())
+                                .setTitle('GRRRAAAR.. CRACK.. BOOM.. BARK! .. ')
+                                .setDescription('Теперь уже спокойный Ферокс сообщает что ``' + this.creature_name + '`` ему найти не удалось.');
+                        this.message.channel.send(embed);
+                        return;
+                }
+
+                let data = this.getDvData(this.creature.dv_alias);
+                let comment = '';
+
+                if(typeof data === "undefined") {
+                        console.log();
+                        if(this.creature.parent) {
+                                comment = 'Нам не удалось найти информацию о разведении ' + this.creature.ru_name_rp + ', но скорее всего, у этого существа схожие параметры.\n\n';
+                                this.creature = await (new CreaturesModel()).getCreatureByID(this.creature.parent);
+                                data = this.getDvData(this.creature.dv_alias);
+                        }
+                        if (typeof data === "undefined") {
+                                await this.message.channel.send('Тушканчикам не удалось добыть информацию о разведении ' + this.creature.ru_name_rp + ', но они обещают спарить их при случае.');
+                                return;
+                        }
+                }
                 /* --- Вытащили нужное существо --- */
                 let text;
                 let breeding;
+                console.log(data);
+
                 if (!data['breeding'] || !data['breeding']['maturationtime']) {
                         text = '🚫 Неразводимое существо';
                         breeding = false;
@@ -80,7 +110,7 @@ class Breeding {
                 let embed = new Discord.MessageEmbed()
                         .setTitle(this.creature.ru_name)
                         .setAuthor(this.message.author.username, this.message.author.avatarURL())
-                        .setDescription(text);
+                        .setDescription(comment + text);
 
                 if (breeding) {
                         if (data['breeding']['maturationtime']) {
@@ -161,6 +191,33 @@ class Breeding {
                 if (value > 1000) value = 1000;
                 if (value < 0.001) value = 0.001;
                 return Math.ceil(value * 1000) / 1000;
+        }
+
+        /**
+         * Получаем DvData, рекурсивно получая инфу от родителей
+         * @param creature_dv_name
+         * @return {any}
+         */
+        getDvData(creature_dv_name) {
+                let data = JSON.parse(JSON.stringify(DvData[creature_dv_name]));
+                let parent = null;
+                if(typeof data['inherits'] !== "undefined") {
+                        parent = this.getDvData(data['inherits']);
+                } else {
+                        return data;
+                }
+                return this.extend(parent, data);
+        }
+
+        extend(object1, object2) {
+                for(let key in object2) {
+                        if(typeof object1[key] === "object" && typeof object2[key] === "object") {
+                                object1[key] = this.extend(object1[key], object2[key]);
+                        } else {
+                                object1[key] = object2[key];
+                        }
+                }
+                return object1;
         }
 }
 

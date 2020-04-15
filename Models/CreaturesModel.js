@@ -1,3 +1,4 @@
+const CreatureEntity = require('../Entites/CreatureEntity');
 const MainModel = require('./MainModel');
 
 /**
@@ -17,12 +18,32 @@ const MainModel = require('./MainModel');
 
 class CreaturesModel extends MainModel {
 
+        #select_elements = [
+                "ca.id",
+                "ca.en_name",
+                "REPLACE(LOWER(COALESCE(ca.en_dv_alias, ca.en_name)), ' ', '') AS dv_alias",
+                "ca.ru_name",
+                "ca.ru_name_mn",
+                "ca.ru_name_rp",
+                "ca.sex",
+                "COALESCE(cad.alias, ca.en_name) AS dododex_alias",
+                "REPLACE(COALESCE(cam.alias, ca.en_name), ' ', '_') AS map_alias",
+                "cam.comment AS map_comment",
+                "ca.srt",
+                "ca.id",
+                "ca.entity_id",
+                "ca.parent"
+        ];
+
+        query_where = '';
+        where_elements = [];
+        joins = [];
+        creature_name = '';
+        limit = null;
+
+
         constructor() {
                 super();
-                this.query_where = '';
-                this.joins = [];
-                this.creature_name = '';
-                this.limit = null;
         }
 
         setLimit(limit) {
@@ -41,6 +62,13 @@ class CreaturesModel extends MainModel {
                         "OR ca.ru_name_mn ~* $1\n" +
                         "OR car.alias_mn ~* $1\n" +
                         "OR car.alias_mn ~* $2\n";
+                this.where_elements = ['^' + this.creature_name, ' ' + this.creature_name];
+                return this;
+        }
+
+        prepareWhereByID(id) {
+                this.query_where = "WHERE ca.id = $1";
+                this.where_elements = [id];
                 return this;
         }
 
@@ -56,13 +84,13 @@ class CreaturesModel extends MainModel {
 
         execute() {
                 return new Promise((resolve, reject) => {
-                        let query = "SELECT DISTINCT ca.id, ca.en_name, REPLACE(LOWER(COALESCE(ca.en_dv_alias, ca.en_name)), ' ', '') AS dv_alias, ca.ru_name, ca.ru_name_mn, ca.ru_name_rp, ca.sex, COALESCE(cad.alias, ca.en_name) AS dododex_alias, REPLACE(COALESCE(cam.alias, ca.en_name), ' ', '_') AS map_alias, cam.comment AS map_comment, ca.srt, ca.id\n" +
-                                "FROM creatures ca\n" +
-                                this.joins.join('\n') + "\n" +
-                                this.query_where + "\n" +
-                                "ORDER BY ca.srt, ca.id\n" +
-                                ((this.limit) ? "LIMIT "+ this.limit : "");
-                        this.query(query, ['^' + this.creature_name, ' ' + this.creature_name])
+                        let query = `SELECT DISTINCT ${this.#select_elements.join(',')}
+                                FROM creatures ca
+                                    ${this.joins.join('\n')}
+                                    ${this.query_where}
+                                ORDER BY ca.srt, ca.id
+                                ${((this.limit) ? "LIMIT "+ this.limit : "")}`;
+                        this.query(query, this.where_elements)
                                 .then(res => {
                                         resolve(res.rows);
                                 })
@@ -84,7 +112,13 @@ class CreaturesModel extends MainModel {
                         this.prepareWhere();
                         this.prepareSearchJoins();
                         this.execute()
-                                .then(resolve)
+                                .then(value => {
+                                        let result = [];
+                                        value.forEach(el => {
+                                                result.push(new CreatureEntity(el));
+                                        });
+                                        resolve(result);
+                                })
                                 .catch(reject);
                 });
         }
@@ -95,10 +129,8 @@ class CreaturesModel extends MainModel {
          */
         searchOne() {
                 return new Promise((resolve, reject) => {
-                        this.prepareWhere();
-                        this.prepareSearchJoins();
                         this.setLimit(1);
-                        this.execute()
+                        this.search()
                                 .then(res => {
                                         resolve(res.length > 0 ? res[0] : null);
                                 })
@@ -133,6 +165,18 @@ class CreaturesModel extends MainModel {
                                 })
                                 .catch(reject);
                 });
+        }
+
+        /**
+         * Получение существа по ID
+         * @param {number} id
+         */
+        async getCreatureByID(id) {
+                this.prepareWhereByID(id);
+                this.prepareSearchJoins();
+                this.setLimit(1);
+                let res = await this.execute();
+                return res.length > 0 ? res[0] : null;
         }
 
         /**
