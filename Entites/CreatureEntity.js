@@ -14,7 +14,8 @@ class CreatureEntity extends BaseEntity {
                         'sex': this.required,
                         'srt': this.required,
                         'parent': this.not_required,
-                        'entity_id': this.not_required
+                        'entity_id': this.not_required,
+                        'map_alias': this.required
                 };
                 this.fillElements(items);
         }
