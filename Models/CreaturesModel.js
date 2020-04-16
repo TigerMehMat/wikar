@@ -105,7 +105,7 @@ class CreaturesModel extends MainModel {
 
         /**
          * Возвращаем массив всех найденных существ
-         * @return {Promise<CreatureModel[]>}
+         * @return {Promise<CreatureEntity[]>}
          */
         search() {
                 return new Promise((resolve, reject) => {

@@ -35,6 +35,12 @@ class ARK extends ARK_api {
         updater() {
                 return new Promise(async () => {
                         while (1) {
+                                let timer = setTimeout(() => {
+                                        // Сообщаем что логер завис, если в течении 2 минут не перезаписан таймер.
+                                        // Это показатель большого кол-ва серверов, если сильно подвисает.
+                                        DiscordAlarm.send('Логгер ARK завис')
+                                                .catch(console.error);
+                                }, 1000 * 60 * 2); // 2 минуты
                                 try {
                                         await this.update();
                                 } catch (e) {
@@ -42,6 +48,7 @@ class ARK extends ARK_api {
                                                 .catch(console.error);
                                         console.error(e);
                                 }
+                                clearTimeout(timer);
                                 await this.timeout(1000 * 60 * 3); // 3 минуты
                         }
                 });
