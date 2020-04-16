@@ -1,7 +1,6 @@
 const ARK_api = require('./GlobalControllers/ARK_api');
 const Discord = require('discord.js');
 const DiscordHelper = require('./GlobalControllers/DiscordHelper');
-const access = require('./GlobalControllers/access');
 
 const GlobalVarsModel = new (require('../Models/GlobalVarsModel'));
 const DiscordServersModel = new (require('../Models/DiscordServersModel'));
@@ -54,7 +53,7 @@ class ARK extends ARK_api {
                         if (checkResults.changedRates) {
                                 await this.sendRatesLog(checkResults.changedRates);
                         }
-                        if (checkResults.current_version != this.current_version) {
+                        if (String(checkResults.current_version) !== String(this.current_version)) {
                                 let embed = (new Discord.MessageEmbed())
                                         .setDescription('Изменилась версия игры: ' + this.current_version + ' → ' + checkResults.current_version);
                                 this.current_version = checkResults.current_version;
