@@ -14,15 +14,9 @@ const MapsModel = new (require('../Models/MapsModel'));
  * Класс, отвечающий за ответ на команду !карта
  */
 class MapsController {
-
-        /**
-         * Конструктор
-         */
-        constructor() {
-                this.map = undefined;
-                this.creature = undefined;
-                this.message = undefined;
-        }
+        map;
+        creature;
+        message;
 
         /**
          * Установить данные по аргументам
@@ -83,6 +77,11 @@ class MapsController {
                 let embed = new Discord.MessageEmbed()
                         .setAuthor(this.message.author.username, this.message.author.avatarURL())
                         .setTitle(this.creature.ru_name_mn + ' на карте ' + this.map.name);
+                try {
+                        await this.message.react(this.map.reaction);
+                } catch (e) {
+                        console.log(e);
+                }
                 if (!map && !this.creature.map_comment) {
                         embed
                                 .setTitle(this.creature.ru_name)
@@ -195,6 +194,11 @@ class MapsController {
          */
         async processOnlyMap() {
                 const attachment = new Discord.MessageAttachment('./maps/' + this.map.url + '.jpg', "map.jpg");
+                try {
+                        await this.message.react(this.map.reaction);
+                } catch (e) {
+                        console.error(e);
+                }
                 let embed = new Discord.MessageEmbed()
                         .setAuthor(this.message.author.username, this.message.author.avatarURL())
                         .setTitle('Карта ' + this.map.name)
@@ -224,7 +228,6 @@ class MapsController {
                                         this.message.reactions.removeAll()
                                                 .then(() => {
                                                         this.map = maps.find(el => el.reaction === collected.first().emoji.id);
-                                                        this.message.react(this.map.reaction);
                                                         this.processMapAndCreature();
 
                                                 })
