@@ -55,7 +55,7 @@ class ARK extends ARK_api {
         }
 
         update() {
-                return new Promise(async (resolve, reject) => {
+                return new Promise(async (resolve) => {
                         let checkResults = await this.check();
                         if (checkResults.changedRates) {
                                 await this.sendRatesLog(checkResults.changedRates);
@@ -68,7 +68,6 @@ class ARK extends ARK_api {
                                 await this.sendLog(embed);
                         }
                         await this.editStats();
-                        let current_version = '';
                         resolve();
                 });
         }
@@ -100,6 +99,7 @@ class ARK extends ARK_api {
                 let changes = 0;
                 GlobalVarsModel.setItem('rates', JSON.stringify(newRates)).catch(console.error);
                 for (let rate in this.rates) {
+                        if(!this.rates.hasOwnProperty(rate)) continue;
                         if (newRates[rate] !== this.rates[rate]) {
                                 changedRates[rate] = {"old": this.rates[rate], "new": newRates[rate]};
                                 changes++;
@@ -107,11 +107,10 @@ class ARK extends ARK_api {
                 }
                 if (changes === 0) changedRates = false;
                 this.rates = newRates;
-                let res = {
+                return {
                         'changedRates': changedRates,
                         'current_version': current_version
                 };
-                return res;
         }
 
         async sendRatesLog(changedRates) {
@@ -120,6 +119,7 @@ class ARK extends ARK_api {
                         let channel = guild.channels.cache.get(this.info[j].channel);
                         let text = '';
                         for (let i in changedRates) {
+                                if(!changedRates.hasOwnProperty(i)) continue;
                                 text += this.rateByType[i] + ': ' + changedRates[i].old + ' → ' + changedRates[i].new + '\n';
                         }
                         let roleId = ARK.getRoleId(guild);
@@ -157,6 +157,7 @@ class ARK extends ARK_api {
 
                         let text = '';
                         for (let i in this.rates) {
+                                if(!this.rates.hasOwnProperty(i)) continue;
                                 text += this.rateByType[i] + ' = ' + this.rates[i] + '\n';
                         }
                         let embed = new Discord.MessageEmbed()
