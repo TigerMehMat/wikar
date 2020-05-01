@@ -297,7 +297,7 @@ class MapsController {
         }
 
         generateLink(map) {
-                if (map.name === 'Genesis') map.url = 'Genesis_Part_1';
+                if (map.name === 'Genesis') map.url = 'Genesis_Part_1';// Костыль для долбанного генезиса
                 return "https://ark.gamepedia.com/File:Spawning_" + encodeURIComponent(this.creature.map_alias) + "_" + map.url + ".svg";
         }
 
