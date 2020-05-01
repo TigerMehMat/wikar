@@ -60,7 +60,7 @@ class ARK extends ARK_api {
                         if (checkResults.changedRates) {
                                 await this.sendRatesLog(checkResults.changedRates);
                         }
-                        if (String(checkResults.current_version) !== String(this.current_version)) {
+                        if (checkResults.current_version && String(checkResults.current_version) !== String(this.current_version)) {
                                 let embed = (new Discord.MessageEmbed())
                                         .setDescription('Изменилась версия игры: ' + this.current_version + ' → ' + checkResults.current_version);
                                 this.current_version = checkResults.current_version;
