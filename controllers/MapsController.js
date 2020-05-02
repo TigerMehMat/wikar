@@ -9,19 +9,17 @@ const path = require('path');
 
 const BadRequestsModel = new (require('../Models/BadRequestsModel'));
 const MapsModel = new (require('../Models/MapsModel'));
+const AbstractCommandController = require('./AbstractCommandController');
 
 /**
  * Класс, отвечающий за ответ на команду !карта
  */
-class MapsController {
+class MapsController extends AbstractCommandController {
         map;
         creature;
-        message;
 
         /**
-         * Установить данные по аргументам
-         * @param {string[]} args
-         * @return {Promise<MapsController>}
+         * @inheritDoc
          */
         async setArgs(args) {
                 let is_map = args.pop();
@@ -37,11 +35,6 @@ class MapsController {
                                 .setCreatureName(args.join(' '))
                                 .searchOne();
                 }
-                return this;
-        }
-
-        async setMessage(message) {
-                this.message = message;
                 return this;
         }
 
