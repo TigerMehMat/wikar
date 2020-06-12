@@ -258,7 +258,13 @@ class MapsController extends AbstractCommandController {
         }
 
         async getMapListForCreature() {
-                let mapsCash = fs.readFileSync(path.resolve(__dirname, '../data/map/spawnonmaps.json'), 'utf-8');
+                try {
+                        fs.mkdirSync(path.resolve(__dirname, '../data/map'));
+                } catch (e) {
+
+                }
+                let mapsCash = fs.readFileSync(path.resolve(__dirname, '../data/map/spawnonmaps.json'), {encoding: 'utf-8', flag: 'a+'});
+                if(!mapsCash) mapsCash = '{}';
                 let mapsCashObj = JSON.parse(mapsCash);
 
                 if (typeof mapsCashObj[this.creature.map_alias] !== 'undefined') {

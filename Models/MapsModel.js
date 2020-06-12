@@ -44,7 +44,7 @@ class MapsModel extends MainModel {
          */
         getInfoByMaps(maps) {
                 return new Promise((resolve, reject) => {
-                        this.query('SELECT * FROM ark_maps WHERE name IN (\'' + maps.join('\',\'') + '\')')
+                        this.query(`SELECT * FROM ark_maps WHERE name IN ('${maps.join("'','")}')`)
                                 .then(res => {
                                         resolve(res.rows);
                                 })
