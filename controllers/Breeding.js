@@ -76,14 +76,12 @@ class Breeding {
 
                 let data = this.getDvData(this.creature.dv_alias);
                 let comment = '';
-
-                if(typeof data === "undefined") {
+                if(typeof data === "undefined" || !data) {
                         if(this.creature.parent) {
                                 comment = 'Нам не удалось найти информацию о разведении ' + this.creature.ru_name_rp + ', но скорее всего, у этого существа схожие параметры.\n\n';
                                 this.creature = await (new CreaturesModel()).getCreatureByID(this.creature.parent);
                                 data = this.getDvData(this.creature.dv_alias);
-                        }
-                        if (typeof data === "undefined") {
+                        } else {
                                 await this.message.channel.send('Тушканчикам не удалось добыть информацию о разведении ' + this.creature.ru_name_rp + ', но они обещают спарить их при случае.');
                                 return;
                         }
@@ -198,6 +196,7 @@ class Breeding {
          * @return {any}
          */
         getDvData(creature_dv_name) {
+                if(typeof DvData[creature_dv_name] === "undefined") return null;
                 let data = JSON.parse(JSON.stringify(DvData[creature_dv_name]));
                 let parent = null;
                 if(typeof data['inherits'] !== "undefined") {
