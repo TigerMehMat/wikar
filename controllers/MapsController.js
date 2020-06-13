@@ -222,7 +222,6 @@ class MapsController extends AbstractCommandController {
                                                 .then(() => {
                                                         this.map = maps.find(el => el.reaction === collected.first().emoji.id);
                                                         this.processMapAndCreature();
-
                                                 })
                                                 .catch(console.error);
                                 })
@@ -258,29 +257,21 @@ class MapsController extends AbstractCommandController {
         }
 
         async getMapListForCreature() {
-                try {
-                        fs.mkdirSync(path.resolve(__dirname, '../data/map'));
-                } catch (e) {
-
+                let maps = await MapsModel.getMapsForCreature(this.creature);
+                if(maps.length === 0) {
+                        const official_maps = await MapsModel.getAllMaps(true);
+                        const check_maps = await this.getAllMapsListForCreature(official_maps);
+                        maps = await MapsModel.setCreatureMaps(check_maps, this.creature);
                 }
-                let mapsCash = fs.readFileSync(path.resolve(__dirname, '../data/map/spawnonmaps.json'), {encoding: 'utf-8', flag: 'a+'});
-                if(!mapsCash) mapsCash = '{}';
-                let mapsCashObj = JSON.parse(mapsCash);
-
-                if (typeof mapsCashObj[this.creature.map_alias] !== 'undefined') {
-                        return await MapsModel.getInfoByMaps(mapsCashObj[this.creature.map_alias]);
-                } else {
-                        let maps = await MapsModel.getAllMaps(true);
-                        /** @var {Array} */
-                        let all_maps = await this.getAllMapsListForCreature(maps);
-                        if (all_maps.length !== 0) {
-                                mapsCashObj[this.creature.map_alias] = all_maps.map(el => el.name);
-                                fs.writeFileSync(path.resolve(__dirname, '../data/map/spawnonmaps.json'), JSON.stringify(mapsCashObj));
-                        }
-                        return all_maps;
-                }
+                return maps;
         }
 
+        /**
+         *
+         * @param maps
+         * @param resultMaps
+         * @return {Promise<Array>}
+         */
         getAllMapsListForCreature(maps, resultMaps = []) {
                 return new Promise((resolve, reject) => {
                         if (maps.length === 0) {
@@ -297,7 +288,7 @@ class MapsController extends AbstractCommandController {
 
         generateLink(map) {
                 if (map.name === 'Genesis') map.url = 'Genesis_Part_1';// Костыль для долбанного генезиса
-                return "https://ark.gamepedia.com/File:Spawning_" + encodeURIComponent(this.creature.map_alias) + "_" + map.url + ".svg";
+                return `https://ark.gamepedia.com/File:Spawning_${encodeURIComponent(this.creature.map_alias)}_${map.url}.svg`;
         }
 
         getActualLink(text) {
