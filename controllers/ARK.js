@@ -55,7 +55,7 @@ class ARK extends ARK_api {
         }
 
         update() {
-                return new Promise(async (resolve) => {
+                return Promise.race([new Promise(async (resolve) => {
                         let checkResults = await this.check();
                         if (checkResults.changedRates) {
                                 await this.sendRatesLog(checkResults.changedRates);
@@ -69,7 +69,8 @@ class ARK extends ARK_api {
                         }
                         await this.editStats();
                         resolve();
-                });
+                }),
+                this.timeout(1000 * 60)]);
         }
 
         timeout(ms) {
