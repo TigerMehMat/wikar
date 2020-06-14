@@ -19,7 +19,7 @@ class DiscordServersModel extends MainModel {
                                 }
                                 where = ' WHERE `discord_id` IN (' + servers.join(',') + ')';
                         }
-                        this.query('SELECT * FROM `discord_servers`' + where)
+                        this.query('SELECT * FROM discord_servers' + where)
                                 .then(resolve)
                                 .catch(reject);
                 });
@@ -30,7 +30,7 @@ class DiscordServersModel extends MainModel {
                         this.query('SELECT off_rates_channel,discord_id FROM discord_servers WHERE off_rates_channel IS NOT NULL AND off_rates_channel <> \'DELETED\'')
                                 .then((res) => {
                                         let rs = [];
-                                        res.rows.forEach((el, i) => {
+                                        res.rows.forEach((el) => {
                                                 let curRes = el.off_rates_channel.split(',');
                                                 curRes.unshift(el.discord_id);
                                                 rs.push(curRes);
@@ -43,7 +43,7 @@ class DiscordServersModel extends MainModel {
 
         setNewServerNameByServerId(serverId, name) {
                 return new Promise((resolve, reject) => {
-                        this.query('UPDATE `discord_servers` SET `last_name` = ? WHERE `discord_id`= ?', [name, serverId])
+                        this.query('UPDATE discord_servers SET last_name = $1 WHERE discord_id= $2', [name, serverId])
                                 .then((res) => {
                                         resolve(res);
                                 })
@@ -53,7 +53,7 @@ class DiscordServersModel extends MainModel {
 
         deleteRatesAlertByServerId(serverId) {
                 return new Promise((resolve, reject) => {
-                        this.query('UPDATE `discord_servers` SET `off_rates_channel` = "DELETED" WHERE `discord_id`=' + serverId)
+                        this.query(`UPDATE discord_servers SET off_rates_channel = 'DELETED' WHERE discord_id = $1`, [serverId])
                                 .then((res) => {
                                         resolve(res);
                                 })
@@ -86,7 +86,7 @@ class DiscordServersModel extends MainModel {
                                         reject(new Error('Unknown active type'));
                                         return;
                         }
-                        this.query('SELECT tribe_functions, prefix, rates, id FROM discord_servers WHERE ' + field + ' >= NOW() AND discord_id= $1 AND ' + where + ' LIMIT 1', [serverId, channelId])
+                        this.query(`SELECT tribe_functions, prefix, rates, id FROM discord_servers WHERE ${field} >= NOW() AND discord_id= $1 AND ${where} LIMIT 1`, [serverId, channelId])
                                 .then((res) => {
                                         res = res.rows;
                                         if (!(res.length > 0)) return false;
@@ -125,6 +125,19 @@ class DiscordServersModel extends MainModel {
                                 'where off_rates_channel is not null\n' +
                                 '  and ark_active_to > NOW()')
                                 .then(resolve)
+                                .catch(reject);
+                });
+        }
+
+        getVoiceSets(channel_id) {
+                return new Promise((resolve, reject) => {
+                        this.query(`SELECT *
+                                    FROM t_voice_text_channel
+                                    WHERE discord_voice_channel = $1
+                                    LIMIT 1`,[String(channel_id)])
+                                .then((res) => {
+                                        resolve(res.rows && res.rows[0]);
+                                })
                                 .catch(reject);
                 });
         }

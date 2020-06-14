@@ -44,6 +44,8 @@ const SubscribeController = new (require('./controllers/SubscribeController'));
 
 const ItemsController = require('./controllers/ItemsController');
 
+const VoiceTextChannelController = require('./controllers/VoiceTextChannelController');
+
 
 client.login(config.token)
         .catch(console.error);
@@ -70,10 +72,10 @@ client.on("ready", async () => {
 
         await ark.start();
 
-        ark.updater().catch((e) => {
+        ark.updater().catch(() => {
                 DiscordAlarm.send('Логгер ARK окончательно завершил свою работу!');
         });
-        bm.serversUpdater().catch((e) => {
+        bm.serversUpdater().catch(() => {
                 DiscordAlarm.send('Логгер BM окончательно завершил свою работу!');
         });
 });
@@ -190,7 +192,7 @@ client.on('message', async message => {
                         bm.sendPlayersList(message, args, messageAccess);
                         break;
                 case "предмет":
-                        let ctrl = new ItemsController()
+                        await new ItemsController()
                                 .setMessageAccess(messageAccess)
                                 .setMessage(message)
                                 .setArgs(args)
@@ -205,33 +207,10 @@ client.on('message', async message => {
 
 client.on("voiceStateUpdate", (oldMember, newMember) => {
         VoiceLogger.voiceChanged(oldMember, newMember);
+        let voice = new VoiceTextChannelController(oldMember, newMember);
+        voice.checkVoiceTexts();
 });
 
-client.on('error', (e) => {
+client.on('error', () => {
         console.error('Discord long query error, its normal.');
 });
-
-
-/* For Site */
-// const app = require('express')();
-// const http = require('http').Server(app);
-// const io = require('socket.io')(http);
-//
-// app.get('/', function(req, res){
-//     res.sendFile(__dirname + '/siteCode/index.html');
-// });
-//
-//
-// http.listen(3000, function(){
-//     console.log('HTTP server started on port 3000');
-// });
-//
-// io.on('connection', function(socket){
-//     console.log('Client connection received');
-//     socket.emit('sendToClient', { hello: 'world' });
-//
-//     socket.on('receivedFromClient', function (data) {
-//         console.log(data);
-//     });
-// });
-
