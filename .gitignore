@@ -8,3 +8,5 @@ configbot.js
 configbot_release.js
 /data/ls/*
 /data/map/*
+/package-lock.json
+/yarn.lock

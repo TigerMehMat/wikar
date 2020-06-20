@@ -1,5 +1,5 @@
 {
-  "name": "DiscBot",
+  "name": "discbot",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -12,11 +12,9 @@
     "express": "latest",
     "gm": "latest",
     "ini": "latest",
-    "mysql": "latest",
     "numeral": "latest",
     "pg": "latest",
     "sharp": "latest",
-    "socket.io": "latest",
     "transliteration": "latest"
   },
   "scripts": {
