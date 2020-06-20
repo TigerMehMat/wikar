@@ -48,21 +48,24 @@ const VoiceTextChannelController = require('./controllers/VoiceTextChannelContro
 
 
 client.login(config.token)
-        .catch(console.error);
+        .catch(reason => {
+                console.error('Не удалось запустить клиент', reason);
+        });
 
 global.DiscordAlarm = new alarm_class();
 
 client.on("ready", async () => {
         await DiscordAlarm.setClient(client);
 
-        console.log("Готов!\n" + client.user.tag);
-
         try {
                 await DiscordAlarm.send("Готов!\n" + client.user.tag);
         } catch (e) {
                 console.error('Не удалось отправить "Готов!"');
                 console.error(e);
+                return;
         }
+
+        console.log("Готов!\n" + client.user.tag);
 
         SubscribeController.activate(client);
 
@@ -75,9 +78,10 @@ client.on("ready", async () => {
         ark.updater().catch(() => {
                 DiscordAlarm.send('Логгер ARK окончательно завершил свою работу!');
         });
-        bm.serversUpdater().catch(() => {
-                DiscordAlarm.send('Логгер BM окончательно завершил свою работу!');
-        });
+        // Функция временно отключена
+        // bm.serversUpdater().catch(() => {
+        //         DiscordAlarm.send('Логгер BM окончательно завершил свою работу!');
+        // });
 });
 
 
