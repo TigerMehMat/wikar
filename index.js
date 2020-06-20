@@ -209,7 +209,9 @@ client.on("voiceStateUpdate", (oldMember, newMember) => {
         VoiceLogger.voiceChanged(oldMember, newMember);
         let voice = new VoiceTextChannelController(oldMember, newMember);
         voice.checkVoiceTexts()
-                .catch(console.error);
+                .catch((e) => {
+                        console.error('Ошибка в чекере войса', e);
+                });
 });
 
 client.on('error', () => {
