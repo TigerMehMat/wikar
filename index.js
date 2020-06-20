@@ -208,7 +208,8 @@ client.on('message', async message => {
 client.on("voiceStateUpdate", (oldMember, newMember) => {
         VoiceLogger.voiceChanged(oldMember, newMember);
         let voice = new VoiceTextChannelController(oldMember, newMember);
-        voice.checkVoiceTexts();
+        voice.checkVoiceTexts()
+                .catch(console.error);
 });
 
 client.on('error', () => {
