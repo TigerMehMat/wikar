@@ -17,7 +17,7 @@ class MainModel {
                 const client = await pool.connect();
                 let res;
                 try {
-                        await client.query("SET search_path TO 'test';");
+                        await client.query(`SET search_path TO '${config.postgresql.schema}';`);
                         res = await client.query(queryString, values);
                 } finally {
                         client.release();
