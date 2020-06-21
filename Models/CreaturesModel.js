@@ -26,13 +26,12 @@ class CreaturesModel extends MainModel {
                 "ca.ru_name_mn",
                 "ca.ru_name_rp",
                 "ca.sex",
-                "COALESCE(cad.alias, ca.en_name) AS dododex_alias",
-                "REPLACE(COALESCE(cam.alias, ca.en_name), ' ', '_') AS map_alias",
-                "cam.comment AS map_comment",
                 "ca.srt",
-                "ca.id",
+                "ca.parent",
                 "ca.entity_id",
-                "ca.parent"
+                "REPLACE(COALESCE(cam.alias, ca.en_name), ' ', '_') AS map_alias",
+                "COALESCE(cad.alias, ca.en_name) AS dododex_alias",
+                "cam.comment AS map_comment",
         ];
 
         query_where = '';

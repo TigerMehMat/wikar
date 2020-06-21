@@ -37,7 +37,9 @@ class CreatureEntity extends BaseEntity {
                         'srt': this.required,
                         'parent': this.not_required,
                         'entity_id': this.not_required,
-                        'map_alias': this.required
+                        'map_alias': this.required,
+                        'dododex_alias': this.required,
+                        'map_comment': this.required,
                 };
                 this.fillElements(items);
         }
