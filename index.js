@@ -211,11 +211,11 @@ client.on('message', async message => {
 
 client.on("voiceStateUpdate", (oldMember, newMember) => {
         VoiceLogger.voiceChanged(oldMember, newMember);
-        let voice = new VoiceTextChannelController(oldMember, newMember);
-        voice.checkVoiceTexts()
-                .catch((e) => {
-                        console.error('Ошибка в чекере войса', e);
-                });
+        // let voice = new VoiceTextChannelController(oldMember, newMember);
+        // voice.checkVoiceTexts()
+        //         .catch((e) => {
+        //                 console.error('Ошибка в чекере войса', e);
+        //         });
 });
 
 client.on('error', () => {
