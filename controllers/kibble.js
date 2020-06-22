@@ -65,6 +65,9 @@ class Kibble {
         return new Promise((resolve, reject) => {
             if(!this.is_validate) {
                 this.message.channel.send("Пожалуйста, укажите название корма");
+                setTimeout(() => {
+                    this.message.channel.stopTyping()
+                }, 5000);
                 resolve();
             }
             this.message.channel.startTyping();
