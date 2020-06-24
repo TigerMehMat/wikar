@@ -1,16 +1,13 @@
-const DvData = require('./functions/getDvData')();
 const Discord = require('discord.js');
 const DiscordHelper = require('./GlobalControllers/DiscordHelper');
+const AbstractCommandController = require('./AbstractCommandController');
 const getIcon = require('./functions/getIcon');
-
+const DvDataController = require('./DvDataController');
 const BadRequestsModel = new (require('../Models/BadRequestsModel'));
 
 const CreaturesModel = require('../Models/CreaturesModel');
 
-class Breeding {
-
-        message = null;
-
+class Breeding extends AbstractCommandController {
         /**
          * @type {CreatureModel | null}
          */
@@ -22,19 +19,6 @@ class Breeding {
         };
 
         creature_name = '';
-
-        constructor() {
-        }
-
-        /**
-         * @param message
-         * @return {Breeding}
-         */
-        setMessage(message) {
-                this.message = message;
-                return this;
-        }
-
         /**
          * Устанавливаем данные из аргументов вызова
          * @param {Array} args
@@ -65,6 +49,7 @@ class Breeding {
         }
 
         async process() {
+                if(!this.valid) return;
                 // Если не удалось найти существо
                 if(!this.creature) {
                         const embed = (new Discord.MessageEmbed())
@@ -74,13 +59,13 @@ class Breeding {
                         return;
                 }
 
-                let data = this.getDvData(this.creature.dv_alias);
+                let data = (new DvDataController()).getCreature(this.creature.dv_alias);
                 let comment = '';
                 if(typeof data === "undefined" || !data) {
                         if(this.creature.parent) {
                                 comment = 'Нам не удалось найти информацию о разведении ' + this.creature.ru_name_rp + ', но скорее всего, у этого существа схожие параметры.\n\n';
                                 this.creature = await (new CreaturesModel()).getCreatureByID(this.creature.parent);
-                                data = this.getDvData(this.creature.dv_alias);
+                                data = (new DvDataController()).getCreature(this.creature.dv_alias);
                         } else {
                                 await this.message.channel.send('Тушканчикам не удалось добыть информацию о разведении ' + this.creature.ru_name_rp + ', но они обещают спарить их при случае.');
                                 return;
@@ -188,34 +173,6 @@ class Breeding {
                 if (value > 1000) value = 1000;
                 if (value < 0.001) value = 0.001;
                 return Math.ceil(value * 1000) / 1000;
-        }
-
-        /**
-         * Получаем DvData, рекурсивно получая инфу от родителей
-         * @param creature_dv_name
-         * @return {any}
-         */
-        getDvData(creature_dv_name) {
-                if(typeof DvData[creature_dv_name] === "undefined") return null;
-                let data = JSON.parse(JSON.stringify(DvData[creature_dv_name]));
-                let parent = null;
-                if(typeof data['inherits'] !== "undefined") {
-                        parent = this.getDvData(data['inherits']);
-                } else {
-                        return data;
-                }
-                return this.extend(parent, data);
-        }
-
-        extend(object1, object2) {
-                for(let key in object2) {
-                        if(typeof object1[key] === "object" && typeof object2[key] === "object") {
-                                object1[key] = this.extend(object1[key], object2[key]);
-                        } else {
-                                object1[key] = object2[key];
-                        }
-                }
-                return object1;
         }
 }
 

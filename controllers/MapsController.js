@@ -17,6 +17,10 @@ const AbstractCommandController = require('./AbstractCommandController');
 class MapsController extends AbstractCommandController {
         map;
         creature;
+        raw_data = {
+                map: undefined,
+                creature: undefined
+        };
 
         /**
          * @inheritDoc
@@ -25,15 +29,16 @@ class MapsController extends AbstractCommandController {
                 let is_map = args.pop();
                 let map = await MapsModel.searchMap(is_map, true);
                 if (map.length === 0) {
-                        this.map = undefined;
                         args.push(is_map);
                 } else {
                         this.map = map[0];
+                        this.raw_data.map = is_map;
                 }
                 if (args.length > 0) {
                         this.creature = await (new CreaturesModel())
                                 .setCreatureName(args.join(' '))
                                 .searchOne();
+                        this.raw_data.creature = args.join(' ');
                 }
                 return this;
         }
@@ -42,24 +47,33 @@ class MapsController extends AbstractCommandController {
          *
          * @return {MapsController}
          */
-        validate() {
-                this.valid = !(!this.message || (!this.creature && !this.map));
+        async validate() {
+                await super.validate();
+                if (this.valid) {
+                        this.valid = !!(this.creature || this.map);
+                        if (!this.valid) {
+                                await this.message.channel.send(`По вашему запросу не нашлось карт или существ с названием \`\`${this.raw_data.creature}\`\`.`);
+                        }
+                }
+                if (this.valid && this.creature === null) {
+                        this.valid = false;
+                        await this.message.channel.send(`В нашей базе не нашлось существа \`\`${this.raw_data.creature}\`\`.`);
+                }
                 return this;
         }
 
         async process() {
+                if (!this.valid) return;
                 this.message.channel.startTyping();
 
-                if (this.map && this.creature === null) {
-                        await this.message.channel.send('В нашей базе не нашлось существа.');
-                } else if (this.map && !this.creature) {
+                if (this.map && !this.creature) {
                         await this.processOnlyMap();
                 } else if (this.creature && !this.map) {
                         await this.processCreature();
                 } else if (this.creature && this.map) {
                         await this.processMapAndCreature();
                 } else {
-                        await this.message.channel.send('По вашему запросу не нашлось карт или существ.');
+                        throw new Error('Мы не должны сюда попадать в мап контроллере');
                 }
 
                 this.message.channel.stopTyping();

@@ -46,6 +46,10 @@ const ItemsController = require('./controllers/ItemsController');
 
 const VoiceTextChannelController = require('./controllers/VoiceTextChannelController');
 
+const InfoCommandController = require('./controllers/InfoCommandController');
+
+const AbstractCommandController = require('./controllers/AbstractCommandController');
+
 
 client.login(config.token)
         .catch(reason => {
@@ -115,6 +119,7 @@ client.on('message', async message => {
         messageContent = messageContent.replace(RegExp('^' + prefix.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&') + '\\s', 'g'), prefix);
         const args = messageContent.slice(prefix.length).split(/ /);
         const command = args.shift().toLowerCase();
+        let controller;
 
 
         switch (command) {
@@ -131,27 +136,17 @@ client.on('message', async message => {
                 case "разведение":
                 case "рост":
                 case "р":
-                        const breed_controller = (new Breeding());
-                        await breed_controller.setMessage(message);
-                        await breed_controller.setArgs(args);
-                        await breed_controller.process();
+                        controller = new Breeding();
                         break;
+                // case "инфо":
+                //         controller = new InfoCommandController();
+                //         break;
                 case "корм":
                 case "к":
-                        (new Kibble())
-                                .setMessage(message)
-                                .setArgs(args)
-                                .validate()
-                                .process()
-                                .catch(console.error);
+                        controller = new Kibble();
                         break;
                 case "карта":
-                        let controller = (new MapsController());
-                        await controller.setMessage(message);
-                        await controller.setArgs(args);
-                        await controller.validate();
-                        await controller.process();
-                        //MapsController.controller(message, args, messageAccess);
+                        controller = new MapsController();
                         break;
                 case "ава":
                 case "покажиаву":
@@ -176,24 +171,9 @@ client.on('message', async message => {
                 case "таймер":
                         Timer.controller(message, args);
                         break;
-                case "сс":
-                case "статуссервера":
-                        bm.changeState(message, args);
-                        break;
-                case "си":
-                case "статусигрока":
-                        bm.addPlayer(message, args);
-                        break;
                 case "викикрафт":
                         Wiki_Craft.sendCraft(message, args, messageAccess)
                                 .catch(console.error);
-                        break;
-
-                /* Баттл Метрика */
-                case "спи":
-                case "plist":
-                case "списокигроков":
-                        bm.sendPlayersList(message, args, messageAccess);
                         break;
                 case "предмет":
                         await new ItemsController()
@@ -206,16 +186,26 @@ client.on('message', async message => {
                         Helper.sendHelp(message, args);
                         break;
         }
+
+        if (controller instanceof AbstractCommandController) {
+                await controller.setMessage(message);
+                await controller.setArgs(args);
+                await controller.validate();
+                await controller.process();
+                setTimeout(() => {
+                        message.channel.stopTyping(true);
+                }, 10000)
+        }
 });
 
 
 client.on("voiceStateUpdate", (oldMember, newMember) => {
         VoiceLogger.voiceChanged(oldMember, newMember);
-        // let voice = new VoiceTextChannelController(oldMember, newMember);
-        // voice.checkVoiceTexts()
-        //         .catch((e) => {
-        //                 console.error('Ошибка в чекере войса', e);
-        //         });
+        let voice = new VoiceTextChannelController(oldMember, newMember);
+        voice.checkVoiceTexts()
+                .catch((e) => {
+                        console.error('Ошибка в чекере войса', e);
+                });
 });
 
 client.on('error', () => {

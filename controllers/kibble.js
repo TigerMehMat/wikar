@@ -1,5 +1,5 @@
 /**
- * @typedef {Object} KibbleItem
+ * @typedef KibbleItem
  * @property {string} name
  * @property {string} ruName
  * @property {string} color
@@ -9,39 +9,27 @@
  * @property {Object} fullCraft
  */
 const Discord = require("discord.js");
-const access = require("./GlobalControllers/access");
 const kibbles = require("../data/kibble/kibbles.js");
-const itemLink   = require("./functions/itemLink");
-const numberFormat  = require("./functions/numberFormat");
+const itemLink = require("./functions/itemLink");
+const numberFormat = require("./functions/numberFormat");
+const AbstractCommandController = require('./AbstractCommandController');
 
-const BadRequestsModel  = new (require('../Models/BadRequestsModel'));
+const BadRequestsModel = new (require('../Models/BadRequestsModel'));
 
 
-class Kibble {
+class Kibble extends AbstractCommandController {
 
-    constructor() {
-        this.name = undefined;
-        this.quantity = undefined;
-        this.is_validate = false;
-        this.bot_message = undefined;
-    }
-    /**
-     * Сообщение, на которое надо реагировать
-     * @param {Message} message
-     * @return {Kibble}
-     */
-    setMessage(message) {
-        this.message = message;
-        return this;
-    }
+    name;
+    quantity;
+    bot_message;
 
     /**
      * Устанавливаем нужные нам параметры из аргументов
      * @param {string[]} args
-     * @return {Kibble}
+     * @return {Promise<this>}
      */
-    setArgs(args) {
-        if(args.length < 1) return this;
+    async setArgs(args) {
+        if (args.length < 1) return this;
 
         this.name = this.getKibbleRealName(args[0]);
         this.quantity = (!isNaN(args[args.length - 1])) ? Math.min(10000, Math.max(1, args[args.length - 1])) : 1;
@@ -53,8 +41,11 @@ class Kibble {
      * Валидация входных данных перед процессом
      * @return {Kibble}
      */
-    validate() {
-        this.is_validate = !(typeof this.name !== "string" || typeof this.quantity !== "number");
+    async validate() {
+        await super.validate();
+        if (this.valid) {
+            this.valid = !(typeof this.name !== "string" || typeof this.quantity !== "number");
+        }
         return this;
     }
 
@@ -63,12 +54,13 @@ class Kibble {
      */
     process() {
         return new Promise((resolve, reject) => {
-            if(!this.is_validate) {
+            if (!this.valid) {
                 this.message.channel.send("Пожалуйста, укажите название корма");
                 setTimeout(() => {
-                    this.message.channel.stopTyping()
+                    this.message.channel.stopTyping();
+                    resolve();
                 }, 5000);
-                resolve();
+                return;
             }
             this.message.channel.startTyping();
             let embed = this.getEmbed();

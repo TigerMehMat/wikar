@@ -3,6 +3,7 @@
  */
 class AbstractCommandController {
         message;
+        valid = false;
 
         /**
          *
@@ -22,6 +23,17 @@ class AbstractCommandController {
          */
         setArgs(args) {
                 throw new Error('Метод serArgs должен быть переопределен');
+        }
+
+        /**
+         * Стандартная валидация. Для дополнительной валидации расширять, но не переписывать.
+         */
+        async validate() {
+                if(typeof this.message === "undefined") {
+                        throw new Error('В вызове команды не указано сообщение');
+                } else {
+                        this.valid = true;
+                }
         }
 
         /**
