@@ -167,9 +167,8 @@ class ARK extends ARK_api {
                         let message = (await DiscordHelper.getMessagesForLog(channel, this.client.user.id, 1))[0];
 
                         let text = '';
-                        for (let i in this.rates) {
-                                if(!this.rates.hasOwnProperty(i)) continue;
-                                text += this.rateByType[i] + ' = ' + this.rates[i] + '\n';
+                        for (let [key,val] of this.rates) {
+                                text += (this.rateByType[key] || key) + ' = ' + val + '\n';
                         }
                         let embed = new Discord.MessageEmbed()
                                 .setTitle('Глобальные настройки официальных серверов')
