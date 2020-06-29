@@ -112,7 +112,6 @@ class ARK extends ARK_api {
                                 changedRates.set(key, {"old": val, "new": (newRates.get(key) || 'свойство удалено')});
                         }
                 }
-                console.log(newRates);
                 for (let [key, val] of newRates) {
                         if (!this.rates.has(key)) {
                                 changedRates.set(key, {"old": 'свойство добавлено', "new": val});
