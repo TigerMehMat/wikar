@@ -26,7 +26,12 @@ class ARK extends ARK_api {
         }
 
         async start() {
-                this.rates = JSON.parse(await GlobalVarsModel.getItem('rates'));
+                let raw_rates = JSON.parse(await GlobalVarsModel.getItem('rates'));
+                this.rates = new Map();
+                for(let rate in raw_rates) {
+                        if(!raw_rates.hasOwnProperty(rate)) continue;
+                        this.rates.set(rate, raw_rates[rate]);
+                }
                 this.current_version = await GlobalVarsModel.getItem('game_version');
 
                 await this.getChannelsAndMessages();
@@ -60,7 +65,8 @@ class ARK extends ARK_api {
                         if (checkResults.changedRates) {
                                 await this.sendRatesLog(checkResults.changedRates);
                         }
-                        if (checkResults.current_version && String(checkResults.current_version) !== String(this.current_version)) {
+
+                        if (checkResults.current_version && checkResults.current_version.toString() !== this.current_version.toString()) {
                                 let embed = (new Discord.MessageEmbed())
                                         .setDescription('Изменилась версия игры: ' + this.current_version + ' → ' + checkResults.current_version);
                                 this.current_version = checkResults.current_version;
@@ -80,6 +86,7 @@ class ARK extends ARK_api {
         async getChannelsAndMessages() {
                 const currentInfo = await DiscordServersModel.getRatesChannels();
                 this.info = {};
+
                 for (let i = 0; i < currentInfo.length; i++) {
                         this.info[currentInfo[i][0]] = {channel: currentInfo[i][1]};
                 }
@@ -96,17 +103,22 @@ class ARK extends ARK_api {
                         console.error(e);
                         return {};
                 }
-                let changedRates = {};
-                let changes = 0;
-                GlobalVarsModel.setItem('rates', JSON.stringify(newRates)).catch(console.error);
-                for (let rate in this.rates) {
-                        if(!this.rates.hasOwnProperty(rate)) continue;
-                        if (newRates[rate] !== this.rates[rate]) {
-                                changedRates[rate] = {"old": this.rates[rate], "new": newRates[rate]};
-                                changes++;
+                let changedRates = new Map();
+                GlobalVarsModel
+                        .setItem('rates', JSON.stringify(Object.fromEntries(newRates)))
+                        .catch(console.error);
+                for (let [key, val] of this.rates) {
+                        if (newRates.get(key) !== val) {
+                                changedRates.set(key, {"old": val, "new": (newRates.get(key) || 'свойство удалено')});
                         }
                 }
-                if (changes === 0) changedRates = false;
+                console.log(newRates);
+                for (let [key, val] of newRates) {
+                        if (!this.rates.has(key)) {
+                                changedRates.set(key, {"old": 'свойство добавлено', "new": val});
+                        }
+                }
+                if (changedRates.size === 0) changedRates = false;
                 this.rates = newRates;
                 return {
                         'changedRates': changedRates,
@@ -119,14 +131,13 @@ class ARK extends ARK_api {
                         let guild = this.client.guilds.cache.get(j);
                         let channel = guild.channels.cache.get(this.info[j].channel);
                         let text = '';
-                        for (let i in changedRates) {
-                                if(!changedRates.hasOwnProperty(i)) continue;
-                                text += this.rateByType[i] + ': ' + changedRates[i].old + ' → ' + changedRates[i].new + '\n';
+                        for (let [key, val] of changedRates) {
+                                text += (this.rateByType[key] || key) + ': ' + val.old + ' → ' + val.new + '\n';
                         }
                         let roleId = ARK.getRoleId(guild);
                         let roleText = roleId ? '<@&' + roleId + '>' : '';
                         let embed = new Discord.MessageEmbed()
-                                .setTitle('Изменение множителей')
+                                .setTitle('Изменение глобальных настроек официальных серверов')
                                 .setTimestamp(Date.now())
                                 .setFooter((new Date()).toTimeString())
                                 .setDescription(text);
@@ -162,7 +173,7 @@ class ARK extends ARK_api {
                                 text += this.rateByType[i] + ' = ' + this.rates[i] + '\n';
                         }
                         let embed = new Discord.MessageEmbed()
-                                .setTitle('Множители официальных серверов')
+                                .setTitle('Глобальные настройки официальных серверов')
                                 .setTimestamp(Date.now())
                                 .setFooter((new Date()).toTimeString())
                                 .setDescription(text + '\n[Источник](http://arkdedicated.com/dynamicconfig.ini)');

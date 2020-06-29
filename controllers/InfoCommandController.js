@@ -17,6 +17,14 @@ class InfoCommandController extends AbstractCommandController {
                         .searchOne());
         }
 
+        async validate() {
+                await super.validate();
+                if(this.valid && !this.creature) {
+                        this.valid = false;
+                        await this.message.channel.send(`Тушканчики не нашли в базе существо с названием \`\`${this.creature_name}\`\`.`);
+                }
+        }
+
         async process() {
                 if(!this.valid) return;
                 const creature_data = (new DvDataController()).getCreature(this.creature.dv_alias);
