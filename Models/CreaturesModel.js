@@ -157,9 +157,7 @@ class CreaturesModel extends MainModel {
                                 to_update.push(val + '=' + 'EXCLUDED.' + val);
                         }
                         // language=PostgreSQL
-                        this.query("INSERT INTO t_items (" + parcedColumns + ") " +
-                                "VALUES (" + templates.join(", ") + ") " +
-                                "ON CONFLICT (name) DO UPDATE SET " + to_update.join(', ') + " RETURNING id", parcedValues)
+                        this.query(`INSERT INTO t_items (${parcedColumns}) VALUES (${templates.join(", ")}) ON CONFLICT (name) DO UPDATE SET ${to_update.join(', ')} RETURNING id`, parcedValues)
                                 .then((res) => {
                                         if (res.rows.length === 0) resolve(null);
                                         resolve(res.rows[0].id);
