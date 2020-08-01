@@ -188,10 +188,14 @@ client.on('message', async message => {
         }
 
         if (controller instanceof AbstractCommandController) {
-                await controller.setMessage(message);
-                await controller.setArgs(args);
-                await controller.validate();
-                await controller.process();
+                try {
+                        await controller.setMessage(message);
+                        await controller.setArgs(args);
+                        await controller.validate();
+                        await controller.process();
+                } catch (e) {
+                        console.log('Что-то пошло не так, выпали из обработки контроллера', e);
+                }
                 setTimeout(() => {
                         message.channel.stopTyping(true);
                 }, 10000)

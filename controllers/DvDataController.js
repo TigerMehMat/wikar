@@ -131,13 +131,15 @@ const DvData = require('./functions/getDvData')();
  * @property {string} immobilizedby
  * @property {string} candamage
  * @property {string} carryableby
- * @property {string} passengerweightmultiplier
+ * @property {number} passengerweightmultiplier
+ * @property {number} mounteddinoweightmultiplier
  * @property {number} meleebase
  * @property {Object} attacks
  * @property {string} killxpbase
  * @property {string} teamname
  * @property {string} chancetodroploot
  * @property {string} lootitems
+ * @property {string} specialloot
  * @property {string} canbeharvestedfor
  * @property {string} harvests
  */

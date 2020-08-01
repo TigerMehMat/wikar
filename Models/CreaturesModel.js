@@ -51,17 +51,19 @@ class CreaturesModel extends MainModel {
         }
 
         prepareWhere() {
+                let words = this.creature_name.split(' ');
+                let regexp = `(^|\\s)${words.shift()}.*`;
+                let subword;
+                while (subword = words.shift()) {
+                        regexp += `\\s(${subword}.*)`;
+                }
                 this.query_where = "WHERE ca.ru_name ~* $1\n" +
-                        "OR ca.ru_name ~* $2\n" +
                         "OR ca.en_name ~* $1\n" +
-                        "OR ca.en_name ~* $2\n" +
                         "OR cae.alias ~* $1\n" +
                         "OR car.alias ~* $1\n" +
-                        "OR car.alias ~* $2\n" +
                         "OR ca.ru_name_mn ~* $1\n" +
-                        "OR car.alias_mn ~* $1\n" +
-                        "OR car.alias_mn ~* $2\n";
-                this.where_elements = ['^' + this.creature_name, ' ' + this.creature_name];
+                        "OR car.alias_mn ~* $1\n";
+                this.where_elements = [regexp];
                 return this;
         }
 

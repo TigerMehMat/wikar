@@ -58,7 +58,6 @@ class ARK extends ARK_api {
                         }
                 });
         }
-
         update() {
                 return Promise.race([new Promise(async (resolve) => {
                         let checkResults = await this.check();
