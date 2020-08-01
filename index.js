@@ -50,6 +50,8 @@ const InfoCommandController = require('./controllers/InfoCommandController');
 
 const AbstractCommandController = require('./controllers/AbstractCommandController');
 
+const QueryLogs = require('./Models/QueryLogs');
+
 
 client.login(config.token)
         .catch(reason => {
@@ -120,6 +122,16 @@ client.on('message', async message => {
         const args = messageContent.slice(prefix.length).split(/ /);
         const command = args.shift().toLowerCase();
         let controller;
+
+        (new QueryLogs()).send({
+                query: message.content,
+                author: message.author.id,
+                guild: message.guild.id,
+                channel: message.channel.id,
+                message: message.id,
+
+        })
+                .catch(console.error);
 
 
         switch (command) {
