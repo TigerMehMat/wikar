@@ -518,14 +518,14 @@
     "radiationimmune": "No",
     "immobilizedby": "Chain Bola, Large Bear Trap, Plant Species Y Trap (Scorched Earth)",
     "candamage": "Wood, Thatch, Greenhouse",
-    "carryableby": "Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal, Tropical Crystal Wyvern, Tusoteuthis",
+    "carryableby": "Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal, Tusoteuthis",
     "candragcreatureswhileflying": "No",
     "passengerweightmultiplier": 0.85,
     "meleebase": 35,
     "attacks": {
       "1": {
         "name": "Bite",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Allosaurus bites the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Allosaurus bites the target.",
         "staminacost": 10,
         "attackrange": 850,
         "minattackrange": 0,
@@ -536,7 +536,7 @@
       },
       "2": {
         "name": "Gore",
-        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One) while riding the 'Alpha' of a pack, the Allosaurus gores the target with its head. This causes bleeding damage and reduces the target's movement speed.",
+        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button] (Xbox One) while riding the 'Alpha' of a pack, the Allosaurus gores the target with its head. This causes bleeding damage and reduces the target's movement speed.",
         "staminacost": 30,
         "attackrange": 850,
         "minattackrange": 0,
@@ -547,7 +547,7 @@
       },
       "3": {
         "name": "Roar",
-        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One) while riding the 'Alpha' of a pack, the Allosaurus unleashes a menacing roar to frighten opposing survivors.",
+        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button] (Xbox One) while riding the 'Alpha' of a pack, the Allosaurus unleashes a menacing roar to frighten opposing survivors.",
         "staminacost": 0,
         "attackrange": 0,
         "minattackrange": 0,
@@ -1237,7 +1237,7 @@
       },
       "2": {
         "name": "Grab",
-        "description": "The Alpha Tusoteuthis can pick up another creature with its tentacles. While holding a non-friendly target, the Alpha Tusoteuthis will constantly inflict [[File:Torpor.png|x20px|link=Torpor]] [[Torpor]] until the target is unconscious. Note that the Alpha Tusoteuthis cannot hold an unconscious target.",
+        "description": "The Alpha Tusoteuthis can pick up another creature with its tentacles. While holding a non-friendly target, the Alpha Tusoteuthis will constantly inflict [[File:Torpor.png|x20px|link:Torpor]] [[Torpor] until the target is unconscious. Note that the Alpha Tusoteuthis cannot hold an unconscious target.",
         "staminacost": 25,
         "attackrange": 4500,
         "minattackrange": 0,
@@ -1502,7 +1502,7 @@
     "attacks": {
       "1": {
         "name": "Bite",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Angler bites the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Angler bites the target.",
         "staminacost": 0,
         "attackrange": 280,
         "minattackrange": 0,
@@ -1681,7 +1681,7 @@
       },
       "2": {
         "name": "Bite",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Ankylosaurus swings its clubbed tail at the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Ankylosaurus swings its clubbed tail at the target.",
         "staminacost": 0,
         "attackrange": 250,
         "minattackrange": 0,
@@ -1847,7 +1847,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Araneo bites the target. The target's [[File:Torpor.png|x20px|link=Torpor]] [[Torpor]] will increase by 10 points over 10 seconds. This effects stacks with each hit from a wild Araneo, however attacks from tamed Araneos stack up to two times for a maximum of 20 seconds torpor debuff.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Araneo bites the target. The target's [[File:Torpor.png|x20px|link:Torpor]] [[Torpor] will increase by 10 points over 10 seconds. This effects stacks with each hit from a wild Araneo, however attacks from tamed Araneos stack up to two times for a maximum of 20 seconds torpor debuff.",
         "staminacost": 0,
         "attackrange": 200,
         "minattackrange": 0,
@@ -1863,7 +1863,7 @@
       },
       "2": {
         "name": "Web Cone",
-        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One), the Araneo shoots webbing that reduces movement speed by 50% for 10 seconds.",
+        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button] (Xbox One), the Araneo shoots webbing that reduces movement speed by 50% for 10 seconds.",
         "staminacost": 30,
         "attackrange": 1500,
         "minattackrange": 0,
@@ -2019,7 +2019,7 @@
     "radiationimmune": "No",
     "immobilizedby": "Bola, Bear Trap, Plant Species Y Trap (Scorched Earth)",
     "candamage": "Thatch, Greenhouse",
-    "carryableby": "Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Griffin, Ice Wyvern, Kaprosuchus, Karkinos, Lightning Wyvern, Megalosaurus, Poison Wyvern, Procoptodon, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis, X-Tapejara",
+    "carryableby": "Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Griffin, Ice Wyvern, Kaprosuchus, Karkinos, Lightning Wyvern, Megalosaurus, Poison Wyvern, Procoptodon, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropeognathus, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis, X-Tapejara",
     "candragcreatureswhileflying": "No",
     "mounteddinoweightmultiplier": 0.5,
     "meleebase": 5,
@@ -2194,7 +2194,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Argent claws at the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Argent claws at the target.",
         "staminacost": 0,
         "attackrange": 500,
         "minattackrange": 60,
@@ -2205,7 +2205,7 @@
       },
       "2": {
         "name": "GrabClaws",
-        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One) while in the air, the Argent can pick up another creature in its claws. Despite a coded melee damage value, this attack does no damage.",
+        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button] (Xbox One) while in the air, the Argent can pick up another creature in its claws. Despite a coded melee damage value, this attack does no damage.",
         "staminacost": 120,
         "attackrange": 500,
         "minattackrange": 0,
@@ -2216,7 +2216,7 @@
       },
       "3": {
         "name": "GrabBeak",
-        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One) while in the air, the Argent can pick up another creature in its beak. Despite a coded melee damage value, this attack does no damage.",
+        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button] (Xbox One) while in the air, the Argent can pick up another creature in its beak. Despite a coded melee damage value, this attack does no damage.",
         "staminacost": 120,
         "attackrange": 500,
         "minattackrange": 0,
@@ -2501,7 +2501,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Arthropluera lunges at and bites the target. The target's [[File:Torpor.png|x20px|link=Torpor]] [[Torpor]] will increase by 3x the damage dealt over 10 seconds.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Arthropluera lunges at and bites the target. The target's [[File:Torpor.png|x20px|link:Torpor]] [[Torpor] will increase by 3x the damage dealt over 10 seconds.",
         "staminacost": 0,
         "attackrange": 350,
         "minattackrange": 0,
@@ -2512,7 +2512,7 @@
       },
       "2": {
         "name": "Ranged",
-        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One), the Arthropluera spits its own acidic blood at the target. Its blood is highly-corrosive and reduces the durability of the target's armor at 35x the normal rate.",
+        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button] (Xbox One), the Arthropluera spits its own acidic blood at the target. Its blood is highly-corrosive and reduces the durability of the target's armor at 35x the normal rate.",
         "staminacost": 20,
         "attackrange": 1800,
         "minattackrange": 0,
@@ -2820,7 +2820,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Baryonyx attacks the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Baryonyx attacks the target.",
         "staminacost": 0,
         "attackrange": 450,
         "minattackrange": 0,
@@ -2831,7 +2831,7 @@
       },
       "2": {
         "name": "Melee",
-        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One) while swimming, the Baryonyx does a quick tail spin that instantly stuns smaller targets for a short time. Targets are unable to move or attack while stunned.",
+        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button] (Xbox One) while swimming, the Baryonyx does a quick tail spin that instantly stuns smaller targets for a short time. Targets are unable to move or attack while stunned.",
         "staminacost": 20,
         "attackrange": 700,
         "minattackrange": 0,
@@ -2842,7 +2842,7 @@
       },
       "3": {
         "name": "Taunt",
-        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One), the Baryonyx taunts the target with a non-menacing call.",
+        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button] (Xbox One), the Baryonyx taunts the target with a non-menacing call.",
         "staminacost": 0,
         "attackrange": 0,
         "minattackrange": 0,
@@ -2914,10 +2914,10 @@
     },
     "breeding": {
       "gestationtime": 28571.427734,
-      "maturationtime": 666666.625,
-      "babytime": 66666.664063,
-      "juveniletime": 266666.65625,
-      "adolescenttime": 333333.3125,
+      "maturationtime": 416666.667,
+      "babytime": 41666.6667,
+      "juveniletime": 166666.6668,
+      "adolescenttime": 208333.3335,
       "mintimebetweenmating": 64800,
       "maxtimebetweenmating": 172800
     },
@@ -2997,7 +2997,7 @@
     "attacks": {
       "1": {
         "name": "Lunge",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Basilosaurus lunges at the target",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Basilosaurus lunges at the target",
         "staminacost": 0,
         "attackrange": 1000,
         "minattackrange": 0,
@@ -3166,7 +3166,7 @@
     "attacks": {
       "1": {
         "name": "Tongue Attack",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Beelzebufo strikes straight ahead with its tongue. The target's [[File:Torpor.png|x20px|link=Torpor]] [[Torpor]] will increase by 3x the damage dealt over 10 seconds. This effects stacks with each hit from a wild Beelzebufo, however attacks from tamed Beelzebufos stack up to two times for a maximum of 20 seconds torpor debuff.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Beelzebufo strikes straight ahead with its tongue. The target's [[File:Torpor.png|x20px|link:Torpor]] [[Torpor] will increase by 3x the damage dealt over 10 seconds. This effects stacks with each hit from a wild Beelzebufo, however attacks from tamed Beelzebufos stack up to two times for a maximum of 20 seconds torpor debuff.",
         "staminacost": 0,
         "attackrange": 650,
         "minattackrange": 0,
@@ -3184,7 +3184,7 @@
       },
       "2": {
         "name": "Tongue Swipe",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Beelzebufo swipes its tongue from one side to the other. The target's [[File:Torpor.png|x20px|link=Torpor]] [[Torpor]] will increase by 3x the damage dealt over 10 seconds. This effects stacks with each hit from a wild Beelzebufo, however attacks from tamed Beelzebufos stack up to two times for a maximum of 20 seconds torpor debuff.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Beelzebufo swipes its tongue from one side to the other. The target's [[File:Torpor.png|x20px|link:Torpor]] [[Torpor] will increase by 3x the damage dealt over 10 seconds. This effects stacks with each hit from a wild Beelzebufo, however attacks from tamed Beelzebufos stack up to two times for a maximum of 20 seconds torpor debuff.",
         "staminacost": 0,
         "attackrange": 220,
         "minattackrange": 0,
@@ -3483,7 +3483,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Bronto swings its massive tail over a wide area dealing knock-back to smaller creatures.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Bronto swings its massive tail over a wide area dealing knock-back to smaller creatures.",
         "staminacost": 0,
         "attackrange": 2000,
         "minattackrange": 0,
@@ -3788,7 +3788,7 @@
     "specialloot": "Eery Element (Mobile), Broodgenetrix Pt. Note (Mobile)"
   },
   "bunnydodo": {
-    "variants": "Aberrant Dodo, Bunny Oviraptor, Dodo, Dodo Wyvern, DodoRex, Zomdodo",
+    "variants": "Aberrant Dodo, Bunny Oviraptor, Dodo, Dodo Wyvern, DodoRex, Party Dodo, Zomdodo",
     "event": "ARK: Eggcellent Adventure, ARK: Eggcellent Adventure 3, ARK: Eggcellent Adventure 4, ARK: Eggcellent Adventure 5",
     "releasedate": "2016-03-25",
     "releaseversion": "237.0",
@@ -3899,7 +3899,7 @@
     "radiationimmune": "No",
     "immobilizedby": "Bola, Bear Trap, Plant Species Y Trap (Scorched Earth)",
     "candamage": "Thatch",
-    "carryableby": "Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Griffin, Ice Wyvern, Kaprosuchus, Lightning Wyvern, Megalosaurus, Poison Wyvern, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis, X-Tapejara",
+    "carryableby": "Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Griffin, Ice Wyvern, Kaprosuchus, Lightning Wyvern, Megalosaurus, Poison Wyvern, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropeognathus, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis, X-Tapejara",
     "candragcreatureswhileflying": "No",
     "mounteddinoweightmultiplier": 0.5,
     "meleebase": 5,
@@ -4189,14 +4189,14 @@
     "radiationimmune": "No",
     "immobilizedby": "Chain Bola, Large Bear Trap, Plant Species Y Trap (Scorched Earth)",
     "candamage": "Thatch, Greenhouse",
-    "carryableby": "Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Karkinos, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal, Tropical Crystal Wyvern, Tusoteuthis",
+    "carryableby": "Fire Wyvern, Forest Wyvern, Ice Wyvern, Karkinos, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal, Tusoteuthis",
     "candragcreatureswhileflying": "No",
     "passengerweightmultiplier": 0.85,
     "meleebase": 13,
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Carbonemys bites the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Carbonemys bites the target.",
         "staminacost": 0,
         "attackrange": 380,
         "minattackrange": 0,
@@ -4350,14 +4350,14 @@
     "radiationimmune": "No",
     "immobilizedby": "Chain Bola, Large Bear Trap, Plant Species Y Trap (Scorched Earth)",
     "candamage": "Wood, Thatch, Greenhouse",
-    "carryableby": "Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Karkinos, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal, Tropical Crystal Wyvern, Tusoteuthis",
+    "carryableby": "Fire Wyvern, Forest Wyvern, Ice Wyvern, Karkinos, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal, Tusoteuthis",
     "candragcreatureswhileflying": "No",
     "passengerweightmultiplier": 0.85,
     "meleebase": 42,
     "attacks": {
       "1": {
         "name": "Bite",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Carno bites the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Carno bites the target.",
         "staminacost": 0,
         "attackrange": 500,
         "minattackrange": 300,
@@ -4368,7 +4368,7 @@
       },
       "2": {
         "name": "Gore",
-        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One), the Carno headbutts the target causing considerable knock-back.",
+        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button] (Xbox One), the Carno headbutts the target causing considerable knock-back.",
         "staminacost": 0,
         "attackrange": 340,
         "minattackrange": 0,
@@ -4529,7 +4529,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Castoroides bites the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Castoroides bites the target.",
         "staminacost": 0,
         "attackrange": 250,
         "minattackrange": 0,
@@ -4673,7 +4673,7 @@
     "radiationimmune": "No",
     "immobilizedby": "Chain Bola, Large Bear Trap, Plant Species Y Trap (Scorched Earth)",
     "candamage": "Stone, Adobe, Wood, Thatch, Greenhouse",
-    "carryableby": "Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal, Tropical Crystal Wyvern, Tusoteuthis",
+    "carryableby": "Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal, Tusoteuthis",
     "candragcreatureswhileflying": "No",
     "passengerweightmultiplier": 0.85,
     "meleebase": 36,
@@ -5011,10 +5011,10 @@
       "mintemp": 24,
       "maxtemp": 32,
       "incubationtime": 2999.760254,
-      "maturationtime": 333333.3125,
-      "babytime": 33333.332031,
-      "juveniletime": 133333.328125,
-      "adolescenttime": 166666.65625,
+      "maturationtime": 75757.5758,
+      "babytime": 7575.75758,
+      "juveniletime": 30303.03032,
+      "adolescenttime": 37878.7879,
       "mintimebetweenmating": 64800,
       "maxtimebetweenmating": 172800
     },
@@ -5091,7 +5091,7 @@
     "radiationimmune": "No",
     "immobilizedby": "Bola, Bear Trap, Plant Species Y Trap (Scorched Earth)",
     "candamage": "Thatch, Greenhouse",
-    "carryableby": "Aberrant Gigantopithecus, Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Gigantopithecus, Griffin, Ice Wyvern, Karkinos, Kaprosuchus, Lightning Wyvern, Megalosaurus, Poison Wyvern, Procoptodon, Pteranodon, Quetzal,Tapejara, Tek Quetzal, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis, X-Tapejara",
+    "carryableby": "Aberrant Gigantopithecus, Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Gigantopithecus, Griffin, Ice Wyvern, Karkinos, Kaprosuchus, Lightning Wyvern, Megalosaurus, Poison Wyvern, Procoptodon, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropeognathus, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis, X-Tapejara",
     "candragcreatureswhileflying": "No",
     "mounteddinoweightmultiplier": 0.5,
     "meleebase": 4,
@@ -5632,7 +5632,7 @@
     "radiationimmune": "No",
     "immobilizedby": "Bola, Bear Trap, Plant Species Y Trap (Scorched Earth)",
     "candamage": "Thatch, Greenhouse",
-    "carryableby": "Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Griffin, Ice Wyvern, Kaprosuchus, Karkinos, Lightning Wyvern, Megalosaurus, Poison Wyvern, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis, X-Tapejara",
+    "carryableby": "Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Griffin, Ice Wyvern, Kaprosuchus, Karkinos, Lightning Wyvern, Megalosaurus, Poison Wyvern, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropeognathus, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis, X-Tapejara",
     "candragcreatureswhileflying": "No",
     "meleebase": 10,
     "attacks": {
@@ -6118,7 +6118,7 @@
     "radiationimmune": "No",
     "immobilizedby": "Bola, Bear Trap, Plant Species Y Trap (Scorched Earth)",
     "candamage": "Thatch, Greenhouse",
-    "carryableby": "Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Griffin, Ice Wyvern, Kaprosuchus, Karkinos, Lightning Wyvern, Megalosaurus, Poison Wyvern, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis, X-Tapejara",
+    "carryableby": "Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Griffin, Ice Wyvern, Kaprosuchus, Karkinos, Lightning Wyvern, Megalosaurus, Poison Wyvern, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropeognathus, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis, X-Tapejara",
     "candragcreatureswhileflying": "No",
     "passengerweightmultiplier": 0.85,
     "meleebase": 0,
@@ -6290,7 +6290,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Diplodocus swings its massive tail at the target. This attack deals no damage whatsoever, but it does deliver consider knock-back.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Diplodocus swings its massive tail at the target. This attack deals no damage whatsoever, but it does deliver consider knock-back.",
         "staminacost": 10,
         "attackrange": 1600,
         "minattackrange": 0,
@@ -6434,14 +6434,14 @@
     "radiationimmune": "No",
     "immobilizedby": "Chain Bola, Large Bear Trap",
     "candamage": "Wood, Thatch, Greenhouse",
-    "carryableby": "Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal, Tropical Crystal Wyvern, Tusoteuthis",
+    "carryableby": "Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal, Tusoteuthis",
     "candragcreatureswhileflying": "No",
     "passengerweightmultiplier": 0.85,
     "meleebase": 55,
     "attacks": {
       "1": {
         "name": "Bite",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Dire Bear bites the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Dire Bear bites the target.",
         "staminacost": 0,
         "attackrange": 650,
         "minattackrange": 0,
@@ -6452,7 +6452,7 @@
       },
       "2": {
         "name": "Swipe",
-        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One), the Dire Bear swipes at the target. This deals more damage than its default 'Bite' attack, but the Dire Bear must come to a complete stop while swiping. Additionally, this attack will also harvest more meat and berries than its default attack.",
+        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button] (Xbox One), the Dire Bear swipes at the target. This deals more damage than its default 'Bite' attack, but the Dire Bear must come to a complete stop while swiping. Additionally, this attack will also harvest more meat and berries than its default attack.",
         "staminacost": 0,
         "attackrange": 650,
         "minattackrange": 0,
@@ -6463,7 +6463,7 @@
       },
       "3": {
         "name": "Roar",
-        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One), the Dire Bear stands on its hind legs and roars to frighten opposing survivors.",
+        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button] (Xbox One), the Dire Bear stands on its hind legs and roars to frighten opposing survivors.",
         "staminacost": 0,
         "attackrange": 650,
         "minattackrange": 0,
@@ -6613,7 +6613,7 @@
     "attacks": {
       "1": {
         "name": "Bite",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Direwolf bites the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Direwolf bites the target.",
         "staminacost": 5,
         "attackrange": 365,
         "minattackrange": 0,
@@ -6641,7 +6641,7 @@
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
   "dodo": {
-    "variants": "Aberrant Dodo, Bunny Dodo, Dodo Wyvern, DodoRex, Eerie Dodo, Zomdodo",
+    "variants": "Aberrant Dodo, Bunny Dodo, Dodo Wyvern, DodoRex, Eerie Dodo, Party Dodo, Zomdodo",
     "releasedate": "2015-06-02",
     "releaseversion": "",
     "xboxreleasedate": "2015-12-16",
@@ -6781,7 +6781,7 @@
     "radiationimmune": "No",
     "immobilizedby": "Bola, Bear Trap, Plant Species Y Trap (Scorched Earth)",
     "candamage": "Thatch, Greenhouse",
-    "carryableby": "Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Griffin, Ice Wyvern, Kaprosuchus, Lightning Wyvern, Megalosaurus, Pteranodon, Procoptodon, Quetzal, Tapejara, Tek Quetzal, Tusoteuthis, X-Argentavis, X-Tapejara",
+    "carryableby": "Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Griffin, Ice Wyvern, Kaprosuchus, Lightning Wyvern, Megalosaurus, Pteranodon, Procoptodon, Quetzal, Tapejara, Tek Quetzal, Tropeognathus, Tusoteuthis, X-Argentavis, X-Tapejara",
     "candragcreatureswhileflying": "No",
     "mounteddinoweightmultiplier": 0.5,
     "meleebase": 5,
@@ -6920,7 +6920,7 @@
     "lootitems": ""
   },
   "dodorex": {
-    "variants": "Aberrant Dodo, Alpha T-Rex, Brute Malfunctioned Tek Rex, Brute X-Rex, Bunny Dodo, Corrupted Dinotar Rex, Corrupted Rex, Dodo, Dodo Wyvern, Enraged Corrupted Rex, Malfunctioned Tek Rex, Rex, Skeletal Rex, Tek Rex, X-Rex, Zomdodo",
+    "variants": "Aberrant Dodo, Alpha T-Rex, Brute Malfunctioned Tek Rex, Brute X-Rex, Bunny Dodo, Corrupted Dinotar Rex, Corrupted Rex, Dodo, Dodo Wyvern, Enraged Corrupted Rex, Malfunctioned Tek Rex, Party Dodo, Rex, Skeletal Rex, Tek Rex, X-Rex, Zomdodo",
     "event": "ARK: Fear Evolved, ARK: Fear Evolved 2, ARK: Fear Evolved 3, ARK: Turkey Trial, ARK: Turkey Trial 2, ARK: Turkey Trial 3, ARK: Winter Wonderland, ARK: Winter Wonderland 2, ARK: Eggcellent Adventure, ARK: Awesome Anniversary",
     "releasedate": "2015-10-28",
     "releaseversion": "221.0",
@@ -7011,7 +7011,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the DodoRex bites the target for considerable damage.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the DodoRex bites the target for considerable damage.",
         "staminacost": 0,
         "attackrange": 2150,
         "minattackrange": 0,
@@ -7022,7 +7022,7 @@
       },
       "2": {
         "name": "Flame",
-        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One), the DodoRex sets the target on fire, burning away 20% of the target's maximum health (excluding fire resistance modifiers) over 10 seconds.",
+        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button] (Xbox One), the DodoRex sets the target on fire, burning away 20% of the target's maximum health (excluding fire resistance modifiers) over 10 seconds.",
         "staminacost": 100,
         "attackrange": 3450,
         "minattackrange": 0,
@@ -7176,7 +7176,7 @@
     "attacks": {
       "1": {
         "name": "WalkingAndSwimmingTail",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Doedicurus swings its spiked tail at the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Doedicurus swings its spiked tail at the target.",
         "staminacost": 0,
         "attackrange": 300,
         "minattackrange": 0,
@@ -7700,10 +7700,10 @@
     },
     "breeding": {
       "gestationtime": 28571.427734,
-      "maturationtime": 333333.3125,
-      "babytime": 33333.332031,
-      "juveniletime": 133333.328125,
-      "adolescenttime": 166666.65625,
+      "maturationtime": 296296.296,
+      "babytime": 29629.6296,
+      "juveniletime": 118518.5184,
+      "adolescenttime": 148148.148,
       "mintimebetweenmating": 64800,
       "maxtimebetweenmating": 172800
     },
@@ -7786,7 +7786,7 @@
     "attacks": {
       "1": {
         "name": "Bite",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Dunkleosteus bites the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Dunkleosteus bites the target.",
         "staminacost": 0,
         "attackrange": 900,
         "minattackrange": 0,
@@ -8063,10 +8063,10 @@
     },
     "breeding": {
       "gestationtime": 47619.042969,
-      "maturationtime": 208333.328125,
-      "babytime": 20833.333984,
-      "juveniletime": 83333.335938,
-      "adolescenttime": 104166.664063,
+      "maturationtime": 166666.667,
+      "babytime": 16666.6667,
+      "juveniletime": 66666.6668,
+      "adolescenttime": 83333.3335,
       "mintimebetweenmating": 64800,
       "maxtimebetweenmating": 172800
     },
@@ -8280,7 +8280,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "The Eurypterid attacks the target and both reduces the target's [[File:Stamina.png|x20px|link=Stamina]] [[Stamina]] and increases [[File:Torpor.png|x20px|link=Torpor]] [[Torpor]] by 1x the damage dealt over 3 seconds each. This effect stacks with each hit.",
+        "description": "The Eurypterid attacks the target and both reduces the target's [[File:Stamina.png|x20px|link:Stamina]] [[Stamina]] and increases [[File:Torpor.png|x20px|link:Torpor]] [[Torpor] by 1x the damage dealt over 3 seconds each. This effect stacks with each hit.",
         "staminacost": 0,
         "attackrange": 250,
         "minattackrange": 0,
@@ -8449,7 +8449,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Gallimimus bites the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Gallimimus bites the target.",
         "staminacost": 0,
         "attackrange": 500,
         "minattackrange": 0,
@@ -8864,7 +8864,7 @@
     "attacks": {
       "1": {
         "name": "Bite",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Giganotosaurus bites the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Giganotosaurus bites the target.",
         "staminacost": 0,
         "attackrange": 2400,
         "minattackrange": 0,
@@ -8875,7 +8875,7 @@
       },
       "2": {
         "name": "Roar",
-        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One), the Giganotosaurus unleashes a menacing roar to frighten opposing survivors.",
+        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button] (Xbox One), the Giganotosaurus unleashes a menacing roar to frighten opposing survivors.",
         "staminacost": 0,
         "attackrange": 0,
         "minattackrange": 0,
@@ -9038,7 +9038,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Gigantopithecus will either back-hand or crush the target with both fists. This attack deals knock-back that will shove players or smaller creatures a fair distance, sometimes over cliffs.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Gigantopithecus will either back-hand or crush the target with both fists. This attack deals knock-back that will shove players or smaller creatures a fair distance, sometimes over cliffs.",
         "staminacost": 0,
         "attackrange": 200,
         "minattackrange": 0,
@@ -9049,7 +9049,7 @@
       },
       "2": {
         "name": "Throw Player",
-        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One), the Gigantopithecus throws a mounted survivor overhead. Any creature directly in front of the Gigantopithecus will take damage.",
+        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button] (Xbox One), the Gigantopithecus throws a mounted survivor overhead. Any creature directly in front of the Gigantopithecus will take damage.",
         "staminacost": 0,
         "attackrange": 200,
         "minattackrange": 0,
@@ -9435,7 +9435,7 @@
     "radiationimmune": "No",
     "candamage": "Wood, Thatch",
     "immobilizedby": "Bola, Bear Trap, Plant Species Y Trap (Scorched Earth)",
-    "carryableby": "Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Griffin, Ice Wyvern, Kaprosuchus, Karkinos, Lightning Wyvern, Megalosaurus, Poison Wyvern, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis, X-Tapejara",
+    "carryableby": "Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Griffin, Ice Wyvern, Kaprosuchus, Karkinos, Lightning Wyvern, Megalosaurus, Poison Wyvern, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropeognathus, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis, X-Tapejara",
     "candragcreatureswhileflying": "No",
     "meleebase": 0,
     "killxpbase": 0,
@@ -9873,10 +9873,10 @@
     },
     "breeding": {
       "gestationtime": 28571.427734,
-      "maturationtime": 333333.3125,
-      "babytime": 33333.332031,
-      "juveniletime": 133333.328125,
-      "adolescenttime": 166666.65625,
+      "maturationtime": 208333.333,
+      "babytime": 20833.3333,
+      "juveniletime": 83333.3332,
+      "adolescenttime": 104166.6665,
       "mintimebetweenmating": 64800,
       "maxtimebetweenmating": 172800
     },
@@ -9959,7 +9959,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Ichthy bites the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Ichthy bites the target.",
         "staminacost": 0,
         "attackrange": 525,
         "minattackrange": 0,
@@ -10289,7 +10289,7 @@
     "radiationimmune": "No",
     "immobilizedby": "Bola, Bear Trap, Plant Species Y Trap (Scorched Earth)",
     "candamage": "Thatch, Greenhouse",
-    "carryableby": "Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Griffin, Ice Wyvern, Kaprosuchus, Karkinos, Lightning Wyvern, Megalosaurus, Poison Wyvern, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis, X-Tapejara",
+    "carryableby": "Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Griffin, Ice Wyvern, Kaprosuchus, Karkinos, Lightning Wyvern, Megalosaurus, Poison Wyvern, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropeognathus, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis, X-Tapejara",
     "candragcreatureswhileflying": "No",
     "mounteddinoweightmultiplier": 0.5,
     "meleebase": 8,
@@ -10456,7 +10456,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Kaprosuchus bites the target. This will reduce the target's [[File:Stamina.png|x20px|link=Stamina]] [[Stamina]] by 2x the damage dealt over 4 seconds.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Kaprosuchus bites the target. This will reduce the target's [[File:Stamina.png|x20px|link:Stamina]] [[Stamina] by 2x the damage dealt over 4 seconds.",
         "staminacost": 0,
         "attackrange": 320,
         "minattackrange": 0,
@@ -10474,7 +10474,7 @@
       },
       "2": {
         "name": "Leap Attack",
-        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One), the Kaprosuchus leaps forward and attacks. If the creature is small enough, it will grab and carry the creature in its jaws. This will reduce the target's [[File:Stamina.png|x20px|link=Stamina]] [[Stamina]] by 2x the damage dealt over 4 seconds.",
+        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One), the Kaprosuchus leaps forward and attacks. If the creature is small enough, it will grab and carry the creature in its jaws. This will reduce the target's [[File:Stamina.png|x20px|link:Stamina]] [[Stamina] by 2x the damage dealt over 4 seconds.",
         "staminacost": 80,
         "attackrange": 2000,
         "minattackrange": 0,
@@ -10492,7 +10492,7 @@
       },
       "3": {
         "name": "Grab",
-        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One), the Kaprosuchus can grab and carry a creature in its jaws without leaping or inflicting serious damage. This will reduce the target's [[File:Stamina.png|x20px|link=Stamina]] [[Stamina]] by 2x the damage dealt over 4 seconds.",
+        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One), the Kaprosuchus can grab and carry a creature in its jaws without leaping or inflicting serious damage. This will reduce the target's [[File:Stamina.png|x20px|link:Stamina]] [[Stamina] by 2x the damage dealt over 4 seconds.",
         "staminacost": 35,
         "attackrange": 300,
         "minattackrange": 0,
@@ -10654,7 +10654,7 @@
     "radiationimmune": "No",
     "immobilizedby": "Chain Bola, Bear Trap, Large Bear Trap, Plant Species Y Trap (Scorched Earth)",
     "candamage": "Wood, Thatch, Greenhouse",
-    "carryableby": "Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Karkinos, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal, Tropical Crystal Wyvern, Tusoteuthis",
+    "carryableby": "Fire Wyvern, Forest Wyvern, Ice Wyvern, Karkinos, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal, Tusoteuthis",
     "candragcreatureswhileflying": "No",
     "meleebase": 42,
     "attacks": {
@@ -10767,7 +10767,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "The Leech bites the target until it can latch onto its host. While leeched, both the host's [[File:Health.png|x20px|link=Health]] [[Health]] and [[File:Stamina.png|x20px|link=Stamina]] [[Stamina]] will slowly drop. If it is a Diseased Leech, [[File:Swamp Fever.png|x20px|link=Swamp Fever]] [[Swamp Fever]] may be transmitted to a Human host.",
+        "description": "The Leech bites the target until it can latch onto its host. While leeched, both the host's [[File:Health.png|x20px|link:Health]] [[Health]] and [[File:Stamina.png|x20px|link:Stamina]] [[Stamina]] will slowly drop. If it is a Diseased Leech, [[File:Swamp Fever.png|x20px|link:Swamp Fever]] [[Swamp Fever] may be transmitted to a Human host.",
         "staminacost": 0,
         "attackrange": 150,
         "minattackrange": 0,
@@ -10849,7 +10849,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "The Leech bites the target until it can latch onto its host. While leeched, both the host's [[File:Health.png|x20px|link=Health]] [[Health]] and [[File:Stamina.png|x20px|link=Stamina]] [[Stamina]] will slowly drop. If it is a Diseased Leech, [[File:Swamp Fever.png|x20px|link=Swamp Fever]] [[Swamp Fever]] may be transmitted to a Human host.",
+        "description": "The Leech bites the target until it can latch onto its host. While leeched, both the host's [[File:Health.png|x20px|link:Health]] [[Health]] and [[File:Stamina.png|x20px|link:Stamina]] [[Stamina]] will slowly drop. If it is a Diseased Leech, [[File:Swamp Fever.png|x20px|link:Swamp Fever]] [[Swamp Fever] may be transmitted to a Human host.",
         "staminacost": 0,
         "attackrange": 150,
         "minattackrange": 0,
@@ -11244,7 +11244,7 @@
     "radiationimmune": "No",
     "immobilizedby": "Bola, Bear Trap, Plant Species Y Trap (Scorched Earth)",
     "candamage": "Thatch, Greenhouse",
-    "carryableby": "Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Griffin, Ice Wyvern, Kaprosuchus, Lightning Wyvern, Megalosaurus, Poison Wyvern, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis, X-Tapejara",
+    "carryableby": "Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Griffin, Ice Wyvern, Kaprosuchus, Lightning Wyvern, Megalosaurus, Poison Wyvern, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropeognathus, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis, X-Tapejara",
     "candragcreatureswhileflying": "No",
     "meleebase": 6,
     "attacks": {
@@ -11405,7 +11405,7 @@
     "attacks": {
       "1": {
         "name": "Tusk Attacks",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Mammoth swings its tusks at the target and causes knock-back to smaller creatures.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Mammoth swings its tusks at the target and causes knock-back to smaller creatures.",
         "staminacost": 20,
         "attackrange": 1000,
         "minattackrange": 0,
@@ -11583,7 +11583,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Manta stabs the target with its barbed tail.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Manta stabs the target with its barbed tail.",
         "staminacost": -10,
         "attackrange": 200,
         "minattackrange": 0,
@@ -11731,7 +11731,7 @@
     "radiationimmune": "Yes",
     "immobilizedby": "Bola, Bear Trap, Plant Species Y Trap (Scorched Earth)",
     "candamage": "Wood, Thatch, Greenhouse",
-    "carryableby": "Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Griffin, Ice Wyvern, Karkinos, Kaprosuchus, Lightning Wyvern, Megalosaurus, Poison Wyvern, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis, X-Tapejara",
+    "carryableby": "Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Griffin, Ice Wyvern, Karkinos, Kaprosuchus, Lightning Wyvern, Megalosaurus, Poison Wyvern, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropeognathus, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis, X-Tapejara",
     "candragcreatureswhileflying": "No",
     "passengerweightmultiplier": 0.85,
     "meleebase": 0,
@@ -11928,7 +11928,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Megaloceros attacks the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Megaloceros attacks the target.",
         "staminacost": 0,
         "attackrange": 480,
         "minattackrange": 0,
@@ -12081,7 +12081,7 @@
     "attacks": {
       "1": {
         "name": "Bite",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Megalodon bites the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Megalodon bites the target.",
         "staminacost": 0,
         "attackrange": 525,
         "minattackrange": 0,
@@ -12238,7 +12238,7 @@
     "attacks": {
       "1": {
         "name": "Bite (Night)",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Megalosaurus bites the target. At night, this attack costs significantly less stamina and has a high attack speed.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Megalosaurus bites the target. At night, this attack costs significantly less stamina and has a high attack speed.",
         "staminacost": 5,
         "attackrange": 700,
         "minattackrange": 0,
@@ -12249,7 +12249,7 @@
       },
       "2": {
         "name": "Grab/Chomp (Night) (Player)",
-        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One), the Megalosaurus can grab and carry a creature in its jaws. At night, this attack costs less stamina.",
+        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button] (Xbox One), the Megalosaurus can grab and carry a creature in its jaws. At night, this attack costs less stamina.",
         "staminacost": 30,
         "attackrange": 400,
         "minattackrange": 0,
@@ -12260,7 +12260,7 @@
       },
       "3": {
         "name": "Roar",
-        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One), the Megalosaurus unleashes a menacing roar to frighten opposing survivors.",
+        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button] (Xbox One), the Megalosaurus unleashes a menacing roar to frighten opposing survivors.",
         "staminacost": 5,
         "attackrange": 0,
         "minattackrange": 0,
@@ -12268,7 +12268,7 @@
       },
       "4": {
         "name": "Shake Prey (Night)",
-        "description": "While carrying a creature in its jaws and using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Megalosaurus will bite down and shake its prey. At night, this attack costs significantly less stamina and has a high attack speed. Despite the lack of a coded melee damage value, this attack inherits the default 'bite' attack value of 75.",
+        "description": "While carrying a creature in its jaws and using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Megalosaurus will bite down and shake its prey. At night, this attack costs significantly less stamina and has a high attack speed. Despite the lack of a coded melee damage value, this attack inherits the default 'bite' attack value of 75.",
         "staminacost": 5,
         "attackrange": 0,
         "minattackrange": 0,
@@ -12276,7 +12276,7 @@
       },
       "5": {
         "name": "Bite (Day)",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Megalosaurus bites the target. During the day, this attack costs significantly more stamina and has a very low attack speed.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Megalosaurus bites the target. During the day, this attack costs significantly more stamina and has a very low attack speed.",
         "staminacost": 45,
         "attackrange": 700,
         "minattackrange": 0,
@@ -12287,7 +12287,7 @@
       },
       "6": {
         "name": "Grab/Chomp (Day) (Player)",
-        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One), the Megalosaurus can grab and carry a creature in its jaws. During the day, this attack costs more stamina.",
+        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button] (Xbox One), the Megalosaurus can grab and carry a creature in its jaws. During the day, this attack costs more stamina.",
         "staminacost": 50,
         "attackrange": 650,
         "minattackrange": 0,
@@ -12298,7 +12298,7 @@
       },
       "7": {
         "name": "Shake Prey (Day)",
-        "description": "While carrying a creature in its jaws and using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Megalosaurus will bite down and shake its prey. During the day, this attack costs significantly more stamina and has a very low attack speed. Despite the lack of a coded melee damage value, this attack inherits the default 'bite' attack value of 75.",
+        "description": "While carrying a creature in its jaws and using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Megalosaurus will bite down and shake its prey. During the day, this attack costs significantly more stamina and has a very low attack speed. Despite the lack of a coded melee damage value, this attack inherits the default 'bite' attack value of 75.",
         "staminacost": 10,
         "attackrange": 0,
         "minattackrange": 0,
@@ -12419,7 +12419,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "The Meganeura flies around and nibbles at the target. The target's [[File:Stamina.png|x20px|link=Stamina]] [[Stamina]] will decrease by 2x the damage dealt over 4 seconds. This effect stacks with each bite.",
+        "description": "The Meganeura flies around and nibbles at the target. The target's [[File:Stamina.png|x20px|link:Stamina]] [[Stamina] will decrease by 2x the damage dealt over 4 seconds. This effect stacks with each bite.",
         "staminacost": 0,
         "attackrange": 60,
         "minattackrange": 0,
@@ -12861,7 +12861,7 @@
     "radiationimmune": "No",
     "immobilizedby": "Chain Bola, Large Bear Trap",
     "candamage": "Wood, Thatch, Greenhouse",
-    "carryableby": "Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal, Tropical Crystal Wyvern, Tusoteuthis",
+    "carryableby": "Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal, Tusoteuthis",
     "candragcreatureswhileflying": "No",
     "passengerweightmultiplier": 0.85,
     "meleebase": 45,
@@ -13043,7 +13043,7 @@
     "fecessize": "Human",
     "immobilizedby": "Bola, Bear Trap, Plant Species Y Trap (Scorched Earth)",
     "candamage": "Thatch, Greenhouse",
-    "carryableby": "Aberrant Gigantopithecus, Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Gigantopithecus, Griffin, Ice Wyvern, Karkinos, Kaprosuchus, Lightning Wyvern, Megalosaurus, Poison Wyvern, Procoptodon, Pteranodon, Quetzal,Tapejara, Tek Quetzal, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis, X-Tapejara",
+    "carryableby": "Aberrant Gigantopithecus, Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Gigantopithecus, Griffin, Ice Wyvern, Karkinos, Kaprosuchus, Lightning Wyvern, Megalosaurus, Poison Wyvern, Procoptodon, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropeognathus, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis, X-Tapejara",
     "candragcreatureswhileflying": "No",
     "mounteddinoweightmultiplier": 0.5,
     "meleebase": 10,
@@ -13325,10 +13325,10 @@
     },
     "breeding": {
       "gestationtime": 28571.427734,
-      "maturationtime": 1010100.875,
-      "babytime": 101010.085938,
-      "juveniletime": 404040.34375,
-      "adolescenttime": 505050.4375,
+      "maturationtime": 666666.667,
+      "babytime": 66666.6667,
+      "juveniletime": 266666.6668,
+      "adolescenttime": 333333.3335,
       "mintimebetweenmating": 64800,
       "maxtimebetweenmating": 172800
     },
@@ -13419,7 +13419,7 @@
     "attacks": {
       "1": {
         "name": "Bite",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Mosasaurus bites the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Mosasaurus bites the target.",
         "staminacost": 0,
         "attackrange": 1700,
         "minattackrange": 0,
@@ -14148,7 +14148,7 @@
     "radiationimmune": "No",
     "immobilizedby": "Bola, Bear Trap, Plant Species Y Trap (Scorched Earth)",
     "candamage": "Thatch",
-    "carryableby": "Aberrant Gigantopithecus, Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Gigantopithecus, Griffin, Ice Wyvern, Karkinos, Kaprosuchus, Lightning Wyvern, Megalosaurus, Poison Wyvern, Procoptodon, Pteranodon, Quetzal,Tapejara, Tek Quetzal, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis, X-Tapejara",
+    "carryableby": "Aberrant Gigantopithecus, Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Gigantopithecus, Griffin, Ice Wyvern, Karkinos, Kaprosuchus, Lightning Wyvern, Megalosaurus, Poison Wyvern, Procoptodon, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropeognathus, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis, X-Tapejara",
     "candragcreatureswhileflying": "No",
     "mounteddinoweightmultiplier": "0.5",
     "meleebase": "28",
@@ -14617,7 +14617,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Ovis headbutts the target. The target's [[File:Torpor.png|x20px|link=Torpor]] [[Torpor]] will increase by an amount equal to the damage dealt over 5 seconds. This effects stacks with each hit from a wild Ovis, however attacks from a tamed Ovis stack up to two times for a maximum of 10 seconds torpor debuff.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Ovis headbutts the target. The target's [[File:Torpor.png|x20px|link:Torpor]] [[Torpor] will increase by an amount equal to the damage dealt over 5 seconds. This effects stacks with each hit from a wild Ovis, however attacks from a tamed Ovis stack up to two times for a maximum of 10 seconds torpor debuff.",
         "staminacost": 0,
         "attackrange": 250,
         "minattackrange": 0,
@@ -14780,7 +14780,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Pachy headbutts the target. The target's [[File:Torpor.png|x20px|link=Torpor]] [[Torpor]] will increase by an amount equal to the damage dealt over 10 seconds. This effects stacks with each hit from a wild Pachy, however attacks from a tamed Pachy stacks up to two times for a maximum of 20 seconds torpor debuff.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Pachy headbutts the target. The target's [[File:Torpor.png|x20px|link:Torpor]] [[Torpor] will increase by an amount equal to the damage dealt over 10 seconds. This effects stacks with each hit from a wild Pachy, however attacks from a tamed Pachy stacks up to two times for a maximum of 20 seconds torpor debuff.",
         "staminacost": 0,
         "attackrange": 300,
         "minattackrange": 0,
@@ -14939,7 +14939,7 @@
     "attacks": {
       "1": {
         "name": "Head Attack",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Pachyrhinosaurus headbutts the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Pachyrhinosaurus headbutts the target.",
         "staminacost": 0,
         "attackrange": 350,
         "minattackrange": 100,
@@ -15114,7 +15114,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Paracer stomps on the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Paracer stomps on the target.",
         "staminacost": 0,
         "attackrange": 800,
         "minattackrange": 0,
@@ -15281,7 +15281,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Parasaur attacks the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Parasaur attacks the target.",
         "staminacost": 5,
         "attackrange": 400,
         "minattackrange": 0,
@@ -15292,7 +15292,7 @@
       },
       "2": {
         "name": "AlertPulse",
-        "description": "Using the [[File:RMB.svg|x20px|Right Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One), the Parasaur scans the environment to detect enemies.",
+        "description": "Using the [[File:RMB.svg|x20px|Right Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button] (Xbox One), the Parasaur scans the environment to detect enemies.",
         "staminacost": 15,
         "attackrange": 0,
         "minattackrange": 0,
@@ -15300,7 +15300,7 @@
       },
       "3": {
         "name": "Frighten",
-        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One), the Parasaur scares away small and mid sized creatures.",
+        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button] (Xbox One), the Parasaur scares away small and mid sized creatures.",
         "staminacost": 80,
         "attackrange": 1500,
         "minattackrange": 0,
@@ -15312,6 +15312,55 @@
     "chancetodroploot": 0,
     "canbeharvestedfor": "Hide, Raw Meat",
     "harvests": "Amarberry, Amarberry Seed, Azulberry, Azulberry Seed, Cactus Sap, Citronal Seed, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Rockarrot Seed, Savoroot Seed, Stimberry, Stimberry Seed, Thatch, Tintoberry, Tintoberry Seed, Wood"
+  },
+  "partydodo": {
+    "inherits": "dodo",
+    "variants": "Aberrant Dodo, Bunny Dodo, Dodo, Dodo Wyvern, DodoRex, Eerie Dodo, Zomdodo",
+    "event": "ARK: 5th Anniversary",
+    "releasedate": "2020-06-11",
+    "releaseversion": "311.74",
+    "xboxreleasedate": "2020-06-11",
+    "xboxreleaseversion": "799.15",
+    "ps4releasedate": "2020-06-11",
+    "ps4releaseversion": "548.15",
+    "mobilereleasedate": "Unreleased",
+    "mobilereleaseversion": "",
+    "switchreleasedate": "Unreleased",
+    "switchreleaseversion": "",
+    "class": "Dodo_Character_BP_Birthday_C",
+    "blueprintpath": "Blueprint'/Game/PrimalEarth/Dinos/Dodo/Dodo_Character_BP_Birthday.Dodo_Character_BP_Birthday'",
+    "commonname": "Party Dodo",
+    "group": "Birds, Event Creatures",
+    "dossierimage": "Party Dodo Image.jpg",
+    "dossieraddbook": "No",
+    "taming": {
+      "torporimmune": "No",
+      "canbetamed": "No",
+      "rideable": "No",
+      "canmountonhumans": "",
+      "nonviolenttame": "No",
+      "knockouttame": "No",
+      "ballowmountedweaponry": "",
+      "equipment": ""
+    },
+    "tamingfood": {
+      "kibble": "",
+      "favoritefood": "",
+      "primitiveplusfood": ""
+    },
+    "breeding": {
+      "egg": "",
+      "mintemp": "",
+      "maxtemp": "",
+      "incubationtime": "",
+      "maturationtime": "",
+      "babytime": "",
+      "juveniletime": "",
+      "adolescenttime": "",
+      "mintimebetweenmating": "",
+      "maxtimebetweenmating": ""
+    },
+    "canbeharvestedfor": "Cake Slice"
   },
   "pegomastax": {
     "variants": "Eerie Pegomastax",
@@ -15448,7 +15497,7 @@
     "radiationimmune": "No",
     "immobilizedby": "Bola, Bear Trap, Plant Species Y Trap (Scorched Earth)",
     "candamage": "Thatch, Greenhouse",
-    "carryableby": "Aberrant Gigantopithecus, Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Gigantopithecus, Griffin, Ice Wyvern, Karkinos, Kaprosuchus, Lightning Wyvern, Megalosaurus, Poison Wyvern, Procoptodon, Pteranodon, Quetzal,Tapejara, Tek Quetzal, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis, X-Tapejara",
+    "carryableby": "Aberrant Gigantopithecus, Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Gigantopithecus, Griffin, Ice Wyvern, Karkinos, Kaprosuchus, Lightning Wyvern, Megalosaurus, Poison Wyvern, Procoptodon, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropeognathus, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis, X-Tapejara",
     "candragcreatureswhileflying": "No",
     "mounteddinoweightmultiplier": 0.5,
     "meleebase": 3,
@@ -15646,7 +15695,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Pelagornis bites the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Pelagornis bites the target.",
         "staminacost": 0,
         "attackrange": 500,
         "minattackrange": 0,
@@ -15711,10 +15760,10 @@
     },
     "breeding": {
       "gestationtime": 35714.285156,
-      "maturationtime": 416666.65625,
-      "babytime": 41666.667969,
-      "juveniletime": 166666.671875,
-      "adolescenttime": 208333.328125,
+      "maturationtime": 175438.596,
+      "babytime": 17543.8596,
+      "juveniletime": 66666.6668,
+      "adolescenttime": 83333.3335,
       "mintimebetweenmating": 64800,
       "maxtimebetweenmating": 172800
     },
@@ -15797,7 +15846,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Phiomia attacks the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Phiomia attacks the target.",
         "staminacost": 0,
         "attackrange": 280,
         "minattackrange": 0,
@@ -15864,10 +15913,10 @@
     },
     "breeding": {
       "gestationtime": 28571.427734,
-      "maturationtime": 666666.625,
-      "babytime": 66666.664063,
-      "juveniletime": 266666.65625,
-      "adolescenttime": 333333.3125,
+      "maturationtime": 416666.667,
+      "babytime": 41666.6667,
+      "juveniletime": 166666.6668,
+      "adolescenttime": 208333.3335,
       "mintimebetweenmating": 64800,
       "maxtimebetweenmating": 172800
     },
@@ -15958,7 +16007,7 @@
     "attacks": {
       "1": {
         "name": "Bite",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Plesiosaur bites the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Plesiosaur bites the target.",
         "staminacost": 0,
         "attackrange": 2000,
         "minattackrange": 0,
@@ -16034,7 +16083,7 @@
     "attacks": {
       "1": {
         "name": "Bite",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Dire Bear bites the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Dire Bear bites the target.",
         "staminacost": 0,
         "attackrange": 650,
         "minattackrange": 0,
@@ -16045,7 +16094,7 @@
       },
       "2": {
         "name": "Swipe",
-        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One), the Dire Bear swipes at the target. This deals more damage than its default 'Bite' attack, but the Dire Bear must come to a complete stop while swiping. Additionally, this attack will also harvest more meat and berries than its default attack.",
+        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button] (Xbox One), the Dire Bear swipes at the target. This deals more damage than its default 'Bite' attack, but the Dire Bear must come to a complete stop while swiping. Additionally, this attack will also harvest more meat and berries than its default attack.",
         "staminacost": 0,
         "attackrange": 650,
         "minattackrange": 0,
@@ -16056,7 +16105,7 @@
       },
       "3": {
         "name": "Roar",
-        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One), the Dire Bear stands on its hind legs and roars to frighten opposing survivors.",
+        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button] (Xbox One), the Dire Bear stands on its hind legs and roars to frighten opposing survivors.",
         "staminacost": 0,
         "attackrange": 650,
         "minattackrange": 0,
@@ -16320,7 +16369,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Procoptodon attacks the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Procoptodon attacks the target.",
         "staminacost": 0,
         "attackrange": 400,
         "minattackrange": 0,
@@ -16492,7 +16541,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Pteranodon bites the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Pteranodon bites the target.",
         "staminacost": 0,
         "attackrange": 500,
         "minattackrange": 0,
@@ -16503,7 +16552,7 @@
       },
       "2": {
         "name": "Grab",
-        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One) while in the air, the Pteranodon can pick up another creature. Despite a coded melee damage value, this attack does no damage.",
+        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button] (Xbox One) while in the air, the Pteranodon can pick up another creature. Despite a coded melee damage value, this attack does no damage.",
         "staminacost": 40,
         "attackrange": 500,
         "minattackrange": 0,
@@ -16514,7 +16563,7 @@
       },
       "3": {
         "name": "Barrel Roll",
-        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One), the Pteranodon spirals forward dealing considerable damage to all enemies it hits",
+        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button] (Xbox One), the Pteranodon spirals forward dealing considerable damage to all enemies it hits",
         "staminacost": 85,
         "attackrange": 500,
         "minattackrange": 0,
@@ -16671,7 +16720,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Pulmonoscorpius claws or stings the target. The target's [[File:Torpor.png|x20px|link=Torpor]] [[Torpor]] will increase by 3x the damage dealt over 10 seconds. This effects stacks with each hit from a wild Scorpion, however attacks from tamed Scorpions stack up to two times for a maximum of 20 seconds torpor debuff.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Pulmonoscorpius claws or stings the target. The target's [[File:Torpor.png|x20px|link:Torpor]] [[Torpor] will increase by 3x the damage dealt over 10 seconds. This effects stacks with each hit from a wild Scorpion, however attacks from tamed Scorpions stack up to two times for a maximum of 20 seconds torpor debuff.",
         "staminacost": 0,
         "attackrange": 200,
         "minattackrange": 0,
@@ -16821,7 +16870,7 @@
     "radiationimmune": "Yes",
     "immobilizedby": "Chain Bola, Large Bear Trap, Plant Species Y Trap (Scorched Earth)",
     "candamage": "Wood, Thatch, Greenhouse",
-    "carryableby": "Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal, Tropical Crystal Wyvern, Tusoteuthis",
+    "carryableby": "Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal, Tusoteuthis",
     "candragcreatureswhileflying": "No",
     "meleebase": 36,
     "attacks": {
@@ -16931,10 +16980,10 @@
       "mintemp": 5,
       "maxtemp": 6,
       "incubationtime": 59995.199219,
-      "maturationtime": 666666.625,
-      "babytime": 66666.664063,
-      "juveniletime": 266666.65625,
-      "adolescenttime": 333333.3125,
+      "maturationtime": 476190.476,
+      "babytime": 47619.0476,
+      "juveniletime": 190476.1904,
+      "adolescenttime": 238095.238,
       "mintimebetweenmating": 64800,
       "maxtimebetweenmating": 172800
     },
@@ -17033,7 +17082,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Quetzal bites the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Quetzal bites the target.",
         "staminacost": 16,
         "attackrange": 1200,
         "minattackrange": 0,
@@ -17044,7 +17093,7 @@
       },
       "2": {
         "name": "Grab",
-        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One) while in the air, the Quetzal can pick up another creature. Despite a coded melee damage value, this attack does no damage.",
+        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button] (Xbox One) while in the air, the Quetzal can pick up another creature. Despite a coded melee damage value, this attack does no damage.",
         "staminacost": 80,
         "attackrange": 500,
         "minattackrange": 0,
@@ -17209,7 +17258,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Raptor bites and claws at the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Raptor bites and claws at the target.",
         "staminacost": 0,
         "attackrange": 350,
         "minattackrange": 0,
@@ -17220,7 +17269,7 @@
       },
       "2": {
         "name": "Pounce",
-        "description": "Using the [[File:RMB.svg|x20px|Right Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One), the Raptor pounces on its target.",
+        "description": "Using the [[File:RMB.svg|x20px|Right Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button] (Xbox One), the Raptor pounces on its target.",
         "staminacost": 0,
         "attackrange": 350,
         "minattackrange": 0,
@@ -17231,7 +17280,7 @@
       },
       "3": {
         "name": "Roar",
-        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One), the Raptor bites and claws at the target. This attack type is not usable.",
+        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button] (Xbox One), the Raptor bites and claws at the target. This attack type is not usable.",
         "staminacost": 0,
         "attackrange": 0,
         "minattackrange": 0,
@@ -17239,7 +17288,7 @@
       },
       "4": {
         "name": "Melee_Pounce",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Raptor bites the target when it has pinned creature with the pounce attack.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Raptor bites the target when it has pinned creature with the pounce attack.",
         "staminacost": 0,
         "attackrange": 1200,
         "minattackrange": 0,
@@ -17400,7 +17449,7 @@
     "attacks": {
       "1": {
         "name": "Bite",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Rex bites the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Rex bites the target.",
         "staminacost": 0,
         "attackrange": 1200,
         "minattackrange": 0,
@@ -17411,7 +17460,7 @@
       },
       "2": {
         "name": "Roar",
-        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One), the Rex unleashes a menacing roar to frighten opposing survivors.",
+        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button] (Xbox One), the Rex unleashes a menacing roar to frighten opposing survivors.",
         "staminacost": 0,
         "attackrange": 0,
         "minattackrange": 0,
@@ -17764,7 +17813,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Sabertooth bites the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Sabertooth bites the target.",
         "staminacost": 0,
         "attackrange": 280,
         "minattackrange": 0,
@@ -17863,7 +17912,7 @@
     "attacks": {
       "1": {
         "name": "Bite",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Sabertooth Salmon bites the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Sabertooth Salmon bites the target.",
         "staminacost": 0,
         "attackrange": 150,
         "minattackrange": 0,
@@ -18025,7 +18074,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Sarco bites the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Sarco bites the target.",
         "staminacost": 10,
         "attackrange": 650,
         "minattackrange": 0,
@@ -18036,7 +18085,7 @@
       },
       "2": {
         "name": "Roll",
-        "description": "Using the [[File:RMB.svg|x20px|Right Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One), the Sarco grabs its target and rolls dealing damage and disabling them.",
+        "description": "Using the [[File:RMB.svg|x20px|Right Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button] (Xbox One), the Sarco grabs its target and rolls dealing damage and disabling them.",
         "staminacost": 95,
         "attackrange": 600,
         "minattackrange": 0,
@@ -18047,7 +18096,7 @@
       },
       "3": {
         "name": "Lunge",
-        "description": "Using the <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One), the Sarco lunges towards a target in front of it.",
+        "description": "Using the <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button] (Xbox One), the Sarco lunges towards a target in front of it.",
         "staminacost": 125,
         "attackrange": 900,
         "minattackrange": 750,
@@ -18591,7 +18640,7 @@
       },
       "2": {
         "name": "Roar",
-        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One), the Skeletal Rex unleashes a menacing roar to frighten opposing survivors.",
+        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button] (Xbox One), the Skeletal Rex unleashes a menacing roar to frighten opposing survivors.",
         "staminacost": 0,
         "attackrange": 0,
         "minattackrange": 0,
@@ -18660,7 +18709,7 @@
     "fecessize": "None",
     "immobilizedby": "Chain Bola, Large Bear Trap, Plant Species Y Trap (Scorched Earth)",
     "candamage": "Wood, Thatch, Greenhouse",
-    "carryableby": "Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal, Tropical Crystal Wyvern, Tusoteuthis",
+    "carryableby": "Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal, Tusoteuthis",
     "candragcreatureswhileflying": "No",
     "meleebase": 62,
     "attacks": {
@@ -18738,7 +18787,7 @@
     "fecessize": "None",
     "immobilizedby": "Chain Bola, Large Bear Trap, Plant Species Y Trap (Scorched Earth)",
     "candamage": "Wood, Thatch, Greenhouse",
-    "carryableby": "Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal, Tropical Crystal Wyvern, Tusoteuthis",
+    "carryableby": "Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal, Tusoteuthis",
     "candragcreatureswhileflying": "No",
     "meleebase": 48,
     "attacks": {
@@ -18903,7 +18952,7 @@
     "attacks": {
       "1": {
         "name": "Spino Bite",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Spino bites the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Spino bites the target.",
         "staminacost": 10,
         "attackrange": 1500,
         "minattackrange": 0,
@@ -18914,7 +18963,7 @@
       },
       "2": {
         "name": "Change Stance",
-        "description": "Using the [[File:RMB.svg|x20px|Right Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One), the Spino changes from biped to quadruped and back.",
+        "description": "Using the [[File:RMB.svg|x20px|Right Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button] (Xbox One), the Spino changes from biped to quadruped and back.",
         "staminacost": 0,
         "attackrange": 0,
         "minattackrange": 0,
@@ -18922,7 +18971,7 @@
       },
       "3": {
         "name": "Roar",
-        "description": "Using the <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One), the Spino roars.",
+        "description": "Using the <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button] (Xbox One), the Spino roars.",
         "staminacost": 0,
         "attackrange": 0,
         "minattackrange": 0,
@@ -18930,7 +18979,7 @@
       },
       "4": {
         "name": "Spino Swipe Right",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One) when in bipedal mode, the Spino swipes the target with its right foreleg.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One) when in bipedal mode, the Spino swipes the target with its right foreleg.",
         "staminacost": 12,
         "attackrange": 1500,
         "minattackrange": 0,
@@ -18941,7 +18990,7 @@
       },
       "5": {
         "name": "Spino Swipe Left",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One) when in bipedal mode, the Spino swipes the target with its left foreleg.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One) when in bipedal mode, the Spino swipes the target with its left foreleg.",
         "staminacost": 15,
         "attackrange": 1500,
         "minattackrange": 0,
@@ -19105,14 +19154,14 @@
     "radiationimmune": "No",
     "immobilizedby": "Chain Bola, Large Bear Trap, Plant Species Y Trap (Scorched Earth)",
     "candamage": "Wood, Thatch, Greenhouse",
-    "carryableby": "Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Karkinos, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal, Tropical Crystal Wyvern, Tusoteuthis",
+    "carryableby": "Fire Wyvern, Forest Wyvern, Ice Wyvern, Karkinos, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal, Tusoteuthis",
     "candragcreatureswhileflying": "No",
     "passengerweightmultiplier": 0.85,
     "meleebase": 41,
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Stego swings its spiked tail at the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Stego swings its spiked tail at the target.",
         "staminacost": 0,
         "attackrange": 570,
         "minattackrange": 0,
@@ -19282,7 +19331,7 @@
     "attacks": {
       "1": {
         "name": "Bite",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Tapejara bites the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Tapejara bites the target.",
         "staminacost": 0,
         "attackrange": 1000,
         "minattackrange": 0,
@@ -19293,7 +19342,7 @@
       },
       "2": {
         "name": "Grab",
-        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One) while in the air, the Tapejara can pick up another creature. Despite a coded melee damage value, this attack does no damage.",
+        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button] (Xbox One) while in the air, the Tapejara can pick up another creature. Despite a coded melee damage value, this attack does no damage.",
         "staminacost": 40,
         "attackrange": 500,
         "minattackrange": 0,
@@ -19304,7 +19353,7 @@
       },
       "3": {
         "name": "Taunt",
-        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One) while on the ground, the Tapejara flaps its wings and taunts the target.",
+        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button] (Xbox One) while on the ground, the Tapejara flaps its wings and taunts the target.",
         "staminacost": 0,
         "attackrange": 1000,
         "minattackrange": 0,
@@ -19647,7 +19696,7 @@
         "colors": "Dino Light Orange, Dino Dark Orange, Dino Light Brown, Dino Medium Brown, Dino Dark Brown, Light Grey, Dark Grey, Dino Darker Grey, Black, Bigfoot0, Bigfoot4, Bigfoot5"
       },
       "5": {
-        "name": "Beack, Skin and Legs",
+        "name": "Beak, Skin and Legs",
         "colors": "Dino Light Orange, Dino Dark Orange, Dino Light Brown, Dino Medium Brown, Dino Dark Brown, Light Grey, Dark Grey, Dino Darker Grey, Black, Bigfoot0, Bigfoot4, Bigfoot5"
       }
     },
@@ -19716,7 +19765,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Terror Bird bites the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Terror Bird bites the target.",
         "staminacost": 0,
         "attackrange": 330,
         "minattackrange": 0,
@@ -19868,14 +19917,14 @@
     "radiationimmune": "No",
     "immobilizedby": "Chain Bola, Large Bear Trap, Plant Species Y Trap (Scorched Earth)",
     "candamage": "Stone, Adobe, Wood, Thatch, Greenhouse",
-    "carryableby": "Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Karkinos, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal, Tropical Crystal Wyvern, Tusoteuthis",
+    "carryableby": "Fire Wyvern, Forest Wyvern, Ice Wyvern, Karkinos, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal, Tusoteuthis",
     "candragcreatureswhileflying": "No",
     "passengerweightmultiplier": 0.85,
     "meleebase": 52,
     "attacks": {
       "1": {
         "name": "Claw Attack",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Therizinosaur slashes at the target for considerable damage. When harvesting trees, this attack will only collect [[Wood]] and [[Thatch]].",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Therizinosaur slashes at the target for considerable damage. When harvesting trees, this attack will only collect [[Wood]] and [[Thatch].",
         "staminacost": 0,
         "attackrange": 800,
         "minattackrange": 0,
@@ -19886,7 +19935,7 @@
       },
       "2": {
         "name": "Claw (Harvest)",
-        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One), the Therizinosaur shears nearby flora with its claws. When harvesting, it cannot hit trees, and from bushes it will only collect [[Fiber]]. This attack inflicts [[File:Torpor.png|x20px|link=Torpor]] [[Torpor]] at 0.5x the damage dealt to affected creatures.",
+        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One), the Therizinosaur shears nearby flora with its claws. When harvesting, it cannot hit trees, and from bushes it will only collect [[Fiber]]. This attack inflicts [[File:Torpor.png|x20px|link:Torpor]] [[Torpor] at 0.5x the damage dealt to affected creatures.",
         "staminacost": 0,
         "attackrange": 500,
         "minattackrange": 0,
@@ -19899,7 +19948,7 @@
       },
       "3": {
         "name": "Bite (Harvest)",
-        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One), the Therizinosaur bites at the target. When harvesting, it cannot hit trees, and from bushes it will only collect [[Berries]], Seeds, and [[Rare Flower]]s. This attack inflicts [[File:Torpor.png|x20px|link=Torpor]] [[Torpor]] at 0.5x the damage dealt to affected creatures.",
+        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One), the Therizinosaur bites at the target. When harvesting, it cannot hit trees, and from bushes it will only collect [[Berries]], Seeds, and [[Rare Flower]]s. This attack inflicts [[File:Torpor.png|x20px|link:Torpor]] [[Torpor] at 0.5x the damage dealt to affected creatures.",
         "staminacost": 0,
         "attackrange": 600,
         "minattackrange": 0,
@@ -20300,7 +20349,7 @@
     "mass": 50,
     "fecessize": "None",
     "candamage": "Thatch, Greenhouse",
-    "carryableby": "Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Griffin, Ice Wyvern, Kaprosuchus, Karkinos, Lightning Wyvern, Megalosaurus, Poison Wyvern, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis, X-Tapejara",
+    "carryableby": "Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Griffin, Ice Wyvern, Kaprosuchus, Karkinos, Lightning Wyvern, Megalosaurus, Poison Wyvern, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropeognathus, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis, X-Tapejara",
     "candragcreatureswhileflying": "No",
     "attacks": {
       "1": {
@@ -20742,14 +20791,14 @@
     "radiationimmune": "No",
     "immobilizedby": "Chain Bola, Large Bear Trap, Plant Species Y Trap (Scorched Earth)",
     "candamage": "Wood, Thatch, Greenhouse",
-    "carryableby": "Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal, Tropical Crystal Wyvern, Tusoteuthis",
+    "carryableby": "Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal, Tusoteuthis",
     "candragcreatureswhileflying": "No",
     "passengerweightmultiplier": 0.85,
     "meleebase": 32,
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Trike headbutts the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Trike headbutts the target.",
         "staminacost": 0,
         "attackrange": 490,
         "minattackrange": 0,
@@ -20760,7 +20809,7 @@
       },
       "2": {
         "name": "Ram",
-        "description": "Holding the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One), the Trike prepares a charge attack.",
+        "description": "Holding the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button] (Xbox One), the Trike prepares a charge attack.",
         "staminacost": 0,
         "attackrange": 4000,
         "minattackrange": 100,
@@ -20973,13 +21022,13 @@
     "radiationimmune": "No",
     "immobilizedby": "Bola, Bear Trap, Plant Species Y Trap (Scorched Earth)",
     "candamage": "Wood, Thatch, Greenhouse",
-    "carryableby": "Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Griffin, Ice Wyvern, Kaprosuchus, Karkinos, Lightning Wyvern, Megalosaurus, Poison Wyvern, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis, X-Tapejara",
+    "carryableby": "Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Griffin, Ice Wyvern, Kaprosuchus, Karkinos, Lightning Wyvern, Megalosaurus, Poison Wyvern, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropeognathus, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis, X-Tapejara",
     "candragcreatureswhileflying": "No",
     "meleebase": 7,
     "attacks": {
       "1": {
         "name": "Bite",
-        "description": "The Troodon bites the target. The target's [[File:Stamina.png|x20px|link=Stamina]] [[Stamina]] will lower by 2x the damage dealt over 4 seconds. This effect stacks with each hit.",
+        "description": "The Troodon bites the target. The target's [[File:Stamina.png|x20px|link:Stamina]] [[Stamina] will lower by 2x the damage dealt over 4 seconds. This effect stacks with each hit.",
         "staminacost": 0,
         "attackrange": 100,
         "minattackrange": 0,
@@ -20997,7 +21046,7 @@
       },
       "2": {
         "name": "Leap Attack",
-        "description": "The Troodon leaps at the target. The target's [[File:Stamina.png|x20px|link=Stamina]] [[Stamina]] will lower by 2x the damage dealt over 4 seconds. This effect stacks with each hit.",
+        "description": "The Troodon leaps at the target. The target's [[File:Stamina.png|x20px|link:Stamina]] [[Stamina] will lower by 2x the damage dealt over 4 seconds. This effect stacks with each hit.",
         "staminacost": 0,
         "attackrange": 900,
         "minattackrange": 350,
@@ -21179,10 +21228,10 @@
       "mintemp": 0,
       "maxtemp": 50,
       "incubationtime": 17998.560547,
-      "maturationtime": 1010100.875,
-      "babytime": 101010.085938,
-      "juveniletime": 404040.34375,
-      "adolescenttime": 505050.4375,
+      "maturationtime": 666666.667,
+      "babytime": 66666.6667,
+      "juveniletime": 266666.6668,
+      "adolescenttime": 333333.3335,
       "mintimebetweenmating": 64800,
       "maxtimebetweenmating": 172800
     },
@@ -21268,7 +21317,7 @@
     "attacks": {
       "1": {
         "name": "Tentacle Slap",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Tusoteuthis swipes its massive tentacles at the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Tusoteuthis swipes its massive tentacles at the target.",
         "staminacost": 10,
         "attackrange": 3500,
         "minattackrange": 0,
@@ -21279,7 +21328,7 @@
       },
       "2": {
         "name": "Grab",
-        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One), the Tusoteuthis can pick up another creature with its tentacles. While holding a non-friendly target, the Tusoteuthis will constantly inflict [[File:Torpor.png|x20px|link=Torpor]] [[Torpor]] until the target is unconscious. Note that the Tusoteuthis cannot hold an unconscious target.",
+        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One), the Tusoteuthis can pick up another creature with its tentacles. While holding a non-friendly target, the Tusoteuthis will constantly inflict [[File:Torpor.png|x20px|link:Torpor]] [[Torpor] until the target is unconscious. Note that the Tusoteuthis cannot hold an unconscious target.",
         "staminacost": 25,
         "attackrange": 3500,
         "minattackrange": 0,
@@ -21290,7 +21339,7 @@
       },
       "3": {
         "name": "Ink",
-        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One), the Tusoteuthis releases a large ink cloud to completely obscure vision for a limited time.",
+        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button] (Xbox One), the Tusoteuthis releases a large ink cloud to completely obscure vision for a limited time.",
         "staminacost": 15,
         "attackrange": 0,
         "minattackrange": 0,
@@ -21298,7 +21347,7 @@
       },
       "4": {
         "name": "Crush Prey",
-        "description": "While carrying a creature with its tentacles and using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Tusoteuthis will crush the target for considerable damage.",
+        "description": "While carrying a creature with its tentacles and using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Tusoteuthis will crush the target for considerable damage.",
         "staminacost": 10,
         "attackrange": 4000,
         "minattackrange": 0,
@@ -21380,10 +21429,10 @@
     },
     "breeding": {
       "gestationtime": 14285.713867,
-      "maturationtime": 166666.65625,
-      "babytime": 16666.666016,
-      "juveniletime": 66666.664063,
-      "adolescenttime": 83333.328125,
+      "maturationtime": 208333.333,
+      "babytime": 20833.3333,
+      "juveniletime": 83333.3332,
+      "adolescenttime": 104166.6665,
       "mintimebetweenmating": 64800,
       "maxtimebetweenmating": 172800
     },
@@ -21472,7 +21521,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Woolly Rhino headbutts the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Woolly Rhino headbutts the target.",
         "staminacost": 0,
         "attackrange": 1000,
         "minattackrange": 0,
@@ -21575,7 +21624,7 @@
       },
       "2": {
         "name": "Throw Player",
-        "description": "'''While this attack is coded, it is not used by the AI in-game.'''<br>Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One), the Yeti throws a mounted survivor overhead. Any creature directly in front of the Yeti will take damage.",
+        "description": "'''While this attack is coded, it is not used by the AI in-game.'''<br>Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button] (Xbox One), the Yeti throws a mounted survivor overhead. Any creature directly in front of the Yeti will take damage.",
         "staminacost": 0,
         "attackrange": 200,
         "minattackrange": 0,
@@ -21775,7 +21824,7 @@
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Charcoal, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Mutton, Raw Prime Fish Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
   "zomdodo": {
-    "variants": "Aberrant Dodo, Bunny Dodo, Dodo, Dodo Wyvern, DodoRex, Zombie Wyvern",
+    "variants": "Aberrant Dodo, Bunny Dodo, Dodo, Dodo Wyvern, DodoRex, Party Dodo, Zombie Wyvern",
     "event": "ARK: Fear Evolved, ARK: Fear Evolved 2, ARK: Fear Evolved 3",
     "releasedate": "2015-10-29",
     "releaseversion": "221.0",
@@ -21890,7 +21939,7 @@
     "radiationimmune": "No",
     "immobilizedby": "Bola, Bear Trap, Plant Species Y Trap (Scorched Earth)",
     "candamage": "Wood, Thatch, Greenhouse",
-    "carryableby": "Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Griffin, Ice Wyvern, Kaprosuchus, Lightning Wyvern, Megalosaurus, Poison Wyvern, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis, X-Tapejara",
+    "carryableby": "Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Griffin, Ice Wyvern, Kaprosuchus, Lightning Wyvern, Megalosaurus, Poison Wyvern, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropeognathus, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis, X-Tapejara",
     "candragcreatureswhileflying": "No",
     "mounteddinoweightmultiplier": 0.5,
     "meleebase": 55,
@@ -22960,7 +23009,7 @@
     "fecessize": "Small",
     "immobilizedby": "Bola, Bear Trap, Plant Species Y Trap (Scorched Earth)",
     "candamage": "Thatch, Greenhouse",
-    "carryableby": "Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Griffin, Ice Wyvern, Kaprosuchus, Lightning Wyvern, Megalosaurus, Poison Wyvern, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis, X-Tapejara",
+    "carryableby": "Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Griffin, Ice Wyvern, Kaprosuchus, Lightning Wyvern, Megalosaurus, Poison Wyvern, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropeognathus, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis, X-Tapejara",
     "candragcreatureswhileflying": "No",
     "meleebase": 3,
     "attacks": {
@@ -23095,7 +23144,7 @@
     "specialloot": "Deathworm Horn (Scorched Earth)"
   },
   "dodowyvern": {
-    "variants": "Aberrant Dodo, Alpha Fire Wyvern, Bone Fire Wyvern, Brute Fire Wyvern, Bunny Dodo, Corrupted Wyvern, Dodo, DodoRex, Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Wyvern, Zombie Fire Wyvern, Zombie Lightning Wyvern, Zombie Poison Wyvern, Zomdodo",
+    "variants": "Aberrant Dodo, Alpha Fire Wyvern, Bone Fire Wyvern, Brute Fire Wyvern, Bunny Dodo, Corrupted Wyvern, Dodo, DodoRex, Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Party Dodo, Poison Wyvern, Wyvern, Zombie Fire Wyvern, Zombie Lightning Wyvern, Zombie Poison Wyvern, Zomdodo",
     "event": "ARK: Fear Evolved 2, ARK: Fear Evolved 3",
     "dlc": "Scorched Earth",
     "releasedate": "2016-10-28",
@@ -23279,10 +23328,10 @@
     },
     "breeding": {
       "gestationtime": 9523.80957,
-      "maturationtime": 111111.109375,
-      "babytime": 11111.111328,
-      "juveniletime": 44444.445313,
-      "adolescenttime": 55555.554688,
+      "maturationtime": 75757.5758,
+      "babytime": 7575.75758,
+      "juveniletime": 30303.03032,
+      "adolescenttime": 37878.7879,
       "mintimebetweenmating": 64800,
       "maxtimebetweenmating": 172800
     },
@@ -23355,7 +23404,7 @@
     "radiationimmune": "No",
     "immobilizedby": "Bola, Bear Trap, Plant Species Y Trap (Scorched Earth)",
     "candamage": "Thatch, Greenhouse",
-    "carryableby": "Aberrant Gigantopithecus, Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Gigantopithecus, Griffin, Ice Wyvern, Karkinos, Kaprosuchus, Lightning Wyvern, Megalosaurus, Poison Wyvern, Procoptodon, Pteranodon, Quetzal,Tapejara, Tek Quetzal, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis, X-Tapejara",
+    "carryableby": "Aberrant Gigantopithecus, Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Gigantopithecus, Griffin, Ice Wyvern, Karkinos, Kaprosuchus, Lightning Wyvern, Megalosaurus, Poison Wyvern, Procoptodon, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropeognathus, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis, X-Tapejara",
     "candragcreatureswhileflying": "No",
     "mounteddinoweightmultiplier": 0.5,
     "meleebase": 3,
@@ -23816,7 +23865,7 @@
     "attacks": {
       "1": {
         "name": "Drop Spores",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Lymantria expels a spore cloud. Upon contact, the spore cloud will deplete stamina and slow player and creature movement speed by 90%.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Lymantria expels a spore cloud. Upon contact, the spore cloud will deplete stamina and slow player and creature movement speed by 90%.",
         "staminacost": 50,
         "attackrange": 500,
         "minattackrange": 0,
@@ -24252,7 +24301,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Mantis slashes at the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Mantis slashes at the target.",
         "staminacost": 0,
         "attackrange": 300,
         "minattackrange": 0,
@@ -24263,7 +24312,7 @@
       },
       "2": {
         "name": "Leap Attack",
-        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One), the Mantis leaps a great distance at the target for considerable damage.",
+        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button] (Xbox One), the Mantis leaps a great distance at the target for considerable damage.",
         "staminacost": 40,
         "attackrange": 3200,
         "minattackrange": 800,
@@ -24420,14 +24469,14 @@
     "radiationimmune": "No",
     "immobilizedby": "Chain Bola, Large Bear Trap",
     "candamage": "Wood, Thatch, Greenhouse",
-    "carryableby": "Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal, Tropical Crystal Wyvern, Tusoteuthis",
+    "carryableby": "Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal, Tusoteuthis",
     "candragcreatureswhileflying": "No",
     "passengerweightmultiplier": 0.85,
     "meleebase": 13,
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Morellatops attacks the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Morellatops attacks the target.",
         "staminacost": 0,
         "attackrange": 500,
         "minattackrange": 0,
@@ -24749,7 +24798,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Rock Elemental smashes the target with both fists.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Rock Elemental smashes the target with both fists.",
         "staminacost": 25,
         "attackrange": 950,
         "minattackrange": 0,
@@ -24760,7 +24809,7 @@
       },
       "2": {
         "name": "Throw Rock",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Rock Elemental pulls a boulder out of the ground and lobs it at the target for considerable impact damage.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Rock Elemental pulls a boulder out of the ground and lobs it at the target for considerable impact damage.",
         "staminacost": 75,
         "attackrange": 5600,
         "minattackrange": 1000,
@@ -24778,7 +24827,7 @@
       },
       "3": {
         "name": "Swipe",
-        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One), the Rock Elemental swipes an arm at the target and spins in a circle.",
+        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button] (Xbox One), the Rock Elemental swipes an arm at the target and spins in a circle.",
         "staminacost": 25,
         "attackrange": 950,
         "minattackrange": 0,
@@ -25052,7 +25101,7 @@
     "attacks": {
       "1": {
         "name": "Claws",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Thorny Dragon swipes at the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Thorny Dragon swipes at the target.",
         "staminacost": 5,
         "attackrange": 470,
         "minattackrange": 0,
@@ -25377,7 +25426,7 @@
     "attacks": {
       "1": {
         "name": "Bite",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Wyvern bites the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Wyvern bites the target.",
         "staminacost": 10,
         "attackrange": 1200,
         "minattackrange": 0,
@@ -25388,7 +25437,7 @@
       },
       "2": {
         "name": "Breathe Fire",
-        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One) with a '''Fire Wyvern''', it will set the target on fire, burning away 20% of the target's maximum health (excluding fire resistance modifiers) over 10 seconds.",
+        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button] (Xbox One) with a '''Fire Wyvern''', it will set the target on fire, burning away 20% of the target's maximum health (excluding fire resistance modifiers) over 10 seconds.",
         "staminacost": 125,
         "attackrange": 4000,
         "minattackrange": 0,
@@ -25396,7 +25445,7 @@
       },
       "3": {
         "name": "Breathe Lightning",
-        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One) with a '''Lightning Wyvern''', it will shoot a concentrated beam of lightning at the target for impact damage.",
+        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button] (Xbox One) with a '''Lightning Wyvern''', it will shoot a concentrated beam of lightning at the target for impact damage.",
         "staminacost": 125,
         "attackrange": 3700,
         "minattackrange": 2000,
@@ -25411,7 +25460,7 @@
       },
       "4": {
         "name": "Breathe Poison",
-        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One) with a '''Poison Wyvern''', it will shoot a single projectile of poison gas at the target that will explode on impact.",
+        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button] (Xbox One) with a '''Poison Wyvern''', it will shoot a single projectile of poison gas at the target that will explode on impact.",
         "staminacost": 65,
         "attackrange": 5000,
         "minattackrange": 0,
@@ -25429,7 +25478,7 @@
       },
       "5": {
         "name": "Breathe Ice",
-        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One) with an '''Ice Wyvern''', it will significantly slow the target's movement speed over a period of time.",
+        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button] (Xbox One) with an '''Ice Wyvern''', it will significantly slow the target's movement speed over a period of time.",
         "staminacost": 160,
         "attackrange": 4000,
         "minattackrange": 0,
@@ -25437,7 +25486,7 @@
       },
       "6": {
         "name": "Grab",
-        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One) while in the air, the Wyvern can pick up another creature. Despite a coded melee damage value, this attack does no damage.",
+        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button] (Xbox One) while in the air, the Wyvern can pick up another creature. Despite a coded melee damage value, this attack does no damage.",
         "staminacost": 40,
         "attackrange": 500,
         "minattackrange": 0,
@@ -25448,7 +25497,7 @@
       },
       "7": {
         "name": "Taunt",
-        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One) while on the ground, the Wyvern flaps its wings and taunts the target. This pushes creatures in front of the Wyvern away.",
+        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button] (Xbox One) while on the ground, the Wyvern flaps its wings and taunts the target. This pushes creatures in front of the Wyvern away.",
         "staminacost": 2,
         "attackrange": 0,
         "minattackrange": 0,
@@ -25628,7 +25677,7 @@
       },
       "2": {
         "name": "Breathe Fire",
-        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One) with a '''Fire Wyvern''', it will set the target on fire, burning away 20% of the target's maximum health (excluding fire resistance modifiers) over 10 seconds.",
+        "description": "Using the [[File:RMB.svg|x20px|Right  Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button] (Xbox One) with a '''Fire Wyvern''', it will set the target on fire, burning away 20% of the target's maximum health (excluding fire resistance modifiers) over 10 seconds.",
         "staminacost": 125,
         "attackrange": 4000,
         "minattackrange": 0,
@@ -25636,7 +25685,7 @@
       },
       "3": {
         "name": "Grab",
-        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One) while in the air, the Wyvern can pick up another creature. Despite a coded melee damage value, this attack does no damage.",
+        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button] (Xbox One) while in the air, the Wyvern can pick up another creature. Despite a coded melee damage value, this attack does no damage.",
         "staminacost": 40,
         "attackrange": 500,
         "minattackrange": 0,
@@ -25647,7 +25696,7 @@
       },
       "4": {
         "name": "Taunt",
-        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One) while on the ground, the Wyvern flaps its wings and taunts the target. This pushes creatures in front of the Wyvern away.",
+        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button] (Xbox One) while on the ground, the Wyvern flaps its wings and taunts the target. This pushes creatures in front of the Wyvern away.",
         "staminacost": 2,
         "attackrange": 0,
         "minattackrange": 0,
@@ -25844,7 +25893,7 @@
       },
       "3": {
         "name": "Grab",
-        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One) while in the air, the Wyvern can pick up another creature. Despite a coded melee damage value, this attack does no damage.",
+        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button] (Xbox One) while in the air, the Wyvern can pick up another creature. Despite a coded melee damage value, this attack does no damage.",
         "staminacost": 40,
         "attackrange": 500,
         "minattackrange": 0,
@@ -25855,7 +25904,7 @@
       },
       "4": {
         "name": "Taunt",
-        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One) while on the ground, the Wyvern flaps its wings and taunts the target. This pushes creatures in front of the Wyvern away.",
+        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button] (Xbox One) while on the ground, the Wyvern flaps its wings and taunts the target. This pushes creatures in front of the Wyvern away.",
         "staminacost": 2,
         "attackrange": 0,
         "minattackrange": 0,
@@ -26059,7 +26108,7 @@
       },
       "3": {
         "name": "Grab",
-        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One) while in the air, the Wyvern can pick up another creature. Despite a coded melee damage value, this attack does no damage.",
+        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button] (Xbox One) while in the air, the Wyvern can pick up another creature. Despite a coded melee damage value, this attack does no damage.",
         "staminacost": 40,
         "attackrange": 500,
         "minattackrange": 0,
@@ -26070,7 +26119,7 @@
       },
       "4": {
         "name": "Taunt",
-        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One) while on the ground, the Wyvern flaps its wings and taunts the target. This pushes creatures in front of the Wyvern away.",
+        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button] (Xbox One) while on the ground, the Wyvern flaps its wings and taunts the target. This pushes creatures in front of the Wyvern away.",
         "staminacost": 2,
         "attackrange": 0,
         "minattackrange": 0,
@@ -26141,7 +26190,7 @@
     "taming": {
       "torporimmune": "No",
       "canbetamed": "Yes",
-      "rideable": "No",
+      "rideable": "Yes",
       "canmountonhumans": "No",
       "nonviolenttame": "No",
       "knockouttame": "No",
@@ -26252,7 +26301,7 @@
       },
       "3": {
         "name": "Grab",
-        "description": "'''While this attack is coded, it is not used in-game.'''<br>Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One) while in the air, the Zombie Wyvern can pick up another creature. Despite a coded melee damage value, this attack does no damage.",
+        "description": "'''While this attack is coded, it is not used in-game.'''<br>Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button] (Xbox One) while in the air, the Zombie Wyvern can pick up another creature. Despite a coded melee damage value, this attack does no damage.",
         "staminacost": 40,
         "attackrange": 500,
         "minattackrange": 0,
@@ -26263,7 +26312,7 @@
       },
       "4": {
         "name": "Taunt",
-        "description": "'''While this attack is coded, it is not used in-game.''' Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One) while on the ground, the Zombie Wyvern flaps its wings and taunts the target.",
+        "description": "'''While this attack is coded, it is not used in-game.''' Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button] (Xbox One) while on the ground, the Zombie Wyvern flaps its wings and taunts the target.",
         "staminacost": 2,
         "attackrange": 0,
         "minattackrange": 0,
@@ -26315,7 +26364,7 @@
     "taming": {
       "torporimmune": "No",
       "canbetamed": "Yes",
-      "rideable": "No",
+      "rideable": "Yes",
       "canmountonhumans": "No",
       "nonviolenttame": "No",
       "knockouttame": "No",
@@ -26448,7 +26497,7 @@
       },
       "3": {
         "name": "Grab",
-        "description": "'''While this attack is coded, it is not used in-game.'''<br>Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One) while in the air, the Zombie Wyvern can pick up another creature. Despite a coded melee damage value, this attack does no damage.",
+        "description": "'''While this attack is coded, it is not used in-game.'''<br>Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button] (Xbox One) while in the air, the Zombie Wyvern can pick up another creature. Despite a coded melee damage value, this attack does no damage.",
         "staminacost": 40,
         "attackrange": 500,
         "minattackrange": 0,
@@ -26459,7 +26508,7 @@
       },
       "4": {
         "name": "Taunt",
-        "description": "'''While this attack is coded, it is not used in-game.''' Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One) while on the ground, the Zombie Wyvern flaps its wings and taunts the target.",
+        "description": "'''While this attack is coded, it is not used in-game.''' Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button] (Xbox One) while on the ground, the Zombie Wyvern flaps its wings and taunts the target.",
         "staminacost": 2,
         "attackrange": 0,
         "minattackrange": 0,
@@ -26511,7 +26560,7 @@
     "taming": {
       "torporimmune": "No",
       "canbetamed": "Yes",
-      "rideable": "No",
+      "rideable": "Yes",
       "canmountonhumans": "No",
       "nonviolenttame": "No",
       "knockouttame": "No",
@@ -26644,7 +26693,7 @@
       },
       "3": {
         "name": "Grab",
-        "description": "'''While this attack is coded, it is not used in-game.'''<br>Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One) while in the air, the Zombie Wyvern can pick up another creature. Despite a coded melee damage value, this attack does no damage.",
+        "description": "'''While this attack is coded, it is not used in-game.'''<br>Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button] (Xbox One) while in the air, the Zombie Wyvern can pick up another creature. Despite a coded melee damage value, this attack does no damage.",
         "staminacost": 40,
         "attackrange": 500,
         "minattackrange": 0,
@@ -26655,7 +26704,7 @@
       },
       "4": {
         "name": "Taunt",
-        "description": "'''While this attack is coded, it is not used in-game.''' Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One) while on the ground, the Zombie Wyvern flaps its wings and taunts the target.",
+        "description": "'''While this attack is coded, it is not used in-game.''' Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button] (Xbox One) while on the ground, the Zombie Wyvern flaps its wings and taunts the target.",
         "staminacost": 2,
         "attackrange": 0,
         "minattackrange": 0,
@@ -26707,7 +26756,7 @@
     "taming": {
       "torporimmune": "No",
       "canbetamed": "Yes",
-      "rideable": "No",
+      "rideable": "Yes",
       "canmountonhumans": "No",
       "nonviolenttame": "No",
       "knockouttame": "No",
@@ -26844,7 +26893,7 @@
       },
       "3": {
         "name": "Grab",
-        "description": "'''While this attack is coded, it is not used in-game.'''<br>Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One) while in the air, the Zombie Wyvern can pick up another creature. Despite a coded melee damage value, this attack does no damage.",
+        "description": "'''While this attack is coded, it is not used in-game.'''<br>Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button] (Xbox One) while in the air, the Zombie Wyvern can pick up another creature. Despite a coded melee damage value, this attack does no damage.",
         "staminacost": 40,
         "attackrange": 500,
         "minattackrange": 0,
@@ -26855,7 +26904,7 @@
       },
       "4": {
         "name": "Taunt",
-        "description": "'''While this attack is coded, it is not used in-game.''' Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One) while on the ground, the Zombie Wyvern flaps its wings and taunts the target.",
+        "description": "'''While this attack is coded, it is not used in-game.''' Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button] (Xbox One) while on the ground, the Zombie Wyvern flaps its wings and taunts the target.",
         "staminacost": 2,
         "attackrange": 0,
         "minattackrange": 0,
@@ -27442,14 +27491,6 @@
       "0": {
         "name": "Main Body",
         "colors": "DragonBlue0, Dino Light Green, Dino Light Blue, Light Grey, WyvernBlue0, WyvernBlue1, Dino Light Purple, Dino Albino, BigFoot4, DragonGreen3, WyvernPurple1, NearBlack"
-      },
-      "1": {
-        "name": "Fins",
-        "colors": "DragonBlue0, Black, Dino Light Blue, Light Grey, WyvernBlue0, WyvernBlue1"
-      },
-      "2": {
-        "name": "Wings",
-        "colors": "WyvernPurple0, WyvernPurple1, Dino Dark Purple, DragonBlue0, Dino Darker Grey, Dino Light Blue, Dino Light Purple, Light Grey, WyvernBlue0"
       },
       "4": {
         "name": "Belly Scales",
@@ -28365,7 +28406,7 @@
       "wakefooddeplmult": "2"
     },
     "tamingfood": {
-      "favoritefood": "Fertilized Rock Drake Egg",
+      "favoritefood": "Fertilized Rock Drake Egg (Aberration), Fertilized Magmasaur Egg (Genesis: Part 1)",
       "primitiveplusfood": ""
     },
     "breeding": {
@@ -28759,7 +28800,7 @@
     "radiationimmune": "Yes",
     "immobilizedby": "Bola, Bear Trap, Plant Species Y (Scorched Earth)",
     "candamage": "Thatch",
-    "carryableby": "Aberrant Gigantopithecus, Gigantopithecus, Karkinos, Pteranodon, Quetzal, Tapejara, Tek Quetzal, X-Tapejara",
+    "carryableby": "Aberrant Gigantopithecus, Gigantopithecus, Karkinos, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropeognathus, X-Tapejara",
     "candragcreatureswhileflying": "",
     "candragcreatures": "",
     "passengerweightmultiplier": "",
@@ -29350,10 +29391,6 @@
         "name": "Main Body",
         "colors": "Dino Light Yellow, Dino Dark Yellow, Dino Medium Green, DragonBase0, Dino Medium Brown, DragonBase1, DragonGreen0, DragonGreen2, DragonGreen3, WyvernPurple0, DragonGreen1, WyvernBlue0, Black"
       },
-      "1": {
-        "name": "",
-        "colors": "Dino Light Yellow, Dino Dark Yellow, Dino Medium Green, Dino Dark Green, Dino Medium Brown, Dino Dark Brown, Dark Grey, Dino Darker Grey, Black"
-      },
       "2": {
         "name": "Wings",
         "colors": "Dino Dark Yellow, Dino Medium Green, DragonBase0, WyvernPurple1, DragonGreen1, DragonBase1, DragonFire, WyvernPurple0, DragonGreen3, WyvernBlue0, Dino Medium Blue"
@@ -29441,7 +29478,7 @@
     "radiationimmune": "Yes",
     "immobilizedby": "Bola, Bear Trap, Plant Species Y (Scorched Earth)",
     "candamage": "Thatch",
-    "carryableby": "Aberrant Gigantopithecus, Gigantopithecus, Karkinos, Procoptodon, Pteranodon, Quetzal, Tapejara, Tek Quetzal, X-Tapejara",
+    "carryableby": "Aberrant Gigantopithecus, Gigantopithecus, Karkinos, Procoptodon, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropeognathus, X-Tapejara",
     "candragcreatureswhileflying": "",
     "candragcreatures": "",
     "passengerweightmultiplier": "",
@@ -31767,7 +31804,7 @@
     "attacks": {
       "1": {
         "name": "Bite",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Rock Drake bites the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Rock Drake bites the target.",
         "staminacost": "20",
         "attackrange": "1100",
         "minattackrange": "0",
@@ -31792,7 +31829,7 @@
       },
       "2": {
         "name": "Toggle Climbing",
-        "description": "Using the [[File:RMB.svg|x20px|Right Mousebutton]] (PC) the Rock Drake will climb up/down walls/cliffs/overhangs. This is beneficial when you want to climb down a wall rather than falling off.",
+        "description": "Using the [[File:RMB.svg|x20px|Right Mousebutton] (PC) the Rock Drake will climb up/down walls/cliffs/overhangs. This is beneficial when you want to climb down a wall rather than falling off.",
         "staminacost": "0",
         "attackrange": "0",
         "minattackrange": "0",
@@ -31817,7 +31854,7 @@
       },
       "3": {
         "name": "Toggle Camo",
-        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One), the Rock Drake camouflage itself from view, along with the mount rider and the saddle. Getting hit may lose the camouflage.",
+        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button] (Xbox One), the Rock Drake camouflage itself from view, along with the mount rider and the saddle. Getting hit may lose the camouflage.",
         "staminacost": "0",
         "attackrange": "0",
         "minattackrange": "0",
@@ -31842,7 +31879,7 @@
       },
       "4": {
         "name": "Pounce_DirectHit",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC) while climbing and within range of a wall, a ceiling, or the ground, the Rock Drake will pounce. Any wild or enemy creatures take damage upon impact.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton] (PC) while climbing and within range of a wall, a ceiling, or the ground, the Rock Drake will pounce. Any wild or enemy creatures take damage upon impact.",
         "staminacost": "0",
         "attackrange": "0",
         "minattackrange": "0",
@@ -31867,7 +31904,7 @@
       },
       "5": {
         "name": "Pounce_AOE",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC) while climbing and within range of a wall, a ceiling, or the ground, the Rock Drake will pounce. Any wild or enemy creatures take damage upon impact.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton] (PC) while climbing and within range of a wall, a ceiling, or the ground, the Rock Drake will pounce. Any wild or enemy creatures take damage upon impact.",
         "staminacost": "0",
         "attackrange": "0",
         "minattackrange": "0",
@@ -31892,7 +31929,7 @@
       },
       "6": {
         "name": "Bite (Climbing)",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), the Rock Drake bites the target. This may accidentally pounce if pointed at an eligible pounce surface.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton] (PC), the Rock Drake bites the target. This may accidentally pounce if pointed at an eligible pounce surface.",
         "staminacost": "20",
         "attackrange": "1000",
         "minattackrange": "0",
@@ -31928,6 +31965,7 @@
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Charcoal, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Mutton, Raw Prime Fish Meat, Raw Prime Meat, Silica Pearls, Silk (Scorched Earth), Spoiled Meat, Sulfur (Scorched Earth)"
   },
   "rockwell": {
+    "dlc": "Aberration",
     "variants": "Rockwell (Alpha), Rockwell (Beta), Rockwell (Gamma)",
     "releasedate": "2017-12-12",
     "releaseversion": "275.0",
@@ -32176,7 +32214,7 @@
     "attacks": {
       "1": {
         "name": "Bite",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Roll Rat bites the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Roll Rat bites the target.",
         "staminacost": "0",
         "attackrange": "500",
         "minattackrange": "0",
@@ -32674,7 +32712,7 @@
     "radiationimmune": "Yes",
     "immobilizedby": "Bola, Bear Trap, Plant Species Y (Scorched Earth)",
     "candamage": "Greenhouse, Thatch",
-    "carryableby": "Aberrant Gigantopithecus, Gigantopithecus, Karkinos, Procoptodon, Pteranodon, Quetzal, Tapejara, Tek Quetzal, X-Tapejara",
+    "carryableby": "Aberrant Gigantopithecus, Gigantopithecus, Karkinos, Procoptodon, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropeognathus, X-Tapejara",
     "candragcreatureswhileflying": "No",
     "candragcreatures": "",
     "passengerweightmultiplier": "",
@@ -34636,7 +34674,7 @@
     "immobilizedby": "Bola, Large Bear Trap",
     "teamname": "Robot_Neutral",
     "candamage": "Greenhouse, Thatch",
-    "carryableby": "Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Griffin, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropical Crystal Wyvern, X-Argentavis, X-Tapejara",
+    "carryableby": "Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Griffin, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropeognathus, Tropical Crystal Wyvern, X-Argentavis, X-Tapejara",
     "passengerweightmultiplier": 0.85,
     "meleebase": 0,
     "attacks": {
@@ -35507,7 +35545,7 @@
     "immobilizedby": "Chain Bola, Large Bear Trap",
     "teamname": "Herbivores_Medium",
     "candamage": "Greenhouse, Thatch, Wood",
-    "carryableby": "Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal, Tropical Crystal Wyvern",
+    "carryableby": "Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal",
     "passengerweightmultiplier": 0.85,
     "meleebase": 15,
     "attacks": {
@@ -36360,6 +36398,9 @@
         "name": "Wing Highlights",
         "colors": "Dino Dark Brown, Light Grey, Dino Dark Brown, Light Grey, Light Grey, Dark Grey, Dino Darker Grey, Dark Grey, White, Light Grey, Light Grey, Dino Light Blue, Dino Light Blue, NearWhite, Dino Light Blue, Dark Grey, Dino Light Blue, Dino Light Blue, Dark Grey, Dark Grey, Dark Grey"
       },
+      "3": {
+        "name": "Spots"
+      },
       "4": {
         "name": "Body Lower",
         "colors": "Dino Light Blue, Dino Light Blue, Dino Darker Grey, Light Grey, Light Grey, Dark Grey, Dino Light Blue, Dino Light Blue, White, Dark Grey, Dark Grey, Light Grey, Light Grey, NearWhite, Dino Light Blue, Dino Medium Brown, Dark Grey, Dino Dark Brown"
@@ -36769,7 +36810,7 @@
     "immobilizedby": "Chain Bola, Large Bear Trap, Plant Species Y",
     "teamname": "Carnivores_High",
     "candamage": "Thatch, Greenhouse, Wood, Stone, Metal, Tek, Adobe",
-    "carryableby": "Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal, Tropical Crystal Wyvern",
+    "carryableby": "Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal",
     "meleebase": 42,
     "attacks": {
       "1": {
@@ -36879,7 +36920,7 @@
     "immobilizedby": "Chain Bola, Large Bear Trap, Plant Species Y",
     "teamname": "Carnivores_High",
     "candamage": "Thatch, Greenhouse, Wood, Stone, Metal, Tek, Adobe",
-    "carryableby": "Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal, Tropical Crystal Wyvern",
+    "carryableby": "Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal",
     "meleebase": 36,
     "attacks": {
       "1": {
@@ -37070,7 +37111,7 @@
     "immobilizedby": "Bola, Bear Trap, Plant Species Y",
     "teamname": "Carnivores_High",
     "candamage": "Thatch, Greenhouse, Wood, Stone, Metal, Tek, Adobe",
-    "carryableby": "Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Griffin, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropical Crystal Wyvern, X-Argentavis, X-Tapejara",
+    "carryableby": "Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Griffin, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Pteranodon, Quetzal, Tapejara, Tek Quetzal, Tropeognathus, Tropical Crystal Wyvern, X-Argentavis, X-Tapejara",
     "meleebase": 10,
     "attacks": {
       "1": {
@@ -38348,7 +38389,7 @@
     "immobilizedby": "Chain Bola, Large Bear Trap, Plant Species Y",
     "teamname": "Carnivores_High",
     "candamage": "Thatch, Greenhouse, Wood, Stone, Metal, Tek, Adobe",
-    "carryableby": "Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal, Tropical Crystal Wyvern",
+    "carryableby": "Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal",
     "meleebase": 42,
     "attacks": {
       "1": {
@@ -38454,7 +38495,7 @@
     "immobilizedby": "Chain Bola, Large Bear Trap, Plant Species Y",
     "teamname": "Carnivores_High",
     "candamage": "Thatch, Greenhouse, Wood, Stone, Metal, Tek, Adobe",
-    "carryableby": "Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal, Tropical Crystal Wyvern",
+    "carryableby": "Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Quetzal, Tek Quetzal",
     "meleebase": 32,
     "attacks": {
       "1": {
@@ -38747,6 +38788,8 @@
         "colors": "BigFoot0, Dino Dark Orange, Dino Medium Brown, Dino Dark Brown, Dark Grey, Dino Darker Grey, Black, DragonGreen3, NearBlack, BigFoot5, DarkWolfFur, DragonGreen0, DragonGreen2, WyvernBlue1, WyvernBlue0, WyvernPurple0"
       },
       "5": {
+        "name": "Highlights",
+        "colors": "Dino Light Orange, Dino Light Yellow, BigFoot5, WolfFur, Dino Light Blue, Dino Light Brown, Dino Medium Brown, Light Grey, Black, Dino Albino"
       }
     },
     "stats": {
@@ -38814,7 +38857,7 @@
     "attacks": {
       "1": {
         "name": "Melee",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Deinonychus bites and claws at the target.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Deinonychus bites and claws at the target.",
         "staminacost": 0,
         "attackrange": 350,
         "minattackrange": 0,
@@ -38825,7 +38868,7 @@
       },
       "2": {
         "name": "Pounce",
-        "description": "Using the [[File:RMB.svg|x20px|Right Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button]] (Xbox One), the Deinonychus pounces on its target.",
+        "description": "Using the [[File:RMB.svg|x20px|Right Mousebutton]] (PC), [[File:PS4 L2.png|x20px|L2 Button]] (PS4), [[File:XboxOne LT.png|x20px|LT Button] (Xbox One), the Deinonychus pounces on its target.",
         "staminacost": 5,
         "attackrange": 300,
         "minattackrange": 0,
@@ -38836,7 +38879,7 @@
       },
       "3": {
         "name": "Roar",
-        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button]] (Xbox One), the Deinonychus bites and claws at the target. This attack type is not usable.",
+        "description": "Using <kbd>C</kbd> (PC), [[File:PS4 Right Stick.png|x20px|R3 Button]] (PS4), [[File:XboxOne Right Stick.png|x20px|R Button] (Xbox One), the Deinonychus bites and claws at the target. This attack type is not usable.",
         "staminacost": 0,
         "attackrange": 0,
         "minattackrange": 0,
@@ -38844,7 +38887,7 @@
       },
       "4": {
         "name": "Melee_Pounce",
-        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button]] (Xbox One), the Deinonychus bites the target when it has pinned creature with the pounce attack.",
+        "description": "Using the [[File:LMB.svg|x20px|Left Mousebutton]] (PC), [[File:PS4 R2.png|x20px|R2 Button]] (PS4), [[File:XboxOne RT.png|x20px|RT Button] (Xbox One), the Deinonychus bites the target when it has pinned creature with the pounce attack.",
         "staminacost": 0,
         "attackrange": 1200,
         "minattackrange": 0,
@@ -46062,7 +46105,23 @@
     "class": "Volcano_Allo_Character_BP_C",
     "blueprintpath": "Blueprint'/Game/Genesis/Dinos/BiomeVariants/Volcano_Allosaurus/Volcano_Allo_Character_BP.Volcano_Allo_Character_BP'",
     "commonname": "X-Allosaurus",
-    "group": "Dinosaurs, X-Creatures"
+    "group": "Dinosaurs, X-Creatures",
+    "colorization": {
+      "0": {
+        "name": "Main",
+        "colors": "BigFoot5, Dark Grey, Dino Dark Blue, Dino Dark Orange, Dino Dark Purple, Dino Dark Red, Dino Darker Grey, Dino Deep Blue, Dino Light Blue, Dino Medium Blue, Dino Medium Brown, DragonBase0, DragonBase1, DragonFire, DragonGreen3, NearBlack, WyvernBlue0, WyvernBlue1"
+      },
+      "1": "",
+      "3": "",
+      "4": {
+        "name": "Spine",
+        "colors": "BigFoot5, Dark Grey, Dino Dark Blue, Dino Dark Orange, Dino Dark Purple, Dino Dark Red, Dino Darker Grey, Dino Deep Blue, Dino Light Blue, Dino Medium Blue, Dino Medium Brown, DragonBase0, DragonBase1, DragonFire, DragonGreen3, NearBlack, WyvernBlue0, WyvernBlue1"
+      },
+      "5": {
+        "name": "Belly",
+        "colors": "BigFoot5, Dark Grey, Dino Dark Blue, Dino Dark Orange, Dino Dark Purple, Dino Dark Red, Dino Darker Grey, Dino Deep Blue, Dino Light Blue, Dino Medium Blue, Dino Medium Brown, DragonBase0, DragonBase1, DragonFire, DragonGreen3, NearBlack, WyvernBlue0, WyvernBlue1"
+      }
+    }
   },
   "xankylosaurus": {
     "inherits": "ankylosaurus",
@@ -46150,7 +46209,30 @@
     "class": "Bog_Raptor_Character_BP_C",
     "blueprintpath": "Blueprint'/Game/Genesis/Dinos/BiomeVariants/Bog_Raptor/Bog_Raptor_Character_BP.Bog_Raptor_Character_BP'",
     "commonname": "X-Raptor",
-    "group": "Dinosaurs, X-Creatures"
+    "group": "Dinosaurs, X-Creatures",
+    "colorization": {
+      "0": {
+        "name": "Lower Body",
+        "colors": "Black, Dino Dark Blue, Dino Light Blue, Dino Light Orange, Dino Medium Blue, DragonBase0, DragonBase1, DragonGreen0, DragonGreen2, DragonGreen3, NearBlack, NearWhite, WyvernBlue0, WyvernBlue1, WyvernPurple0, WyvernPurple1"
+      },
+      "1": "",
+      "2": {
+        "name": "Stripes",
+        "colors": "BigFoot5, Dino Light Blue, Dino Light Green, Dino Light Purple, Dino Light Yellow, DragonBase0, DragonBase1, DragonFire, DragonGreen0, DragonGreen2, DragonGreen3, Light Orange, Light Yellow, NearWhite, WolfFur, WyvernBlue0, WyvernBlue1, WyvernPurple0, WyvernPurple1"
+      },
+      "3": {
+        "name": "Belly",
+        "colors": "BigFoot5, Dino Deep Blue, Dino Light Blue, Dino Light Brown, Dino Light Green, Dino Light Purple, Dino Light Yellow, Dino Medium Blue, DragonBase0, DragonBase1, DragonFire, DragonGreen0, DragonGreen2, DragonGreen3, Light Orange, Light Yellow, NearWhite, WolfFur, WyvernBlue0, WyvernBlue1, WyvernPurple0, WyvernPurple1"
+      },
+      "4": {
+        "name": "Highlights",
+        "colors": "BigFoot5, Dino Deep Blue, Dino Light Blue, Dino Light Brown, Dino Light Green, Dino Light Purple, Dino Light Yellow, Dino Medium Blue, DragonBase0, DragonBase1, DragonFire, DragonGreen0, DragonGreen2, DragonGreen3, Light Orange, Light Yellow, NearWhite, WolfFur, WyvernBlue0, WyvernBlue1, WyvernPurple0, WyvernPurple1"
+      },
+      "5": {
+        "name": "Main Body",
+        "colors": "Black, Dino Dark Blue, Dino Dark Purple, Dino Darker Grey, Dino Medium Blue, DragonBase0, DragonBase1, DragonFire, DragonGreen3, NearBlack, WyvernBlue0, WyvernBlue1, WyvernPurple0, WyvernPurple1"
+      }
+    }
   },
   "xrex": {
     "inherits": "rex",
@@ -46166,7 +46248,18 @@
     "class": "Volcano_Golem_Character_BP_C",
     "blueprintpath": "Blueprint'/Game/Genesis/Dinos/BiomeVariants/Lava_Golem/Volcano_Golem_Character_BP.Volcano_Golem_Character_BP'",
     "commonname": "X-Rock Elemental",
-    "group": "Fantasy Creatures, X-Creatures"
+    "group": "Fantasy Creatures, X-Creatures",
+    "colorization": {
+      "0": {
+        "name": "Main Body",
+        "colors": "BigFoot5, Black, Dark Grey, Dino Dark Blue, Dino Dark Brown, Dino Dark Orange, Dino Dark Purple, Dino Dark Red, Dino Darker Grey, Dino Deep Blue, Dino Light Blue, Dino Light Brown, Dino Light Orange, Dino Light Purple, Dino Medium Blue, Dino Medium Brown, DragonBase0, DragonBase1, DragonFire, DragonGreen3, Light Grey, NearBlack, WyvernBlue0, WyvernPurple0"
+      },
+      "1": "",
+      "5": {
+        "name": "Body Highlights",
+        "colors": "BigFoot5, Black, Dark Grey, Dino Dark Blue, Dino Dark Brown, Dino Dark Orange, Dino Dark Purple, Dino Dark Red, Dino Darker Grey, Dino Deep Blue, Dino Light Blue, Dino Light Brown, Dino Light Orange, Dino Light Purple, Dino Medium Blue, Dino Medium Brown, DragonBase0, DragonBase1, DragonFire, DragonGreen3, Light Grey, NearBlack, WyvernBlue0, WyvernPurple0"
+      }
+    }
   },
   "xsabertooth": {
     "inherits": "sabertooth",
@@ -46206,7 +46299,29 @@
     "class": "Volcano_Trike_Character_BP_C",
     "blueprintpath": "Blueprint'/Game/Genesis/Dinos/BiomeVariants/Volcano_Trike/Volcano_Trike_Character_BP.Volcano_Trike_Character_BP'",
     "commonname": "X-Triceratops",
-    "group": "Dinosaurs, X-Creatures"
+    "group": "Dinosaurs, X-Creatures",
+    "colorization": {
+      "0": {
+        "name": "Body",
+        "colors": "BigFoot5, Black, Dark Grey, Dino Dark Blue, Dino Dark Brown, Dino Dark Orange, Dino Dark Purple, Dino Dark Red, Dino Darker Grey, Dino Deep Blue, Dino Light Blue, Dino Light Brown, Dino Light Orange, Dino Light Purple, Dino Medium Blue, Dino Medium Brown, DragonBase0, DragonBase1, DragonFire, DragonGreen3, Light Grey, NearBlack, WyvernBlue0, WyvernPurple0"
+      },
+      "1": {
+        "name": "Face and Feet",
+        "colors": "BigFoot5, Black, Dark Grey, Dino Dark Blue, Dino Dark Brown, Dino Dark Orange, Dino Dark Purple, Dino Dark Red, Dino Darker Grey, Dino Deep Blue, Dino Light Blue, Dino Light Brown, Dino Light Orange, Dino Light Purple, Dino Medium Blue, Dino Medium Brown, DragonBase0, DragonBase1, DragonFire, DragonGreen3, Light Grey, NearBlack, WyvernBlue0, WyvernPurple0"
+      },
+      "3": {
+        "name": "Frill",
+        "colors": "BigFoot5, Black, Dark Grey, Dino Dark Blue, Dino Dark Brown, Dino Dark Orange, Dino Dark Purple, Dino Dark Red, Dino Darker Grey, Dino Deep Blue, Dino Light Blue, Dino Light Brown, Dino Light Orange, Dino Light Purple, Dino Medium Blue, Dino Medium Brown, DragonBase0, DragonBase1, DragonFire, DragonGreen3, Light Grey, NearBlack, WyvernBlue0, WyvernPurple0"
+      },
+      "4": {
+        "name": "Patterning",
+        "colors": "BigFoot5, Black, Dark Grey, Dino Dark Blue, Dino Dark Brown, Dino Dark Orange, Dino Dark Purple, Dino Dark Red, Dino Darker Grey, Dino Deep Blue, Dino Light Blue, Dino Light Brown, Dino Light Orange, Dino Light Purple, Dino Medium Blue, Dino Medium Brown, DragonBase0, DragonBase1, DragonFire, DragonGreen3, Light Grey, NearBlack, WyvernBlue0, WyvernPurple0"
+      },
+      "5": {
+        "name": "Body Accents",
+        "colors": "BigFoot5, Black, Dark Grey, Dino Dark Blue, Dino Dark Brown, Dino Dark Orange, Dino Dark Purple, Dino Dark Red, Dino Darker Grey, Dino Deep Blue, Dino Light Blue, Dino Light Brown, Dino Light Orange, Dino Light Purple, Dino Medium Blue, Dino Medium Brown, DragonBase0, DragonBase1, DragonFire, DragonGreen3, Light Grey, NearBlack, WyvernBlue0, WyvernPurple0"
+      }
+    }
   },
   "xwoollyrhino": {
     "inherits": "woollyrhinoceros",
@@ -46222,7 +46337,30 @@
     "class": "Snow_Yutyrannus_Character_BP_C",
     "blueprintpath": "Blueprint'/Game/Genesis/Dinos/BiomeVariants/Snow_Yutyrannus/Snow_Yutyrannus_Character_BP.Snow_Yutyrannus_Character_BP'",
     "commonname": "X-Yutyrannus",
-    "group": "Dinosaurs, X-Creatures"
+    "group": "Dinosaurs, X-Creatures",
+    "colorization": {
+      "0": {
+        "name": "Main Body",
+        "colors": "BigFoot0, BigFoot4, BigFoot5, Black, Dark Grey, DarkWolfFur, Dino Albino, Dino Light Blue, Dino Light Brown, Dino Light Purple, Dino Medium Brown, Light Grey, NearBlack, NearWhite, WolfFur"
+      },
+      "1": "",
+      "2": {
+        "name": "Dark Accents",
+        "colors": "BigFoot0, BigFoot4, BigFoot5, Black, Dark Grey, DarkWolfFur, Dino Albino, Dino Light Blue, Dino Light Brown, Dino Light Purple, Dino Medium Brown, Light Grey, NearBlack, NearWhite, WolfFur"
+      },
+      "3": {
+        "name": "Spots",
+        "colors": "BigFoot0, BigFoot4, BigFoot5, Black, Dark Grey, DarkWolfFur, Dino Albino, Dino Light Blue, Dino Light Brown, Dino Light Purple, Dino Medium Brown, Light Grey, NearBlack, NearWhite, WolfFur"
+      },
+      "4": {
+        "name": "Belly",
+        "colors": "BigFoot0, BigFoot4, BigFoot5, Black, Dark Grey, DarkWolfFur, Dino Albino, Dino Light Blue, Dino Light Brown, Dino Light Purple, Dino Medium Brown, Light Grey, NearBlack, NearWhite, WolfFur"
+      },
+      "5": {
+        "name": "Back",
+        "colors": "BigFoot0, BigFoot4, BigFoot5, Black, Dark Grey, DarkWolfFur, Dino Albino, Dino Light Blue, Dino Light Brown, Dino Light Purple, Dino Medium Brown, Light Grey, NearBlack, NearWhite, WolfFur"
+      }
+    }
   },
   "alphabloodcrystalwyvern": {
     "dlc": "Crystal Isles",
@@ -47021,7 +47159,7 @@
     "commonname": "Tropeognathus",
     "dossierimage": "Dossier Tropeognathus.png",
     "dossieraddbook": "Yes",
-    "soundfile": "Tapejarasound.ogg",
+    "soundfile": "Tropeognathus half-loop sound.ogg",
     "pronunciation": "",
     "categories": "",
     "species": "Tropeognathus mesembrinus",

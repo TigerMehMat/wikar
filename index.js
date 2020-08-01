@@ -138,9 +138,9 @@ client.on('message', async message => {
                 case "р":
                         controller = new Breeding();
                         break;
-                // case "инфо":
-                //         controller = new InfoCommandController();
-                //         break;
+                case "инфо":
+                        controller = new InfoCommandController();
+                        break;
                 case "корм":
                 case "к":
                         controller = new Kibble();
