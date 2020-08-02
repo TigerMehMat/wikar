@@ -206,7 +206,7 @@ client.on('message', async message => {
                         await controller.validate();
                         await controller.process();
                 } catch (e) {
-                        console.log('Что-то пошло не так, выпали из обработки контроллера', e);
+                        console.error('Что-то пошло не так, выпали из обработки контроллера', e);
                 }
                 setTimeout(() => {
                         message.channel.stopTyping(true);

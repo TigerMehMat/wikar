@@ -40,7 +40,6 @@ class InfoCommandController extends AbstractCommandController {
 
         async getEmbed() {
                 let embed = new Discord.MessageEmbed();
-                console.log(this.creature);
                 embed.setTitle(this.creature.ru_name);
                 embed.addField(
                         'Иммунитет к',
@@ -86,7 +85,6 @@ class InfoCommandController extends AbstractCommandController {
                          '\nКатегория: ' + this.getParameter(this.creature_data.teamname),
                         true
                         );
-                console.log(this.creature_data);
                 return embed;
         }
 
