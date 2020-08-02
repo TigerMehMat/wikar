@@ -62,17 +62,26 @@ const functionsConf = {
         "example": "!разведение трайк 3 1",
         "exampleComment": "Выдаст карточку с информацией о разведении Трицератопса при скорости роста х3 и скорости инкубации х1",
     },
-    "множители": {
-        "name": "множители",
+    // "множители": {
+    //     "name": "множители",
+    //     "description": "Ставит или снимает роль, которая оповещается при изменении множителей официальных серверов.",
+    //     "params": [],
+    //     "aliases": ["множители"],
+    //     "example": "!множители",
+    //     "exampleComment": "Поставит роль 'множители', если её нет, и снимет, если она есть.",
+    //     "access": function(message){
+    //         let isRole  = message.member.roles.cache.find(value => value.name === "множители");
+    //         return !!isRole;
+    //     }
+    // },
+    "инфо": {
+        "name": "инфо",
         "description": "Ставит или снимает роль, которая оповещается при изменении множителей официальных серверов.",
-        "params": [],
-        "aliases": ["множители"],
-        "example": "!множители",
-        "exampleComment": "Поставит роль 'множители', если её нет, и снимет, если она есть.",
-        "access": function(message){
-            let isRole  = message.member.roles.cache.find(value => value.name === "множители");
-            return !!isRole;
-        }
+        "status": "α",
+        "params": ["название существа"],
+        "aliases": ["инфо"],
+        "example": "!инфо додо",
+        "exampleComment": "Вернет информацию о `Додо`.",
     }
 };
 
