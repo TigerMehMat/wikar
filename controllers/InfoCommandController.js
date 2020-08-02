@@ -93,10 +93,10 @@ class InfoCommandController extends AbstractCommandController {
         }
 
         getCanDamage() {
-                let candamage = this.creature_data.candamage;
-                if(!candamage) return 'Неизвестно';
-                candamage = candamage.split(', ');
-                let candamage_result = [];
+                let can_damage = this.creature_data.candamage;
+                if(!can_damage) return 'Неизвестно';
+                can_damage = can_damage.split(', ');
+                let can_damage_result = [];
                 let weights = {
                         'Thatch': 1,
                         'Wood': 2,
@@ -106,8 +106,8 @@ class InfoCommandController extends AbstractCommandController {
                         'Metal': 6,
                         'Tek': 7,
                 };
-                candamage.sort((a,b) => weights[a] > weights[b] ? 1 : -1);
-                for(let material of candamage) {
+                can_damage.sort((a,b) => weights[a] > weights[b] ? 1 : -1);
+                for(let material of can_damage) {
                         let material_translated = material;
                         switch (material) {
                                 case 'Thatch':
@@ -132,9 +132,9 @@ class InfoCommandController extends AbstractCommandController {
                                         material_translated = 'Тек';
                                         break;
                         }
-                        candamage_result.push(material_translated);
+                        can_damage_result.push(material_translated);
                 }
-                return candamage_result.join('\n');
+                return can_damage_result.join('\n');
         }
 
         async getHarvests(harvests) {
