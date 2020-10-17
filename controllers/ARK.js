@@ -175,7 +175,7 @@ class ARK extends ARK_api {
                                 .setFooter((new Date()).toTimeString())
                                 .setDescription(text + '\n[Источник](http://arkdedicated.com/dynamicconfig.ini)');
                         try {
-                                await message.edit(embed);
+                                await message.edit('', embed);
                         } catch (e) {
                                 console.error(e);
                         }
