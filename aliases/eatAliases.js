@@ -29,6 +29,7 @@ let aliases = {
     "Giant Bee Honey": "<:giant_bee_honey:553222776408768533> Мёд Гигантской Пчелы",
 
     "Plant Species Z Seed": "<:plant_species_z_seed:556052217979994126> Семена Растения Z",
+    "Plant Species X Seed": "⬛ Семена Растения X",
     "Aggeravic Mushroom": "<:aggeravic_mushroom:556062823998947340> Сытный Гриб",
     "Citronal Seed": "<:citronal_seed:556066130058412032> Семена Лимона",
     "Amarberry Seed": "<:amarberry_seed:556065769742663681> Семена Амаберри",
@@ -93,6 +94,11 @@ let aliases = {
     "Stone (10)": "<:stone:556067241989505034> Камень (10)",
     "Wood (10)": "⬛ Дерево (10)",
     "Berries (10)": "<:berries:556050971734704130> Ягоды (10)",
+
+    /* P+ */
+    "Fresh Barley, Fresh Wheat, or Soybean Primitive+": "⬛ Свежий Ячмень, Свежая Пшеница или Соя Primitive+",
+    "Dried Wheat Primitive+": "⬛ Сушеная Пшеница Primitive+",
+    "Fresh Sorghum Primitive+": "⬛ Свежий Сорго Primitive+"
 };
 
 module.exports = aliases;

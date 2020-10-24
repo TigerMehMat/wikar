@@ -198,14 +198,24 @@ class Dododex extends Tame {
                 /* Подделывание некоторых непереведенных частей */
 
                 /* -- Mobile/Switch -- */
-                let isMobile = item.label.search('Mobile/Switch') !== -1 || item.label === 'Kairuku Kibble';
-                if (isMobile) {
+                let is_mobile = item.label.search('Mobile/Switch') !== -1 || item.label === 'Kairuku Kibble' || item.label === 'Megalosaurus Kibble';
+                if (is_mobile) {
                         item.label = item.label.replace('Mobile/Switch', '').trim();
                         item.label = item.label.replace('Kibble', '').trim() + ' Egg';
                         if (kibblesArr[item.label]) {
                                 item.label = kibblesArr[item.label];
                         }
                         item.label = getIcon('корм') + ' Корм (' + item.label + ') <:phone:583555807321391117>';
+                        //item.label = '(📱) ' + item.label;
+                }
+                let is_switch_only = item.label.search('Nintendo Switch') !== -1;
+                if (is_switch_only) {
+                        item.label = item.label.replace('Nintendo Switch', '').trim();
+                        item.label = item.label.replace('Kibble', '').trim() + ' Egg';
+                        if (kibblesArr[item.label]) {
+                                item.label = kibblesArr[item.label];
+                        }
+                        item.label = getIcon('корм') + ' Корм (' + item.label + ') Nintendo Switch';
                         //item.label = '(📱) ' + item.label;
                 }
 
@@ -282,7 +292,7 @@ class Dododex extends Tame {
                                                         embed = "На Dododex'е нет существа ``" + thisClass.data.name + "``";
                                                         errorCode = 2;
                                                 } else {
-                                                        embed = "Dododex недоступен, код ошибки - " + e;
+                                                        embed = "Dododex недоступен, код ошибки - " + error;
                                                         errorCode = 3;
                                                 }
                                                 message.channel.stopTyping();

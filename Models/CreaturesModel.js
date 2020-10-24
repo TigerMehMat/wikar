@@ -18,25 +18,8 @@ const MainModel = require('./MainModel');
 
 class CreaturesModel extends MainModel {
 
-        #select_elements = [
-                "ca.id",
-                "ca.en_name",
-                "REPLACE(LOWER(COALESCE(ca.en_dv_alias, ca.en_name)), ' ', '') AS dv_alias",
-                "ca.ru_name",
-                "ca.ru_name_mn",
-                "ca.ru_name_rp",
-                "ca.sex",
-                "ca.srt",
-                "ca.parent",
-                "ca.entity_id",
-                "REPLACE(COALESCE(cam.alias, ca.en_name), ' ', '_') AS map_alias",
-                "COALESCE(cad.alias, ca.en_name) AS dododex_alias",
-                "cam.comment AS map_comment",
-        ];
-
         query_where = '';
         where_elements = [];
-        joins = [];
         creature_name = '';
         limit = null;
 
@@ -51,45 +34,23 @@ class CreaturesModel extends MainModel {
         }
 
         prepareWhere() {
-                let words = this.creature_name.split(' ');
-                let regexp = `(^|\\s)${words.shift()}.*`;
-                let subword;
-                while (subword = words.shift()) {
-                        regexp += `\\s(${subword}.*)`;
-                }
-                this.query_where = "WHERE ca.ru_name ~* $1\n" +
-                        "OR ca.en_name ~* $1\n" +
-                        "OR cae.alias ~* $1\n" +
-                        "OR car.alias ~* $1\n" +
-                        "OR ca.ru_name_mn ~* $1\n" +
-                        "OR car.alias_mn ~* $1\n";
-                this.where_elements = [regexp];
+                this.query_where = `WHERE similarity(search_name, $1) > 0.2`;
+                this.where_elements = [this.creature_name];
                 return this;
         }
 
         prepareWhereByID(id) {
-                this.query_where = "WHERE ca.id = $1";
+                this.query_where = "WHERE id = $1";
                 this.where_elements = [id];
-                return this;
-        }
-
-        prepareSearchJoins() {
-                this.joins = this.joins.concat([
-                        "LEFT JOIN creatures_aliases_en cae on ca.id = cae.creature_id",
-                        "LEFT JOIN creatures_aliases_ru car on ca.id = car.creature_id",
-                        "LEFT JOIN creatures_aliases_dododex cad on ca.id = cad.creature_id",
-                        "LEFT JOIN creature_aliases_map cam on ca.id = cam.creature_id" // Для карт
-                ]);
                 return this;
         }
 
         execute() {
                 return new Promise((resolve, reject) => {
-                        let query = `SELECT DISTINCT ${this.#select_elements.join(',')}
-                                FROM creatures ca
-                                    ${this.joins.join('\n')}
+                        let query = `SELECT *
+                                FROM v_search_creatures
                                     ${this.query_where}
-                                ORDER BY ca.srt, ca.id
+                                ORDER BY similarity(search_name, $1) DESC
                                 ${((this.limit) ? "LIMIT "+ this.limit : "")}`;
                         this.query(query, this.where_elements)
                                 .then(res => {
@@ -111,7 +72,6 @@ class CreaturesModel extends MainModel {
         search() {
                 return new Promise((resolve, reject) => {
                         this.prepareWhere();
-                        this.prepareSearchJoins();
                         this.execute()
                                 .then(value => {
                                         let result = [];
@@ -172,7 +132,6 @@ class CreaturesModel extends MainModel {
          */
         async getCreatureByID(id) {
                 this.prepareWhereByID(id);
-                this.prepareSearchJoins();
                 this.setLimit(1);
                 let res = await this.execute();
                 return res.length > 0 ? res[0] : null;

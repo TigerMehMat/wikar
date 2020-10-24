@@ -73,11 +73,11 @@ class Breeding extends AbstractCommandController {
                 }
                 /* --- Вытащили нужное существо --- */
                 let text;
-                let breeding;
+                let is_breeding;
 
                 if (!data['breeding'] || !data['breeding']['maturationtime']) {
                         text = '🚫 Неразводимое существо';
-                        breeding = false;
+                        is_breeding = false;
                 } else {
                         text = '✅ Разводимое существо';
                         if (this.creature.dv_alias === 'reaper')
@@ -86,7 +86,7 @@ class Breeding extends AbstractCommandController {
                                 text += '\n*Может быть выращен из дикого яйца, но взрослые особи спариваться не могут.*';
                         if (this.creature.dv_alias === 'wyvern')
                                 text += '\n*Может быть выращена из дикого яйца, но взрослые особи спариваться не могут.*';
-                        breeding = true;
+                        is_breeding = true;
                 }
 
                 let embed = new Discord.MessageEmbed()
@@ -94,7 +94,7 @@ class Breeding extends AbstractCommandController {
                         .setAuthor(this.message.author.username, this.message.author.avatarURL())
                         .setDescription(comment + text);
 
-                if (breeding) {
+                if (is_breeding) {
                         if (data['breeding']['maturationtime']) {
                                 embed.addField('Общее время роста', DiscordHelper.getTime(parseInt(data['breeding']['maturationtime']) / this.multipliers.mature), true);
                         }
@@ -109,16 +109,13 @@ class Breeding extends AbstractCommandController {
                                 embed.addField('Диапазон инкубации', data['breeding']['mintemp'] + ' - ' + data['breeding']['maxtemp'] + ' °C', true);
 
 
-                		embed.addField('\u200B', '\u200B');
+                        embed.addField('\u200B', '\u200B');
 
-                        if (data['breeding']['babytime'])
-                                embed.addField('Детёныш', DiscordHelper.getTime(parseInt(data['breeding']['babytime']) / this.multipliers.mature), true);
-
-                        if (data['breeding']['juveniletime'])
-                                embed.addField('Юнец', DiscordHelper.getTime(parseInt(data['breeding']['juveniletime']) / this.multipliers.mature), true);
-
-                        if (data['breeding']['adolescenttime'])
-                                embed.addField('Юный', DiscordHelper.getTime(parseInt(data['breeding']['adolescenttime']) / this.multipliers.mature), true);
+                        if (data['breeding']['maturationtime']) {
+                                embed.addField('Детёныш', DiscordHelper.getTime(Math.floor(Number(data['breeding']['maturationtime'] * 0.1)) / this.multipliers.mature), true);
+                                embed.addField('Юнец', DiscordHelper.getTime(Math.floor(Number(data['breeding']['maturationtime'] * 0.4)) / this.multipliers.mature), true);
+                                embed.addField('Юный', DiscordHelper.getTime(Math.floor(Number(data['breeding']['maturationtime'] * 0.5)) / this.multipliers.mature), true);
+                        }
                 }
 
                 embed.addField('\u200B', '\u200B');
