@@ -51,6 +51,7 @@
       "wakefooddeplmult": ""
     },
     "tamingfood": {
+
       "kibble": "",
       "mobilekibble": "",
       "favoritefood": "",
@@ -249,6 +250,13 @@
     },
     "harvests": ""
   },
+
+
+
+
+
+
+
   "achatina": {
     "variants": "Aberrant Achatina, Eerie Achatina",
     "releasedate": "2016-11-24",
@@ -382,6 +390,9 @@
     "canbeharvestedfor": "Chitin, Raw Meat"
 
   },
+
+
+
   "allosaurus": {
     "variants": "Brute X-Allosaurus, Eerie Allosaurus, X-Allosaurus",
     "releasedate": "2016-07-28",
@@ -449,10 +460,16 @@
         "colors": "Dino Dark Red, Dino Light Orange, Dino Dark Orange, Dino Light Yellow, Dino Dark Yellow, Dino Light Green, Dino Medium Green, Dino Dark Green, Dino Light Brown, Dino Medium Brown, Dino Dark Brown, Light Grey, Dark Grey, Dino Darker Grey, Black"
       },
       "1": {
+
+
       },
       "2": {
+
+
       },
       "3": {
+
+
       },
       "4": {
         "name": "Spine",
@@ -576,6 +593,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "alphacarnotaurus": {
     "variants": "Aberrant Carnotaurus, Carnotaurus, Corrupted Carnotaurus, Eerie Alpha Carno, Eerie Carno, Skeletal Carnotaurus",
     "releasedate": "2015-08-07",
@@ -684,6 +704,9 @@
     "specialloot": "Alpha Carnotaurus Arm"
 
   },
+
+
+
   "alphaleedsichthys": {
     "variants": "Leedsichthys",
     "releasedate": "2017-03-31",
@@ -705,8 +728,6 @@
     "soundfile": "",
     "pronunciation": "",
     "categories": "Aquatic",
-    "species": "Leedsichthys conviviumbrosia",
-    "time": "Mid-Jurassic",
     "group": "Alpha Creatures, Fish",
     "temperament": "Defensive",
     "diet": "Piscivore",
@@ -776,6 +797,9 @@
     "canbeharvestedfor": "Hide, Raw Prime Fish Meat, Raw Fish Meat",
     "specialloot": "Captain's Hat Skin, Alpha Leedsichthys Blubber"
   },
+
+
+
   "alphamegalodon": {
     "variants": "Brute X-Megalodon, Golden Striped Brute Megalodon, Golden Striped Megalodon, Megalodon, X-Megalodon",
     "releasedate": "2017-05-05",
@@ -866,6 +890,9 @@
     "canbeharvestedfor": "Raw Fish Meat, Raw Prime Fish Meat",
     "specialloot": "Alpha Megalodon Fin"
   },
+
+
+
   "alphamosasaurus": {
     "variants": "Brute X-Mosasaurus, Eerie Alpha Mosasaur, Eerie Mosasaur, Mosasaurus, X-Mosasaurus",
     "releasedate": "2016-06-02",
@@ -899,12 +926,16 @@
         "colors": "Dark Red, Red, Black, Dino Albino"
       },
       "1": {
+
+
       },
       "2": {
         "name": "Spinal Ridge",
         "colors": "Dark Red, Red, Black, Dino Albino"
       },
       "3": {
+
+
       },
       "4": {
         "name": "Patterning",
@@ -965,6 +996,9 @@
     "canbeharvestedfor": "Hide, Raw Prime Meat",
     "specialloot": "Alpha Mosasaur Tooth"
   },
+
+
+
   "alpharaptor": {
     "variants": "Aberrant Raptor, Brute X-Raptor, Corrupted Raptor, Eerie Alpha Raptor, Eerie Raptor, Malfunctioned Tek Raptor, Raptor, Skeletal Raptor, Tek Raptor, X-Raptor",
     "releasedate": "2015-08-07",
@@ -1062,8 +1096,11 @@
     "specialloot": "Alpha Raptor Claw"
 
   },
+
+
+
   "alphatrex": {
-    "variants": "Brute Malfunctioned Tek Rex, Brute X-Rex, Corrupted Rex, DodoRex, Eerie Alpha T-Rex, Eerie Rex, Enraged Corrupted Rex, Malfunctioned Tek Rex, Rex, Skeletal Rex, Tek Rex, X-Rex",
+    "variants": "Brute Malfunctioned Tek Rex, Brute X-Rex, Corrupted Rex, DodoRex, Eerie Alpha T-Rex, Eerie Rex, Enraged Corrupted Rex, Malfunctioned Tek Rex, Rex, Rex Ghost, Skeletal Rex, Tek Rex, X-Rex",
     "releasedate": "2015-08-05",
     "releaseversion": "193.0",
     "xboxreleasedate": "2015-12-16",
@@ -1165,6 +1202,9 @@
     "canbeharvestedfor": "Hide, Raw Prime Meat",
     "specialloot": "Alpha Tyrannosaur Tooth, Alpha Rex Trophy, Trike Bone Helmet Skin"
   },
+
+
+
   "alphatusoteuthis": {
     "variants": "Brute Tusoteuthis, Tusoteuthis",
     "releasedate": "2016-12-23",
@@ -1186,8 +1226,6 @@
     "soundfile": "",
     "pronunciation": "",
     "categories": "Aquatic",
-    "species": "Tusoteuthis vampyrus",
-    "time": "Cretaceous",
     "group": "Alpha Creatures, Invertebrates",
     "temperament": "Aggressive",
     "diet": "Carnivore",
@@ -1294,6 +1332,9 @@
     "specialloot": "Alpha Tusoteuthis Eye, Tusoteuthis Tentacle"
 
   },
+
+
+
   "ammonite": {
     "variants": "Eerie Ammonite",
     "releasedate": "2017-02-26",
@@ -1389,6 +1430,9 @@
     "canbeharvestedfor": "Ammonite Bile, Black Pearl, Chitin, Oil, Raw Meat, Silica Pearls"
 
   },
+
+
+
   "angler": {
     "variants": "Aberrant Anglerfish, Eerie Angler",
     "releasedate": "2015-11-12",
@@ -1455,6 +1499,8 @@
         "colors": "Dino Light Red, Dino Dark Red, Dino Light Orange, Dino Dark Orange, Dino Light Yellow, Dino Dark Yellow, Dino Light Green, Dino Medium Green, Dino Dark Green, Dino Light Blue, Dino Dark Blue, Dino Light Purple, Dino Dark Purple, Black, Dino Albino, Red, Orange, Yellow, Green, Blue, Purple"
       },
       "4": {
+
+
       },
       "5": {
         "name": "Tail fin and Accents",
@@ -1542,6 +1588,9 @@
     "canbeharvestedfor": "AnglerGel, Raw Fish Meat",
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "ankylosaurus": {
     "variants": "Aberrant Ankylosaurus, Eerie Ankylo, X-Ankylosaurus",
     "releasedate": "2015-06-02",
@@ -1732,6 +1781,9 @@
     "canbeharvestedfor": "Hide, Keratin, Raw Meat",
     "harvests": "Amarberry, Amarberry Seed, Azulberry, Azulberry Seed, Cactus Sap, Citronal Seed, Crystal, Flint, Longrass Seed, Mejoberry, Mejoberry Seed, Metal, Narcoberry, Narcoberry Seed, Obsidian, Oil, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Raw Salt, Rockarrot Seed, Savoroot Seed, Stimberry, Stimberry Seed, Stone, Sulfur, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "araneomorphus": {
     "variants": "Aberrant Araneo, Brute Araneo, Broodgenetrix, Eerie Araneo",
     "releasedate": "2015-06-02",
@@ -1782,30 +1834,39 @@
       "kibble": "",
       "favoritefood": "Spoiled Meat"
     },
+    "breeding": {
+      "egg": "Araneo Egg",
+      "mintemp": 4,
+      "maxtemp": 12,
+      "incubationtime": 5142.44575,
+      "maturationtime": 90090.0901,
+      "mintimebetweenmating": 64800,
+      "maxtimebetweenmating": 172800
+    },
     "colorization": {
       "0": {
         "name": "Thorax and Head",
-        "femalecolors": "Red",
+      "femalecolors": "Red",
         "colors": "Dino Dark Red, Dino Dark Orange, Dino Dark Yellow, Dino Medium Green, Dino Dark Green, Dino Dark Blue, Dino Dark Purple, Dino Medium Brown, Dino Dark Brown, Dark Grey, Dino Darker Grey, Black"
       },
       "2": {
         "name": "Lower Abdomen",
-        "femalecolors": "Blue",
+      "femalecolors": "Blue",
         "colors": "Dino Dark Red, Dino Dark Orange, Dino Dark Yellow, Dino Medium Green, Dino Dark Green, Dino Dark Blue, Dino Dark Purple, Dino Medium Brown, Dino Dark Brown, Dark Grey, Dino Darker Grey, Black"
       },
       "3": {
         "name": "Leg",
-        "femalecolors": "Cyan",
+      "femalecolors": "Cyan",
         "colors": "Dino Dark Red, Dino Dark Orange, Dino Dark Yellow, Dino Medium Green, Dino Dark Green, Dino Dark Blue, Dino Dark Purple, Dino Medium Brown, Dino Dark Brown, Dark Grey, Dino Darker Grey, Black"
       },
       "4": {
         "name": "Scutes",
-        "femalecolors": "Yellow",
+      "femalecolors": "Yellow",
         "colors": "Dino Light Red, Dino Light Orange, Dino Light Yellow, Dino Light Green, Dino Medium Green, Dino Light Blue, Dino Light Purple, Dino Light Brown, Dino Medium Brown, Light Grey, Black"
       },
       "5": {
         "name": "Upper Abdomen and Markings",
-        "femalecolors": "Magenta",
+      "femalecolors": "Magenta",
         "colors": "Dino Dark Red, Dino Dark Orange, Dino Dark Yellow, Dino Medium Green, Dino Dark Green, Dino Dark Blue, Dino Dark Purple, Dino Medium Brown, Dino Dark Brown, Dark Grey, Dino Darker Grey, Black"
       }
     },
@@ -1910,6 +1971,9 @@
     "canbeharvestedfor": "Chitin, Raw Meat",
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "archaeopteryx": {
     "variants": "Eerie Archaeopteryx",
     "releasedate": "2016-09-12",
@@ -1975,12 +2039,16 @@
         "colors": "Dino Light Red, Dino Dark Red, Dino Light Orange, Dino Dark Orange, Dino Light Yellow, Dino Dark Yellow, Dino Light Green, Dino Medium Green, Dino Dark Green, Dino Light Blue, Dino Dark Blue, Dino Light Purple, Dino Dark Purple, Dino Light Brown, Dino Medium Brown, Dino Dark Brown, Light Grey, Dark Grey, Dino Darker Grey, Black"
       },
       "1": {
+
+
       },
       "2": {
         "name": "Skin",
         "colors": "Dino Dark Red, Dino Dark Orange, Dino Dark Yellow, Dino Medium Green, Dino Dark Green, Dino Medium Brown, Dino Dark Brown, Dark Grey, Dino Darker Grey, Black"
       },
       "3": {
+
+
       },
       "4": {
         "name": "Top & Wing Tips",
@@ -2070,6 +2138,9 @@
 
     "harvests": "Amarberry, Amarberry Seed, Azulberry, Azulberry Seed, Cactus Sap, Citronal Seed, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Rockarrot Seed, Savoroot Seed, Stimberry, Stimberry Seed, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "argentavis": {
     "variants": "Argentustus, Eerie Argentavis, X-Argentavis",
     "releasedate": "2015-06-02",
@@ -2262,6 +2333,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "argentustus": {
     "inherits": "argentavis",
     "variants": "Argentavis, Eerie Argentavis",
@@ -2394,6 +2468,9 @@
     "specialloot": "Eery Element (Mobile), Argentustus Pt. Note (Mobile)",
     "lootitems": ""
   },
+
+
+
   "arthropluera": {
     "variants": "Aberrant Arthropluera, Corrupted Arthropluera, Eerie Arthropluera",
     "releasedate": "2016-05-04",
@@ -2442,6 +2519,15 @@
     "tamingfood": {
 
       "favoritefood": "Broth of Enlightenment"
+    },
+    "breeding": {
+      "egg": "Arthropluera Egg",
+      "mintemp": 18,
+      "maxtemp": 22,
+      "incubationtime": 8999.28006,
+      "maturationtime": 185185.185,
+      "mintimebetweenmating": 64800,
+      "maxtimebetweenmating": 172800
     },
     "colorization": {
       "0": {
@@ -2568,6 +2654,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "attackdrone": {
     "releasedate": "2017-08-29",
     "releaseversion": "267.0",
@@ -2711,6 +2800,9 @@
     "chancetodroploot": 0
 
   },
+
+
+
   "baryonyx": {
     "variants": "Aberrant Baryonyx, Eerie Baryonyx",
     "releasedate": "2017-01-30",
@@ -2846,7 +2938,7 @@
     "mass": 190,
     "fecessize": "Medium",
     "radiationimmune": "No",
-    "immobilizedby": "Bola, Bear Trap, Large Bear Trap, Plant Species Y Trap (Scorched Earth)",
+    "immobilizedby": "Bear Trap, Chain Bola, Large Bear Trap, Plant Species Y Trap (Scorched Earth)",
     "candamage": "Wood, Thatch, Greenhouse",
     "carryableby": "Aberrant Megalosaurus, Argentavis, Blood Crystal Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Karkinos, Lightning Wyvern, Megalosaurus, Poison Wyvern, Quetzal, Tek Quetzal, Tropical Crystal Wyvern, Tusoteuthis, X-Argentavis",
     "candragcreatureswhileflying": "No",
@@ -2891,6 +2983,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Charcoal, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Mutton, Raw Prime Fish Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "basilosaurus": {
     "variants": "Brute Basilosaurus, Eerie Basilosaurus, X-Basilosaurus",
     "releasedate": "2017-01-30",
@@ -3059,6 +3154,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Charcoal, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Mutton, Raw Prime Fish Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "beelzebufo": {
     "variants": "Aberrant Beelzebufo, Beelzemorbus, Eerie Beelzebufo",
     "releasedate": "2015-09-28",
@@ -3245,6 +3343,9 @@
     "specialloot": "Frog Legs (Mobile)",
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Cementing Paste, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "beelzemorbus": {
     "inherits": "beelzebufo",
     "variants": "Beelzebufo, Eerie Beelzebufo",
@@ -3323,6 +3424,7 @@
       "melee": "",
       "torpor": 300,
       "walkspeed": 1000,
+      "walkspeed": "",
       "riddenwalkspeed": "",
       "walkingstaminaconsumptionrate": "",
       "untamedrunspeed": "",
@@ -3375,6 +3477,9 @@
     "specialloot": "Eery Element (Mobile), Beelzemorbus Pt. Note (Mobile), Frog Legs (Mobile)",
     "lootitems": ""
   },
+
+
+
   "brontosaurus": {
     "variants": "Eerie Bronto, Skeletal Bronto",
     "releasedate": "2015-06-02",
@@ -3537,6 +3642,9 @@
     "specialloot": "Sauropod Vertebra",
     "harvests": "Amarberry, Amarberry Seed, Azulberry, Azulberry Seed, Cactus Sap, Citronal Seed, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Rockarrot Seed, Savoroot Seed, Stimberry, Stimberry Seed, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "broodmotherlysrix": {
     "variants": "Broodmother Lysrix (Alpha), Broodmother Lysrix (Beta), Broodmother Lysrix (Gamma)",
     "releasedate": "2015-06-02",
@@ -3731,6 +3839,9 @@
       "health": 972000
     }
   },
+
+
+
   "broodgenetrix": {
     "inherits": "broodmotherlysrix",
     "variants": "Araneo, Eerie Araneo",
@@ -3832,6 +3943,9 @@
     "canbeharvestedfor": "",
     "specialloot": "Eery Element (Mobile), Broodgenetrix Pt. Note (Mobile)"
   },
+
+
+
   "bunnydodo": {
     "variants": "Aberrant Dodo, Bunny Oviraptor, Dodo, Dodo Wyvern, DodoRex, Party Dodo, Zomdodo",
     "event": "ARK: Eggcellent Adventure, ARK: Eggcellent Adventure 3, ARK: Eggcellent Adventure 4, ARK: Eggcellent Adventure 5",
@@ -3845,16 +3959,14 @@
     "mobilereleaseversion": "",
     "switchreleasedate": "Unreleased",
     "switchreleaseversion": "",
-    "egsreleasedate": "2020-06-11",
-    "egsreleaseversion": "311.74",
+    "egsreleasedate": "Unreleased",
+    "egsreleaseversion": "",
     "class": "Dodo_Character_BP_Bunny_C",
     "blueprintpath": "Blueprint'/Game/PrimalEarth/Dinos/Dodo/Dodo_Character_BP_Bunny.Dodo_Character_BP_Bunny'",
     "commonname": "Bunny Dodo",
     "soundfile": "PW_dodo_voc_mumble.ogg",
     "pronunciation": "",
     "categories": "",
-    "species": "Raphus replicare",
-    "time": "Late Holocene",
     "group": "Birds, Event Creatures",
     "temperament": "Oblivious",
     "diet": "Herbivore",
@@ -3969,6 +4081,9 @@
     "canbeharvestedfor": "Hide, Raw Meat"
 
   },
+
+
+
   "bunnyoviraptor": {
     "variants": "Bunny Dodo, Oviraptor",
     "event": "ARK: Eggcellent Adventure, ARK: Eggcellent Adventure 3, ARK: Eggcellent Adventure 4, ARK: Eggcellent Adventure 5",
@@ -3982,16 +4097,14 @@
     "mobilereleaseversion": "",
     "switchreleasedate": "Unreleased",
     "switchreleaseversion": "",
-    "egsreleasedate": "2020-06-11",
-    "egsreleaseversion": "311.74",
+    "egsreleasedate": "Unreleased",
+    "egsreleaseversion": "",
     "class": "Bunny_Oviraptor_Character_BP_C",
     "blueprintpath": "Blueprint'/Game/PrimalEarth/Dinos/Oviraptor/BunnyOviraptor_Character_BP.BunnyOviraptor_Character_BP'",
     "commonname": "Bunny Oviraptor",
     "soundfile": "Oviraptor_Startled_3.OGG",
     "pronunciation": "",
     "categories": "",
-    "species": "Oviraptor philodator",
-    "time": "Late Cretaceous",
     "group": "Dinosaurs, Event Creatures",
     "temperament": "Skittish",
     "diet": "Carnivore",
@@ -4103,6 +4216,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "carbonemys": {
     "variants": "Aberrant Carbonemys, Eerie Carbonemys",
     "releasedate": "2015-06-02",
@@ -4264,6 +4380,9 @@
 
     "harvests": "Amarberry, Amarberry Seed, Azulberry, Azulberry Seed, Cactus Sap, Citronal Seed, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Rockarrot Seed, Savoroot Seed, Stimberry, Stimberry Seed, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "carnotaurus": {
     "variants": "Aberrant Carnotaurus, Alpha Carnotaurus, Corrupted Carnotaurus, Eerie Alpha Carno, Eerie Carno, Skeletal Carnotaurus",
     "releasedate": "2015-06-02",
@@ -4437,6 +4556,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "castoroides": {
     "variants": "Eerie Castoroides",
     "releasedate": "2016-02-24",
@@ -4505,8 +4627,12 @@
         "colors": "Dino Light Orange, Dino Dark Orange, Dino Light Brown, Dino Medium Brown, Dino Dark Brown, Light Grey, Dark Grey, Dino Darker Grey, Black, Bigfoot0, Bigfoot4, Bigfoot5"
       },
       "2": {
+
+
       },
       "3": {
+
+
       },
       "4": {
         "name": "Stripe",
@@ -4598,6 +4724,9 @@
     "canbeharvestedfor": "Hide, Pelt, Raw Meat",
     "harvests": "Amarberry, Amarberry Seed, Azulberry, Azulberry Seed, Cactus Sap, Citronal Seed, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Rockarrot Seed, Savoroot Seed, Stimberry, Stimberry Seed, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "chalicotherium": {
     "variants": "Corrupted Chalicotherium, Eerie Chalicotherium, Obsidioequus",
     "releasedate": "2016-10-21",
@@ -4838,6 +4967,9 @@
     "canbeharvestedfor": "Hide, Raw Meat, Raw Prime Meat",
     "harvests": "Amarberry, Amarberry Seed, Ammonite Bile, AnglerGel, Bio Toxin, Azulberry, Azulberry Seed, Black Pearl, Cactus Sap, Chitin, Citronal Seed, Crystal, Hide, Keratin, Leech Blood, Longrass Seed, Mejoberry, Mejoberry Seed, Metal, Narcoberry, Narcoberry Seed, Obsidian, Oil, Organic Polymer, Pelt, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Raw Fish Meat, Raw Meat, Raw Prime Meat, Rockarrot Seed, Savoroot Seed, Silica Pearls, Silk, Spoiled Meat, Stimberry, Stimberry Seed, Stone, Sulfur, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "cnidaria": {
     "variants": "Aberrant Cnidaria, Cubozoa Multis",
     "releasedate": "2016-12-23",
@@ -4917,6 +5049,9 @@
     "chancetodroploot": 0,
     "canbeharvestedfor": "Bio Toxin"
   },
+
+
+
   "coelacanth": {
     "variants": "Abberant Coelacanth, Eerie Coelacanth",
     "releasedate": "2015-06-02",
@@ -5017,6 +5152,9 @@
     "chancetodroploot": 0,
     "canbeharvestedfor": "Raw Fish Meat"
   },
+
+
+
   "compsognathus": {
     "variants": "Eerie Compy",
     "releasedate": "2015-11-21",
@@ -5182,6 +5320,9 @@
     "canbeharvestedfor": "Hide, Raw Meat",
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "cubozoamultis": {
     "inherits": "cnidaria",
     "variants": "Cnidaria",
@@ -5237,6 +5378,9 @@
     "specialloot": "Eery Element (Mobile), Cubozoa Multis Pt. Note (Mobile)",
     "lootitems": ""
   },
+
+
+
   "daeodon": {
     "variants": "Eerie Daeodon",
     "releasedate": "2017-05-05",
@@ -5436,6 +5580,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Charcoal, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Mutton, Raw Prime Fish Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "defenseunit": {
     "releasedate": "2017-08-29",
     "releaseversion": "267.0",
@@ -5553,6 +5700,9 @@
     "chancetodroploot": 1,
     "canbeharvestedfor": "Element"
   },
+
+
+
   "dilophosaurus": {
     "variants": "Corrupted Dilophosaur, Eerie Dilophosaurus",
     "releasedate": "2015-06-02",
@@ -5731,6 +5881,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "dimetrodon": {
     "variants": "Aberrant Dimetrodon, Eerie Dimetrodon",
     "releasedate": "2016-01-15",
@@ -5890,6 +6043,9 @@
     "canbeharvestedfor": "Hide, Raw Meat, Raw Prime Meat",
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "dimorphodon": {
     "variants": "Aberrant Dimorphodon, Corrupted Dimorphodon, Eerie Dimorphodon",
     "releasedate": "2015-07-18",
@@ -6045,6 +6201,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "diplocaulus": {
     "variants": "Aberrant Diplocaulus, Eerie Diplocaulus",
     "releasedate": "2016-10-21",
@@ -6125,7 +6284,7 @@
     },
     "stats": {
       "cansuffocate": "No",
-      "health": 190,
+      "health": 250,
       "healthwildlevel": 0.2,
       "healthtamedlevel": 0.27,
       "healthtamedmult": 0,
@@ -6204,6 +6363,9 @@
     "canbeharvestedfor": "Hide, Raw Meat",
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "diplodocus": {
     "variants": "Aberrant Diplodocus, Eerie Diplodocus",
     "releasedate": "2016-06-02",
@@ -6278,8 +6440,12 @@
         "colors": "Dino Dark Red, Dino Dark Orange, Dino Dark Yellow, Dino Medium Green, Dino Dark Green, Dino Medium Brown, Dino Dark Brown, Dark Grey, Dino Darker Grey, Black"
       },
       "2": {
+
+
       },
       "3": {
+
+
       },
       "4": {
         "name": "Back",
@@ -6366,6 +6532,9 @@
     "canbeharvestedfor": "Hide, Raw Meat, Raw Prime Meat",
     "specialloot": "Sauropod Vertebra"
   },
+
+
+
   "direbear": {
     "variants": "Aberrant Dire Bear, Dire Polar Bear, Eerie Dire Bear, Polar Bear, Spirit Dire Bear",
     "releasedate": "2016-04-20",
@@ -6429,10 +6598,16 @@
         "colors": "Dino Light Orange, Dino Dark Orange, Dino Light Brown, Dino Medium Brown, Dino Dark Brown, Light Grey, Dark Grey, Dino Darker Grey, Black, Bigfoot0, Bigfoot4, Bigfoot5"
       },
       "1": {
+
+
       },
       "3": {
+
+
       },
       "4": {
+
+
       },
       "5": {
         "name": "Belly and Legs",
@@ -6539,8 +6714,11 @@
     "canbeharvestedfor": "Hide, Pelt, Raw Meat",
     "harvests": "Amarberry, Amarberry Seed, Ammonite Bile, AnglerGel, Bio Toxin, Azulberry, Azulberry Seed, Black Pearl, Chitin, Citronal Seed, FiberHide, Keratin, Leech Blood, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Oil, Organic Polymer, Pelt, Plant Species X Seed, Rare Flower, Raw Fish Meat, Raw Meat, Raw Prime Meat, Rockarrot Seed, Savoroot Seed, Silica Pearls, Silk, Spoiled Meat, Stimberry, Stimberry Seed, Sulfur, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "direwolf": {
-    "variants": "Eerie Dire Wolf, Spirit Direwolf",
+    "variants": "Direwolf Ghost, Eerie Dire Wolf, Spirit Direwolf",
     "releasedate": "2015-09-28",
     "releaseversion": "216.0",
     "xboxreleasedate": "2015-12-16",
@@ -6705,6 +6883,63 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
+  "direwolfghost": {
+    "inherits": "direwolf",
+    "dlc": "",
+    "event": "ARK: Fear Evolved 4",
+    "variants": "Direwolf, Spirit Direwolf",
+    "releasedate": "2020-10-23",
+    "releaseversion": "315.2",
+    "xboxreleasedate": "2020-10-27",
+    "xboxreleaseversion": "802.11",
+    "ps4releasedate": "2020-10-23",
+    "ps4releaseversion": "551.11",
+    "mobilereleasedate": "Unreleased",
+    "mobilereleaseversion": "",
+    "switchreleasedate": "Unreleased",
+    "switchreleaseversion": "",
+    "egsreleasedate": "2020-10-23",
+    "egsreleaseversion": "315.2",
+    "class": "Ghost_Direwolf_Character_BP_C",
+    "blueprintpath": "Blueprint'/Game/PrimalEarth/Dinos/Direwolf/Ghost_Direwolf_Character_BP.Ghost_Direwolf_Character_BP'",
+    "commonname": "Direwolf Ghost",
+    "species": "",
+    "time": "",
+    "group": "Event Creatures, Mammals",
+    "dossierimage": "Direwolf Ghost Image.jpg",
+    "dossieraddbook": "No",
+    "taming": {
+      "canbetamed": "No",
+      "rideable": "No",
+      "equipment": "",
+      "uniquecostumes": "",
+      "canmountonhumans": "",
+      "nonviolenttame": "",
+      "knockouttame": "",
+      "ballowmountedweaponry": ""
+    },
+    "tamingfood": {
+
+      "kibble": "",
+      "mobilekibble": "",
+      "favoritefood": "",
+      "mobilefood": "",
+      "primitiveplusfood": ""
+    },
+    "breeding": {
+      "gestationtime": "",
+      "maturationtime": "",
+      "mintimebetweenmating": "",
+      "maxtimebetweenmating": ""
+    },
+    "specialloot": "Direwolf Ghost Costume"
+  },
+
+
+
   "dodo": {
     "variants": "Aberrant Dodo, Bunny Dodo, Dodo Wyvern, DodoRex, Eerie Dodo, Party Dodo, Zomdodo",
     "releasedate": "2015-06-02",
@@ -6870,6 +7105,9 @@
 
     "harvests": "Amarberry, Amarberry Seed, Azulberry, Azulberry Seed, Cactus Sap, Citronal Seed, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Rockarrot Seed, Savoroot Seed, Stimberry, Stimberry Seed, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "dodobitus": {
     "inherits": "dodo",
     "variants": "Dodo, Eerie Dodo",
@@ -6985,8 +7223,11 @@
     "specialloot": "Eery Element (Mobile), Dodobitus Pt. Note (Mobile)",
     "lootitems": ""
   },
+
+
+
   "dodorex": {
-    "variants": "Aberrant Dodo, Alpha T-Rex, Brute Malfunctioned Tek Rex, Brute X-Rex, Bunny Dodo, Corrupted Rex, Dodo, Dodo Wyvern, Enraged Corrupted Rex, Malfunctioned Tek Rex, Party Dodo, Rex, Skeletal Rex, Tek Rex, X-Rex, Zomdodo",
+    "variants": "Aberrant Dodo, Alpha T-Rex, Brute Malfunctioned Tek Rex, Brute X-Rex, Bunny Dodo, Corrupted Rex, Dodo, Dodo Wyvern, Enraged Corrupted Rex, Malfunctioned Tek Rex, Party Dodo, Rex, Rex Ghost, Skeletal Rex, Tek Rex, X-Rex, Zomdodo",
     "event": "ARK: Fear Evolved, ARK: Fear Evolved 2, ARK: Fear Evolved 3, ARK: Fear Evolved 4, ARK: Turkey Trial, ARK: Turkey Trial 2, ARK: Turkey Trial 3, ARK: Winter Wonderland, ARK: Winter Wonderland 2, ARK: Eggcellent Adventure, ARK: Awesome Anniversary",
     "releasedate": "2015-10-28",
     "releaseversion": "221.0",
@@ -6998,8 +7239,8 @@
     "mobilereleaseversion": "",
     "switchreleasedate": "Unreleased",
     "switchreleaseversion": "",
-    "egsreleasedate": "2020-06-11",
-    "egsreleaseversion": "311.74",
+    "egsreleasedate": "2020-10-23",
+    "egsreleaseversion": "315.2",
     "class": "DodoRex_Character_BP_C",
     "blueprintpath": "Blueprint'/Game/PrimalEarth/Dinos/DodoRex/DodoRex_Character_BP.DodoRex_Character_BP'",
     "commonname": "DodoRex",
@@ -7016,6 +7257,15 @@
       "torporimmune": "Yes",
       "canbetamed": "Yes",
       "rideable": "No"
+
+
+
+
+
+
+
+
+
     },
     "stats": {
       "cansuffocate": "No",
@@ -7071,7 +7321,7 @@
     "mass": 400,
     "fecessize": "None",
     "immobilizedby": "Large Bear Trap",
-    "candamage": "Metal, Stone, Adobe, Wood, Thatch, Greenhouse",
+    "candamage": "Tek, Metal, Stone, Adobe, Wood, Thatch, Greenhouse",
     "carryableby": "",
     "candragcreatureswhileflying": "No",
     "passengerweightmultiplier": 0.85,
@@ -7103,6 +7353,9 @@
     "canbeharvestedfor": "Hide, Raw Meat, Raw Prime Meat",
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "doedicurus": {
     "variants": "Aberrant Doedicurus, Doedicurus Vastus, Eerie Doedicurus",
     "releasedate": "2015-08-25",
@@ -7282,6 +7535,9 @@
     "canbeharvestedfor": "Hide, Keratin, Raw Meat",
     "harvests": "Amarberry, Amarberry Seed, Azulberry, Azulberry Seed, Cactus Sap, Citronal Seed, Crystal, Longrass Seed, Mejoberry, Mejoberry Seed, Metal, Narcoberry, Narcoberry Seed, Obsidian, Oil, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Rockarrot Seed, Sand, Savoroot Seed, Stimberry, Stimberry Seed, Stone, Sulfur, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "doedicurusvastus": {
     "inherits": "doedicurus",
     "variants": "Doedicurus, Eerie Doedicurus",
@@ -7399,6 +7655,9 @@
     "specialloot": "Eery Element (Mobile), Doedicurus Vastus Pt. Note (Mobile)",
     "lootitems": ""
   },
+
+
+
   "dragon": {
     "variants": "Dragon (Alpha), Dragon (Beta), Dragon (Gamma)",
     "releasedate": "2016-06-02",
@@ -7577,6 +7836,9 @@
       "health": 972000
     }
   },
+
+
+
   "dungbeetle": {
     "variants": "Aberrant Dung Beetle, Eerie Dung Beetle, Gula Beetle",
     "releasedate": "2016-01-15",
@@ -7725,6 +7987,9 @@
     "canbeharvestedfor": "Chitin, Raw Meat",
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "dunkleosteus": {
     "variants": "Eerie Dunkleosteus, X-Dunkleosteus",
     "releasedate": "2016-04-02",
@@ -7878,6 +8143,9 @@
     "canbeharvestedfor": "Chitin, Raw Fish Meat, Raw Prime Fish Meat",
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Cactus Sap, Chitin, Crystal, Hide, Keratin, Leech Blood, Metal, Obsidian, Oil, Organic Polymer, Pelt, Rare Mushroom, Raw Fish Meat, Raw Meat, Raw Prime Meat, Sand, Silica Pearls, Silk, Spoiled Meat, Stone, Sulfur, Thatch, Wood"
   },
+
+
+
   "electrophorus": {
     "variants": "Aberrant Electrophorus",
     "releasedate": "2017-02-26",
@@ -8080,6 +8348,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Charcoal, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Mutton, Raw Prime Fish Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "equus": {
     "variants": "Aberrant Equus, Eerie Equus, Noctis, Unicorn",
     "releasedate": "2017-03-31",
@@ -8272,6 +8543,9 @@
 
     "harvests": "Amarberry, Amarberry Seed, Azulberry, Azulberry Seed, Cactus Sap, Charcoal, Citronal Seed, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Rockarrot Seed, Savoroot Seed, Stimberry, Stimberry Seed, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "eurypterid": {
     "variants": "Eerie Eurypterid",
     "releasedate": "2016-04-02",
@@ -8321,6 +8595,8 @@
         "colors": "Dino Dark Red, Dino Dark Orange, Dino Medium Brown, Dino Dark Brown, DarkWolfFur, DragonBase0, DragonBase1"
       },
       "4": {
+
+
       },
       "5": {
         "name": "Abdomen",
@@ -8383,6 +8659,9 @@
     "chancetodroploot": 0,
     "canbeharvestedfor": "Black Pearl, Chitin, Oil, Raw Meat, Silica Pearls"
   },
+
+
+
   "gallimimus": {
     "variants": "Eerie Gallimimus",
     "releasedate": "2016-01-28",
@@ -8454,6 +8733,8 @@
         "colors": "Dino Dark Red, Dino Dark Orange, Dino Dark Yellow, Dino Medium Green, Dino Dark Green, Dino Medium Brown, Dino Dark Brown, Dark Grey, Dino Darker Grey, Black, Dino Albino"
       },
       "3": {
+
+
       },
       "4": {
         "name": "Spine and Feather Tips",
@@ -8546,6 +8827,9 @@
 
     "harvests": "Amarberry, Amarberry Seed, Azulberry, Azulberry Seed, Cactus Sap, Citronal Seed, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Rockarrot Seed, Savoroot Seed, Stimberry, Stimberry Seed, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "giantbee": {
     "variants": "Giant Queen Bee, Giant Worker Bee",
     "releasedate": "2017-05-05",
@@ -8673,6 +8957,9 @@
     "chancetodroploot": 0,
     "canbeharvestedfor": "Chitin, Raw Meat"
   },
+
+
+
   "giantqueenbee": {
     "variants": "Giant Bee",
     "releasedate": "2017-05-05",
@@ -8724,6 +9011,8 @@
         "colors": "Dino Dark Red,Dino Dark Orange,Dino Medium Brown,Dino Dark Brown,DarkWolfFur,DragonBase0,DragonBase1"
       },
       "3": {
+
+
       },
       "4": {
         "name": "Dark All",
@@ -8810,6 +9099,9 @@
     "chancetodroploot": 0,
     "canbeharvestedfor": "Chitin, Raw Meat"
   },
+
+
+
   "giganotosaurus": {
     "variants": "Brute Malfunctioned Tek Giganotosaurus, Corrupted Giganotosaurus, Eerie Giganotosaurus, Malfunctioned Tek Giganotosaurus, Skeletal Giganotosaurus",
     "releasedate": "2015-11-05",
@@ -8868,7 +9160,7 @@
       "mintemp": 43,
       "maxtemp": 44,
       "incubationtime": 179985.609375,
-      "maturationtime": 1010100.875,
+      "maturationtime": 878348.704,
       "mintimebetweenmating": 64800,
       "maxtimebetweenmating": 172800
     },
@@ -8987,6 +9279,9 @@
     "specialloot": "Giganotosaurus Heart",
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Cactus Sap, Chitin, Crystal, Hide, Keratin, Leech Blood, Metal, Obsidian, Oil, Organic Polymer, Pelt, Rare Mushroom, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Stone, Sulfur, Thatch, Wood"
   },
+
+
+
   "gigantopithecus": {
     "variants": "Aberrant Gigantopithecus, Eerie Gigantopithecus, Eerie Yeti, Megapithecus Pestis, Yeti",
     "releasedate": "2015-08-18",
@@ -9153,6 +9448,9 @@
 
     "harvests": "Amarberry, Amarberry Seed, Azulberry, Azulberry Seed, Cactus Sap, Citronal Seed, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Rockarrot Seed, Savoroot Seed, Stimberry, Stimberry Seed, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "gulabeetle": {
     "inherits": "dungbeetle",
     "variants": "Dung Beetle, Eerie Dung Beetle",
@@ -9249,6 +9547,9 @@
     "specialloot": "Eery Element (Mobile), Gula Beetle Pt. Note (Mobile)",
     "lootitems": ""
   },
+
+
+
   "hesperornis": {
     "releasedate": "2017-05-30",
     "releaseversion": "258.0",
@@ -9442,8 +9743,23 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Charcoal, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Mutton, Raw Prime Fish Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "human": {
     "variants": "Corrupted Avatar",
+    "releasedate": "2015-06-02",
+    "releaseversion": "",
+    "xboxreleasedate": "2015-12-16",
+    "xboxreleaseversion": "729.0",
+    "ps4releasedate": "2016-12-06",
+    "ps4releaseversion": "501.0",
+    "mobilereleasedate": "2018-05-24",
+    "mobilereleaseversion": "1.0",
+    "switchreleasedate": "2018-11-30",
+    "switchreleaseversion": "599.0",
+    "egsreleasedate": "2020-06-11",
+    "egsreleaseversion": "311.74",
     "class": "PlayerPawnTest_Male_C",
     "blueprintpath": "Blueprint'/Game/PrimalEarth/CoreBlueprints/PlayerPawnTest_Male.PlayerPawnTest_Male'",
     "femaleclass": "PlayerPawnTest_Female_C",
@@ -9536,6 +9852,9 @@
     "canbeharvestedfor": "Raw Meat"
 
   },
+
+
+
   "hyaenodon": {
     "releasedate": "2017-05-30",
     "releaseversion": "258.0",
@@ -9713,6 +10032,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Charcoal, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Mutton, Raw Prime Fish Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "ichthyornis": {
     "releasedate": "2017-03-31",
     "releaseversion": "256.0",
@@ -9916,6 +10238,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Charcoal, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Mutton, Raw Prime Fish Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "ichthyosaurus": {
     "variants": "Eerie Ichthyosaurus, X-Ichthyosaurus",
     "releasedate": "2015-06-30",
@@ -10069,6 +10394,9 @@
     "canbeharvestedfor": "Raw Meat",
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "iguanodon": {
     "variants": "Aberrant Iguanodon, Eerie Iguanodon",
     "releasedate": "2017-03-31",
@@ -10251,6 +10579,9 @@
 
     "harvests": "Amarberry, Amarberry Seed, Azulberry, Azulberry Seed, Cactus Sap, Charcoal, Citronal Seed, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Rockarrot Seed, Savoroot Seed, Stimberry, Stimberry Seed, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "kairuku": {
     "variants": "Eerie Kairuku",
     "releasedate": "2015-11-12",
@@ -10408,6 +10739,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "kaprosuchus": {
     "variants": "Eerie Kaprosuchus",
     "releasedate": "2016-10-21",
@@ -10611,6 +10945,9 @@
     "canbeharvestedfor": "Hide, Raw Meat",
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "kentrosaurus": {
     "releasedate": "2017-05-05",
     "releaseversion": "257.0",
@@ -10795,6 +11132,9 @@
 
     "harvests": "Amarberry, Amarberry Seed, Ammonite Bile, AnglerGel, Azulberry, Azulberry Seed, Bio Toxin, Black Pearl, Cactus Sap, Charcoal, Chitin, Citronal Seed, Hide, Keratin, Leech Blood, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Oil, Organic Polymer, Pelt, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Raw Fish Meat, Raw Meat, Raw Mutton, Raw Prime Fish Meat, Raw Prime Meat, Rockarrot Seed, Savoroot Seed, Silica Pearls, Silk, Spoiled Meat, Stimberry, Stimberry Seed, Sulfur, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "leech": {
     "variants": "Diseased Leech, Eerie Diseased Leech, Eerie Leech",
     "releasedate": "2016-06-02",
@@ -10881,6 +11221,9 @@
     "chancetodroploot": 0,
     "canbeharvestedfor": "Chitin, Leech Blood, Oil, Raw Meat, Silica Pearls"
   },
+
+
+
   "diseasedleech": {
     "variants": "Leech, Eerie Diseased Leech, Eerie Leech",
     "releasedate": "2016-06-02",
@@ -10965,6 +11308,9 @@
     "chancetodroploot": 1,
     "canbeharvestedfor": "Chitin, Leech Blood, Oil, Raw Meat, Silica Pearls"
   },
+
+
+
   "leedsichthys": {
     "variants": "Alpha Leedsichthys, Brute Leedsichthys, Eerie Leedsichthys",
     "releasedate": "2017-03-31",
@@ -11057,6 +11403,9 @@
     "chancetodroploot": 1,
     "canbeharvestedfor": "Hide, Raw Prime Fish Meat, Raw Fish Meat"
   },
+
+
+
   "liopleurodon": {
     "variants": "Eerie Liopleurodon",
     "releasedate": "2017-05-05",
@@ -11219,6 +11568,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Charcoal, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Mutton, Raw Prime Fish Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "lystrosaurus": {
     "variants": "Aberrant Lystrosaurus, Eerie Lystrosaurus",
     "releasedate": "2016-05-04",
@@ -11282,10 +11634,16 @@
         "colors": "Dino Dark Red, Dino Dark Orange, Dino Dark Yellow, Dino Medium Green, Dino Dark Green, Dino Medium Brown, Dino Dark Brown, Dark Grey, Dino Darker Grey, Black"
       },
       "1": {
+
+
       },
       "2": {
+
+
       },
       "3": {
+
+
       },
       "4": {
         "name": "Underside",
@@ -11374,6 +11732,9 @@
 
     "harvests": "Amarberry, Amarberry Seed, Azulberry, Azulberry Seed, Cactus Sap, Citronal Seed, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Rockarrot Seed, Savoroot Seed, Stimberry, Stimberry Seed, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "woollymammoth": {
     "variants": "Brute Mammoth, Eerie Mammoth",
     "releasedate": "2015-06-02",
@@ -11434,18 +11795,24 @@
     },
     "colorization": {
       "0": {
-        "name": "Fur Mane",
-        "colors": "Dino Dark Red, Dino Light Orange, Dino Dark Orange, Dino Light Yellow, Dino Dark Yellow, Dino Light Blue, Dino Dark Blue, Dino Light Brown, Dino Medium Brown, Dino Dark Brown, Light Grey, Dark Grey, Dino Darker Grey, Black, Dino Albino"
+        "name": "Main Body",
+        "colors": "BigFoot0, BigFoot4, BigFoot5, Brown, Dark Grey, DarkWarmGray, DarkWolfFur, Dino Albino, Dino Dark Brown, Dino Darker Grey, Dino Light Brown, Dino Medium Brown, Light Grey, LightWarmGray, MediumWarmGray, NearBlack, WolfFur"
+      },
+      "1": {
+        "name": "Highlights",
+        "colors": "BigFoot0, BigFoot4, BigFoot5, Brown, Dark Grey, DarkWarmGray, DarkWolfFur, Dino Albino, Dino Dark Brown, Dino Darker Grey, Dino Light Brown, Dino Medium Brown, Light Grey, LightWarmGray, MediumWarmGray, NearBlack, WolfFur"
       },
       "2": {
-        "name": "Tusks and Toes",
-        "colors": "Dino Light Yellow, Dino Light Blue, Dino Light Brown, Dino Medium Brown, Light Grey, Black"
+        "name": "Tusks",
+        "colors": "BigFoot0, BigFoot5, Dino Light Brown, LightWarmGray, WolfFur"
       },
       "4": {
-        "name": "Fur Accent",
-        "colors": "Dino Dark Red, Dino Light Orange, Dino Dark Orange, Dino Light Yellow, Dino Dark Yellow, Dino Light Blue, Dino Dark Blue, Dino Light Brown, Dino Medium Brown, Dino Dark Brown, Light Grey, Dark Grey, Dino Darker Grey, Black, Dino Albino"
+        "name": "Highlights",
+        "colors": "BigFoot0, BigFoot4, BigFoot5, Brown, Dark Grey, DarkWarmGray, DarkWolfFur, Dino Albino, Dino Dark Brown, Dino Darker Grey, Dino Light Brown, Dino Medium Brown, Light Grey, LightWarmGray, MediumWarmGray, NearBlack, WolfFur"
       },
       "5": {
+        "name": "Highlights",
+        "colors": "BigFoot0, BigFoot4, BigFoot5, Brown, Dark Grey, DarkWarmGray, DarkWolfFur, Dino Albino, Dino Dark Brown, Dino Darker Grey, Dino Light Brown, Dino Medium Brown, Light Grey, LightWarmGray, MediumWarmGray, NearBlack, WolfFur"
       }
     },
     "stats": {
@@ -11551,6 +11918,9 @@
     "canbeharvestedfor": "Hide, Keratin, Pelt, Raw Meat, Raw Prime Meat",
     "harvests": "Amarberry, Amarberry Seed, Azulberry, Azulberry Seed, Cactus Sap, Citronal Seed, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Rockarrot Seed, Savoroot Seed, Stimberry, Stimberry Seed, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "manta": {
     "variants": "Aberrant Manta, Eerie Manta",
     "releasedate": "2016-04-20",
@@ -11616,14 +11986,20 @@
         "colors": "Dino Dark Red, Dino Dark Orange, Dino Dark Yellow, Dino Medium Green, Dino Dark Green, Dino Medium Brown, Dino Dark Brown, Dark Grey, Dino Darker Grey, Black"
       },
       "2": {
+
+
       },
       "3": {
+
+
       },
       "4": {
         "name": "Patterning",
         "colors": "Dino Dark Red, Dino Dark Orange, Dino Dark Yellow, Dino Medium Green, Dino Dark Green, Dino Medium Brown, Dino Dark Brown, Dark Grey, Dino Darker Grey, Black"
       },
       "5": {
+
+
       }
     },
     "stats": {
@@ -11707,6 +12083,9 @@
     "canbeharvestedfor": "Raw Fish Meat",
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Charcoal, Chitin, Corrupted Nodule, Crystal, Electronics, Element Dust, Fungal Wood (Aberration), Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Meat, Raw Mutton, Raw Fish Meat, Raw Prime Meat, Scrap Metal, Silica Pearls, Silk, Spoiled Meat, Stone, Sulfur, Thatch"
   },
+
+
+
   "megalania": {
     "variants": "Aberrant Megalania",
     "releasedate": "2017-05-30",
@@ -11899,6 +12278,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Charcoal, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Mutton, Raw Prime Fish Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "megaloceros": {
     "variants": "Brute Megaloceros, Eerie Megaloceros",
     "releasedate": "2015-09-28",
@@ -12054,6 +12436,9 @@
 
     "harvests": "Amarberry, Amarberry Seed, Azulberry, Azulberry Seed, Cactus Sap, Citronal Seed, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Rockarrot Seed, Savoroot Seed, Stimberry, Stimberry Seed, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "megalodon": {
     "variants": "Alpha Megalodon, Brute X-Megalodon, Eerie Megalodon, Golden Striped Brute Megalodon, Golden Striped Megalodon, X-Megalodon",
     "releasedate": "2015-06-02",
@@ -12107,8 +12492,8 @@
       "mobilefood": "Raw Prime Meat"
     },
     "breeding": {
-      "gestationtime": 28571.427734,
-      "maturationtime": 333333.3125,
+      "gestationtime": 21978.021484,
+      "maturationtime": 256410.256,
       "mintimebetweenmating": 64800,
       "maxtimebetweenmating": 172800
     },
@@ -12208,6 +12593,9 @@
     "specialloot": "Megalodon Tooth",
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "megalosaurus": {
     "variants": "Aberrant Megalosaurus, Eerie Megalosaurus",
     "releasedate": "2016-11-24",
@@ -12444,6 +12832,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Charcoal, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "meganeura": {
     "variants": "Aberrant Meganeura, Eerie Meganeura",
     "releasedate": "2015-07-25",
@@ -12555,6 +12946,9 @@
     "canbeharvestedfor": "Cementing Paste, Chitin, Raw Meat",
     "specialloot": "Neura Husk (Mobile)"
   },
+
+
+
   "megapiranha": {
     "variants": "Aberrant Piranha, Eerie Megapiranha",
     "releasedate": "2015-06-02",
@@ -12663,6 +13057,9 @@
     "chancetodroploot": 0,
     "canbeharvestedfor": "Raw Fish Meat"
   },
+
+
+
   "megapithecus": {
     "variants": "Megapithecus (Alpha), Megapithecus (Beta), Megapithecus (Gamma)",
     "releasedate": "2016-05-04",
@@ -12788,6 +13185,9 @@
       "health": 540000
     }
   },
+
+
+
   "megapithecuspestis": {
     "inherits": "megapithecus",
     "variants": "Eerie Gigantopithecus, Eerie Yeti, Gigantopithecus, Yeti",
@@ -12857,6 +13257,9 @@
     },
     "specialloot": "Eery Element (Mobile), Megapithecus Pt. Note (Mobile)"
   },
+
+
+
   "megatherium": {
     "variants": "Eerie Megatherium",
     "releasedate": "2017-05-30",
@@ -13037,6 +13440,9 @@
 
     "harvests": "Amarberry, Amarberry Seed, Ammonite Bile, AnglerGel, Azulberry, Azulberry Seed, Black Pearl, Cactus Sap, Charcoal, Chitin, Citronal Seed, Fiber, Hide, Keratin, Leech Blood, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Oil, Organic Polymer, Pelt, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Raw Fish Meat, Raw Meat, Raw Mutton, Raw Prime Fish Meat, Raw Prime Meat, Rockarrot Seed, Savoroot Seed, Silica Pearls, Silk, Spoiled Meat, Stimberry, Stimberry Seed, Sulfur, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "mesopithecus": {
     "variants": "Eerie Mesopithecus",
     "releasedate": "2015-08-28",
@@ -13204,6 +13610,9 @@
 
     "harvests": "Amarberry, Amarberry Seed, Azulberry, Azulberry Seed, Cactus Sap, Citronal Seed, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Rockarrot Seed, Savoroot Seed, Stimberry, Stimberry Seed, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "microraptor": {
     "releasedate": "2017-02-26",
     "releaseversion": "255.0",
@@ -13398,6 +13807,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Charcoal, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Mutton, Raw Prime Fish Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "mosasaurus": {
     "variants": "Alpha Mosasaur, Brute X-Mosasaurus, Eerie Alpha Mosasaur, Eerie Mosasaur, X-Mosasaurus",
     "releasedate": "2015-10-14",
@@ -13463,12 +13875,16 @@
         "colors": "Dino Light Red, Dino Dark Red, Dino Light Orange, Dino Dark Orange, Dino Light Yellow, Dino Dark Yellow, Dino Light Blue, Dino Dark Blue, Black"
       },
       "1": {
+
+
       },
       "2": {
         "name": "Spinal Ridge",
         "colors": "Dino Dark Red, Dino Dark Orange, Dino Dark Yellow, Dino Medium Green, Dino Dark Green, Dino Medium Brown, Dino Dark Brown, Dark Grey, Dino Darker Grey, Black"
       },
       "3": {
+
+
       },
       "4": {
         "name": "Patterning",
@@ -13561,6 +13977,9 @@
     "canbeharvestedfor": "Hide, Raw Prime Meat",
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Charcoal, Chitin, Corrupted Nodule, Crystal, Electronics, Element Dust, Fungal Wood (Aberration), Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Meat, Raw Mutton, Raw Fish Meat, Raw Prime Meat, Scrap Metal, Silica Pearls, Silk, Spoiled Meat, Stone, Sulfur, Thatch"
   },
+
+
+
   "moschops": {
     "variants": "Aberrant Moschops, Eerie Moschops",
     "releasedate": "2016-11-24",
@@ -13630,8 +14049,12 @@
         "colors": "Dino Dark Orange, Dino Dark Yellow, Dino Dark Brown, Dino Medium Brown, Dark Grey, Black"
       },
       "2": {
+
+
       },
       "3": {
+
+
       },
       "4": {
         "name": "Back",
@@ -13746,6 +14169,9 @@
 
     "harvests": "Amarberry, Amarberry Seed, Ammonite Bile, AnglerGel, Bio Toxin, Azulberry, Azulberry Seed, Black Pearl, Cactus Sap, Charcoal, Chitin, Citronal Seed, Fiber, Hide, Keratin, Leech Blood, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Oil, Organic Polymer, Pelt, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Raw Fish Meat, Raw Meat, Raw Prime Meat, Rockarrot Seed, Savoroot Seed, Silica Pearls, Silk, Spoiled Meat, Stimberry, Stimberry Seed, Sulfur, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "noctis": {
     "inherits": "equus",
     "variants": "Eerie Equus, Equus, Unicorn",
@@ -13813,6 +14239,9 @@
     },
     "specialloot": "Eery Element (Mobile), Noctis Pt. Note (Mobile)"
   },
+
+
+
   "obsidioequus": {
     "inherits": "chalicotherium",
     "variants": "Chalicotherium, Eerie Chalicotherium",
@@ -13992,6 +14421,9 @@
     "specialloot": "Eery Element (Mobile), Obsidioequus Pt. Note (Mobile)",
     "lootitems": ""
   },
+
+
+
   "onychonycteris": {
     "variants": "Eerie Onyc",
     "releasedate": "2015-06-02",
@@ -14040,6 +14472,12 @@
 
       "favoritefood": "Raw Mutton",
       "mobilefood": "Raw Prime Meat"
+    },
+    "breeding": {
+      "gestationtime": 14285.7143,
+      "maturationtime": 101010.101,
+      "mintimebetweenmating": 64800,
+      "maxtimebetweenmating": 172800
     },
     "colorization": {
       "0": {
@@ -14143,6 +14581,9 @@
     "canbeharvestedfor": "Hide, Raw Meat",
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "otter": {
     "variants": "Aberrant Otter, Eerie Otter, X-Otter",
     "releasedate": "2017-08-29",
@@ -14301,6 +14742,9 @@
 
     "harvests": "Raw Fish Meat, Silica Pearls, Black Pearls"
   },
+
+
+
   "overseer": {
     "variants": "Overseer (Alpha), Overseer (Beta), Overseer (Gamma)",
     "releasedate": "2017-08-29",
@@ -14452,6 +14896,9 @@
     },
     "meleebase": 240
   },
+
+
+
   "oviraptor": {
     "variants": "Bunny Oviraptor, Eerie Oviraptor",
     "releasedate": "2015-12-01",
@@ -14610,6 +15057,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "ovis": {
     "variants": "Aberrant Ovis",
     "releasedate": "2017-01-30",
@@ -14771,6 +15221,9 @@
     "canbeharvestedfor": "Hide, Pelt, Raw Mutton",
     "harvests": "Amarberry, Amarberry Seed, Azulberry, Azulberry Seed, Cactus Sap, Charcoal, Citronal Seed, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Rockarrot Seed, Savoroot Seed, Stimberry, Stimberry Seed, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "pachycephalosaurus": {
     "variants": "Eerie Pachy",
     "releasedate": "2015-09-11",
@@ -14935,6 +15388,9 @@
 
     "harvests": "Amarberry, Amarberry Seed, Azulberry, Azulberry Seed, Cactus Sap, Citronal Seed, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Rockarrot Seed, Savoroot Seed, Stimberry, Stimberry Seed, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "pachyrhinosaurus": {
     "variants": "Eerie Pachyrhinosaurus",
     "releasedate": "2016-11-24",
@@ -15115,6 +15571,9 @@
 
     "harvests": "Amarberry, Amarberry Seed, Azulberry, Azulberry Seed, Cactus Sap, Charcoal, Citronal Seed, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Rockarrot Seed, Savoroot Seed, Stimberry, Stimberry Seed, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "paraceratherium": {
     "variants": "Aberrant Paraceratherium, Corrupted Paraceratherium, X-Paraceratherium",
     "releasedate": "2015-09-24",
@@ -15268,6 +15727,9 @@
     "canbeharvestedfor": "Hide, Raw Meat, Raw Prime Meat",
     "harvests": "Amarberry, Amarberry Seed, Azulberry, Azulberry Seed, Cactus Sap, Citronal Seed, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Rockarrot Seed, Savoroot Seed, Stimberry, Stimberry Seed, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "parasaurolophus": {
     "variants": "Aberrant Parasaur, Eerie Parasaur, Tek Parasaur, X-Parasaur",
     "releasedate": "2015-06-02",
@@ -15452,10 +15914,14 @@
 
     "harvests": "Amarberry, Amarberry Seed, Azulberry, Azulberry Seed, Cactus Sap, Citronal Seed, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Rockarrot Seed, Savoroot Seed, Stimberry, Stimberry Seed, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "partydodo": {
     "inherits": "dodo",
-    "variants": "Aberrant Dodo, Bunny Dodo, Dodo, Dodo Wyvern, DodoRex, Eerie Dodo, Zomdodo",
+    "dlc": "",
     "event": "ARK: 5th Anniversary",
+    "variants": "Aberrant Dodo, Bunny Dodo, Dodo, Dodo Wyvern, DodoRex, Eerie Dodo, Zomdodo",
     "releasedate": "2020-06-11",
     "releaseversion": "311.74",
     "xboxreleasedate": "2020-06-11",
@@ -15471,22 +15937,26 @@
     "class": "Dodo_Character_BP_Birthday_C",
     "blueprintpath": "Blueprint'/Game/PrimalEarth/Dinos/Dodo/Dodo_Character_BP_Birthday.Dodo_Character_BP_Birthday'",
     "commonname": "Party Dodo",
+    "species": "",
+    "time": "",
     "group": "Birds, Event Creatures",
     "dossierimage": "Party Dodo Image.jpg",
     "dossieraddbook": "No",
     "taming": {
-      "torporimmune": "No",
       "canbetamed": "No",
       "rideable": "No",
+      "equipment": "",
       "canmountonhumans": "",
-      "nonviolenttame": "No",
-      "knockouttame": "No",
-      "ballowmountedweaponry": "",
-      "equipment": ""
+      "nonviolenttame": "",
+      "knockouttame": "",
+      "ballowmountedweaponry": ""
     },
     "tamingfood": {
+
       "kibble": "",
+      "mobilekibble": "",
       "favoritefood": "",
+      "mobilefood": "",
       "primitiveplusfood": ""
     },
     "breeding": {
@@ -15500,6 +15970,9 @@
     },
     "canbeharvestedfor": "Cake Slice"
   },
+
+
+
   "pegomastax": {
     "variants": "Eerie Pegomastax",
     "releasedate": "2016-12-23",
@@ -15689,6 +16162,9 @@
 
     "harvests": "Amarberry, Amarberry Seed, Azulberry, Azulberry Seed, Cactus Sap, Charcoal, Citronal Seed, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Rockarrot Seed, Savoroot Seed, Stimberry, Stimberry Seed, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "pelagornis": {
     "variants": "Eerie Pelagornis",
     "releasedate": "2016-07-28",
@@ -15755,8 +16231,12 @@
         "colors": "Dino Light Red, Dino Dark Red, Dino Light Orange, Dino Dark Orange, Dino Light Yellow, Dino Dark Yellow, Dino Light Green, Dino Medium Green, Dino Dark Green, Dino Light Brown, Dino Medium Brown, Dino Dark Brown, Light Grey, Dark Grey, Dino Darker Grey, Black, Dino Albino"
       },
       "1": {
+
+
       },
       "3": {
+
+
       },
       "5": {
         "name": "Skin and Wing/Tail Tips",
@@ -15851,6 +16331,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "phiomia": {
     "variants": "Eerie Phiomia",
     "releasedate": "2015-06-02",
@@ -16003,6 +16486,9 @@
 
     "harvests": "Amarberry, Amarberry Seed, Azulberry, Azulberry Seed, Cactus Sap, Citronal Seed, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Rockarrot Seed, Savoroot Seed, Stimberry, Stimberry Seed, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "plesiosaur": {
     "variants": "Brute Plesiosaur, Eerie Plesiosaur",
     "releasedate": "2015-06-30",
@@ -16165,6 +16651,8 @@
     "canbeharvestedfor": "Hide, Raw Prime Meat",
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
   "polarbear": {
     "variants": "Aberrant Dire Bear, Dire Bear, Dire Polar Bear, Spirit Dire Bear",
     "releasedate": "2017-07-07",
@@ -16261,6 +16749,9 @@
     "canbeharvestedfor": "Hide, Pelt, Raw Meat",
     "harvests": "Amarberry, Amarberry Seed, Ammonite Bile, AnglerGel, Bio Toxin, Azulberry, Azulberry Seed, Black Pearl, Chitin, Citronal Seed, FiberHide, Keratin, Leech Blood, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Oil, Organic Polymer, Pelt, Plant Species X Seed, Rare Flower, Raw Fish Meat, Raw Meat, Raw Prime Meat, Rockarrot Seed, Savoroot Seed, Silica Pearls, Silk, Spoiled Meat, Stimberry, Stimberry Seed, Sulfur, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "polarpurlovia": {
     "variants": "Aberrant Purlovia, Purlovia",
     "releasedate": "2017-07-07",
@@ -16374,6 +16865,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Charcoal, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Mutton, Raw Prime Fish Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "procoptodon": {
     "variants": "Eerie Procoptodon",
     "releasedate": "2015-12-31",
@@ -16436,10 +16930,16 @@
         "colors": "Dino Light Orange, Dino Dark Orange, Dino Light Brown, Dino Medium Brown, Dino Dark Brown, Light Grey, Dark Grey, Dino Darker Grey, Black, Bigfoot0, Bigfoot4, Bigfoot5"
       },
       "1": {
+
+
       },
       "2": {
+
+
       },
       "3": {
+
+
       },
       "4": {
         "name": "Back Stripes",
@@ -16531,6 +17031,9 @@
     "canbeharvestedfor": "Hide, Pelt, Raw Meat",
     "harvests": "Amarberry, Amarberry Seed, Azulberry, Azulberry Seed, Cactus Sap, Citronal Seed, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Rockarrot Seed, Savoroot Seed, Stimberry, Stimberry Seed, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "pteranodon": {
     "variants": "Corrupted Pteranodon, Eerie Pteranodon",
     "releasedate": "2015-06-02",
@@ -16726,6 +17229,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "pulmonoscorpius": {
     "variants": "Aberrant Pulmonoscorpius, Eerie Pulmonoscorpius",
     "releasedate": "2015-06-02",
@@ -16777,7 +17283,13 @@
       "favoritefood": "Spoiled Meat"
     },
     "breeding": {
-      "egg": "Pulmonoscorpius Egg"
+      "egg": "Pulmonoscorpius Egg",
+      "mintemp": 12,
+      "maxtemp": 16,
+      "incubationtime": 7199.42405,
+      "maturationtime": 133333.333,
+      "mintimebetweenmating": 64800,
+      "maxtimebetweenmating": 172800
     },
     "colorization": {
       "0": {
@@ -16893,6 +17405,9 @@
     "canbeharvestedfor": "Chitin, Raw Meat",
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "purlovia": {
     "variants": "Aberrant Purlovia, Eerie Purlovia, Polar Purlovia",
     "releasedate": "2017-01-30",
@@ -17076,6 +17591,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Charcoal, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Mutton, Raw Prime Fish Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "quetzalcoatlus": {
     "variants": "Eerie Quetzal, Malfunctioned Tek Quetzal, Skeletal Quetzal, Tek Quetzal",
     "releasedate": "2015-10-06",
@@ -17261,6 +17779,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "raptor": {
     "variants": "Aberrant Raptor, Alpha Raptor, Brute X-Raptor, Corrupted Raptor, Eerie Alpha Raptor, Eerie Raptor, Malfunctioned Tek Raptor, Skeletal Raptor, Tek Raptor, X-Raptor",
     "releasedate": "2015-06-02",
@@ -17457,8 +17978,11 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "rex": {
-    "variants": "Alpha T-Rex, Brute Malfunctioned Tek Rex, Brute X-Rex, Corrupted Rex, DodoRex, Eerie Alpha T-Rex, Eerie Rex, Enraged Corrupted Rex, Malfunctioned Tek Rex, Skeletal Rex, Tek Rex, X-Rex",
+    "variants": "Alpha T-Rex, Brute Malfunctioned Tek Rex, Brute X-Rex, Corrupted Rex, DodoRex, Eerie Alpha T-Rex, Eerie Rex, Enraged Corrupted Rex, Malfunctioned Tek Rex, Rex Ghost, Skeletal Rex, Tek Rex, X-Rex",
     "releasedate": "2015-06-02",
     "releaseversion": "",
     "xboxreleasedate": "2015-12-16",
@@ -17527,6 +18051,10 @@
       "1": {
         "name": "Spine",
         "colors": "Dino Dark Red, Dino Dark Orange, Dino Dark Yellow, Dino Dark Green, Dino Medium Brown, Dino Dark Brown, Dark Grey, Dino Darker Grey, Black, Dino Albino"
+      },
+      "3": {
+        "name": "Highlights",
+        "colors": ""
       },
       "4": {
         "name": "Back",
@@ -17638,6 +18166,66 @@
     "specialloot": "Tyrannosaurus Arm, Rex Bone Helmet Skin",
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
+  "rexghost": {
+    "inherits": "rex",
+    "dlc": "",
+    "event": "ARK: Fear Evolved 4",
+    "variants": "Alpha T-Rex, Brute Malfunctioned Tek Rex, Brute X-Rex, Corrupted Rex, DodoRex, Eerie Alpha T-Rex, Eerie Rex, Enraged Corrupted Rex, Malfunctioned Tek Rex, Rex, Skeletal Rex, Tek Rex, X-Rex",
+    "releasedate": "2020-10-23",
+    "releaseversion": "315.2",
+    "xboxreleasedate": "2020-10-27",
+    "xboxreleaseversion": "802.11",
+    "ps4releasedate": "2020-10-23",
+    "ps4releaseversion": "551.11",
+    "mobilereleasedate": "Unreleased",
+    "mobilereleaseversion": "",
+    "switchreleasedate": "Unreleased",
+    "switchreleaseversion": "",
+    "egsreleasedate": "2020-10-23",
+    "egsreleaseversion": "315.2",
+    "class": "Ghost_Rex_Character_BP_C",
+    "blueprintpath": "Blueprint'/Game/PrimalEarth/Dinos/Rex/Ghost_Rex_Character_BP.Ghost_Rex_Character_BP'",
+    "commonname": "Rex Ghost",
+    "species": "",
+    "time": "",
+    "group": "Dinosaurs, Event Creatures",
+    "dossierimage": "Rex Ghost Image.jpg",
+    "dossieraddbook": "No",
+    "taming": {
+      "canbetamed": "No",
+      "rideable": "No",
+      "equipment": "",
+      "uniquecostumes": "",
+      "canmountonhumans": "",
+      "nonviolenttame": "",
+      "knockouttame": "",
+      "ballowmountedweaponry": ""
+    },
+    "tamingfood": {
+
+      "kibble": "",
+      "mobilekibble": "",
+      "favoritefood": "",
+      "mobilefood": "",
+      "primitiveplusfood": ""
+    },
+    "breeding": {
+      "gestationtime": "",
+      "mintemp": "",
+      "maxtemp": "",
+      "incubationtime": "",
+      "maturationtime": "",
+      "mintimebetweenmating": "",
+      "maxtimebetweenmating": ""
+    },
+    "specialloot": "Rex Bone Helmet Skin, Rex Ghost Costume, Tyrannosaurus Arm"
+  },
+
+
+
   "royalgriffin": {
     "variants": "Eerie Griffin",
     "releasedate": "Unreleased",
@@ -17830,6 +18418,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Charcoal, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Mutton, Raw Prime Fish Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "sabertooth": {
     "variants": "Eerie Sabertooth, X-Sabertooth",
     "releasedate": "2015-06-02",
@@ -17984,6 +18575,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "sabertoothsalmon": {
     "variants": "Aberrant Salmon, Eerie Sabertooth Salmon, X-Sabertooth Salmon",
     "releasedate": "2016-05-04",
@@ -18084,6 +18678,9 @@
     "chancetodroploot": 0,
     "canbeharvestedfor": "Raw Fish Meat, Raw Prime Fish Meat"
   },
+
+
+
   "sarcosuchus": {
     "variants": "Aberrant Sarco, Brute Sarco, Eerie Sarco",
     "releasedate": "2015-06-02",
@@ -18292,6 +18889,9 @@
     "specialloot": "Sarcosuchus Skin",
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "skeletalbrontosaurus": {
     "variants": "Brontosaurus",
     "event": "ARK: Fear Evolved, ARK: Fear Evolved 2, ARK: Fear Evolved 3, ARK: Fear Evolved 4",
@@ -18305,16 +18905,14 @@
     "mobilereleaseversion": "",
     "switchreleasedate": "Unreleased",
     "switchreleaseversion": "",
-    "egsreleasedate": "2020-06-11",
-    "egsreleaseversion": "311.74",
+    "egsreleasedate": "2020-10-23",
+    "egsreleaseversion": "315.2",
     "class": "Bone_Sauropod_Character_BP_C",
     "blueprintpath": "Blueprint'/Game/PrimalEarth/Dinos/Sauropod/Bone_Sauropod_Character_BP.Bone_Sauropod_Character_BP'",
     "commonname": "Skeletal Bronto",
     "soundfile": "PW_bronto_voc_mumble_01.OGG",
     "pronunciation": "",
     "categories": "",
-    "species": "Brontosaurus lazarus",
-    "time": "Late Cretaceous",
     "group": "Dinosaurs, Event Creatures",
     "temperament": "Docile",
     "diet": "Herbivore",
@@ -18372,6 +18970,9 @@
     "canbeharvestedfor": "Hide, Raw Meat, Raw Prime Meat",
     "specialloot": "Bronto Bone Costume, Dinosaur Bone, Sauropod Vertebra"
   },
+
+
+
   "skeletalcarnotaurus": {
     "variants": "Aberrant Carnotaurus, Alpha Carnotaurus, Carnotaurus, Corrupted Carnotaurus",
     "event": "ARK: Fear Evolved, ARK: Fear Evolved 2, ARK: Fear Evolved 3, ARK: Fear Evolved 4",
@@ -18385,16 +18986,14 @@
     "mobilereleaseversion": "",
     "switchreleasedate": "Unreleased",
     "switchreleaseversion": "",
-    "egsreleasedate": "2020-06-11",
-    "egsreleaseversion": "311.74",
+    "egsreleasedate": "2020-10-23",
+    "egsreleaseversion": "315.2",
     "class": "Bone_MegaCarno_Character_BP_C",
     "blueprintpath": "Blueprint'/Game/PrimalEarth/Dinos/Carno/Bone_MegaCarno_Character_BP.Bone_MegaCarno_Character_BP'",
     "commonname": "Skeletal Carnotaurus",
     "soundfile": "PW_carno_voc_mumble_01.OGG",
     "pronunciation": "",
     "categories": "",
-    "species": "Carnotaurus pressor",
-    "time": "Late Cretaceous",
     "group": "Dinosaurs, Event Creatures",
     "temperament": "Aggressive",
     "diet": "Carnivore",
@@ -18464,6 +19063,9 @@
     "specialloot": "Carno Bone Costume, Dinosaur Bone, Rex Bone Helmet Skin"
 
   },
+
+
+
   "skeletalgiganotosaurus": {
     "variants": "Brute Malfunctioned Tek Giganotosaurus, Corrupted Giganotosaurus, Giganotosaurus, Malfunctioned Tek Giganotosaurus",
     "event": "ARK: Fear Evolved 2, ARK: Fear Evolved 3, ARK: Fear Evolved 4",
@@ -18477,16 +19079,14 @@
     "mobilereleaseversion": "",
     "switchreleasedate": "Unreleased",
     "switchreleaseversion": "",
-    "egsreleasedate": "2020-06-11",
-    "egsreleaseversion": "311.74",
+    "egsreleasedate": "2020-10-23",
+    "egsreleaseversion": "315.2",
     "class": "Bone_Gigant_Character_BP_C",
     "blueprintpath": "Blueprint'/Game/PrimalEarth/Dinos/Giganotosaurus/Bone_Gigant_Character_BP.Bone_Gigant_Character_BP'",
     "commonname": "Skeletal Giganotosaurus",
     "soundfile": "Gigantosaurus Startled 1.OGG",
     "pronunciation": "",
     "categories": "",
-    "species": "Giganotosaurus furiosa",
-    "time": "Late Cretaceous",
     "group": "Dinosaurs, Event Creatures",
     "temperament": "Aggressive",
     "diet": "Carnivore",
@@ -18563,6 +19163,9 @@
     "canbeharvestedfor": "Hide, Raw Meat, Raw Prime Meat",
     "specialloot": "Dinosaur Bone, Giganotosaurus Bone Costume"
   },
+
+
+
   "skeletalquetzalcoatlus": {
     "variants": "Malfunctioned Tek Quetzal, Quetzal, Tek Quetzal",
     "event": "ARK: Fear Evolved 2, ARK: Fear Evolved 3, ARK: Fear Evolved 4",
@@ -18576,16 +19179,14 @@
     "mobilereleaseversion": "",
     "switchreleasedate": "Unreleased",
     "switchreleaseversion": "",
-    "egsreleasedate": "2020-06-11",
-    "egsreleaseversion": "311.74",
+    "egsreleasedate": "2020-10-23",
+    "egsreleaseversion": "315.2",
     "class": "Bone_Quetz_Character_BP_C",
     "blueprintpath": "Blueprint'/Game/PrimalEarth/Dinos/Quetzalcoatlus/Bone_Quetz_Character_BP.Bone_Quetz_Character_BP'",
     "commonname": "Skeletal Quetzal",
     "soundfile": "Quetzal_mumble_1.OGG",
     "pronunciation": "",
     "categories": "",
-    "species": "Quetzalcoatlus conchapicem",
-    "time": "Late Cretaceous",
     "group": "Event Creatures, Reptiles",
     "temperament": "Skittish",
     "diet": "Carnivore",
@@ -18656,6 +19257,9 @@
     "specialloot": "Dinosaur Bone, Quetzalcoatlus Bone Costume"
 
   },
+
+
+
   "skeletalraptor": {
     "variants": "Aberrant Raptor, Alpha Raptor, Brute X-Raptor, Corrupted Raptor, Malfunctioned Tek Raptor, Raptor, Tek Raptor, X-Raptor",
     "event": "ARK: Fear Evolved, ARK: Fear Evolved 2, ARK: Fear Evolved 3, ARK: Fear Evolved 4",
@@ -18669,16 +19273,14 @@
     "mobilereleaseversion": "",
     "switchreleasedate": "Unreleased",
     "switchreleaseversion": "",
-    "egsreleasedate": "2020-06-11",
-    "egsreleaseversion": "311.74",
+    "egsreleasedate": "2020-10-23",
+    "egsreleaseversion": "315.2",
     "class": "Bone_MegaRaptor_Character_BP_C",
     "blueprintpath": "Blueprint'/Game/PrimalEarth/Dinos/Raptor/Bone_MegaRaptor_Character_BP.Bone_MegaRaptor_Character_BP'",
     "commonname": "Skeletal Raptor",
     "soundfile": "PW_raptor_attack_04.OGG",
     "pronunciation": "",
     "categories": "",
-    "species": "Utahraptor prime",
-    "time": "Early Cretaceous",
     "group": "Dinosaurs, Event Creatures",
     "temperament": "Aggressive",
     "diet": "Carnivore",
@@ -18737,8 +19339,11 @@
     "specialloot": "Dinosaur Bone, Raptor Bone Costume, Rex Bone Helmet Skin"
 
   },
+
+
+
   "skeletalrex": {
-    "variants": "Alpha T-Rex, Brute Malfunctioned Tek Rex, Brute X-Rex, Corrupted Rex, DodoRex, Enraged Corrupted Rex, Malfunctioned Tek Rex, Rex, Tek Rex, X-Rex",
+    "variants": "Alpha T-Rex, Brute Malfunctioned Tek Rex, Brute X-Rex, Corrupted Rex, DodoRex, Enraged Corrupted Rex, Malfunctioned Tek Rex, Rex, Rex Ghost, Tek Rex, X-Rex",
     "event": "ARK: Fear Evolved, ARK: Fear Evolved 2, ARK: Fear Evolved 3, ARK: Fear Evolved 4",
     "releasedate": "2015-10-28",
     "releaseversion": "221.0",
@@ -18750,16 +19355,14 @@
     "mobilereleaseversion": "",
     "switchreleasedate": "Unreleased",
     "switchreleaseversion": "",
-    "egsreleasedate": "2020-06-11",
-    "egsreleaseversion": "311.74",
+    "egsreleasedate": "2020-10-23",
+    "egsreleaseversion": "315.2",
     "class": "Bone_MegaRex_Character_BP_C",
     "blueprintpath": "Blueprint'/Game/PrimalEarth/Dinos/Rex/Bone_MegaRex_Character_BP.Bone_MegaRex_Character_BP'",
     "commonname": "Skeletal Rex",
     "soundfile": "PW_trex_vox_roar_02.OGG",
     "pronunciation": "",
     "categories": "",
-    "species": "Tyrannosaurus dominum",
-    "time": "Late Cretaceous",
     "group": "Dinosaurs, Event Creatures",
     "temperament": "Aggressive",
     "diet": "Carnivore",
@@ -18825,6 +19428,9 @@
     "canbeharvestedfor": "Hide, Raw Prime Meat",
     "specialloot": "Alpha Rex Trophy, Dinosaur Bone, Rex Bone Costume, Trike Bone Helmet Skin, Tyrannosaurus Arm"
   },
+
+
+
   "skeletalstegosaurus": {
     "variants": "Aberrant Stegosaurus, Corrupted Stegosaurus, Malfunctioned Tek Stegosaurus, Stegosaurus, Tek Stegosaurus",
     "event": "ARK: Fear Evolved, ARK: Fear Evolved 2, ARK: Fear Evolved 3, ARK: Fear Evolved 4",
@@ -18838,16 +19444,14 @@
     "mobilereleaseversion": "",
     "switchreleasedate": "Unreleased",
     "switchreleaseversion": "",
-    "egsreleasedate": "2020-06-11",
-    "egsreleaseversion": "311.74",
+    "egsreleasedate": "2020-10-23",
+    "egsreleaseversion": "315.2",
     "class": "Bone_Stego_Character_BP_C",
     "blueprintpath": "Blueprint'/Game/PrimalEarth/Dinos/Stego/Bone_Stego_Character_BP.Bone_Stego_Character_BP'",
     "commonname": "Skeletal Stego",
     "soundfile": "PW_stego_voc_mumble_01.OGG",
     "pronunciation": "",
     "categories": "",
-    "species": "Stegosaurus regium",
-    "time": "Late Jurassic",
     "group": "Dinosaurs, Event Creatures",
     "temperament": "Docile",
     "diet": "Herbivore",
@@ -18906,6 +19510,9 @@
     "specialloot": "Dinosaur Bone, Stego Bone Costume"
 
   },
+
+
+
   "skeletaltriceratops": {
     "variants": "Aberrant Triceratops, Corrupted Triceratops, Enraged Triceratops, Malfunctioned Tek Triceratops, Tek Triceratops, Triceratops, X-Triceratops",
     "event": "ARK: Fear Evolved, ARK: Fear Evolved 2, ARK: Fear Evolved 3, ARK: Fear Evolved 4",
@@ -18919,16 +19526,14 @@
     "mobilereleaseversion": "",
     "switchreleasedate": "Unreleased",
     "switchreleaseversion": "",
-    "egsreleasedate": "2020-06-11",
-    "egsreleaseversion": "311.74",
+    "egsreleasedate": "2020-10-23",
+    "egsreleaseversion": "315.2",
     "class": "Bone_Trike_Character_BP_C",
     "blueprintpath": "Blueprint'/Game/PrimalEarth/Dinos/Trike/Bone_Trike_Character_BP.Bone_Trike_Character_BP'",
     "commonname": "Skeletal Trike",
     "soundfile": "PW_trike_voc_mumble_01.OGG",
     "pronunciation": "",
     "categories": "",
-    "species": "Triceratops styrax",
-    "time": "Late Cretaceous",
     "group": "Dinosaurs, Event Creatures",
     "temperament": "Short-Tempered",
     "diet": "Herbivore",
@@ -18986,6 +19591,9 @@
     "canbeharvestedfor": "Hide, Keratin, Raw Meat",
     "specialloot": "Dinosaur Bone, Trike Bone Costume"
   },
+
+
+
   "spinosaurus": {
     "variants": "Aberrant Spino, Corrupted Spino, Eerie Spino, X-Spino",
     "releasedate": "2015-06-12",
@@ -19185,6 +19793,9 @@
     "specialloot": "Spinosaurus Sail",
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "stegosaurus": {
     "variants": "Aberrant Stegosaurus, Corrupted Stegosaurus, Eerie Stego, Malfunctioned Tek Stegosaurus, Skeletal Stego, Tek Stegosaurus",
     "releasedate": "2015-06-02",
@@ -19258,7 +19869,7 @@
       },
       "2": {
         "name": "Plate/Spike Base",
-        "colors": "Dino Dark Red, Dino Dark Orange, Dino Dark Yellow, Dino Medium Green, Dino Dark Green, Dino Dark Blue, Dino Dark Purple, Dino Medium Brown, Dino Dark Brown, Dark Grey, Dino Darker Grey, Black"
+        "colors": "Black, Dark Grey, Dino Dark Blue, Dino Dark Brown, Dino Dark Green, Dino Dark Orange, Dino Dark Purple, Dino Dark Red, Dino Dark Yellow, Dino Darker Grey, Dino Medium Brown, Dino Medium Green"
       },
       "3": {
         "name": "Back",
@@ -19266,7 +19877,7 @@
       },
       "4": {
         "name": "Plate Edge and Spike Tips",
-        "colors": "Dino Light Red, Dino Light Orange, Dino Light Yellow, Dino Light Green, Dino Medium Green, Dino Light Blue, Dino Light Purple, Dino Light Brown, Dino Medium Brown, Light Grey, Black"
+        "colors": "BigFoot0, BigFoot4, BigFoot5, Black, Cream, Dino Light Blue, Dino Light Brown, Dino Light Orange, Dino Light Purple, Dino Light Yellow, Dino Medium Brown, Light Grey, WolfFur"
       },
       "5": {
         "name": "Belly",
@@ -19355,6 +19966,9 @@
 
     "harvests": "Amarberry, Amarberry Seed, Azulberry, Azulberry Seed, Cactus Sap, Citronal Seed, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Rockarrot Seed, Savoroot Seed, Stimberry, Stimberry Seed, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "tapejara": {
     "variants": "Eerie Tapejara, X-Tapejara",
     "releasedate": "2016-09-12",
@@ -19426,6 +20040,8 @@
         "colors": "Dino Light Red, Dino Light Orange, Dino Light Yellow, Dino Light Green, Dino Medium Green, Dino Light Blue, Dino Light Purple, Dino Light Brown, Dino Medium Brown, Light Grey, Black"
       },
       "2": {
+
+
       },
       "3": {
         "name": "Wings and Sail",
@@ -19548,6 +20164,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "tekparasaur": {
     "inherits": "parasaurolophus",
     "variants": "Aberrant Parasaur, Parasaur, X-Parasaur",
@@ -19600,6 +20219,9 @@
     },
     "canbeharvestedfor": "Electronics, Element Dust, Oil, Scrap Metal"
   },
+
+
+
   "tekquetzal": {
     "inherits": "quetzalcoatlus",
     "variants": "Malfunctioned Tek Quetzal, Quetzal, Skeletal Quetzal",
@@ -19652,6 +20274,9 @@
     },
     "canbeharvestedfor": "Electronics, Element Dust, Oil, Scrap Metal"
   },
+
+
+
   "tekraptor": {
     "inherits": "raptor",
     "variants": "Aberrant Raptor, Alpha Raptor, Brute X-Raptor, Corrupted Raptor, Malfunctioned Tek Raptor, Raptor, Skeletal Raptor, X-Raptor",
@@ -19704,9 +20329,12 @@
     },
     "canbeharvestedfor": "Electronics, Element Dust, Oil, Scrap Metal"
   },
+
+
+
   "tekrex": {
     "inherits": "rex",
-    "variants": "Alpha T-Rex, Brute Malfunctioned Tek Rex, Brute X-Rex, Corrupted Rex, DodoRex, Enraged Corrupted Rex, Malfunctioned Tek Rex, Rex, Skeletal Rex, X-Rex",
+    "variants": "Alpha T-Rex, Brute Malfunctioned Tek Rex, Brute X-Rex, Corrupted Rex, DodoRex, Enraged Corrupted Rex, Malfunctioned Tek Rex, Rex, Rex Ghost, Skeletal Rex, X-Rex",
     "releasedate": "2018-06-15",
     "releaseversion": "280.114",
     "xboxreleasedate": "2018-06-15",
@@ -19756,6 +20384,9 @@
     },
     "canbeharvestedfor": "Electronics, Element Dust, Oil, Scrap Metal"
   },
+
+
+
   "tekstegosaurus": {
     "inherits": "stegosaurus",
     "variants": "Aberrant Stegosaurus, Corrupted Stegosaurus, Skeletal Stego, Stegosaurus",
@@ -19808,6 +20439,9 @@
     },
     "canbeharvestedfor": "Electronics, Element Dust, Oil, Scrap Metal"
   },
+
+
+
   "terrorbird": {
     "variants": "Eerie Terror Bird",
     "releasedate": "2016-02-07",
@@ -19875,10 +20509,16 @@
         "colors": "Dino Light Orange, Dino Dark Orange, Dino Light Brown, Dino Medium Brown, Dino Dark Brown, Light Grey, Dark Grey, Dino Darker Grey, Black, Bigfoot0, Bigfoot4, Bigfoot5"
       },
       "1": {
+
+
       },
       "2": {
+
+
       },
       "3": {
+
+
       },
       "4": {
         "name": "Belly/Wings Accent",
@@ -19971,6 +20611,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "therizinosaurus": {
     "variants": "Eerie Therizinosaur",
     "releasedate": "2016-12-23",
@@ -20158,6 +20801,9 @@
 
     "harvests": "Amarberry, Amarberry Seed, Ammonite Bile, AnglerGel, Bio Toxin, Azulberry, Azulberry Seed, Bio Toxin, Black Pearl, Cactus Sap, Charcoal, Chitin, Citronal Seed, Fiber, Hide, Keratin, Leech Blood, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Oil, Organic Polymer, Pelt, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Raw Fish Meat, Raw Meat, Raw Prime Fish Meat, Raw Prime Meat, Rockarrot Seed, Sap, Savoroot Seed, Silica Pearls, Silk, Spoiled Meat, Stimberry, Stimberry Seed, Sulfur, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "thylacoleo": {
     "releasedate": "2017-02-26",
     "releaseversion": "255.0",
@@ -20343,6 +20989,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Charcoal, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Mutton, Raw Prime Fish Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "titanoboa": {
     "variants": "Aberrant Titanoboa, Eerie Titanoboa",
     "releasedate": "2015-06-02",
@@ -20467,6 +21116,9 @@
     "specialloot": "Titanoboa Venom"
 
   },
+
+
+
   "titanomyrmadrone": {
     "variants": "Eerie Titanomyrma Drone, Eerie Titanomyrma Soldier, Titanomyrma Drone, Titanomyrma Soldier",
     "releasedate": "2015-07-18",
@@ -20585,6 +21237,9 @@
     "chancetodroploot": 0,
     "canbeharvestedfor": "Cementing Paste, Chitin, Raw Meat"
   },
+
+
+
   "titanomyrmasoldier": {
     "variants": "Eerie Titanomyrma Drone, Eerie Titanomyrma Soldier, Titanomyrma Drone, Titanomyrma Soldier",
     "releasedate": "2015-07-18",
@@ -20695,6 +21350,9 @@
     "chancetodroploot": 0,
     "canbeharvestedfor": "Cementing Paste, Chitin, Raw Meat"
   },
+
+
+
   "titanosaur": {
     "variants": "Eerie Titanosaur",
     "releasedate": "2016-06-23",
@@ -20750,10 +21408,16 @@
         "colors": "Dino Light Orange, Dino Light Yellow, Dino Light Green, Dino Medium Green, Dino Light Brown, Dino Medium Brown, Light Grey, Black"
       },
       "1": {
+
+
       },
       "2": {
+
+
       },
       "3": {
+
+
       },
       "4": {
         "name": "Back",
@@ -20853,6 +21517,9 @@
     "specialloot": "Sauropod Vertebra",
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "triceratops": {
     "variants": "Aberrant Triceratops, Corrupted Triceratops, Eerie Triceratops, Enraged Triceratops, Malfunctioned Tek Triceratops, Tek Triceratops, Skeletal Trike, X-Triceratops",
     "releasedate": "2015-06-02",
@@ -21028,6 +21695,9 @@
     "canbeharvestedfor": "Hide, Keratin, Raw Meat",
     "harvests": "Amarberry, Amarberry Seed, Azulberry, Azulberry Seed, Cactus Sap, Citronal Seed, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Rockarrot Seed, Savoroot Seed, Stimberry, Stimberry Seed, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "trilobite": {
     "variants": "Aberrant Trilobite, Eerie Trilobite",
     "releasedate": "2015-07-30",
@@ -21101,6 +21771,9 @@
     "chancetodroploot": 0,
     "canbeharvestedfor": "Chitin, Oil, Raw Meat, Silica Pearls, Black Pearls"
   },
+
+
+
   "troodon": {
     "variants": "Eerie Troodon",
     "releasedate": "2016-12-23",
@@ -21276,6 +21949,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Charcoal, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Fish Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "superturkey": {
     "event": "ARK: Turkey Trial, ARK: Turkey Trial 2, ARK: Turkey Trial 3",
     "releasedate": "2015-11-25",
@@ -21288,8 +21964,8 @@
     "mobilereleaseversion": "",
     "switchreleasedate": "Unreleased",
     "switchreleaseversion": "",
-    "egsreleasedate": "2020-06-11",
-    "egsreleaseversion": "311.74",
+    "egsreleasedate": "Unreleased",
+    "egsreleaseversion": "",
     "class": "Turkey_Character_BP_C",
     "blueprintpath": "Blueprint'/Game/PrimalEarth/Dinos/Dodo/Turkey_Character_BP.Turkey_Character_BP'",
     "commonname": "Super Turkey",
@@ -21362,6 +22038,7 @@
     "killxpbase": 0.5,
     "teamname": "Herbivores_Medium_Aggressive",
     "chancetodroploot": 1,
+    "meleebase": 61,
     "attacks": {
       "1": {
         "name": "Melee",
@@ -21378,6 +22055,9 @@
     "canbeharvestedfor": "Hide, Raw Meat",
     "specialloot": "Wishbone"
   },
+
+
+
   "tusoteuthis": {
     "variants": "Alpha Tusoteuthis, Brute Tusoteuthis, Eerie Tusoteuthis",
     "releasedate": "2016-12-23",
@@ -21574,6 +22254,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Charcoal, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Fish Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "unicorn": {
     "inherits": "equus",
     "variants": "Aberrant Equus, Eerie Equus, Equus, Noctis",
@@ -21582,6 +22265,8 @@
     "commonname": "Unicorn",
     "dossierimage": "Equus-Unicorn.jpg",
     "dossieraddbook": "No",
+    "species": "",
+    "time": "",
     "group": "Fantasy Creatures, Mammals",
     "fecessize": "Medium, Unicorn Residue (Mobile)",
     "tamingfood": {
@@ -21589,6 +22274,9 @@
       "mobilekibble": "Kibble (Griffin Egg) (Mobile)"
     }
   },
+
+
+
   "woollyrhinoceros": {
     "variants": "Eerie Woolly Rhinoceros, X-Woolly Rhino",
     "releasedate": "2016-04-02",
@@ -21656,6 +22344,8 @@
         "colors": "Dino Light Orange, Dino Dark Orange, Dino Light Brown, Dino Medium Brown, Dino Dark Brown, Light Grey, Dark Grey, Dino Darker Grey, Black, Bigfoot0, Bigfoot4, Bigfoot5"
       },
       "3": {
+
+
       },
       "4": {
         "name": "Underside",
@@ -21748,6 +22438,9 @@
     "specialloot": "Woolly Rhino Horn",
     "harvests": "Amarberry, Amarberry Seed, Azulberry, Azulberry Seed, Cactus Sap, Citronal Seed, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Rockarrot Seed, Savoroot Seed, Stimberry, Stimberry Seed, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "yeti": {
     "variants": "Aberrant Gigantopithecus, Eerie Gigantopithecus, Eerie Yeti, Gigantopithecus, Megapithecus Pestis",
     "releasedate": "2016-03-25",
@@ -21769,7 +22462,7 @@
     "pronunciation": "",
     "categories": "",
     "species": "",
-    "time": "Unknown",
+    "time": "",
     "group": "Alpha Creatures, Mammals",
     "temperament": "Aggressive",
     "diet": "Herbivore",
@@ -21852,6 +22545,9 @@
     "canbeharvestedfor": "Hide, Raw Meat"
 
   },
+
+
+
   "yutyrannus": {
     "variants": "Brute X-Yutyrannus, X-Yutyrannus",
     "releasedate": "2017-05-30",
@@ -22037,6 +22733,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Charcoal, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Mutton, Raw Prime Fish Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "zomdodo": {
     "variants": "Aberrant Dodo, Bunny Dodo, Dodo, Dodo Wyvern, DodoRex, Party Dodo, Zombie Wyvern",
     "event": "ARK: Fear Evolved, ARK: Fear Evolved 2, ARK: Fear Evolved 3, ARK: Fear Evolved 4",
@@ -22050,15 +22749,14 @@
     "mobilereleaseversion": "",
     "switchreleasedate": "Unreleased",
     "switchreleaseversion": "",
-    "egsreleasedate": "2020-06-11",
-    "egsreleaseversion": "311.74",
+    "egsreleasedate": "2020-10-23",
+    "egsreleaseversion": "315.2",
     "class": "ZombieDodo_Character_BP_C",
     "blueprintpath": "Blueprint'/Game/PrimalEarth/Dinos/Dodo/ZombieDodo_Character_BP.ZombieDodo_Character_BP'",
     "commonname": "Zomdodo",
     "soundfile": "",
     "pronunciation": "",
     "categories": "",
-    "species": "Raphus replicare",
     "group": "Birds, Event Creatures",
     "temperament": "Aggressive",
     "diet": "Carnivore",
@@ -22176,8 +22874,12 @@
     "teamname": "TargetOnlyPlayers",
     "chancetodroploot": 0,
     "canbeharvestedfor": "Hide, Raw Meat",
+
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
-  },
+    },
+
+
+
   "eerieCreaturesOverride": {
     "releasedate": "Unreleased",
     "releaseversion": "",
@@ -22226,6 +22928,9 @@
     "class": "",
     "blueprintpath": ""
   },
+
+
+
   "eerieachatina": {
     "inherits": "achatina",
     "overridewith": "eerieCreaturesOverride",
@@ -22811,6 +23516,18 @@
     "commonname": "Eerie Yeti",
     "group": "Alpha Creatures, Eerie Creatures, Mammals"
   },
+
+
+
+
+
+
+
+
+
+
+
+
   "alphadeathworm": {
     "variants": "Deathworm, Iceworm Male, Iceworm Queen",
     "dlc": "Scorched Earth, Ragnarok",
@@ -22845,12 +23562,16 @@
         "colors": "Dino Light Orange, Dino Light Brown, Dino Medium Brown, Bigfoot0, Bigfoot5, Dino Dark Orange"
       },
       "1": {
+
+
       },
       "2": {
         "name": "Claws",
         "colors": "Dino Light Orange, Dino Light Brown, Dino Medium Brown, Black, Bigfoot5, Dino Dark Orange"
       },
       "3": {
+
+
       },
       "4": {
         "name": "Back and Spikes",
@@ -22921,6 +23642,9 @@
     "canbeharvestedfor": "Hide, Keratin, Raw Meat, Raw Prime Meat",
     "specialloot": "Deathworm Horn (Scorched Earth), Alpha Deathworm Trophy (Scorched Earth), Manticore Helmet Skin (Scorched Earth)"
   },
+
+
+
   "alphafirewyvern": {
     "variants": "Alpha Blood Crystal Wyvern, Blood Crystal Wyvern, Bone Fire Wyvern, Brute Fire Wyvern, Corrupted Wyvern, Crystal Wyvern Queen (Gamma), Crystal Wyvern Queen (Beta), Crystal Wyvern Queen (Alpha), Dodo Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Tropical Crystal Wyvern, Zombie Fire Wyvern, Zombie Lightning Wyvern, Zombie Poison Wyvern",
     "dlc": "Scorched Earth, Ragnarok, Valguero",
@@ -22942,8 +23666,6 @@
     "soundfile": "",
     "pronunciation": "",
     "categories": "",
-    "species": "Draconis vipera",
-    "time": "Unknown",
     "group": "Alpha Creatures, Fantasy Creatures",
     "temperament": "Aggressive",
     "diet": "Carnivore",
@@ -22961,6 +23683,8 @@
         "colors": "Black, Dino Light Orange, Dino Medium Brown, Dino Dark Orange, Dino Dark Red"
       },
       "3": {
+
+
       },
       "4": {
         "name": "Fins and Wings",
@@ -22981,7 +23705,7 @@
       "torporwildlevel": 0.06,
       "oxygen": 150,
       "oxygenwildlevel": 0.1,
-      "food": 2000,
+      "food": 1800,
       "foodwildlevel": 0.1,
       "weight": 350,
       "weightwildlevel": 0.02,
@@ -23060,10 +23784,13 @@
     "canbeharvestedfor": "Hide, Raw Prime Meat, Sulfur (Scorched Earth)",
     "specialloot": "Fire Talon (Scorched Earth), Wyvern Milk (Scorched Earth), Alpha Wyvern Trophy (Scorched Earth), Wyvern Gloves Skin (Scorched Earth)"
   },
+
+
+
   "bonefirewyvern": {
     "variants": "Alpha Blood Crystal Wyvern, Alpha Fire Wyvern, Blood Crystal Wyvern, Corrupted Wyvern, Crystal Wyvern Queen (Gamma), Crystal Wyvern Queen (Beta), Crystal Wyvern Queen (Alpha), Brute Fire Wyvern, Dodo Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Zombie Fire Wyvern, Zombie Lightning Wyvern, Zombie Poison Wyvern",
     "event": "ARK: Fear Evolved 2, ARK: Fear Evolved 3, ARK: Fear Evolved 4",
-    "dlc": "Scorched Earth",
+    "dlc": "Scorched Earth, Ragnarok, Valguero",
     "releasedate": "2016-10-28",
     "releaseversion": "249.0",
     "xboxreleasedate": "2016-11-03",
@@ -23074,16 +23801,14 @@
     "mobilereleaseversion": "",
     "switchreleasedate": "Unreleased",
     "switchreleaseversion": "",
-    "egsreleasedate": "2020-06-11",
-    "egsreleaseversion": "311.74",
+    "egsreleasedate": "2020-10-23",
+    "egsreleaseversion": "315.2",
     "class": "Bone_MegaWyvern_Character_BP_Fire_C",
     "blueprintpath": "Blueprint'/Game/ScorchedEarth/Dinos/Wyvern/Bone_MegaWyvern_Character_BP_Fire.Bone_MegaWyvern_Character_BP_Fire'",
     "commonname": "Bone Fire Wyvern",
     "soundfile": "",
     "pronunciation": "",
     "categories": "",
-    "species": "Draconis vipera",
-    "time": "Unknown",
     "group": "Event Creatures, Reptiles",
     "temperament": "Aggressive",
     "diet": "Carnivore",
@@ -23101,7 +23826,7 @@
       "torporwildlevel": 0.06,
       "oxygen": 150,
       "oxygenwildlevel": 0.1,
-      "food": 2000,
+      "food": 1800,
       "foodwildlevel": 0.1,
       "weight": 400,
       "weightwildlevel": 0.02,
@@ -23180,10 +23905,13 @@
     "canbeharvestedfor": "Hide, Raw Prime Meat, Sulfur (Scorched Earth)",
     "specialloot": "Dinosaur Bone, Fire Talon (Scorched Earth), Wyvern Bone Costume, Wyvern Milk (Scorched Earth)"
   },
+
+
+
   "bonejerboa": {
     "variants": "Jerboa",
     "event": "ARK: Fear Evolved 2, ARK: Fear Evolved 3, ARK: Fear Evolved 4",
-    "dlc": "Scorched Earth",
+    "dlc": "Scorched Earth, Ragnarok, Valguero, Crystal Isles",
     "releasedate": "2016-10-28",
     "releaseversion": "249.0",
     "xboxreleasedate": "2016-11-03",
@@ -23194,16 +23922,14 @@
     "mobilereleaseversion": "",
     "switchreleasedate": "Unreleased",
     "switchreleaseversion": "",
-    "egsreleasedate": "2020-06-11",
-    "egsreleaseversion": "311.74",
+    "egsreleasedate": "2020-10-23",
+    "egsreleaseversion": "315.2",
     "class": "Bone_Jerboa_Character_BP_C",
     "blueprintpath": "Blueprint'/Game/ScorchedEarth/Dinos/Jerboa/Bone_Jerboa_Character_BP.Bone_Jerboa_Character_BP'",
     "commonname": "Skeletal Jerboa",
     "soundfile": "s_jerboa_idle_1.OGG",
     "pronunciation": "",
     "categories": "",
-    "species": "Renopila amplexus",
-    "time": "Unknown",
     "group": "Event Creatures, Mammals",
     "temperament": "Cowardly",
     "diet": "Herbivore",
@@ -23262,6 +23988,9 @@
     "specialloot": "Dinosaur Bone, Jerboa Bone Costume"
 
   },
+
+
+
   "deathworm": {
     "variants": "Alpha Deathworm, Iceworm Male, Iceworm Queen",
     "dlc": "Scorched Earth, Ragnarok, Genesis: Part 1",
@@ -23300,12 +24029,16 @@
         "colors": "Dino Light Orange, Dino Light Brown, Dino Medium Brown, Bigfoot0, Bigfoot5, Dino Dark Orange"
       },
       "1": {
+
+
       },
       "2": {
         "name": "Claws",
         "colors": "Dino Light Orange, Dino Light Brown, Dino Medium Brown, Black, Bigfoot5, Dino Dark Orange"
       },
       "3": {
+
+
       },
       "4": {
         "name": "Back and Spikes",
@@ -23376,6 +24109,9 @@
     "canbeharvestedfor": "Hide, Keratin, Raw Meat, Raw Prime Meat",
     "specialloot": "Deathworm Horn (Scorched Earth)"
   },
+
+
+
   "dodowyvern": {
     "variants": "Aberrant Dodo, Alpha Fire Wyvern, Bone Fire Wyvern, Brute Fire Wyvern, Bunny Dodo, Corrupted Wyvern, Dodo, DodoRex, Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Party Dodo, Poison Wyvern, Wyvern, Zombie Fire Wyvern, Zombie Lightning Wyvern, Zombie Poison Wyvern, Zomdodo",
     "event": "ARK: Fear Evolved 2, ARK: Fear Evolved 3, ARK: Fear Evolved 4",
@@ -23390,8 +24126,8 @@
     "mobilereleaseversion": "",
     "switchreleasedate": "Unreleased",
     "switchreleaseversion": "",
-    "egsreleasedate": "2020-06-11",
-    "egsreleaseversion": "311.74",
+    "egsreleasedate": "2020-10-23",
+    "egsreleaseversion": "315.2",
     "class": "DodoWyvern_Character_BP_C",
     "blueprintpath": "Blueprint'/Game/ScorchedEarth/Dinos/DodoWyvern/DodoWyvern_Character_BP.DodoWyvern_Character_BP'",
     "commonname": "Dodo Wyvern",
@@ -23411,14 +24147,24 @@
     "colorization": {
 
       "0": {
+
+
       },
       "2": {
+
+
       },
       "3": {
+
+
       },
       "4": {
+
+
       },
       "5": {
+
+
       }
     },
     "stats": {
@@ -23449,7 +24195,7 @@
     "dragweight": 1000,
     "mass": 800,
     "fecessize": "Medium",
-    "candamage": "Stone, Adobe, Wood, Thatch, Greenhouse",
+    "candamage": "Tek, Metal, Stone, Adobe, Wood, Thatch, Greenhouse",
     "carryableby": "",
     "candragcreatureswhileflying": "No",
     "meleebase": 160,
@@ -23513,6 +24259,9 @@
     "canbeharvestedfor": "Hide, Raw Prime Meat, Sulfur (Scorched Earth)",
     "specialloot": "DodoWyvern Mask Skin, Vampire Eyes Skin, Werewolf Mask Skin"
   },
+
+
+
   "jerboa": {
     "variants": "Eerie Jerboa, Skeletal Jerboa",
     "dlc": "Scorched Earth, Ragnarok, Valguero, Crystal Isles",
@@ -23611,7 +24360,7 @@
       "foodtamedlevel": 0.1,
       "foodtamedmult": 0.15,
       "foodtamedadd": 0,
-      "weight": 55,
+      "weight": 120,
       "weightwildlevel": 0.02,
       "weighttamedlevel": 0.04,
       "weighttamedmult": 0,
@@ -23664,6 +24413,9 @@
 
     "harvests": "Amarberry, Amarberry Seed, Azulberry, Azulberry Seed, Cactus Sap, Citronal Seed, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Rockarrot Seed, Savoroot Seed, Stimberry, Stimberry Seed, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "jugbug": {
     "variants": "Oil Jug Bug, Water Jug Bug",
     "dlc": "Scorched Earth, Ragnarok, Extinction, Genesis: Part 1, Crystal Isles",
@@ -23702,8 +24454,12 @@
         "colors": "Dino Light Red, Dino Dark Red, Dino Light Orange, Dino Dark Orange, Dino Light Yellow, Dino Dark Yellow, Dino Light Green, Dino Medium Green, Dino Dark Green, Dino Light Blue, Dino Dark Blue, Dino Light Purple, Dino Dark Purple"
       },
       "2": {
+
+
       },
       "3": {
+
+
       },
       "4": {
         "name": "Head and Wings",
@@ -23776,6 +24532,9 @@
     "chancetodroploot": 0,
     "canbeharvestedfor": "Cementing Paste, Chitin, Raw Meat"
   },
+
+
+
   "oiljugbug": {
     "variants": "Water Jug Bug",
     "dlc": "Scorched Earth, Ragnarok, Extinction, Genesis: Part 1",
@@ -23870,6 +24629,9 @@
     "chancetodroploot": 1,
     "canbeharvestedfor": "Cementing Paste, Chitin, Raw Meat"
   },
+
+
+
   "waterjugbug": {
     "variants": "Oil Jug Bug",
     "dlc": "Scorched Earth, Ragnarok, Extinction, Genesis: Part 1",
@@ -23964,6 +24726,9 @@
     "chancetodroploot": 0,
     "canbeharvestedfor": "Cementing Paste, Chitin, Raw Meat"
   },
+
+
+
   "lymantria": {
     "dlc": "Scorched Earth, Ragnarok, Valguero, Genesis: Part 1, Crystal Isles",
     "releasedate": "2016-09-01",
@@ -24015,7 +24780,13 @@
       "favoritefood": "Crops"
     },
     "breeding": {
-      "egg": "Moth Egg (Scorched Earth)"
+      "egg": "Moth Egg (Scorched Earth)",
+      "mintemp": 35,
+      "maxtemp": 38,
+      "incubationtime": 5454.10913,
+      "maturationtime": 111111.111,
+      "mintimebetweenmating": 64800,
+      "maxtimebetweenmating": 172800
     },
     "colorization": {
       "0": {
@@ -24128,6 +24899,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "manticore": {
     "variants": "Manticore (Alpha), Manticore (Beta), Manticore (Gamma)",
     "dlc": "Scorched Earth, Ragnarok, Valguero",
@@ -24425,7 +25199,11 @@
       "health": 160000
     }
   },
+
+
+
   "mantis": {
+    "variants": "Mantis Ghost",
     "dlc": "Scorched Earth, Ragnarok, Valguero, Genesis: Part 1, Crystal Isles",
     "releasedate": "2016-09-01",
     "releaseversion": "246.0",
@@ -24476,7 +25254,13 @@
       "favoritefood": "Deathworm Horn"
     },
     "breeding": {
-      "egg": "Mantis Egg"
+      "egg": "Mantis Egg (Scorched Earth)",
+      "mintemp": 35,
+      "maxtemp": 38,
+      "incubationtime": 9999.20006,
+      "maturationtime": 196078.431,
+      "mintimebetweenmating": 64800,
+      "maxtimebetweenmating": 172800
     },
     "colorization": {
       "0": {
@@ -24584,6 +25368,64 @@
     "canbeharvestedfor": "Chitin, Organic Polymer, Raw Meat",
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
+  "mantisghost": {
+    "inherits": "mantis",
+    "dlc": "Scorched Earth, Ragnarok, Extinction, Valguero, Crystal Isles",
+    "event": "ARK: Fear Evolved 4",
+    "variants": "Mantis",
+    "releasedate": "2020-10-23",
+    "releaseversion": "315.2",
+    "xboxreleasedate": "2020-10-27",
+    "xboxreleaseversion": "802.11",
+    "ps4releasedate": "2020-10-23",
+    "ps4releaseversion": "551.11",
+    "mobilereleasedate": "Unreleased",
+    "mobilereleaseversion": "",
+    "switchreleasedate": "Unreleased",
+    "switchreleaseversion": "",
+    "egsreleasedate": "2020-10-23",
+    "egsreleaseversion": "315.2",
+    "class": "Ghost_Mantis_Character_BP_C",
+    "blueprintpath": "Blueprint'/Game/ScorchedEarth/Dinos/Mantis/Ghost_Mantis_Character_BP.Ghost_Mantis_Character_BP'",
+    "commonname": "Mantis Ghost",
+    "species": "",
+    "time": "",
+    "group": "Event Creatures, Invertebrates",
+    "dossierimage": "Mantis Ghost Image.jpg",
+    "dossieraddbook": "No",
+    "taming": {
+      "canbetamed": "No",
+      "rideable": "No",
+      "equipment": "",
+      "uniquecostumes": "",
+      "canmountonhumans": "",
+      "nonviolenttame": "",
+      "knockouttame": "",
+      "ballowmountedweaponry": ""
+    },
+    "tamingfood": {
+
+      "kibble": "",
+      "favoritefood": "",
+      "primitiveplusfood": ""
+    },
+    "breeding": {
+      "gestationtime": "",
+      "mintemp": "",
+      "maxtemp": "",
+      "incubationtime": "",
+      "maturationtime": "",
+      "mintimebetweenmating": "",
+      "maxtimebetweenmating": ""
+    },
+    "specialloot": "Mantis Ghost Costume"
+  },
+
+
+
   "morellatops": {
     "dlc": "Scorched Earth, Ragnarok, Extinction, Crystal Isles",
     "releasedate": "2016-09-01",
@@ -24653,6 +25495,8 @@
         "colors": "Dino Light Orange, Dino Dark Orange, Dino Light Brown, Dino Medium Brown, Dino Dark Brown, Light Grey, Dark Grey, Dino Dark Brown, Black, Bigfoot0, Bigfoot4, BigFoot5"
       },
       "2": {
+
+
       },
       "3": {
         "name": "Spikes",
@@ -24760,6 +25604,9 @@
 
     "harvests": "Amarberry, Amarberry Seed, Azulberry, Azulberry Seed, Cactus Sap, Citronal Seed, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Rockarrot Seed, Savoroot Seed, Stimberry, Stimberry Seed, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "phoenix": {
     "dlc": "Scorched Earth, Genesis: Part 1",
     "releasedate": "2017-09-03",
@@ -24940,6 +25787,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Cactus Sap, Charcoal, Chitin, Crystal, Flint, Hide, Keratin, Leech Blood, Metal, Obsidian, Oil, Organic Polymer, Pelt, Rare Mushroom, Raw Fish Meat, Raw Meat, Raw Mutton, Raw Prime Fish Meat, Raw Prime Meat, Sand, Silica Pearls, Silk, Spoiled Meat, Stone, Sulfur, Thatch, Wood"
   },
+
+
+
   "rockelemental": {
     "variants": "Brute X-Rock Elemental, Chalk Golem, Ice Golem, Lava Elemental, Rubble Golem, X-Rock Elemental",
     "dlc": "Scorched Earth, Ragnarok, Extinction, Valguero, Genesis: Part 1, Crystal Isles",
@@ -24992,7 +25842,7 @@
       "favoritefood": "Sulfur"
     },
     "colorization": {
-      "1": {
+    "1": {
         "name": "Body",
         "colors": "Red, Dark Red, Dino Light Red, Dino Light Yellow, Dino Dark Yellow, Dino Light Blue, Dino Albino, Black"
       }
@@ -25106,6 +25956,9 @@
     "canbeharvestedfor": "Crystal, Metal, Obsidian, Oil, Stone, Sulfur (Scorched Earth)",
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Cactus Sap, Chitin, Crystal, Hide, Keratin, Leech Blood, Metal, Obsidian, Oil, Organic Polymer, Pelt, Rare Mushroom, Raw Fish Meat, Raw Meat, Raw Prime Meat, Sand, Silica Pearls, Silk, Spoiled Meat, Stone, Sulfur, Thatch, Wood"
   },
+
+
+
   "rubblegolem": {
     "variants": "Brute X-Rock Elemental, Chalk Golem, Ice Golem, Lava Elemental, Rock Elemental, X-Rock Elemental",
     "dlc": "Scorched Earth, Extinction",
@@ -25137,7 +25990,7 @@
       "canbetamed": "No"
     },
     "colorization": {
-      "1": {
+    "1": {
         "name": "Body",
         "colors": "Red, Dark Red, Dino Light Red, Dino Light Yellow, Dino Dark Yellow, Dino Light Blue, Dino Albino, Black"
       }
@@ -25219,6 +26072,9 @@
     "chancetodroploot": 1,
     "canbeharvestedfor": "Crystal, Metal, Obsidian, Oil, Stone, Sulfur (Scorched Earth)"
   },
+
+
+
   "thornydragon": {
     "dlc": "Scorched Earth, Ragnarok, Extinction, Genesis: Part 1, Crystal Isles",
     "releasedate": "2016-09-01",
@@ -25410,6 +26266,9 @@
 
     "harvests": "Amarberry, Amarberry Seed, Ammonite Bile, AnglerGel, Bio Toxin, Azulberry, Azulberry Seed, Black Pearl, Cactus Sap, Chitin, Citronal Seed, Crystal, Hide, Keratin, Leech Blood, Longrass Seed, Mejoberry, Mejoberry Seed, Metal, Narcoberry, Narcoberry Seed, Obsidian, Oil, Organic Polymer, Pelt, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Raw Fish Meat, Raw Meat, Raw Prime Meat, Rockarrot Seed, Sand, Savoroot Seed, Silica Pearls, Silk, Spoiled Meat, Stimberry, Stimberry Seed, Stone, Sulfur, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "vulture": {
     "dlc": "Scorched Earth, Ragnarok, Crystal Isles",
     "releasedate": "2016-09-01",
@@ -25568,6 +26427,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "wyvern": {
     "variants": "Alpha Blood Crystal Wyvern, Alpha Fire Wyvern, Blood Crystal Wyvern, Bone Fire Wyvern, Brute Fire Wyvern, Corrupted Wyvern, Crystal Wyvern Queen (Gamma), Crystal Wyvern Queen (Beta), Crystal Wyvern Queen (Alpha), Dodo Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Tropical Crystal Wyvern, Zombie Fire Wyvern, Zombie Lightning Wyvern, Zombie Poison Wyvern",
     "dlc": "Scorched Earth, Ragnarok, Valguero, Genesis: Part 1",
@@ -25622,41 +26484,31 @@
     },
     "stats": {
       "cansuffocate": "Yes",
-      "health": 1725,
+      "health": 1295,
       "healthwildlevel": 0.15,
       "healthtamedlevel": 0.2025,
-      "healthtamedmult": 0,
-      "healthtamedadd": -1050,
-      "stamina": 400,
-      "staminawildlevel": 0.1,
-      "staminatamedlevel": 0.1,
-      "staminatamedmult": 0,
-      "staminatamedadd": 0,
-      "torpor": 725,
+      "healthtamedadd": -758,
+      "stamina": 325,
+      "staminawildlevel": 0.05,
+      "staminatamedlevel": 0.05,
+      "torpor": 545,
       "torporwildlevel": 0.06,
-      "torportamedmult": 0,
       "torportamedadd": 0.5,
       "oxygen": 150,
       "oxygenwildlevel": 0.1,
       "oxygentamedlevel": 0.1,
-      "oxygentamedmult": 0,
-      "oxygentamedadd": 0,
-      "food": 2000,
+      "food": 1500,
       "foodwildlevel": 0.1,
       "foodtamedlevel": 0.1,
-      "foodtamedmult": 0,
-      "foodtamedadd": 0,
-      "weight": 350,
+      "weight": 300,
       "weightwildlevel": 0.02,
       "weighttamedlevel": 0.04,
-      "weighttamedmult": 0,
-      "weighttamedadd": 0,
-      "melee": 0,
+      "melee": 45,
       "meleewildlevel": 0.05,
       "meleetamedlevel": 0.1,
       "meleetamedmult": 0.4,
       "meleetamedadd": -0.25,
-      "speed": 0,
+      "speed": 100,
       "speedwildlevel": 0,
       "speedtamedlevel": 0.025,
       "speedtamedmult": 0,
@@ -25788,6 +26640,9 @@
     "specialloot": "Fire Talon (Scorched Earth), Lightning Talon (Scorched Earth), Poison Talon (Scorched Earth)",
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "firewyvern": {
     "variants": "Alpha Blood Crystal Wyvern, Alpha Fire Wyvern, Blood Crystal Wyvern, Bone Fire Wyvern, Brute Fire Wyvern, Corrupted Wyvern, Crystal Wyvern Queen (Gamma), Crystal Wyvern Queen (Beta), Crystal Wyvern Queen (Alpha), Dodo Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Tropical Crystal Wyvern, Zombie Fire Wyvern, Zombie Lightning Wyvern, Zombie Poison Wyvern",
     "dlc": "Scorched Earth, Ragnarok, Valguero, Genesis: Part 1",
@@ -25849,6 +26704,8 @@
         "colors": "Dark Grey, Dino Light Orange, Dino Medium Brown, BigFoot5, Dark Wolf Fur, DragonBase0, DragonBase1, Dino Dark Orange"
       },
       "3": {
+
+
       },
       "4": {
         "name": "Fins and Wings",
@@ -25861,12 +26718,12 @@
     },
     "stats": {
       "cansuffocate": "Yes",
-      "health": 1725,
+      "health": 1295,
       "healthwildlevel": 0.15,
       "healthtamedlevel": 0.2025,
       "healthtamedmult": 0,
-      "healthtamedadd": -1050,
-      "stamina": 400,
+      "healthtamedadd": -785,
+      "stamina": 315,
       "staminawildlevel": 0.1,
       "staminatamedlevel": 0.1,
       "staminatamedmult": 0,
@@ -25880,7 +26737,7 @@
       "oxygentamedlevel": 0.1,
       "oxygentamedmult": 0,
       "oxygentamedadd": 0,
-      "food": 2000,
+      "food": 1800,
       "foodwildlevel": 0.1,
       "foodtamedlevel": 0.1,
       "foodtamedmult": 0,
@@ -25986,6 +26843,9 @@
     "specialloot": "Fire Talon (Scorched Earth)",
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "lightningwyvern": {
     "variants": "Alpha Blood Crystal Wyvern, Alpha Fire Wyvern, Blood Crystal Wyvern, Bone Fire Wyvern, Brute Fire Wyvern, Corrupted Wyvern, Crystal Wyvern Queen (Gamma), Crystal Wyvern Queen (Beta), Crystal Wyvern Queen (Alpha), Dodo Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Tropical Crystal Wyvern, Zombie Fire Wyvern, Zombie Lightning Wyvern, Zombie Poison Wyvern",
     "dlc": "Scorched Earth, Ragnarok, Genesis: Part 1",
@@ -26061,12 +26921,12 @@
     },
     "stats": {
       "cansuffocate": "Yes",
-      "health": 1725,
+      "health": 1295,
       "healthwildlevel": 0.15,
       "healthtamedlevel": 0.2025,
       "healthtamedmult": 0,
-      "healthtamedadd": -1050,
-      "stamina": 400,
+      "healthtamedadd": -785,
+      "stamina": 315,
       "staminawildlevel": 0.1,
       "staminatamedlevel": 0.1,
       "staminatamedmult": 0,
@@ -26080,7 +26940,7 @@
       "oxygentamedlevel": 0.1,
       "oxygentamedmult": 0,
       "oxygentamedadd": 0,
-      "food": 2000,
+      "food": 1800,
       "foodwildlevel": 0.1,
       "foodtamedlevel": 0.1,
       "foodtamedmult": 0,
@@ -26193,6 +27053,9 @@
     "specialloot": "Lightning Talon (Scorched Earth)",
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "poisonwyvern": {
     "variants": "Alpha Blood Crystal Wyvern, Alpha Fire Wyvern, Blood Crystal Wyvern, Bone Fire Wyvern, Brute Fire Wyvern, Corrupted Wyvern, Crystal Wyvern Queen (Gamma), Crystal Wyvern Queen (Beta), Crystal Wyvern Queen (Alpha), Dodo Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Tropical Crystal Wyvern, Zombie Fire Wyvern, Zombie Lightning Wyvern, Zombie Poison Wyvern",
     "dlc": "Scorched Earth, Ragnarok, Genesis: Part 1",
@@ -26272,12 +27135,12 @@
     },
     "stats": {
       "cansuffocate": "Yes",
-      "health": 1725,
+      "health": 1295,
       "healthwildlevel": 0.15,
       "healthtamedlevel": 0.2025,
       "healthtamedmult": 0,
-      "healthtamedadd": -1050,
-      "stamina": 400,
+      "healthtamedadd": -785,
+      "stamina": 315,
       "staminawildlevel": 0.1,
       "staminatamedlevel": 0.1,
       "staminatamedmult": 0,
@@ -26291,7 +27154,7 @@
       "oxygentamedlevel": 0.1,
       "oxygentamedmult": 0,
       "oxygentamedadd": 0,
-      "food": 2000,
+      "food": 1800,
       "foodwildlevel": 0.1,
       "foodtamedlevel": 0.1,
       "foodtamedmult": 0,
@@ -26425,9 +27288,12 @@
     "specialloot": "Poison Talon (Scorched Earth)",
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "zombiewyvern": {
     "variants": "Alpha Blood Crystal Wyvern, Alpha Fire Wyvern, Blood Crystal Wyvern, Bone Fire Wyvern, Brute Fire Wyvern, Corrupted Wyvern, Crystal Wyvern Queen (Gamma), Crystal Wyvern Queen (Beta), Crystal Wyvern Queen (Alpha), Dodo Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Tropical Crystal Wyvern, Zombie Fire Wyvern, Zombie Lightning Wyvern, Zombie Poison Wyvern",
-    "dlc": "Scorched Earth",
+    "dlc": "Scorched Earth, Ragnarok, Extinction, Valguero",
     "event": "ARK: Fear Evolved 2, ARK: Fear Evolved 3, ARK: Fear Evolved 4",
     "releasedate": "2016-10-28",
     "releaseversion": "249.0",
@@ -26439,16 +27305,14 @@
     "mobilereleaseversion": "",
     "switchreleasedate": "Unreleased",
     "switchreleaseversion": "",
-    "egsreleasedate": "2020-06-11",
-    "egsreleaseversion": "311.74",
+    "egsreleasedate": "2020-10-23",
+    "egsreleaseversion": "315.2",
     "class": "Wyvern_Character_BP_ZombieBase_C",
     "blueprintpath": "Blueprint'/Game/ScorchedEarth/Dinos/Wyvern/Wyvern_Character_BP_ZombieBase.Wyvern_Character_BP_ZombieBase'",
     "commonname": "Zombie Wyvern",
     "soundfile": "",
     "pronunciation": "",
     "categories": "",
-    "species": "Draconis vipera",
-    "time": "Unknown",
     "group": "Event Creatures, Reptiles",
     "temperament": "Aggressive",
     "diet": "Carnivore",
@@ -26601,9 +27465,12 @@
     "specialloot": "Fire Talon (Scorched Earth), Lightning Talon (Scorched Earth), Poison Talon (Scorched Earth)",
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "zombiefirewyvern": {
     "variants": "Alpha Blood Crystal Wyvern, Alpha Fire Wyvern, Blood Crystal Wyvern, Bone Fire Wyvern, Brute Fire Wyvern, Corrupted Wyvern, Crystal Wyvern Queen (Gamma), Crystal Wyvern Queen (Beta), Crystal Wyvern Queen (Alpha), Dodo Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Tropical Crystal Wyvern, Zombie Fire Wyvern, Zombie Lightning Wyvern, Zombie Poison Wyvern",
-    "dlc": "Scorched Earth",
+    "dlc": "Scorched Earth, Ragnarok, Extinction, Valguero",
     "releasedate": "2016-10-28",
     "releaseversion": "249.0",
     "xboxreleasedate": "2016-11-03",
@@ -26614,16 +27481,14 @@
     "mobilereleaseversion": "",
     "switchreleasedate": "Unreleased",
     "switchreleaseversion": "",
-    "egsreleasedate": "2020-06-11",
-    "egsreleaseversion": "311.74",
+    "egsreleasedate": "2020-10-23",
+    "egsreleaseversion": "315.2",
     "class": "Wyvern_Character_BP_ZombieFire_C",
     "blueprintpath": "Blueprint'/Game/ScorchedEarth/Dinos/Wyvern/Wyvern_Character_BP_ZombieFire.Wyvern_Character_BP_ZombieFire'",
     "commonname": "Zombie Wyvern",
     "soundfile": "",
     "pronunciation": "",
     "categories": "",
-    "species": "Draconis vipera",
-    "time": "Unknown",
     "group": "Event Creatures, Reptiles",
     "temperament": "Aggressive",
     "diet": "Carnivore",
@@ -26653,34 +27518,30 @@
     },
     "colorization": {
       "0": {
-        "name": "Body",
-        "colors": "DragonBase0, Dark Wolf Fur, Wolf Fur, BigFoot5, BigFoot4, Dino Darker Grey, Dino Dark Orange, Dark Grey, DragonBase1"
+        "name": "Main Body",
+        "colors": ""
       },
-      "2": {
-        "name": "Belly and Foot Scales",
-        "colors": "Dark Grey, Dino Light Orange, Dino Medium Brown, BigFoot5, Dark Wolf Fur, DragonBase0, DragonBase1, Dino Dark Orange"
+      "1": {
+        "name": "Wings",
+        "colors": ""
       },
       "3": {
-        "name": "null",
-        "colors": "DragonBase0, Dark Wolf Fur, Wolf Fur, BigFoot5, BigFoot4, Dino Dark Brown, Dino Dark Orange, Dark Grey, DragonBase1"
-      },
-      "4": {
-        "name": "Fins and Wings",
-        "colors": "Light Orange, DragonFire, Dino Dark Red, Dino Light Orange, Dino Darker Grey, DragonBase0"
+        "name": "Wing Highlights",
+        "colors": ""
       },
       "5": {
-        "name": "Belly Detail",
-        "colors": "Light Orange, DragonFire, DragonBase1, Dino Light Orange, Dino Medium Brown, DragonBase0"
+        "name": "Underbelly",
+        "colors": ""
       }
     },
     "stats": {
       "cansuffocate": "Yes",
-      "health": 1725,
+      "health": 1295,
       "healthwildlevel": 0.15,
       "healthtamedlevel": 0.2025,
       "healthtamedmult": 0,
-      "healthtamedadd": -1050,
-      "stamina": 400,
+      "healthtamedadd": -785,
+      "stamina": 315,
       "staminawildlevel": 0.1,
       "staminatamedlevel": 0.1,
       "staminatamedmult": 0,
@@ -26694,7 +27555,7 @@
       "oxygentamedlevel": 0.1,
       "oxygentamedmult": 0,
       "oxygentamedadd": 0,
-      "food": 2000,
+      "food": 1800,
       "foodwildlevel": 0.1,
       "foodtamedlevel": 0.1,
       "foodtamedmult": 0,
@@ -26798,9 +27659,12 @@
     "specialloot": "Fire Talon (Scorched Earth)",
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "zombielightningwyvern": {
     "variants": "Alpha Blood Crystal Wyvern, Alpha Fire Wyvern, Blood Crystal Wyvern, Bone Fire Wyvern, Brute Fire Wyvern, Corrupted Wyvern, Crystal Wyvern Queen (Gamma), Crystal Wyvern Queen (Beta), Crystal Wyvern Queen (Alpha), Dodo Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Tropical Crystal Wyvern, Zombie Fire Wyvern, Zombie Lightning Wyvern, Zombie Poison Wyvern",
-    "dlc": "Scorched Earth",
+    "dlc": "Scorched Earth, Ragnarok",
     "releasedate": "2016-10-28",
     "releaseversion": "249.0",
     "xboxreleasedate": "2016-11-03",
@@ -26811,16 +27675,14 @@
     "mobilereleaseversion": "",
     "switchreleasedate": "Unreleased",
     "switchreleaseversion": "",
-    "egsreleasedate": "2020-06-11",
-    "egsreleaseversion": "311.74",
+    "egsreleasedate": "2020-10-23",
+    "egsreleaseversion": "315.2",
     "class": "Wyvern_Character_BP_ZombieLightning_C",
     "blueprintpath": "Blueprint'/Game/ScorchedEarth/Dinos/Wyvern/Wyvern_Character_BP_ZombieLightning.Wyvern_Character_BP_ZombieLightning'",
     "commonname": "Zombie Wyvern",
     "soundfile": "",
     "pronunciation": "",
     "categories": "",
-    "species": "Draconis vipera",
-    "time": "Unknown",
     "group": "Event Creatures, Reptiles",
     "temperament": "Aggressive",
     "diet": "Carnivore",
@@ -26850,34 +27712,30 @@
     },
     "colorization": {
       "0": {
-        "name": "Body",
-        "colors": "Dino Light Purple, Dino Light Blue, Black, WyvernBlue0, Light Grey, Dino Dark Brown"
+        "name": "Main Body",
+        "colors": ""
       },
       "1": {
-        "name": "Fins and Frills",
-        "colors": "WyvernPurple0, WyvernPurple1, Dino Dark Purple, DragonBlue0, Black, Dino Light Purple, Light Grey, WyvernBlue0, WyvernBlue1"
-      },
-      "2": {
         "name": "Wings",
-        "colors": "WyvernPurple0, WyvernPurple1, Dino Dark Purple, DragonBlue0, Dino Dark Brown, Dino Light Blue, Dino Light Purple, Light Grey, WyvernBlue0"
+        "colors": ""
       },
-      "4": {
-        "name": "Back",
-        "colors": "WyvernPurple0, WyvernPurple1, Dino Dark Purple, DragonBlue0, Black, Dino Light Purple, Light Grey, WyvernBlue0, WyvernBlue1"
+      "3": {
+        "name": "Wing Highlights",
+        "colors": ""
       },
       "5": {
-        "name": "Belly",
-        "colors": "WyvernPurple0, WyvernPurple1, Dino Dark Purple, DragonBlue0, Black, Dino Light Purple, Light Grey, WyvernBlue0, WyvernBlue1"
+        "name": "Underbelly",
+        "colors": ""
       }
     },
     "stats": {
       "cansuffocate": "Yes",
-      "health": 1725,
+      "health": 1295,
       "healthwildlevel": 0.15,
       "healthtamedlevel": 0.2025,
       "healthtamedmult": 0,
-      "healthtamedadd": -1050,
-      "stamina": 400,
+      "healthtamedadd": -785,
+      "stamina": 315,
       "staminawildlevel": 0.1,
       "staminatamedlevel": 0.1,
       "staminatamedmult": 0,
@@ -26891,7 +27749,7 @@
       "oxygentamedlevel": 0.1,
       "oxygentamedmult": 0,
       "oxygentamedadd": 0,
-      "food": 2000,
+      "food": 1800,
       "foodwildlevel": 0.1,
       "foodtamedlevel": 0.1,
       "foodtamedmult": 0,
@@ -26995,9 +27853,12 @@
     "specialloot": "Lightning Talon (Scorched Earth)",
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "zombiepoisonwyvern": {
     "variants": "Alpha Blood Crystal Wyvern, Alpha Fire Wyvern, Blood Crystal Wyvern, Bone Fire Wyvern, Brute Fire Wyvern, Corrupted Wyvern, Crystal Wyvern Queen (Gamma), Crystal Wyvern Queen (Beta), Crystal Wyvern Queen (Alpha), Dodo Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Tropical Crystal Wyvern, Zombie Fire Wyvern, Zombie Lightning Wyvern, Zombie Poison Wyvern",
-    "dlc": "Scorched Earth",
+    "dlc": "Scorched Earth, Ragnarok",
     "releasedate": "2016-10-28",
     "releaseversion": "249.0",
     "xboxreleasedate": "2016-11-03",
@@ -27008,16 +27869,14 @@
     "mobilereleaseversion": "",
     "switchreleasedate": "Unreleased",
     "switchreleaseversion": "",
-    "egsreleasedate": "2020-06-11",
-    "egsreleaseversion": "311.74",
+    "egsreleasedate": "2020-10-23",
+    "egsreleaseversion": "315.2",
     "class": "Wyvern_Character_BP_ZombiePoison_C",
     "blueprintpath": "Blueprint'/Game/ScorchedEarth/Dinos/Wyvern/Wyvern_Character_BP_ZombiePoison.Wyvern_Character_BP_ZombiePoison'",
     "commonname": "Zombie Wyvern",
     "soundfile": "",
     "pronunciation": "",
     "categories": "",
-    "species": "Draconis vipera",
-    "time": "Unknown",
     "group": "Event Creatures, Reptiles",
     "temperament": "Aggressive",
     "diet": "Carnivore",
@@ -27047,38 +27906,30 @@
     },
     "colorization": {
       "0": {
-        "name": "Body",
-        "colors": "DragonGreen0, DragonGreen1, Dino Dark Brown, Dino Dark Green, Dino Medium Green, Dino Dark Yellow, Light Grey, DragonGreen2, Wolf Fur, Bigfoot4, Bigfoot5"
+        "name": "Main Body",
+        "colors": ""
       },
       "1": {
-        "name": "Fins and Wings",
-        "colors": "DragonGreen0, DragonGreen1, Dino Dark Brown, Dino Dark Green, Dino Medium Green, Dino Dark Yellow, Light Grey"
-      },
-      "2": {
-        "name": "Belly",
-        "colors": "DragonGreen2, Dino Light Brown, Dino Light Green, Dino Light Yellow, Light Grey"
+        "name": "Wings",
+        "colors": ""
       },
       "3": {
-        "name": "Wing Detail and Fins",
-        "colors": "Light Green, Light Yellow, Dino Light Yellow, Dino Dark Yellow, Dino Light Green, Dino Medium Green, Dino Dark Green, Dino Light Purple, DragonGreen0, DragonGreen1, Dino Dark Grey"
-      },
-      "4": {
-        "name": "Back",
-        "colors": "DragonGreen2, Dino Light Brown, Dino Light Green, Dino Light Yellow, Light Grey, DragonGreen3"
+        "name": "Wing Highlights",
+        "colors": ""
       },
       "5": {
-        "name": "Body Detail",
-        "colors": "DragonGreen2, Dino Light Brown, Dino Light Green, Dino Light Yellow, Light Grey"
+        "name": "Underbelly",
+        "colors": ""
       }
     },
     "stats": {
       "cansuffocate": "Yes",
-      "health": 1725,
+      "health": 1295,
       "healthwildlevel": 0.15,
       "healthtamedlevel": 0.2025,
       "healthtamedmult": 0,
-      "healthtamedadd": -1050,
-      "stamina": 400,
+      "healthtamedadd": -785,
+      "stamina": 315,
       "staminawildlevel": 0.1,
       "staminatamedlevel": 0.1,
       "staminatamedmult": 0,
@@ -27092,7 +27943,7 @@
       "oxygentamedlevel": 0.1,
       "oxygentamedmult": 0,
       "oxygentamedadd": 0,
-      "food": 2000,
+      "food": 1800,
       "foodwildlevel": 0.1,
       "foodtamedlevel": 0.1,
       "foodtamedmult": 0,
@@ -27196,6 +28047,13 @@
     "specialloot": "Poison Talon (Scorched Earth)",
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
+
+
+
+
   "direpolarbear": {
     "inherits": "direbear",
     "variants": "Aberrant Dire Bear, Dire Bear, Polar Bear, Spirit Dire Bear",
@@ -27216,6 +28074,9 @@
     "blueprintpath": "Blueprint'/Game/Mods/Ragnarok/Custom_Assets/Dinos/Polar_Bear/Polar_Bear.Polar_Bear'",
     "commonname": "Dire Polar Bear"
   },
+
+
+
   "griffin": {
     "dlc": "Ragnarok, Crystal Isles",
     "releasedate": "2017-06-12",
@@ -27400,6 +28261,9 @@
 
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Charcoal, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Mutton, Raw Prime Fish Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "icewormmale": {
     "variants": "Alpha Deathworm, Deathworm, Iceworm Queen",
     "dlc": "Ragnarok",
@@ -27422,8 +28286,6 @@
     "soundfile": "",
     "pronunciation": "",
     "categories": "",
-    "species": "Khorkoi arrakis",
-    "time": "Unknown",
     "group": "Fantasy Creatures, Invertebrates",
     "temperament": "Extremely Territorial",
     "diet": "Carnivore",
@@ -27488,6 +28350,9 @@
     "canbeharvestedfor": "Hide, Keratin, Raw Meat, Raw Prime Meat",
     "specialloot": "Deathworm Horn (Scorched Earth)"
   },
+
+
+
   "icewormqueen": {
     "variants": "Alpha Deathworm, Deathworm, Iceworm Male",
     "dlc": "Ragnarok",
@@ -27510,8 +28375,6 @@
     "soundfile": "",
     "pronunciation": "",
     "categories": "",
-    "species": "Khorkoi arrakis",
-    "time": "Unknown",
     "group": "Alpha Creatures, Fantasy Creatures, Invertebrates",
     "temperament": "Extremely Territorial",
     "diet": "Carnivore",
@@ -27574,6 +28437,9 @@
     "canbeharvestedfor": "Hide, Keratin, Raw Meat, Raw Prime Meat",
     "specialloot": "Deathworm Horn (Scorched Earth), Alpha Deathworm Trophy (Scorched Earth), Manticore Helmet Skin (Scorched Earth)"
   },
+
+
+
   "lavaelemental": {
     "variants": "Brute X-Rock Elemental, Chalk Golem, Ice Golem, Rock Elemental, Rubble Golem, X-Rock Elemental",
     "dlc": "Ragnarok",
@@ -27596,8 +28462,6 @@
     "soundfile": "",
     "pronunciation": "",
     "categories": "",
-    "species": "",
-    "time": "Unknown",
     "group": "Fantasy Creatures",
     "temperament": "Extremely Territorial",
     "diet": "Minerals",
@@ -27679,6 +28543,9 @@
     "chancetodroploot": 1,
     "canbeharvestedfor": "Crystal, Metal, Obsidian, Oil, Stone, Sulfur (Scorched Earth)"
   },
+
+
+
   "spiritdirebear": {
     "inherits": "direbear",
     "variants": "Aberrant Dire Bear, Dire Polar Bear, Dire Bear, Polar Bear",
@@ -27698,9 +28565,12 @@
     "class": "Direbear_LL_Character_BP_C",
     "blueprintpath": "Blueprint'/Game/Mods/Ragnarok/Custom_Assets/Bosses/LifeLabyrinth/Bear/Direbear_LL_Character_BP.Direbear_LL_Character_BP'"
   },
+
+
+
   "spiritdirewolf": {
     "inherits": "direwolf",
-    "variants": "Direwolf",
+    "variants": "Direwolf, Direwolf Ghost",
     "dlc": "Ragnarok",
     "releasedate": "2017-12-21",
     "releaseversion": "276.0",
@@ -27717,6 +28587,9 @@
     "class": "Direwolf_LL_Character_BP_C",
     "blueprintpath": "Blueprint'/Game/Mods/Ragnarok/Custom_Assets/Bosses/LifeLabyrinth/Wolf/Direwolf_LL_Character_BP.Direwolf_LL_Character_BP'"
   },
+
+
+
   "icewyvern": {
     "variants": "Alpha Blood Crystal Wyvern, Alpha Fire Wyvern, Blood Crystal Wyvern, Bone Fire Wyvern, Brute Fire Wyvern, Corrupted Wyvern, Crystal Wyvern Queen (Gamma), Crystal Wyvern Queen (Beta), Crystal Wyvern Queen (Alpha), Dodo Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Tropical Crystal Wyvern, Zombie Fire Wyvern, Zombie Lightning Wyvern, Zombie Poison Wyvern",
     "dlc": "Ragnarok, Valguero",
@@ -27774,6 +28647,15 @@
         "name": "Main Body",
         "colors": "DragonBlue0, Dino Light Green, Dino Light Blue, Light Grey, WyvernBlue0, WyvernBlue1, Dino Light Purple, Dino Albino, BigFoot4, DragonGreen3, WyvernPurple1, NearBlack"
       },
+
+
+
+
+
+
+
+
+
       "4": {
         "name": "Belly Scales",
         "colors": "DragonBlue0, Dino Light Green, Dino Light Blue, Light Grey, WyvernBlue0, WyvernBlue1, Dino Light Purple, Dino Light Brown, Dino Albino, BigFoot0, BigFoot4, WolfFur, DragonGreen3, NearBlack"
@@ -27785,12 +28667,12 @@
     },
     "stats": {
       "cansuffocate": "Yes",
-      "health": 1725,
+      "health": 1295,
       "healthwildlevel": 0.15,
       "healthtamedlevel": 0.2025,
       "healthtamedmult": 0,
-      "healthtamedadd": -1050,
-      "stamina": 275,
+      "healthtamedadd": -785,
+      "stamina": 315,
       "staminawildlevel": 0.05,
       "staminatamedlevel": 0.05,
       "staminatamedmult": 0,
@@ -27804,7 +28686,7 @@
       "oxygentamedlevel": 0.1,
       "oxygentamedmult": 0,
       "oxygentamedadd": 0,
-      "food": 2000,
+      "food": 1800,
       "foodwildlevel": 0.1,
       "foodtamedlevel": 0.1,
       "foodtamedmult": 0,
@@ -27859,9 +28741,18 @@
     "canbeharvestedfor": "Hide, Raw Prime Meat, Sulfur (Scorched Earth)",
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
+
+
+
+
+
+
   "alphabasilisk": {
     "dlc": "Aberration",
-    "variants": "Basilisk",
+    "variants": "Basilisk, Basilisk Ghost",
     "releasedate": "2017-12-12",
     "releaseversion": "275.0",
     "xboxreleasedate": "2017-12-12",
@@ -27884,8 +28775,6 @@
     "soundfile": "",
     "pronunciation": "",
     "categories": "",
-    "species": "Serpens regulus",
-    "time": "Unknown",
     "group": "Alpha Creatures, Fantasy Creatures, Reptiles",
     "temperament": "Aggressive",
     "diet": "Carnivore",
@@ -28110,7 +28999,7 @@
                 "amount": ""
               }
             }
-          }
+      }
         }
       },
       "3": {
@@ -28141,6 +29030,9 @@
     },
     "harvests": ""
   },
+
+
+
   "alphakarkinos": {
     "dlc": "Aberration, Valguero",
     "variants": "Karkinos",
@@ -28166,8 +29058,6 @@
     "soundfile": "",
     "pronunciation": "",
     "categories": "",
-    "species": "Karkinos versatus",
-    "time": "Unknown",
     "group": "Alpha Creatures, Fantasy Creatures, Invertebrates",
     "temperament": "Aggressive",
     "diet": "Omnivore",
@@ -28392,9 +29282,12 @@
     },
     "harvests": ""
   },
+
+
+
   "alphasurfacereaperking": {
     "dlc": "Aberration",
-    "variants": "Brute Reaper King, Corrupted Reaper King, Elemental Reaper King, Reaper King, Reaper Prince, Reaper Queen, Subterranean Reaper King, Surface Reaper King",
+    "variants": "Brute Reaper King, Corrupted Reaper King, Elemental Reaper King, Reaper King, Reaper Prince, Reaper Queen, Subterranean Reaper King, Surface Reaper King, Surface Reaper King Ghost",
     "releasedate": "2017-12-12",
     "releaseversion": "275.0",
     "xboxreleasedate": "2017-12-12",
@@ -28417,8 +29310,6 @@
     "soundfile": "",
     "pronunciation": "",
     "categories": "",
-    "species": "",
-    "time": "Unknown",
     "group": "Alpha Creatures, Fantasy Creatures",
     "temperament": "Aggressive",
     "diet": "Carnivore",
@@ -28637,9 +29528,12 @@
     },
     "harvests": ""
   },
+
+
+
   "basilisk": {
     "dlc": "Aberration, Genesis: Part 1, Crystal Isles",
-    "variants": "Alpha Basilisk",
+    "variants": "Alpha Basilisk, Basilisk Ghost",
     "releasedate": "2017-12-12",
     "releaseversion": "275.0",
     "xboxreleasedate": "2017-12-12",
@@ -28888,7 +29782,7 @@
                 "amount": ""
               }
             }
-          }
+      }
         }
       },
       "3": {
@@ -28919,9 +29813,65 @@
     },
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Charcoal, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Mutton, Raw Prime Fish Meat, Raw Prime Meat, Silica Pearls, Silk (Scorched Earth), Spoiled Meat, Sulfur (Scorched Earth)"
   },
+
+
+
+
+  "basiliskghost": {
+    "inherits": "basilisk",
+    "dlc": "Aberration, Genesis: Part 1, Crystal Isles",
+    "event": "ARK: Fear Evolved 4",
+    "variants": "Alpha Basilisk, Basilisk",
+    "releasedate": "2020-10-23",
+    "releaseversion": "315.2",
+    "xboxreleasedate": "2020-10-27",
+    "xboxreleaseversion": "802.11",
+    "ps4releasedate": "2020-10-23",
+    "ps4releaseversion": "551.11",
+    "mobilereleasedate": "Unreleased",
+    "mobilereleaseversion": "",
+    "switchreleasedate": "Unreleased",
+    "switchreleaseversion": "",
+    "egsreleasedate": "2020-10-23",
+    "egsreleaseversion": "315.2",
+    "class": "Ghost_Basilisk_Character_BP_C",
+    "blueprintpath": "Blueprint'/Game/Aberration/Dinos/Basilisk/Ghost_Basilisk_Character_BP.Ghost_Basilisk_Character_BP'",
+    "commonname": "Basilisk Ghost",
+    "species": "",
+    "time": "",
+    "group": "Event Creatures, Fantasy Creatures, Reptiles",
+    "dossierimage": "Basilisk Ghost Image.jpg",
+    "dossieraddbook": "No",
+    "taming": {
+      "canbetamed": "No",
+      "rideable": "No",
+      "equipment": "",
+      "uniquecostumes": "",
+      "canmountonhumans": "",
+      "nonviolenttame": "",
+      "knockouttame": "",
+      "ballowmountedweaponry": ""
+    },
+    "tamingfood": {
+
+      "kibble": "",
+      "favoritefood": "",
+      "primitiveplusfood": ""
+    },
+    "breeding": {
+      "gestationtime": "",
+      "maturationtime": "",
+      "mintimebetweenmating": "",
+      "maxtimebetweenmating": ""
+    },
+    "specialloot": "Basilisk Ghost Costume, Basilisk Scale (Aberration)"
+  },
+
+
+
   "bulbdog": {
     "dlc": "Aberration, Valguero, Genesis: Part 1",
-    "variants": "",
+    "variants": "Bulbdog Ghost",
     "releasedate": "2017-12-12",
     "releaseversion": "275.0",
     "xboxreleasedate": "2017-12-12",
@@ -29162,13 +30112,69 @@
     "killxpbase": "2",
     "teamname": "Herbivores_Medium_Aggressive",
     "chancetodroploot": "0",
-    "canbeharvestedfor": "Hide, Raw Meat, Raw Prime Meat",
+    "canbeharvestedfor": "Hide, Raw Meat",
     "bonedamageadjusters": {
       "head": "",
       "neck": ""
     },
     "harvests": "Aggeravic Mushroom, Amarberry, Amarberry Seed, Aquatic Mushroom, Ascerbic Mushroom, Auric Mushroom, Azulberry, Azulberry Seed, Bio Toxin, Cactus Sap, Charcoal, Citronal Seed, Fungal Wood (Aberration), Keratin, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Rockarrot Seed, Savoroot Seed, Stimberry, Stimberry Seed, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
+
+  "bulbdogghost": {
+    "inherits": "bulbdog",
+    "dlc": "Aberration, Valguero, Genesis: Part 1",
+    "event": "ARK: Fear Evolved 4",
+    "variants": "Bulbdog",
+    "releasedate": "2020-10-23",
+    "releaseversion": "315.2",
+    "xboxreleasedate": "2020-10-27",
+    "xboxreleaseversion": "802.11",
+    "ps4releasedate": "2020-10-23",
+    "ps4releaseversion": "551.11",
+    "mobilereleasedate": "Unreleased",
+    "mobilereleaseversion": "",
+    "switchreleasedate": "Unreleased",
+    "switchreleaseversion": "",
+    "egsreleasedate": "2020-10-23",
+    "egsreleaseversion": "315.2",
+    "class": "Ghost_LanternPug_Character_BP_C",
+    "blueprintpath": "Blueprint'/Game/Aberration/Dinos/LanternPug/Ghost_LanternPug_Character_BP.Ghost_LanternPug_Character_BP'",
+    "commonname": "Bulbdog Ghost",
+    "species": "",
+    "time": "",
+    "group": "Event Creatures, Fantasy Creatures, Mammals",
+    "dossierimage": "Bulbdog Ghost Image.jpg",
+    "dossieraddbook": "No",
+    "taming": {
+      "canbetamed": "No",
+      "rideable": "No",
+      "equipment": "",
+      "uniquecostumes": "",
+      "canmountonhumans": "",
+      "nonviolenttame": "",
+      "knockouttame": "",
+      "ballowmountedweaponry": ""
+    },
+    "tamingfood": {
+
+      "kibble": "",
+      "favoritefood": "",
+      "primitiveplusfood": ""
+    },
+    "breeding": {
+      "gestationtime": "",
+      "maturationtime": "",
+      "mintimebetweenmating": "",
+      "maxtimebetweenmating": ""
+    },
+    "specialloot": "Bulbdog Ghost Costume"
+  },
+
+
+
   "featherlight": {
     "dlc": "Aberration, Valguero, Genesis: Part 1, Crystal Isles",
     "variants": "",
@@ -29373,6 +30379,9 @@
     },
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Charcoal, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Mutton, Raw Prime Fish Meat, Raw Prime Meat, Silica Pearls, Silk, Spoiled Meat, Sulfur"
   },
+
+
+
   "glowbug": {
     "dlc": "Aberration, Valguero, Genesis: Part 1, Crystal Isles",
     "variants": "",
@@ -29601,6 +30610,9 @@
     },
     "harvests": ""
   },
+
+
+
   "glowtail": {
     "dlc": "Aberration, Valguero, Crystal Isles",
     "variants": "",
@@ -29673,6 +30685,11 @@
         "name": "Main Body",
         "colors": "Dino Light Yellow, Dino Dark Yellow, Dino Medium Green, DragonBase0, Dino Medium Brown, DragonBase1, DragonGreen0, DragonGreen2, DragonGreen3, WyvernPurple0, DragonGreen1, WyvernBlue0, Black"
       },
+
+
+
+
+
       "2": {
         "name": "Wings",
         "colors": "Dino Dark Yellow, Dino Medium Green, DragonBase0, WyvernPurple1, DragonGreen1, DragonBase1, DragonFire, WyvernPurple0, DragonGreen3, WyvernBlue0, Dino Medium Blue"
@@ -29847,6 +30864,9 @@
     },
     "harvests": "Aggeravic Mushroom, Amarberry, Amarberry Seed, Aquatic Mushroom, Ascerbic Mushroom, Auric Mushroom, Azulberry, Azulberry Seed, Bio Toxin, Cactus Sap, Charcoal, Citronal Seed, Fungal Wood (Aberration), Keratin, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Plant Species X Seed, Plant Species Y Seed, Rare Flower, Rare Mushroom, Rockarrot Seed, Savoroot Seed, Stimberry, Stimberry Seed, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "karkinos": {
     "dlc": "Aberration, Valguero, Genesis: Part 1, Crystal Isles",
     "variants": "Alpha Karkinos",
@@ -30098,6 +31118,9 @@
     },
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Charcoal, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Mutton, Raw Prime Fish Meat, Raw Prime Meat, Silica Pearls, Silk (Scorched Earth), Spoiled Meat, Sulfur (Scorched Earth)"
   },
+
+
+
   "lamprey": {
     "dlc": "Aberration, Valguero, Genesis: Part 1, Crystal Isles",
     "variants": "",
@@ -30336,6 +31359,9 @@
     },
     "harvests": ""
   },
+
+
+
   "nameless": {
     "dlc": "Aberration, Genesis: Part 1",
     "releasedate": "2017-12-12",
@@ -30402,8 +31428,8 @@
     },
     "colorization": {
       "0": {
-        "name": "",
-        "colors": ""
+        "name": "Body Secondary",
+        "colors": "BigFoot0, BigFoot5, Dark Grey, DarkWolfFur, Dino Dark Brown, Dino Darker Grey, Dino Light Orange, Dino Medium Brown, DragonBase0, Light Grey"
       },
       "1": {
         "name": "",
@@ -30418,12 +31444,12 @@
         "colors": ""
       },
       "4": {
-        "name": "",
-        "colors": ""
+        "name": "Fur Main",
+        "colors": "BigFoot0, Dark Grey, DarkWolfFur, Dino Dark Brown, Dino Dark Orange, Dino Darker Grey, Dino Light Orange, Dino Medium Brown"
       },
       "5": {
-        "name": "",
-        "colors": ""
+        "name": "Belly",
+        "colors": "BigFoot4, Dino Light Brown, Dino Light Orange, Dino Medium Brown, Light Brown, Light Grey, WolfFur"
       }
     },
     "stats": {
@@ -30583,6 +31609,9 @@
     },
     "harvests": ""
   },
+
+
+
   "ravager": {
     "dlc": "Aberration, Valguero, Genesis: Part 1, Crystal Isles",
     "variants": "",
@@ -30962,9 +31991,12 @@
     },
     "harvests": "Aggeravic Mushroom (Aberration), Amarberry, Amarberry Seed, Ammonite Bile, AnglerGel, Aquatic Mushroom (Aberration), Ascerbic Mushroom (Aberration), Auric Mushroom (Aberration), Azulberry, Azulberry Seed, Bio Toxin, Black Pearl, Charcoal, Chitin, Citronal Seed, Fiber, Hide, Keratin, Leech Blood, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Oil, Organic Polymer, Pelt, Plant Species X Seed, Plant Species Y Seed (Scorched Earth), Rare Flower, Rare Mushroom, Raw Fish Meat, Raw Meat, Raw Mutton, Raw Prime Fish Meat, Raw Prime Meat, Rockarrot Seed, Savoroot Seed, Silica Pearls, Silk (Scorched Earth), Spoiled Meat, Stimberry, Stimberry Seed, Sulfur (Scorched Earth), Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "reaper": {
     "dlc": "Aberration, Extinction, Genesis: Part 1",
-    "variants": "Alpha Surface Reaper King, Brute Reaper King, Corrupted Reaper King, Elemental Reaper King, Injured Brute Reaper King, Reaper King, Reaper Prince, Reaper Queen, Subterranean Reaper King, Surface Reaper King",
+    "variants": "Alpha Surface Reaper King, Brute Reaper King, Corrupted Reaper King, Elemental Reaper King, Injured Brute Reaper King, Reaper King, Reaper Prince, Reaper Queen, Subterranean Reaper King, Surface Reaper King, Surface Reaper King Ghost",
     "releasedate": "2017-12-12",
     "releaseversion": "275.0",
     "xboxreleasedate": "2017-12-12",
@@ -31213,16 +32245,22 @@
     },
     "harvests": ""
   },
+
+
+
   "reaperking": {
     "inherits": "reaper",
-    "variants": "Alpha Surface Reaper King, Brute Reaper King, Corrupted Reaper King, Elemental Reaper King, Injured Brute Reaper King, Reaper Prince, Reaper Queen, Subterranean Reaper King, Surface Reaper King",
+    "variants": "Alpha Surface Reaper King, Brute Reaper King, Corrupted Reaper King, Elemental Reaper King, Injured Brute Reaper King, Reaper Prince, Reaper Queen, Subterranean Reaper King, Surface Reaper King, Surface Reaper King Ghost",
     "baseclass": "Xenomorph_Character_BP_Male_Tamed_C",
     "baseblueprintpath": "Blueprint'/Game/Aberration/Dinos/Nameless/Xenomorph_Character_BP_Male_Tamed.Xenomorph_Character_BP_Male_Tamed'",
     "commonname": "Reaper King"
   },
+
+
+
   "elementalreaperking": {
     "dlc": "Aberration",
-    "variants": "Alpha Surface Reaper King, Brute Reaper King, Corrupted Reaper King, Injured Brute Reaper King, Reaper King, Reaper Prince, Reaper Queen, Subterranean Reaper King, Surface Reaper King",
+    "variants": "Alpha Surface Reaper King, Brute Reaper King, Corrupted Reaper King, Injured Brute Reaper King, Reaper King, Reaper Prince, Reaper Queen, Subterranean Reaper King, Surface Reaper King, Surface Reaper King Ghost",
     "releasedate": "2017-12-12",
     "releaseversion": "275.0",
     "xboxreleasedate": "2017-12-12",
@@ -31428,9 +32466,12 @@
     },
     "harvests": ""
   },
+
+
+
   "subterraneanreaperking": {
     "dlc": "Aberration",
-    "variants": "Alpha Surface Reaper King, Brute Reaper King, Corrupted Reaper King, Elemental Reaper King, Injured Brute Reaper King, Reaper King, Reaper Prince, Reaper Queen, Surface Reaper King",
+    "variants": "Alpha Surface Reaper King, Brute Reaper King, Corrupted Reaper King, Elemental Reaper King, Injured Brute Reaper King, Reaper King, Reaper Prince, Reaper Queen, Surface Reaper King, Surface Reaper King Ghost",
     "releasedate": "2017-12-12",
     "releaseversion": "275.0",
     "xboxreleasedate": "2017-12-12",
@@ -31636,9 +32677,12 @@
     },
     "harvests": ""
   },
+
+
+
   "surfacereaperking": {
     "dlc": "Aberration, Genesis: Part 1",
-    "variants": "Alpha Surface Reaper King, Brute Reaper King, Corrupted Reaper King, Elemental Reaper King, Injured Brute Reaper King, Reaper King, Reaper Prince, Reaper Queen, Subterranean Reaper King",
+    "variants": "Alpha Surface Reaper King, Brute Reaper King, Corrupted Reaper King, Elemental Reaper King, Injured Brute Reaper King, Reaper King, Reaper Prince, Reaper Queen, Subterranean Reaper King, Surface Reaper King Ghost",
     "releasedate": "2017-12-12",
     "releaseversion": "275.0",
     "xboxreleasedate": "2017-12-12",
@@ -31844,9 +32888,12 @@
     },
     "harvests": ""
   },
+
+
+
   "reaperqueen": {
     "dlc": "Aberration",
-    "variants": "Alpha Surface Reaper King, Brute Reaper King, Corrupted Reaper King, Elemental Reaper King, Injured Brute Reaper King, Reaper King, Subterranean Reaper King, Surface Reaper King",
+    "variants": "Alpha Surface Reaper King, Brute Reaper King, Corrupted Reaper King, Elemental Reaper King, Injured Brute Reaper King, Reaper King, Subterranean Reaper King, Surface Reaper King, Surface Reaper King Ghost",
     "releasedate": "2017-12-12",
     "releaseversion": "275.0",
     "xboxreleasedate": "2017-12-12",
@@ -31918,6 +32965,61 @@
     },
     "harvests": ""
   },
+
+
+
+  "surfacereaperkingghost": {
+    "inherits": "surfacereaperking",
+    "dlc": "Aberration, Genesis: Part 1",
+    "event": "ARK: Fear Evolved 4",
+    "variants": "Alpha Surface Reaper King, Brute Reaper King, Corrupted Reaper King, Elemental Reaper King, Injured Brute Reaper King, Reaper King, Reaper Prince, Reaper Queen, Subterranean Reaper King, Surface Reaper King",
+    "releasedate": "2020-10-23",
+    "releaseversion": "315.2",
+    "xboxreleasedate": "2020-10-27",
+    "xboxreleaseversion": "802.11",
+    "ps4releasedate": "2020-10-23",
+    "ps4releaseversion": "551.11",
+    "mobilereleasedate": "Unreleased",
+    "mobilereleaseversion": "",
+    "switchreleasedate": "Unreleased",
+    "switchreleaseversion": "",
+    "egsreleasedate": "2020-10-23",
+    "egsreleaseversion": "315.2",
+    "class": "Ghost_Xenomorph_Character_BP_Male_Surface_C",
+    "blueprintpath": "Blueprint'/Game/Aberration/Dinos/Nameless/Ghost_Xenomorph_Character_BP_Male_Surface.Ghost_Xenomorph_Character_BP_Male_Surface'",
+    "commonname": "Surface Reaper King Ghost",
+    "species": "",
+    "time": "",
+    "group": "Event Creatures, Fantasy Creatures",
+    "dossierimage": "Surface Reaper King Ghost Image.jpg",
+    "dossieraddbook": "No",
+    "taming": {
+      "canbetamed": "No",
+      "rideable": "No",
+      "equipment": "",
+      "uniquecostumes": "",
+      "canmountonhumans": "",
+      "nonviolenttame": "",
+      "knockouttame": "",
+      "ballowmountedweaponry": ""
+    },
+    "tamingfood": {
+
+      "kibble": "",
+      "favoritefood": "",
+      "primitiveplusfood": ""
+    },
+    "breeding": {
+      "gestationtime": "",
+      "maturationtime": "",
+      "mintimebetweenmating": "",
+      "maxtimebetweenmating": ""
+    },
+    "specialloot": "Reaper Ghost Costume"
+  },
+
+
+
   "rockdrake": {
     "dlc": "Aberration, Extinction, Genesis: Part 1",
     "variants": "Corrupted Rock Drake",
@@ -32248,6 +33350,9 @@
     },
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Charcoal, Chitin, Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Mutton, Raw Prime Fish Meat, Raw Prime Meat, Silica Pearls, Silk (Scorched Earth), Spoiled Meat, Sulfur (Scorched Earth)"
   },
+
+
+
   "rockwell": {
     "dlc": "Aberration",
     "variants": "Rockwell (Alpha), Rockwell (Beta), Rockwell (Gamma)",
@@ -32333,6 +33438,9 @@
       "health": 115000
     }
   },
+
+
+
   "rollrat": {
     "dlc": "Aberration, Valguero, Genesis: Part 1",
     "variants": "",
@@ -32384,6 +33492,7 @@
       "wakefooddeplmult": "2"
     },
     "tamingfood": {
+
       "favoritefood": "Giant Bee Honey",
       "primitiveplusfood": ""
     },
@@ -32586,6 +33695,9 @@
     },
     "harvests": "Aggeravic Mushroom (Aberration), Amarberry, Amarberry Seed, Aquatic Mushroom (Aberration), Ascerbic Mushroom (Aberration), Auric Mushroom (Aberration), Azulberry, Azulberry Seed, Bio Toxin, Cactus Sap (Scorched Earth), Charcoal, Citronal Seed, Fungal Wood (Aberration), Keratin, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Plant Species X Seed, Plant Species Y Seed (Scorched Earth), Rare Flower, Rare Mushroom, Rockarrot Seed, Savoroot Seed, Stimberry, Stimberry Seed, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "seeker": {
     "dlc": "Aberration, Valguero, Genesis: Part 1, Crystal Isles",
     "variants": "Brute Seeker",
@@ -32637,6 +33749,7 @@
       "wakefooddeplmult": ""
     },
     "tamingfood": {
+
       "favoritefood": "",
       "primitiveplusfood": ""
     },
@@ -32838,6 +33951,9 @@
     },
     "harvests": ""
   },
+
+
+
   "shinehorn": {
     "dlc": "Aberration, Genesis: Part 1",
     "variants": "",
@@ -32889,6 +34005,7 @@
       "wakefooddeplmult": "2"
     },
     "tamingfood": {
+
       "favoritefood": "Plant Species Z Seed (Aberration)",
       "primitiveplusfood": ""
     },
@@ -33041,6 +34158,9 @@
     },
     "harvests": "Aggeravic Mushroom (Aberration), Amarberry, Amarberry Seed, Aquatic Mushroom (Aberration), Ascerbic Mushroom (Aberration), Auric Mushroom (Aberration), Azulberry, Azulberry Seed, Bio Toxin, Cactus Sap (Scorched Earth), Charcoal, Citronal Seed, Fungal Wood (Aberration), Keratin, Longrass Seed, Mejoberry, Mejoberry Seed, Narcoberry, Narcoberry Seed, Plant Species X Seed, Plant Species Y Seed (Scorched Earth), Rare Flower, Rare Mushroom, Rockarrot Seed, Savoroot Seed, Stimberry, Stimberry Seed, Thatch, Tintoberry, Tintoberry Seed, Wood"
   },
+
+
+
   "aberrantCreatureTameableOverride": {
     "dlc": "Aberration",
     "releasedate": "2017-12-12",
@@ -33097,6 +34217,9 @@
       "healthtamedmult": "-0.04"
     }
   },
+
+
+
   "aberrantachatina": {
     "inherits": "achatina",
     "overridewith": "aberrantCreatureTameableOverride",
@@ -33248,6 +34371,7 @@
   },
   "aberrantdungbeetle": {
     "inherits": "dungbeetle",
+
     "dlc": "Aberration",
     "releasedate": "2017-12-12",
     "releaseversion": "275.0",
@@ -33313,7 +34437,7 @@
     "blueprintpath": "Blueprint'/Game/PrimalEarth/Dinos/Manta/Manta_Character_BP_Aberrant.Manta_Character_BP_Aberrant'",
     "commonname": "Aberrant Manta",
     "group": "Aberrant Creatures, Fish",
-    "healthtamedmult": -0.04
+      "healthtamedmult": -0.04
   },
   "aberrantmegalania": {
     "inherits": "megalania",
@@ -33360,6 +34484,7 @@
   },
   "aberrantovis": {
     "inherits": "ovis",
+
     "dlc": "Aberration",
     "releasedate": "2017-12-12",
     "releaseversion": "275.0",
@@ -33487,6 +34612,16 @@
     "commonname": "Aberrant Trilobite",
     "group": "Aberrant Creatures, Invertebrates"
   },
+
+
+
+
+
+
+
+
+
+
   "alphakingtitan": {
     "variants": "Alpha King Titan, Beta King Titan, Gamma King Titan",
     "commonname": "Alpha King Titan",
@@ -33700,6 +34835,9 @@
     "specialloot": "Element, King Titan Trophy (Alpha) (Extinction), King Titan Flag (Extinction)",
     "lootitems": "HomoDeus Boots Skin (Extinction), HomoDeus Gloves Skin (Extinction), HomoDeus Helmet Skin (Extinction), HomoDeus Pants Skin (Extinction), HomoDeus Shirt Skin (Extinction)"
   },
+
+
+
   "betakingtitan": {
     "variants": "Alpha King Titan, Beta King Titan, Gamma King Titan",
     "commonname": "Beta King Titan",
@@ -33913,6 +35051,9 @@
     "specialloot": "Element, King Titan Trophy (Beta) (Extinction), King Titan Flag (Extinction)",
     "lootitems": "HomoDeus Boots Skin (Extinction), HomoDeus Gloves Skin (Extinction), HomoDeus Helmet Skin (Extinction), HomoDeus Pants Skin (Extinction), HomoDeus Shirt Skin (Extinction)"
   },
+
+
+
   "gammakingtitan": {
     "variants": "Alpha King Titan, Beta King Titan, Gamma King Titan",
     "commonname": "Gamma King Titan",
@@ -34127,6 +35268,9 @@
     "specialloot": "Element, King Titan Trophy (Extinction), King Titan Flag (Extinction)",
     "lootitems": "HomoDeus Boots Skin (Extinction), HomoDeus Gloves Skin (Extinction), HomoDeus Helmet Skin (Extinction), HomoDeus Pants Skin (Extinction), HomoDeus Shirt Skin (Extinction)"
   },
+
+
+
   "deserttitan": {
     "commonname": "Desert Titan",
     "class": "DesertKaiju_Character_BP_C",
@@ -34254,6 +35398,9 @@
     "specialloot": "",
     "harvests": "Ammonite Bile, Bio Toxin, Black Pearl, Charcoal, Crystal, Leech Blood, Raw Prime Fish Meat, Silica Pearls, Sulfur, Oil, Element Dust, Electronics, Thatch, Raw Fish Meat, Raw Meat, Raw Prime Meat, Raw Mutton, Keratin, Silk, Fungal Wood (Aberration), Spoiled Meat, Scrap Metal, AnglerGel, Hide, Corrupted Nodule, Chitin, Pelt, Organic Polymer"
   },
+
+
+
   "deserttitanflock": {
     "commonname": "Desert Titan Flock",
     "class": "DesertKaiju_FirstFlockChar_BP_C",
@@ -34395,6 +35542,9 @@
       }
     }
   },
+
+
+
   "foresttitan": {
     "commonname": "Forest Titan",
     "class": "ForestKaiju_Character_BP_C",
@@ -34556,6 +35706,9 @@
     "specialloot": "",
     "harvests": "Ammonite Bile, Bio Toxin, Black Pearl, Leech Blood, Raw Prime Fish Meat, Silica Pearls, Sulfur, Oil, Thatch, Raw Fish Meat, Raw Meat, Raw Prime Meat, Element Dust, Raw Mutton, Keratin, Silk, Electronics, Scrap Metal, Fungal Wood (Aberration), Spoiled Meat, AnglerGel, Hide, Chitin, Corrupted Nodule, Pelt, Organic Polymer"
   },
+
+
+
   "icetitan": {
     "commonname": "Ice Titan",
     "class": "IceKaiju_Character_BP_C",
@@ -34815,6 +35968,9 @@
     "specialloot": "",
     "harvests": "Ammonite Bile, Bio Toxin, Black Pearl, Leech Blood, Raw Prime Fish Meat, Silica Pearls, Sulfur, Oil, Thatch, Raw Fish Meat, Raw Meat, Raw Prime Meat, Element Dust, Raw Mutton, Keratin, Silk, Electronics, Scrap Metal, Fungal Wood (Aberration), Spoiled Meat, AnglerGel, Hide, Chitin, Corrupted Nodule, Pelt, Organic Polymer"
   },
+
+
+
   "enforcer": {
     "commonname": "Enforcer",
     "class": "Enforcer_Character_BP_C",
@@ -34969,14 +36125,16 @@
       }
     }
   },
+
+
+
   "enragedcorruptedrex": {
     "commonname": "Enraged Corrupted Rex",
     "class": "MegaRex_Character_BP_Corrupt_C",
     "blueprintpath": "Blueprint'/Game/Extinction/Dinos/Corrupt/Rex/MegaRex_Character_BP_Corrupt.MegaRex_Character_BP_Corrupt'",
-    "variants": "Alpha T-Rex, Brute Malfunctioned Tek Rex, Brute X-Rex, Corrupted Rex, DodoRex, Malfunctioned Tek Rex, Rex, Skeletal Rex, Tek Rex, X-Rex",
+    "variants": "Alpha T-Rex, Brute Malfunctioned Tek Rex, Brute X-Rex, Corrupted Rex, DodoRex, Malfunctioned Tek Rex, Rex, Rex Ghost, Skeletal Rex, Tek Rex, X-Rex",
     "dlc": "Extinction",
     "categories": "",
-    "species": "Tyrannosaurus dominum",
     "group": "Dinosaurs, Enraged Creatures",
     "temperament": "Highly Aggressive",
     "releasedate": "2018-11-06",
@@ -35090,6 +36248,9 @@
       }
     }
   },
+
+
+
   "enragedtriceratops": {
     "commonname": "Enraged Triceratops",
     "class": "MegaTrike_Character_BP_Corrupt_C",
@@ -35097,7 +36258,6 @@
     "variants": "Aberrant Triceratops, Corrupted Triceratops, Malfunctioned Tek Triceratops, Skeletal Trike, Tek Triceratops, Triceratops, X-Triceratops",
     "dlc": "Extinction",
     "categories": "",
-    "species": "Triceratops styrax",
     "group": "Dinosaurs, Enraged Creatures",
     "temperament": "Highly Aggressive",
     "releasedate": "2018-11-06",
@@ -35205,6 +36365,9 @@
       }
     }
   },
+
+
+
   "forestwyvern": {
     "variants": "Alpha Blood Crystal Wyvern, Alpha Fire Wyvern, Blood Crystal Wyvern, Bone Fire Wyvern, Brute Fire Wyvern, Corrupted Wyvern, Crystal Wyvern Queen (Gamma), Crystal Wyvern Queen (Beta), Crystal Wyvern Queen (Alpha), Dodo Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Tropical Crystal Wyvern, Zombie Fire Wyvern, Zombie Lightning Wyvern, Zombie Poison Wyvern",
     "commonname": "Forest Wyvern",
@@ -35248,13 +36411,13 @@
     },
     "stats": {
       "cansuffocate": "Yes",
-      "health": 1725,
+      "health": 1295,
       "healthwildlevel": 0.15,
       "healthtamedlevel": 0.2025,
       "healthtamedmult": 0,
-      "healthtamedadd": -1050,
+      "healthtamedadd": -785,
       "tamedbasehealthmultiplier": 1,
-      "stamina": 275,
+      "stamina": 315,
       "staminawildlevel": 0.05,
       "staminatamedlevel": 0.05,
       "staminatamedmult": 0,
@@ -35268,7 +36431,7 @@
       "oxygentamedlevel": 0.1,
       "oxygentamedmult": 0,
       "oxygentamedadd": 0,
-      "food": 2000,
+      "food": 1800,
       "foodwildlevel": 0.1,
       "foodtamedlevel": 0.1,
       "foodtamedmult": 0,
@@ -35376,6 +36539,9 @@
     "specialloot": "",
     "harvests": "Ammonite Bile, Bio Toxin, Black Pearl, Charcoal, Crystal, Leech Blood, Raw Prime Fish Meat, Silica Pearls, Sulfur, Oil, Element Dust, Electronics, Thatch, Raw Fish Meat, Raw Meat, Raw Prime Meat, Raw Mutton, Keratin, Silk, Fungal Wood (Aberration), Spoiled Meat, Scrap Metal, AnglerGel, Hide, Corrupted Nodule, Chitin, Pelt, Organic Polymer"
   },
+
+
+
   "gacha": {
     "commonname": "Gacha",
     "class": "Gacha_Character_BP_C",
@@ -35558,6 +36724,9 @@
       }
     }
   },
+
+
+
   "gachaclaus": {
     "inherits": "gacha",
     "dlc": "",
@@ -35573,11 +36742,13 @@
     "mobilereleaseversion": "",
     "switchreleasedate": "Unreleased",
     "switchreleaseversion": "",
-    "egsreleasedate": "2020-06-11",
-    "egsreleaseversion": "311.74",
+    "egsreleasedate": "Unreleased",
+    "egsreleaseversion": "",
     "class": "Gacha_Claus_Character_BP_C",
     "blueprintpath": "Blueprint'/Game/Extinction/Dinos/Gacha/Gacha_Claus_Character_BP.Gacha_Claus_Character_BP'",
     "commonname": "GachaClaus",
+    "species": "",
+    "time": "",
     "group": "Event Creatures, Mammals",
     "dossierimage": "GachaClaus Image.jpg",
     "dossieraddbook": "No",
@@ -35591,6 +36762,7 @@
       "ballowmountedweaponry": ""
     },
     "tamingfood": {
+
       "kibble": "",
       "favoritefood": "",
       "primitiveplusfood": ""
@@ -35674,6 +36846,9 @@
       }
     }
   },
+
+
+
   "gasbags": {
     "commonname": "Gasbags",
     "class": "GasBags_Character_BP_C",
@@ -35859,6 +37034,9 @@
       }
     }
   },
+
+
+
   "managarmr": {
     "commonname": "Managarmr",
     "class": "IceJumper_Character_BP_C",
@@ -36049,6 +37227,9 @@
       }
     }
   },
+
+
+
   "megamek": {
     "commonname": "Mega Mek",
     "class": "MegaMek_Character_BP_C",
@@ -36202,6 +37383,9 @@
       }
     }
   },
+
+
+
   "mek": {
     "commonname": "Mek",
     "class": "Mek_Character_BP_C",
@@ -36358,6 +37542,9 @@
       }
     }
   },
+
+
+
   "scout": {
     "commonname": "Scout",
     "class": "Scout_Character_BP_C",
@@ -36478,11 +37665,14 @@
       }
     }
   },
+
+
+
   "snowowl": {
     "commonname": "Snow Owl",
     "class": "Owl_Character_BP_C",
     "blueprintpath": "Blueprint'/Game/Extinction/Dinos/Owl/Owl_Character_BP.Owl_Character_BP'",
-    "variants": "",
+    "variants": "Snow Owl Ghost",
     "dlc": "Extinction, Genesis: Part 1",
     "dossierimage": "Dossier Snow Owl.png",
     "dossieraddbook": "Yes",
@@ -36657,6 +37847,64 @@
       }
     }
   },
+
+
+
+  "snowowlghost": {
+    "inherits": "snowowl",
+    "dlc": "Extinction",
+    "event": "ARK: Fear Evolved 4",
+    "variants": "Snow Owl",
+    "releasedate": "2020-10-23",
+    "releaseversion": "315.2",
+    "xboxreleasedate": "2020-10-27",
+    "xboxreleaseversion": "802.11",
+    "ps4releasedate": "2020-10-23",
+    "ps4releaseversion": "551.11",
+    "mobilereleasedate": "Unreleased",
+    "mobilereleaseversion": "",
+    "switchreleasedate": "Unreleased",
+    "switchreleaseversion": "",
+    "egsreleasedate": "2020-10-23",
+    "egsreleaseversion": "315.2",
+    "class": "Ghost_Owl_Character_BP_C",
+    "blueprintpath": "Blueprint'/Game/Extinction/Dinos/Owl/Ghost_Owl_Character_BP.Ghost_Owl_Character_BP'",
+    "commonname": "Snow Owl Ghost",
+    "species": "",
+    "time": "",
+    "group": "Birds, Event Creatures",
+    "dossierimage": "Snow Owl Ghost Image.jpg",
+    "dossieraddbook": "No",
+    "taming": {
+      "canbetamed": "No",
+      "rideable": "No",
+      "equipment": "",
+      "uniquecostumes": "",
+      "canmountonhumans": "",
+      "nonviolenttame": "",
+      "knockouttame": "",
+      "ballowmountedweaponry": ""
+    },
+    "tamingfood": {
+
+      "kibble": "",
+      "favoritefood": "",
+      "primitiveplusfood": ""
+    },
+    "breeding": {
+      "gestationtime": "",
+      "mintemp": "",
+      "maxtemp": "",
+      "incubationtime": "",
+      "maturationtime": "",
+      "mintimebetweenmating": "",
+      "maxtimebetweenmating": ""
+    },
+    "specialloot": "Snow Owl Ghost Costume"
+  },
+
+
+
   "velonasaur": {
     "commonname": "Velonasaur",
     "class": "Spindles_Character_BP_C",
@@ -36872,6 +38120,9 @@
       }
     }
   },
+
+
+
   "corruptedarthropluera": {
     "commonname": "Corrupted Arthropluera",
     "class": "Arthro_Character_BP_Corrupt_C",
@@ -36996,6 +38247,9 @@
       }
     }
   },
+
+
+
   "corruptedcarnotaurus": {
     "commonname": "Corrupted Carnotaurus",
     "class": "Carno_Character_BP_Corrupt_C",
@@ -37108,6 +38362,9 @@
       }
     }
   },
+
+
+
   "corruptedchalicotherium": {
     "commonname": "Corrupted Chalicotherium",
     "class": "Chalico_Character_BP_Corrupt_C",
@@ -37301,6 +38558,9 @@
       }
     }
   },
+
+
+
   "corrupteddilophosaur": {
     "commonname": "Corrupted Dilophosaur",
     "class": "Dilo_Character_BP_Corrupt_C",
@@ -37424,6 +38684,9 @@
       }
     }
   },
+
+
+
   "corrupteddimorphodon": {
     "commonname": "Corrupted Dimorphodon",
     "class": "Dimorph_Character_BP_Corrupt_C",
@@ -37522,6 +38785,9 @@
       }
     }
   },
+
+
+
   "corruptedgiganotosaurus": {
     "commonname": "Corrupted Giganotosaurus",
     "class": "Gigant_Character_BP_Corrupt_C",
@@ -37640,6 +38906,9 @@
       }
     }
   },
+
+
+
   "corruptedparaceratherium": {
     "commonname": "Corrupted Paraceratherium",
     "class": "Paracer_Character_BP_Corrupt_C",
@@ -37735,6 +39004,9 @@
       }
     }
   },
+
+
+
   "corruptedpteranodon": {
     "commonname": "Corrupted Pteranodon",
     "class": "Ptero_Character_BP_Corrupt_C",
@@ -37866,6 +39138,9 @@
       }
     }
   },
+
+
+
   "corruptedraptor": {
     "commonname": "Corrupted Raptor",
     "class": "Raptor_Character_BP_Corrupt_C",
@@ -38001,11 +39276,14 @@
       }
     }
   },
+
+
+
   "corruptedreaperking": {
     "commonname": "Corrupted Reaper King",
     "class": "Xenomorph_Character_BP_Male_Tamed_Corrupt_C",
     "blueprintpath": "Blueprint'/Game/Extinction/Dinos/Corrupt/Nameless/Xenomorph_Character_BP_Male_Tamed_Corrupt.Xenomorph_Character_BP_Male_Tamed_Corrupt'",
-    "variants": "Alpha Surface Reaper King, Brute Reaper King, Elemental Reaper King, Injured Brute Reaper King, Reaper King, Reaper Prince, Reaper Queen, Subterranean Reaper King, Surface Reaper King",
+    "variants": "Alpha Surface Reaper King, Brute Reaper King, Elemental Reaper King, Injured Brute Reaper King, Reaper King, Reaper Prince, Reaper Queen, Subterranean Reaper King, Surface Reaper King, Surface Reaper King Ghost",
     "dlc": "Extinction",
     "categories": "",
     "species": "Unknown",
@@ -38182,11 +39460,14 @@
       }
     }
   },
+
+
+
   "corruptedrex": {
     "commonname": "Corrupted Rex",
     "class": "Rex_Character_BP_Corrupt_C",
     "blueprintpath": "Blueprint'/Game/Extinction/Dinos/Corrupt/Rex/Rex_Character_BP_Corrupt.Rex_Character_BP_Corrupt'",
-    "variants": "Alpha T-Rex, Brute Malfunctioned Tek Rex, Brute X-Rex, DodoRex, Enraged Corrupted Rex, Malfunctioned Tek Rex, Rex, Skeletal Rex, Tek Rex",
+    "variants": "Alpha T-Rex, Brute Malfunctioned Tek Rex, Brute X-Rex, DodoRex, Enraged Corrupted Rex, Malfunctioned Tek Rex, Rex, Rex Ghost, Skeletal Rex, Tek Rex",
     "dlc": "Extinction",
     "categories": "",
     "species": "Tyrannosaurus dominum",
@@ -38303,6 +39584,9 @@
       }
     }
   },
+
+
+
   "corruptedrockdrake": {
     "commonname": "Corrupted Rock Drake",
     "class": "RockDrake_Character_BP_Corrupt_C",
@@ -38455,6 +39739,9 @@
       }
     }
   },
+
+
+
   "corruptedspino": {
     "commonname": "Corrupted Spino",
     "class": "Spino_Character_BP_Corrupt_C",
@@ -38599,6 +39886,9 @@
       }
     }
   },
+
+
+
   "corruptedstegosaurus": {
     "commonname": "Corrupted Stegosaurus",
     "class": "Stego_Character_BP_Corrupt_C",
@@ -38707,6 +39997,9 @@
       }
     }
   },
+
+
+
   "corruptedtriceratops": {
     "commonname": "Corrupted Triceratops",
     "class": "Trike_Character_BP_Corrupt_C",
@@ -38822,6 +40115,9 @@
       }
     }
   },
+
+
+
   "corruptedwyvern": {
     "commonname": "Corrupted Wyvern",
     "class": "Wyvern_Character_BP_Fire_Corrupt_C",
@@ -38856,16 +40152,16 @@
     },
     "stats": {
       "cansuffocate": "Yes",
-      "health": 1725,
+      "health": 1295,
       "healthwildlevel": 0.15,
       "tamedbasehealthmultiplier": 1,
-      "stamina": 275,
+      "stamina": 315,
       "staminawildlevel": 0.05,
       "torpor": 725,
       "torporwildlevel": 0.06,
       "oxygen": 150,
       "oxygenwildlevel": 0.1,
-      "food": 2000,
+      "food": 1800,
       "foodwildlevel": 0.1,
       "weight": 400,
       "weightwildlevel": 0.02,
@@ -38972,6 +40268,17 @@
       }
     }
   },
+
+
+
+
+
+
+
+
+
+
+
   "chalkgolem": {
     "inherits": "rockelemental",
     "dlc": "Valguero",
@@ -38992,6 +40299,9 @@
     "blueprintpath": "Blueprint'/Game/Mods/Valguero/Assets/Dinos/RockGolem/ChalkGolem/ChalkGolem_Character_BP.ChalkGolem_Character_BP'",
     "commonname": "Rock Elemental"
   },
+
+
+
   "deinonychus": {
     "dlc": "Valguero",
     "variants": "",
@@ -39037,6 +40347,7 @@
       "foodconsumptionmult": 648.088135
     },
     "tamingfood": {
+
       "kibble": "",
       "mobilekibble": "",
       "favoritefood": ""
@@ -39060,6 +40371,8 @@
         "colors": "Dino Medium Brown, Dino Light Orange, Dino Light Yellow, Dino Light Blue, Dino Light Purple, DragonBase0, DragonFire, NearBlack, DragonGreen3, BigFoot5, DarkWolfFur"
       },
       "2": {
+
+
       },
       "3": {
         "name": "Feathers Main",
@@ -39184,8 +40497,12 @@
     "chancetodroploot": 0.3,
     "lootitems": "",
     "canbeharvestedfor": "Hide, Raw Meat",
+
     "harvests": "Ammonite Bile, AnglerGel, Bio Toxin, Black Pearl, Charcoal, Chitin, Corrupted Nodule, Crystal, Electronics, Element Dust, Fungal Wood (Aberration), Hide, Keratin, Leech Blood, Oil, Organic Polymer, Pelt, Raw Fish Meat, Raw Meat, Raw Mutton, Raw Prime Meat, Raw Prime Fish Meat, Scrap Metal, Silica Pearls, Silk, Spoiled Meat, Stone, Sulfur, Thatch"
   },
+
+
+
   "icegolem": {
     "inherits": "rockelemental",
     "dlc": "Valguero, Genesis: Part 1",
@@ -39206,6 +40523,15 @@
     "blueprintpath": "Blueprint'/Game/PrimalEarth/Dinos/IceGolem/IceGolem_Character_BP.IceGolem_Character_BP'",
     "commonname": "Rock Elemental"
   },
+
+
+
+
+
+
+
+
+
   "alphaxtriceratops": {
     "dlc": "Genesis: Part 1",
     "variants": "Aberrant Triceratops, Corrupted Triceratops, Enraged Triceratops, Skeletal Trike, Triceratops, X-Triceratops",
@@ -39333,6 +40659,9 @@
     },
     "harvests": ""
   },
+
+
+
   "astrocetus": {
     "dlc": "Genesis: Part 1",
     "variants": "Brute Astrocetus",
@@ -39385,6 +40714,7 @@
       "wakefooddeplmult": ""
     },
     "tamingfood": {
+
       "kibble": "Extraordinary Kibble",
       "favoritefood": "Raw Mutton",
       "primitiveplusfood": ""
@@ -39562,6 +40892,9 @@
     },
     "harvests": ""
   },
+
+
+
   "bloodstalker": {
     "dlc": "Genesis: Part 1",
     "variants": "Brute Bloodstalker",
@@ -39770,6 +41103,9 @@
     },
     "harvests": ""
   },
+
+
+
   "brutearaneo": {
     "dlc": "Genesis: Part 1",
     "variants": "Aberrant Araneo, Araneo",
@@ -39919,6 +41255,9 @@
     },
     "harvests": ""
   },
+
+
+
   "bruteastrocetus": {
     "dlc": "Genesis: Part 1",
     "variants": "Astrocetus",
@@ -40078,6 +41417,9 @@
     },
     "harvests": ""
   },
+
+
+
   "brutebasilosaurus": {
     "dlc": "Genesis: Part 1",
     "variants": "Basilosaurus, X-Basilosaurus",
@@ -40196,6 +41538,9 @@
     },
     "harvests": ""
   },
+
+
+
   "brutebloodstalker": {
     "dlc": "Genesis: Part 1",
     "variants": "Bloodstalker",
@@ -40340,6 +41685,9 @@
     },
     "harvests": ""
   },
+
+
+
   "bruteferox": {
     "dlc": "Genesis: Part 1",
     "variants": "Ferox, Ferox (Large)",
@@ -40551,6 +41899,9 @@
     },
     "harvests": ""
   },
+
+
+
   "brutefirewyvern": {
     "dlc": "Genesis: Part 1",
     "variants": "Alpha Blood Crystal Wyvern, Alpha Fire Wyvern, Blood Crystal Wyvern, Bone Fire Wyvern, Corrupted Wyvern, Crystal Wyvern Queen (Gamma), Crystal Wyvern Queen (Beta), Crystal Wyvern Queen (Alpha), Dodo Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Tropical Crystal Wyvern, Zombie Fire Wyvern, Zombie Lightning Wyvern, Zombie Poison Wyvern",
@@ -40588,6 +41939,8 @@
         "colors": "Black, Dino Dark Orange, Dino Dark Red, Dino Light Orange, Dino Medium Brown"
       },
       "3": {
+
+
       },
       "4": {
         "name": "Fins Highlight",
@@ -40771,6 +42124,9 @@
     },
     "harvests": ""
   },
+
+
+
   "bruteleedsichthys": {
     "dlc": "Genesis: Part 1",
     "variants": "Alpha Leedsichthys, Leedsichthys",
@@ -40885,6 +42241,9 @@
     },
     "harvests": ""
   },
+
+
+
   "brutemagmasaur": {
     "dlc": "Genesis: Part 1",
     "variants": "Magmasaur",
@@ -41067,6 +42426,9 @@
     },
     "harvests": ""
   },
+
+
+
   "brutemalfunctionedtekgiganotosaurus": {
     "dlc": "Genesis: Part 1",
     "variants": "Corrupted Giganotosaurus, Giganotosaurus, Malfunctioned Tek Giganotosaurus, Skeletal Giganotosaurus",
@@ -41228,9 +42590,12 @@
     },
     "harvests": ""
   },
+
+
+
   "brutemalfunctionedtekrex": {
     "dlc": "Genesis: Part 1",
-    "variants": "Alpha T-Rex, Brute X-Rex, Corrupted Rex, DodoRex, Eerie Alpha T-Rex, Eerie Rex, Enraged Corrupted Rex, Malfunctioned Tek Rex, Rex, Skeletal Rex, Tek Rex, X-Rex",
+    "variants": "Alpha T-Rex, Brute X-Rex, Corrupted Rex, DodoRex, Eerie Alpha T-Rex, Eerie Rex, Enraged Corrupted Rex, Malfunctioned Tek Rex, Rex, Rex Ghost, Skeletal Rex, Tek Rex, X-Rex",
     "releasedate": "2020-02-25",
     "releaseversion": "306.41",
     "xboxreleasedate": "2020-02-25",
@@ -41389,6 +42754,9 @@
     },
     "harvests": ""
   },
+
+
+
   "brutemammoth": {
     "dlc": "Genesis: Part 1",
     "variants": "Mammoth",
@@ -41559,6 +42927,9 @@
     },
     "harvests": ""
   },
+
+
+
   "brutemegaloceros": {
     "dlc": "Genesis: Part 1",
     "variants": "Megaloceros",
@@ -41700,6 +43071,9 @@
     },
     "harvests": ""
   },
+
+
+
   "bruteplesiosaur": {
     "dlc": "Genesis: Part 1",
     "variants": "Plesiosaur",
@@ -41822,9 +43196,12 @@
     },
     "harvests": ""
   },
+
+
+
   "brutereaperking": {
     "dlc": "Genesis: Part 1",
-    "variants": "Alpha Surface Reaper King, Corrupted Reaper King, Elemental Reaper King, Injured Brute Reaper King, Reaper King, Reaper Prince, Reaper Queen, Subterranean Reaper King, Surface Reaper King",
+    "variants": "Alpha Surface Reaper King, Corrupted Reaper King, Elemental Reaper King, Injured Brute Reaper King, Reaper King, Reaper Prince, Reaper Queen, Subterranean Reaper King, Surface Reaper King, Surface Reaper King Ghost",
     "releasedate": "2020-02-25",
     "releaseversion": "306.41",
     "xboxreleasedate": "2020-02-25",
@@ -41859,6 +43236,8 @@
         "colors": "BlackSands, DarkBlue, DarkCement, DarkTeal, DarkTurquoise, DarkWarmGray, DragonGreen3, Glacial, LightCement, LightWarmGray, MediumTeal, MediumTurquoise, MediumWarmGray, MidnightBlue, NearBlack, WyvernBlue0, WyvernBlue1, WyvernPurple0"
       },
       "2": {
+
+
       },
       "4": {
         "name": "Secondary",
@@ -42011,6 +43390,9 @@
     },
     "harvests": ""
   },
+
+
+
   "brutesarco": {
     "dlc": "Genesis: Part 1",
     "variants": "Aberrant Sarco, Sarco",
@@ -42235,6 +43617,9 @@
     },
     "harvests": ""
   },
+
+
+
   "bruteseeker": {
     "dlc": "Genesis: Part 1",
     "variants": "Seeker",
@@ -42407,6 +43792,9 @@
     },
     "harvests": ""
   },
+
+
+
   "brutetusoteuthis": {
     "dlc": "Genesis: Part 1",
     "variants": "Alpha Tusoteuthis, Tusoteuthis",
@@ -42583,6 +43971,9 @@
     },
     "harvests": ""
   },
+
+
+
   "brutexallosaurus": {
     "dlc": "Genesis: Part 1",
     "variants": "Allosaurus, X-Allosaurus",
@@ -42620,8 +44011,12 @@
         "colors": "BigFoot5, Dark Grey, Dino Dark Blue, Dino Dark Orange, Dino Dark Purple, Dino Dark Red, Dino Darker Grey, Dino Deep Blue, Dino Light Blue, Dino Medium Blue, Dino Medium Brown, DragonBase0, DragonBase1, DragonFire, DragonGreen3, NearBlack, WyvernBlue0, WyvernBlue1"
       },
       "1": {
+
+
       },
       "2": {
+
+
       },
       "3": {
         "name": "",
@@ -42765,6 +44160,9 @@
     },
     "harvests": ""
   },
+
+
+
   "brutexmegalodon": {
     "dlc": "Genesis: Part 1",
     "variants": "Alpha Megalodon, Golden Striped Brute Megalodon, Golden Striped Megalodon, Megalodon, X-Megalodon",
@@ -42891,6 +44289,9 @@
     },
     "harvests": ""
   },
+
+
+
   "brutexmosasaurus": {
     "dlc": "Genesis: Part 1",
     "variants": "Alpha Mosasaurus, Mosasaurus, X-Mosasaurus",
@@ -43017,6 +44418,9 @@
     },
     "harvests": ""
   },
+
+
+
   "brutexraptor": {
     "dlc": "Genesis: Part 1",
     "variants": "Aberrant Raptor, Alpha Raptor, Corrupted Raptor, Malfunctioned Tek Raptor, Raptor, Skeletal Raptor, Tek Raptor, X-Raptor",
@@ -43054,6 +44458,8 @@
         "colors": "Black, Dino Dark Blue, Dino Light Blue, Dino Light Orange, Dino Medium Blue, DragonBase0, DragonBase1, DragonGreen0, DragonGreen2, DragonGreen3, NearBlack, NearWhite, WyvernBlue0, WyvernBlue1, WyvernPurple0, WyvernPurple1"
       },
       "1": {
+
+
       },
       "2": {
         "name": "Stripes",
@@ -43201,9 +44607,12 @@
     },
     "harvests": ""
   },
+
+
+
   "brutexrex": {
     "dlc": "Genesis: Part 1",
-    "variants": "Alpha T-Rex, Brute Malfunctioned Tek Rex, Corrupted Rex, DodoRex, Eerie Alpha T-Rex, Eerie Rex, Enraged Corrupted Rex, Malfunctioned Tek Rex, Rex, Skeletal Rex, Tek Rex, X-Rex",
+    "variants": "Alpha T-Rex, Brute Malfunctioned Tek Rex, Corrupted Rex, DodoRex, Eerie Alpha T-Rex, Eerie Rex, Enraged Corrupted Rex, Malfunctioned Tek Rex, Rex, Rex Ghost, Skeletal Rex, Tek Rex, X-Rex",
     "releasedate": "2020-02-25",
     "releaseversion": "306.41",
     "xboxreleasedate": "2020-02-25",
@@ -43242,6 +44651,8 @@
         "colors": "BigFoot5, Dark Grey, Dino Dark Blue, Dino Dark Orange, Dino Dark Purple, Dino Dark Red, Dino Darker Grey, Dino Deep Blue, Dino Light Blue, Dino Medium Blue, Dino Medium Brown, DragonBase0, DragonBase1, DragonFire, DragonGreen3, NearBlack, WyvernBlue0, WyvernBlue1"
       },
       "2": {
+
+
       },
       "4": {
         "name": "Unknown",
@@ -43356,6 +44767,9 @@
     },
     "harvests": ""
   },
+
+
+
   "brutexrockelemental": {
     "dlc": "Genesis: Part 1",
     "variants": "Chalk Golem, Ice Golem, Lava Elemental, Rock Elemental, Rubble Golem, X-Rock Elemental",
@@ -43393,12 +44807,20 @@
         "colors": "BigFoot5, Black, Dark Grey, Dino Dark Blue, Dino Dark Brown, Dino Dark Orange, Dino Dark Purple, Dino Dark Red, Dino Darker Grey, Dino Deep Blue, Dino Light Blue, Dino Light Brown, Dino Light Orange, Dino Light Purple, Dino Medium Blue, Dino Medium Brown, DragonBase0, DragonBase1, DragonFire, DragonGreen3, Light Grey, NearBlack, WyvernBlue0, WyvernPurple0"
       },
       "1": {
+
+
       },
       "2": {
+
+
       },
       "3": {
+
+
       },
       "4": {
+
+
       },
       "5": {
         "name": "Tips",
@@ -43524,6 +44946,9 @@
     },
     "harvests": ""
   },
+
+
+
   "brutexspino": {
     "dlc": "Genesis: Part 1",
     "variants": "Aberrant Spino, Corrupted Spino, X-Spino",
@@ -43714,6 +45139,9 @@
     },
     "harvests": ""
   },
+
+
+
   "brutexyutyrannus": {
     "dlc": "Genesis: Part 1",
     "variants": "X-Yutyrannus, Yutyrannus",
@@ -43751,6 +45179,8 @@
         "colors": "BigFoot0, BigFoot4, BigFoot5, Black, Dark Grey, DarkWolfFur, Dino Albino, Dino Light Blue, Dino Light Brown, Dino Light Purple, Dino Medium Brown, Light Grey, NearBlack, NearWhite, WolfFur"
       },
       "1": {
+
+
       },
       "2": {
         "name": "Dark accents",
@@ -43864,6 +45294,9 @@
     },
     "harvests": ""
   },
+
+
+
   "corruptedavatar": {
     "inherits": "human",
     "dlc": "Genesis: Part 1",
@@ -43892,6 +45325,9 @@
     "diet": "",
     "teamname": "Bot"
   },
+
+
+
   "corruptedmastercontroller": {
     "dlc": "Genesis: Part 1",
     "variants": "Alpha Corrupted Master Controller, Beta Corrupted Master Controller, Gamma Corrupted Master Controller",
@@ -43965,11 +45401,13 @@
     },
     "harvests": ""
   },
+
   "gammacorruptedmastercontroller": {
     "inherits": "corruptedmastercontroller",
     "class": "VRMainBoss_Character_Easy_C",
     "blueprintpath": "Blueprint'/Game/Genesis/Dinos/VRMainBoss/VRMainBoss_Character_Easy.VRMainBoss_Character_Easy'"
   },
+
   "betacorruptedmastercontroller": {
     "inherits": "corruptedmastercontroller",
     "class": "VRMainBoss_Character_Medium_C",
@@ -43978,6 +45416,7 @@
       "health": 60000
     }
   },
+
   "alphacorruptedmastercontroller": {
     "inherits": "corruptedmastercontroller",
     "class": "VRMainBoss_Character_Hard_C",
@@ -43986,6 +45425,9 @@
       "health": 150000
     }
   },
+
+
+
   "eelminion": {
     "dlc": "Genesis: Part 1",
     "releasedate": "2020-02-25",
@@ -44164,6 +45606,9 @@
     },
     "harvests": ""
   },
+
+
+
   "ferox": {
     "dlc": "Genesis: Part 1",
     "variants": "Brute Ferox, Ferox (Large)",
@@ -44209,6 +45654,7 @@
       "foodconsumptionmult": 648.0881
     },
     "tamingfood": {
+
       "favoritefood": "Element",
       "primitiveplusfood": ""
     },
@@ -44270,7 +45716,7 @@
       "foodtamedlevel": 0.1,
       "foodtamedmult": 0.15,
       "foodtamedadd": 0,
-      "weight": 55,
+      "weight": 120,
       "weightwildlevel": 0.02,
       "weighttamedlevel": 0.04,
       "weighttamedmult": 0,
@@ -44333,7 +45779,7 @@
           }
         }
       }
-    },
+	},
     "killxpbase": "",
     "teamname": "Carnivores_Medium_TargetPlayerOrTamed",
     "chancetodroploot": "",
@@ -44344,6 +45790,9 @@
     },
     "harvests": ""
   },
+
+
+
   "feroxlarge": {
     "inherits": "ferox",
     "class": "Shapeshifter_Large_Character_BP_C",
@@ -44514,6 +45963,9 @@
     },
     "teamname": "Carnivores_High"
   },
+
+
+
   "goldenstripedbrutemegalodon": {
     "dlc": "Genesis: Part 1",
     "variants": "Alpha Megalodon, Brute X-Megalodon, Golden Striped Megalodon, Megalodon, X-Megalodon",
@@ -44640,6 +46092,9 @@
     },
     "harvests": ""
   },
+
+
+
   "goldenstripedmegalodon": {
     "dlc": "Genesis: Part 1",
     "variants": "Alpha Megalodon, Brute X-Megalodon, Golden Striped Brute Megalodon, Megalodon, X-Megalodon",
@@ -44766,9 +46221,12 @@
     },
     "harvests": ""
   },
+
+
+
   "injuredbrutereaperking": {
     "dlc": "Genesis: Part 1",
-    "variants": "Alpha Surface Reaper King, Brute Reaper King, Corrupted Reaper King, Elemental Reaper King, Injured Brute Reaper King, Reaper King, Reaper Prince, Reaper Queen, Subterranean Reaper King, Surface Reaper King",
+    "variants": "Alpha Surface Reaper King, Brute Reaper King, Corrupted Reaper King, Elemental Reaper King, Injured Brute Reaper King, Reaper King, Reaper Prince, Reaper Queen, Subterranean Reaper King, Surface Reaper King, Surface Reaper King Ghost",
     "releasedate": "2020-02-25",
     "releaseversion": "306.41",
     "xboxreleasedate": "2020-02-25",
@@ -44953,6 +46411,9 @@
     },
     "harvests": ""
   },
+
+
+
   "insectswarm": {
     "dlc": "Genesis: Part 1",
     "releasedate": "2020-02-25",
@@ -45036,6 +46497,9 @@
     },
     "harvests": ""
   },
+
+
+
   "magmasaur": {
     "dlc": "Genesis: Part 1",
     "variants": "Brute Magmasaur",
@@ -45218,9 +46682,12 @@
     },
     "harvests": ""
   },
+
+
+
   "malfunctionedtekgiganotosaurus": {
     "inherits": "giganotosaurus",
-    "dlc": "Genesis: Part 1",
+	"dlc": "Genesis: Part 1",
     "variants": "Corrupted Giganotosaurus, Giganotosaurus, Skeletal Giganotosaurus",
     "releasedate": "2020-02-25",
     "releaseversion": "306.41",
@@ -45244,7 +46711,7 @@
       "canbetamed": "No",
       "rideable": "No",
       "equipment": ""
-    },
+	},
     "breeding": {
       "egg": "",
       "mintemp": "",
@@ -45283,9 +46750,12 @@
     "fecessize": "None",
     "canbeharvestedfor": ""
   },
+
+
+
   "malfunctionedtekparasaur": {
     "inherits": "parasaurolophus",
-    "dlc": "Genesis: Part 1",
+	"dlc": "Genesis: Part 1",
     "variants": "Aberrant Parasaur, Parasaur, Tek Parasaur, X-Parasaur",
     "releasedate": "2020-02-25",
     "releaseversion": "306.41",
@@ -45309,7 +46779,7 @@
       "canbetamed": "No",
       "rideable": "No",
       "equipment": ""
-    },
+	},
     "breeding": {
       "egg": "",
       "mintemp": "",
@@ -45348,9 +46818,12 @@
     "fecessize": "None",
     "canbeharvestedfor": ""
   },
+
+
+
   "malfunctionedtekquetzal": {
     "inherits": "quetzalcoatlus",
-    "dlc": "Genesis: Part 1",
+	"dlc": "Genesis: Part 1",
     "variants": "Quetzal, Skeletal Quetzal, Tek Quetzal",
     "releasedate": "2020-02-25",
     "releaseversion": "306.41",
@@ -45374,7 +46847,7 @@
       "canbetamed": "No",
       "rideable": "No",
       "equipment": ""
-    },
+	},
     "breeding": {
       "egg": "",
       "mintemp": "",
@@ -45413,9 +46886,12 @@
     "fecessize": "None",
     "canbeharvestedfor": ""
   },
+
+
+
   "malfunctionedtekraptor": {
     "inherits": "raptor",
-    "dlc": "Genesis: Part 1",
+	"dlc": "Genesis: Part 1",
     "variants": "Aberrant Raptor, Alpha Raptor, Brute X-Raptor, Corrupted Raptor, Raptor, Skeletal Raptor, Tek Raptor, X-Raptor",
     "releasedate": "2020-02-25",
     "releaseversion": "306.41",
@@ -45439,7 +46915,7 @@
       "canbetamed": "No",
       "rideable": "No",
       "equipment": ""
-    },
+	},
     "breeding": {
       "egg": "",
       "mintemp": "",
@@ -45478,10 +46954,13 @@
     "fecessize": "None",
     "canbeharvestedfor": ""
   },
+
+
+
   "malfunctionedtekrex": {
     "inherits": "rex",
-    "dlc": "Genesis: Part 1",
-    "variants": "Alpha T-Rex, Brute Malfunctioned Tek Rex, Brute X-Rex, Corrupted Rex, DodoRex, Enraged Corrupted Rex, Rex, Skeletal Rex, Tek Rex, X-Rex",
+	"dlc": "Genesis: Part 1",
+    "variants": "Alpha T-Rex, Brute Malfunctioned Tek Rex, Brute X-Rex, Corrupted Rex, DodoRex, Enraged Corrupted Rex, Rex, Rex Ghost, Skeletal Rex, Tek Rex, X-Rex",
     "releasedate": "2020-02-25",
     "releaseversion": "306.41",
     "xboxreleasedate": "2020-02-25",
@@ -45504,7 +46983,7 @@
       "canbetamed": "No",
       "rideable": "No",
       "equipment": ""
-    },
+	},
     "breeding": {
       "egg": "",
       "mintemp": "",
@@ -45543,9 +47022,12 @@
     "fecessize": "None",
     "canbeharvestedfor": ""
   },
+
+
+
   "malfunctionedtekstegosaurus": {
     "inherits": "stegosaurus",
-    "dlc": "Genesis: Part 1",
+	"dlc": "Genesis: Part 1",
     "variants": "Aberrant Stegosaurus, Corrupted Stegosaurus, Skeletal Stego, Stegosaurus, Tek Stegosaurus",
     "releasedate": "2020-02-25",
     "releaseversion": "306.41",
@@ -45569,7 +47051,7 @@
       "canbetamed": "No",
       "rideable": "No",
       "equipment": ""
-    },
+	},
     "breeding": {
       "egg": "",
       "mintemp": "",
@@ -45608,9 +47090,12 @@
     "fecessize": "None",
     "canbeharvestedfor": ""
   },
+
+
+
   "malfunctionedtektriceratops": {
     "inherits": "triceratops",
-    "dlc": "Genesis: Part 1",
+	"dlc": "Genesis: Part 1",
     "variants": "Aberrant Triceratops, Corrupted Triceratops, Enraged Triceratops, Tek Triceratops, Skeletal Trike, X-Triceratops",
     "releasedate": "2020-02-25",
     "releaseversion": "306.41",
@@ -45634,7 +47119,7 @@
       "canbetamed": "No",
       "rideable": "No",
       "equipment": ""
-    },
+	},
     "breeding": {
       "egg": "",
       "mintemp": "",
@@ -45673,6 +47158,9 @@
     "fecessize": "None",
     "canbeharvestedfor": ""
   },
+
+
+
   "megachelon": {
     "dlc": "Genesis: Part 1",
     "releasedate": "2020-02-25",
@@ -45717,6 +47205,7 @@
       "foodconsumptionmult": 0.05
     },
     "tamingfood": {
+
       "favoritefood": "Parakeet Fish School",
       "primitiveplusfood": ""
     },
@@ -45859,6 +47348,9 @@
     },
     "harvests": ""
   },
+
+
+
   "moedermasteroftheocean": {
     "dlc": "Genesis: Part 1",
     "variants": "Alpha Moeder&#44; Master of the Ocean, Beta Moeder&#44; Master of the Ocean, Gamma Moeder&#44; Master of the Ocean",
@@ -46015,6 +47507,7 @@
     },
     "harvests": ""
   },
+
   "betamoedermasteroftheocean": {
     "inherits": "moedermasteroftheocean",
     "class": "EelBoss_Character_BP_Medium_C",
@@ -46023,6 +47516,7 @@
       "health": 686000
     }
   },
+
   "alphamoedermasteroftheocean": {
     "inherits": "moedermasteroftheocean",
     "class": "EelBoss_Character_BP_Hard_C",
@@ -46031,6 +47525,9 @@
       "health": 960400
     }
   },
+
+
+
   "parakeetfishschool": {
     "dlc": "Genesis: Part 1",
     "releasedate": "2020-02-25",
@@ -46114,9 +47611,12 @@
     },
     "harvests": ""
   },
+
+
+
   "reaperprince": {
     "inherits": "reaper",
-    "dlc": "Genesis: Part 1",
+	"dlc": "Genesis: Part 1",
     "releasedate": "2020-02-25",
     "releaseversion": "306.41",
     "xboxreleasedate": "2020-02-25",
@@ -46135,7 +47635,7 @@
     "group": "Fantasy Creatures",
     "taming": {
       "rideable": "No"
-    },
+	},
     "breeding": {
       "mintemp": "",
       "maxtemp": "",
@@ -46146,6 +47646,9 @@
     },
     "fecessize": "None"
   },
+
+
+
   "tektriceratops": {
     "inherits": "triceratops",
     "dlc": "Genesis: Part 1",
@@ -46197,6 +47700,9 @@
     },
     "canbeharvestedfor": "Electronics, Element Dust, Oil, Scrap Metal"
   },
+
+
+
   "xCreatureOverride": {
     "dlc": "Genesis: Part 1",
     "releasedate": "2020-02-25",
@@ -46212,6 +47718,9 @@
     "egsreleasedate": "2020-06-11",
     "egsreleaseversion": "311.74"
   },
+
+
+
   "xallosaurus": {
     "inherits": "allosaurus",
     "overridewith": "xCreatureOverride",
@@ -46388,6 +47897,10 @@
         "name": "Spine",
         "colors": "BigFoot5, Dark Grey, Dino Dark Blue, Dino Dark Orange, Dino Dark Purple, Dino Dark Red, Dino Darker Grey, Dino Deep Blue, Dino Light Blue, Dino Medium Blue, Dino Medium Brown, DragonBase0, DragonBase1, DragonFire, DragonGreen3, NearBlack, WyvernBlue0, WyvernBlue1"
       },
+      "3": {
+        "name": "Highlights",
+        "colors": ""
+      },
       "4": {
         "name": "Back",
         "colors": "BigFoot5, Dark Grey, Dino Dark Blue, Dino Dark Orange, Dino Dark Purple, Dino Dark Red, Dino Darker Grey, Dino Deep Blue, Dino Light Blue, Dino Medium Blue, Dino Medium Brown, DragonBase0, DragonBase1, DragonFire, DragonGreen3, NearBlack, WyvernBlue0, WyvernBlue1"
@@ -46541,6 +48054,16 @@
       }
     }
   },
+
+
+
+
+
+
+
+
+
+
   "alphabloodcrystalwyvern": {
     "dlc": "Crystal Isles",
     "variants": "Alpha Fire Wyvern, Blood Crystal Wyvern, Bone Fire Wyvern, Brute Fire Wyvern, Corrupted Wyvern, Crystal Wyvern Queen (Gamma), Crystal Wyvern Queen (Beta), Crystal Wyvern Queen (Alpha), Dodo Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Tropical Crystal Wyvern, Zombie Fire Wyvern, Zombie Lightning Wyvern, Zombie Poison Wyvern",
@@ -46676,14 +48199,18 @@
           "damage": 80
         }
       }
-    },
+	},
     "killxpbase": "",
     "teamname": "Carnivores_High",
     "chancetodroploot": "",
     "lootitems": "Alpha Crystal Talon (Crystal Isles), Primal Crystal (Crystal Isles), Wyvern Gloves Skin (Scorched Earth)",
     "canbeharvestedfor": "Crystal, Hide, Raw Prime Meat",
+
     "harvests": ""
   },
+
+
+
   "crystalwyvern": {
     "dlc": "Crystal Isles",
     "variants": "Alpha Blood Crystal Wyvern, Alpha Fire Wyvern, Blood Crystal Wyvern, Bone Fire Wyvern, Brute Fire Wyvern, Corrupted Wyvern, Crystal Wyvern Queen (Gamma), Crystal Wyvern Queen (Beta), Crystal Wyvern Queen (Alpha), Dodo Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Tropical Crystal Wyvern, Zombie Fire Wyvern, Zombie Lightning Wyvern, Zombie Poison Wyvern",
@@ -46726,6 +48253,7 @@
       "foodconsumptionmult": 199.984
     },
     "tamingfood": {
+
       "favoritefood": "Primal Crystal (Crystal Isles)"
     },
     "breeding": {
@@ -46841,14 +48369,18 @@
           "damage": 45
         }
       }
-    },
+	},
     "killxpbase": "",
     "teamname": "Carnivores_High",
     "chancetodroploot": "",
     "lootitems": "Crystal Talon (Crystal Isles)",
     "canbeharvestedfor": "Crystal, Hide, Raw Meat, Raw Prime Meat",
+
     "harvests": ""
   },
+
+
+
   "bloodcrystalwyvern": {
     "inherits": "crystalwyvern",
     "class": "CrystalWyvern_Character_BP_Blood_C",
@@ -46873,6 +48405,9 @@
       }
     }
   },
+
+
+
   "embercrystalwyvern": {
     "inherits": "crystalwyvern",
     "class": "CrystalWyvern_Character_BP_Ember_C",
@@ -46897,6 +48432,9 @@
       }
     }
   },
+
+
+
   "tropicalcrystalwyvern": {
     "inherits": "crystalwyvern",
     "class": "CrystalWyvern_Character_BP_WS_C",
@@ -46921,6 +48459,9 @@
       }
     }
   },
+
+
+
   "crystalwyvernqueen": {
     "dlc": "Crystal Isles",
     "variants": "Alpha Blood Crystal Wyvern, Alpha Fire Wyvern, Blood Crystal Wyvern, Bone Fire Wyvern, Brute Fire Wyvern, Corrupted Wyvern, Crystal Wyvern Queen (Gamma), Crystal Wyvern Queen (Beta), Crystal Wyvern Queen (Alpha), Dodo Wyvern, Ember Crystal Wyvern, Fire Wyvern, Forest Wyvern, Ice Wyvern, Lightning Wyvern, Poison Wyvern, Tropical Crystal Wyvern, Zombie Fire Wyvern, Zombie Lightning Wyvern, Zombie Poison Wyvern",
@@ -47036,13 +48577,15 @@
           "damage": 0
         }
       }
-    },
+	},
     "killxpbase": "",
     "teamname": "Carnivores_High",
     "chancetodroploot": "",
     "lootitems": "Crystal Wyvern Queen Flag (Crystal Isles), Crystal Wyvern Queen Trophy (Crystal Isles), Element",
+
     "harvests": ""
   },
+
   "crystalwyvernqueengamma": {
     "inherits": "crystalwyvernqueen",
     "class": "CrystalWyvern_Character_BP_Boss_Easy_C",
@@ -47050,8 +48593,9 @@
     "commonname": "Crystal Wyvern Queen (Gamma)",
     "stats": {
       "health": 400000
-    }
-  },
+	  }
+	},
+
   "crystalwyvernqueenbeta": {
     "inherits": "crystalwyvernqueen",
     "class": "CrystalWyvern_Character_BP_Boss_Medium_C",
@@ -47059,8 +48603,9 @@
     "commonname": "Crystal Wyvern Queen (Beta)",
     "stats": {
       "health": 675000
-    }
-  },
+	  }
+	},
+
   "crystalwyvernqueenalpha": {
     "inherits": "crystalwyvernqueen",
     "class": "CrystalWyvern_Character_BP_Boss_Hard_C",
@@ -47068,8 +48613,11 @@
     "commonname": "Crystal Wyvern Queen (Alpha)",
     "stats": {
       "health": 950000
-    }
-  },
+	  }
+	},
+
+
+
   "giantworkerbee": {
     "inherits": "giantbee",
     "dlc": "Crystal Isles",
@@ -47163,6 +48711,9 @@
     "killxpbase": "",
     "teamname": "Carnivores_Medium_TargetPlayerOrTamed"
   },
+
+
+
   "tropeognathus": {
     "dlc": "Crystal Isles",
     "releasedate": "2020-06-11",
@@ -47206,6 +48757,7 @@
       "foodconsumptionmult": 216.0294
     },
     "tamingfood": {
+
       "kibble": "Exceptional Kibble",
       "favoritefood": "Raw Mutton"
     },
@@ -47325,6 +48877,7 @@
     "chancetodroploot": "",
     "lootitems": "",
     "canbeharvestedfor": "Hide, Raw Meat",
+
     "harvests": ""
   }
 }
