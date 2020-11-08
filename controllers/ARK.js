@@ -17,7 +17,10 @@ class ARK extends ARK_api {
                 BabyMatureSpeedMultiplier: 'Скорость взросления',
                 EggHatchSpeedMultiplier: 'Скорость инкубации / беременности',
                 CropGrowthSpeedMultiplier: 'Скорость роста овощей и ягоды',
-                CustomRecipeEffectivenessMultiplier: 'Эффективность пользовательских рецептов'
+                CustomRecipeEffectivenessMultiplier: 'Эффективность пользовательских рецептов',
+                HexagonRewardMultiplier: 'Наградные шестигранники',
+                BabyCuddleIntervalMultiplier: 'Интервал привязанности',
+                BabyImprintAmountMultiplier: 'Сила привязанности',
         };
 
         constructor(client) {
