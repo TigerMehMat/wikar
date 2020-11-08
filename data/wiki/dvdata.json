@@ -3424,7 +3424,6 @@
       "melee": "",
       "torpor": 300,
       "walkspeed": 1000,
-      "walkspeed": "",
       "riddenwalkspeed": "",
       "walkingstaminaconsumptionrate": "",
       "untamedrunspeed": "",
@@ -22038,7 +22037,6 @@
     "killxpbase": 0.5,
     "teamname": "Herbivores_Medium_Aggressive",
     "chancetodroploot": 1,
-    "meleebase": 61,
     "attacks": {
       "1": {
         "name": "Melee",
