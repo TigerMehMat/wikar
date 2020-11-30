@@ -117,6 +117,11 @@ class Tame {
                         if (this.data.res.torporInfo) tranqText += '\n' + this.data.res.torporInfo;
                         embed.addField('Оглушение', tranqText);
                 }
+
+                if (this.data.res.is_new) {
+                        embed.setDescription(`К сожалению, бот пока не в состоянии получить информацию из новых страниц Дододекста. Приносим свои извинения за неудобства. Ссылка на дододекс рабочая.`);
+                }
+
                 return embed;
         }
 

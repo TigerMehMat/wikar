@@ -20,6 +20,7 @@ let aliases = {
 
     "Vegetables" : "<:vegetables:556049562981367828> Овощи",
     "Crops": "<:vegetables:556049562981367828> Овощи",
+    "Crops (KO Taming Only)": "<:vegetables:556049562981367828> Овощи (только оглушение)",
     "Mejoberry" : "<:mejoberry:553204416904167425> Межоберри",
     "Berries" : "<:berries:556050971734704130> Ягоды",
     "Sweet Vegetable Cake" : "<:sweet_vegetable_cake:556051408986832902> Сладкий Овощной Кекс",

@@ -23,13 +23,50 @@ class Dododex extends Tame {
         }
 
         getInfo() {
-                return new Promise((resolve, reject) => {
+                return new Promise(async (resolve, reject) => {
                         let creatureName = this.data.name.replace(' ', '').toLowerCase();
                         let link = "https://www.dododex.com/taming/" + creatureName + "/" + this.data.lvl + "?taming=" + this.data.rates;
                         let linkTorpor = "https://www.dododex.com/torpor-timer/" + creatureName;
+                        let page;
+                        try {
+                                page = await this.getPage(link);
+                        } catch (e) {
+                                console.error(e.statusCode, 'error in get creature page');
+                        }
+                        let $ = cheerio.load(page);
+
+                        let is_new = $('.scrollx .tamingTable').length === 0;
+
+                        let res = this.getTamingTable($);
+                        let result = {};
+                        result['is_new'] = is_new;
+                        result["tamingTable"] = res;
+                        result["link"] = link;
+                        result["tranqList"] = this.getTranqList($);
+
+                        let $mainImage = $("#mainImage");
+                        if ($mainImage.length !== 0) {
+                                result["mainImage"] = 'https://www.dododex.com' + $mainImage.attr("src");
+                        } else {
+                                result["mainImage"] = false;
+                        }
+
+                        const rawData2 = await this.getPage(linkTorpor);
+                        result["torporInfo"] = this.getTorporInfo(rawData2);
+                        resolve(result);
+                });
+        }
+
+        getPage(link) {
+                return new Promise((resolve, reject) => {
                         http.get(link, (res) => {
-                                if (res.statusCode !== 200) {
-                                        reject(res.statusCode);
+                                if (res.statusCode >=  300 && res.statusCode < 400 && res.headers.location) {
+                                        this.getPage(res.headers.location)
+                                                .then(resolve)
+                                                .catch(reject);
+                                        return;
+                                } else if (res.statusCode !== 200) {
+                                        reject(res);
                                         return;
                                 }
 
@@ -38,37 +75,7 @@ class Dododex extends Tame {
                                 let rawData = '';
                                 res.on('data', (chunk) => rawData += chunk);
                                 res.on('end', () => {
-                                        //this.data.runame = (this.aliases2[this.data.name]) ? this.aliases2[this.data.name] : this.data.name;
-                                        let $ = cheerio.load(rawData);
-                                        let res = this.getTamingTable($);
-                                        let result = {};
-                                        result["tamingTable"] = res;
-                                        result["link"] = link;
-                                        result["tranqList"] = this.getTranqList($);
-
-                                        let $mainImage = $("#mainImage");
-                                        if ($mainImage.length !== 0) {
-                                                result["mainImage"] = 'https://www.dododex.com' + $mainImage.attr("src");
-                                        } else {
-                                                result["mainImage"] = false;
-                                        }
-
-                                        http.get(linkTorpor, res2 => {
-                                                const {statusCode} = res2;
-                                                if (statusCode !== 200) {
-                                                        result["torporInfo"] = null;
-                                                        resolve(result);
-                                                        return;
-                                                }
-
-                                                res2.setEncoding('utf8');
-                                                let rawData2 = '';
-                                                res2.on('data', (chunk2) => rawData2 += chunk2);
-                                                res2.on('end', () => {
-                                                        result["torporInfo"] = this.getTorporInfo(rawData2);
-                                                        resolve(result);
-                                                });
-                                        });
+                                        resolve(rawData);
                                 });
                         });
                 });
