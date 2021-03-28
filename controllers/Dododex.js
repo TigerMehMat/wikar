@@ -57,8 +57,16 @@ class Dododex extends Tame {
                 });
         }
 
+        /**
+         *
+         * @param {string} link
+         * @returns {Promise<unknown>}
+         */
         getPage(link) {
                 return new Promise((resolve, reject) => {
+                        if (link.search(/^\//) !== -1) {
+                                link = `https://www.dododex.com${link}`;
+                        }
                         http.get(link, (res) => {
                                 if (res.statusCode >=  300 && res.statusCode < 400 && res.headers.location) {
                                         this.getPage(res.headers.location)
