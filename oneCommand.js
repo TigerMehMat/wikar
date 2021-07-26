@@ -1,7 +1,7 @@
 const Discord	= require("discord.js");
 const client = new Discord.Client();
 
-const config	= require("./configbot_release");
+const config	= require("./configbot");
 
 client.login(config.token);
 

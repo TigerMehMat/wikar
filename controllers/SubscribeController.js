@@ -31,7 +31,13 @@ class SubscribeController {
                 let instance = this;
                 this.subscribeInfo.forEach((el) => {
                         let guild = this.client.guilds.cache.get(el.guild);
+
+                        if (!guild) return;
+
                         let channel = guild.channels.cache.get(el.channel);
+
+                        if (!channel) return;
+
                         channel.messages.fetch(el.message)
                                 .then(message => {
                                         // Вешаем события
