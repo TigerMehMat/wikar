@@ -3,7 +3,6 @@ const DiscordHelper = require('./GlobalControllers/DiscordHelper');
 const AbstractCommandController = require('./AbstractCommandController');
 const getIcon = require('./functions/getIcon');
 const DvDataController = require('./DvDataController');
-const BadRequestsModel = new (require('../Models/BadRequestsModel'));
 
 const CreaturesModel = require('../Models/CreaturesModel');
 
@@ -163,13 +162,23 @@ class Breeding extends AbstractCommandController {
                 embed.setFooter('Рост х' + this.multipliers.mature + ' • Инкубация х' + this.multipliers.incubation);
 
                 await this.message.channel.send(embed);
-				this.message.channel.stopTyping();
+                this.message.channel.stopTyping();
         }
 
         getTrueValue(value) {
                 if (value > 1000) value = 1000;
                 if (value < 0.001) value = 0.001;
                 return Math.ceil(value * 1000) / 1000;
+        }
+
+        static getAliases() {
+                return [
+                        'инкубация',
+                        'беременность',
+                        'разведение',
+                        'рост',
+                        'р',
+                ];
         }
 }
 

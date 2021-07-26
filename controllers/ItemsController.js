@@ -1,18 +1,9 @@
+const AbstractCommandController = require("./AbstractCommandController");
 const ItemsModel = new (require('../Models/ItemsModel'))();
 
-class ItemsController {
-        setMessage(message) {
-                this.message = message;
-                return this;
-        }
-
-        setArgs(args) {
+class ItemsController extends AbstractCommandController {
+        async setArgs(args) {
                 this.name = args.join(' ');
-                return this;
-        }
-
-        setMessageAccess(messageAccess) {
-                this.messageAccess = messageAccess;
                 return this;
         }
 
@@ -30,6 +21,12 @@ class ItemsController {
                 } catch (e) {
                         console.error(e.message);
                 }
+        }
+
+        static getAliases() {
+                return [
+                        "предмет"
+                ];
         }
 }
 

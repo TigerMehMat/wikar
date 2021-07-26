@@ -312,6 +312,12 @@ class MapsController extends AbstractCommandController {
                 text = text.substr(pos + searchStart.length);
                 return text.substr(0, text.indexOf('"'));
         }
+
+        static getAliases() {
+                return [
+                        'карта'
+                ];
+        }
 }
 
 module.exports = MapsController;

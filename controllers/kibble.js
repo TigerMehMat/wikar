@@ -198,6 +198,13 @@ class Kibble extends AbstractCommandController {
                 return undefined;
         }
     }
+
+    static getAliases() {
+        return [
+            'корм',
+            'к',
+        ];
+    }
 }
 
 module.exports = Kibble;
