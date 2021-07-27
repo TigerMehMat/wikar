@@ -62,12 +62,18 @@ class DiscordServersModel extends MainModel {
         }
 
         /**
+         * @typedef ActiveServerData
+         * @property rates {string}
+         * @property tribe_functions {boolean}
+         */
+
+        /**
          *
          * Проверяет, активен ли текущий сервер.
          * @param {string} serverId
          * @param {string} channelId
          * @param {'active'|'bm'} type
-         * @returns {Promise<array>}
+         * @returns {Promise<ActiveServerData>}
          */
         isActiveServer(serverId, channelId, type = 'active') {
                 return new Promise((resolve, reject) => {

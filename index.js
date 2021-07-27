@@ -66,7 +66,7 @@ client.on('message', async message => {
         let access = (new Access(message.guild.id, message.channel.id)).validate();
         let access_parameters = await access.getAccessParameters();
 
-        /** @var {Object} Неведомый костыль, убрать когда переделаю верефикацию. */
+        /** @var {Object} Неведомый костыль, убрать когда переделаю верификацию. */
         const messageAccess = await access.getMainCheck();
         if (!messageAccess) return;
 
