@@ -151,6 +151,12 @@ class InfoCommandController extends AbstractCommandController {
                 }
                 return items.sort().join('\n');
         }
+
+        static getAliases() {
+                return [
+                        'инфо'
+                ];
+        }
 }
 
 module.exports = InfoCommandController;

@@ -1,4 +1,5 @@
 const Access = require('./access');
+const AbstractCommandController = require("../AbstractCommandController");
 
 
 const functionsConf = {
@@ -86,11 +87,15 @@ const functionsConf = {
 };
 
 
-class Helper {
-    static getList(message) {
+class Helper extends AbstractCommandController {
+    args = [];
+
+    command;
+
+    getList() {
         let res = 'Список всех комманд бота:\n';
         for(let i in functionsConf) {
-            if(typeof functionsConf[i].access !== "undefined" && !functionsConf[i].access(message)) continue;
+            if(typeof functionsConf[i].access !== "undefined" && !functionsConf[i].access(this.message)) continue;
             let statusText = typeof functionsConf[i].status === "undefined" ? '' : " (" + functionsConf[i].status + ")";
             res += `• **${functionsConf[i].name}**${statusText} (${this.getParams(functionsConf[i].params)})\n`;
             res += functionsConf[i].description + '\n';
@@ -100,7 +105,7 @@ class Helper {
         return res;
     }
 
-    static getParams(params) {
+    getParams(params) {
         let res = '';
         for(let i = 0; i < params.length; i++) {
             if(Array.isArray(params[i]))
@@ -111,7 +116,7 @@ class Helper {
         return res;
     }
 
-    static getBigParams(params) {
+    getBigParams(params) {
         let res = 'Список параметров:\n';
         for(let i = 0; i < params.length; i++) {
             if(Array.isArray(params[i]))
@@ -123,26 +128,40 @@ class Helper {
         return res;
     }
 
-    static getText(command) {
-        let listEl = functionsConf[command];
-        let statusText = typeof functionsConf[command].status === "undefined" ? '' : " (" + functionsConf[command].status + ")";
+    getText() {
+        let listEl = functionsConf[this.command];
+        let statusText = typeof listEl.status === "undefined" ? '' : " (" + listEl.status + ")";
         let res = `Команда \`\`${listEl.name}\`\`${statusText} принимает следующие параметры: ${this.getParams(listEl.params)}`;
         res += '\n\n'+this.getBigParams(listEl.params);
         res += `\n\nНапример, команда:\`\`\`${listEl.example}\`\`\`${listEl.exampleComment}`;
         return res;
     }
 
-    static sendHelp(message, args){
-        if(!Access.isAccess(message)) return;
-        if(args.length === 0) {
-            message.channel.send(this.getList(message));
-        } else if(typeof functionsConf[args[0]] !== 'undefined' && !(typeof functionsConf[args[0]].access !== "undefined" && !functionsConf[args[0]].access(message))) {
-            message.channel.send(this.getText(args[0]))
-                .catch(console.error);
+    process() {
+        let text = '';
+
+        if(!this.command) {
+            text = this.getList();
+        } else if(typeof functionsConf[this.command] !== 'undefined' && !(typeof functionsConf[this.command].access === "function" && !functionsConf[this.command].access(this.message))) {
+            text = this.getText();
         } else {
-            message.channel.send('Неизвестная команда ``'+args[0]+'``')
-                .catch(console.error);
+            text = 'Неизвестная команда ``'+this.command+'``';
         }
+
+        return this.message.channel.send(text);
+    }
+
+    async setArgs(args) {
+        this.args = args;
+        this.command = args[0];
+
+        return this;
+    }
+
+    static getAliases() {
+        return [
+                'помощь'
+        ];
     }
 }
 

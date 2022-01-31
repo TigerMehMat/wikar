@@ -38,10 +38,20 @@ class AbstractCommandController {
 
         /**
          * Основной процесс
+         * @return {Promise<void>}
          * @abstract
          */
         process() {
                 throw new Error('Метод process должен быть переопределен');
+        }
+
+        /**
+         * Массив слов, по которым работает программа
+         * @return {string[]}
+         * @abstract
+         */
+        static getAliases() {
+                throw new Error('Метод getAliases должен быть переопределен');
         }
 }
 
