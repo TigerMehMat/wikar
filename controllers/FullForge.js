@@ -1,5 +1,4 @@
 const Timer = require("./GlobalControllers/Timer");
-const config = require('../configbot');
 const access    = require('./GlobalControllers/access');
 
 

@@ -1,4 +1,3 @@
-const config = require('../configbot');
 const axios = require('axios');
 
 /**
@@ -7,7 +6,7 @@ const axios = require('axios');
 class SteamController {
 
         constructor() {
-                this.token = config.steamToken;
+                this.token = process.env.STEAM_TOKEN;
                 this.instance = axios.create({
                         baseURL: 'http://api.steampowered.com',
                 });

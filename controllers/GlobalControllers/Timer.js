@@ -1,10 +1,9 @@
 const Discord = require('discord.js');
 const staticTextModule = require('./staticTextModule');
-const config = require('../../configbot');
 
 class Timer {
         static controller(message, args) {
-                if (!staticTextModule.isAccess(message, config.accessFotTribe)) return;
+                if (!staticTextModule.isAccess(message)) return;
 
                 if (isNaN(+args[0])) {
                         message.channel.send('Укажите время...');

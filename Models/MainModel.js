@@ -1,6 +1,13 @@
 const Pool = require("pg").Pool;
-const config = require("../configbot");
-const pool = new Pool(config.postgresql);
+const pool = new Pool({
+        "host": process.env.POSTGRESQL_HOST,
+        "port": process.env.POSTGRESQL_PORT,
+        "database": process.env.POSTGRESQL_DATABASE,
+        "password": process.env.POSTGRESQL_PASSWORD,
+        "user": process.env.POSTGRESQL_USER,
+        "max": process.env.POSTGRESQL_MAX,
+        "schema": process.env.POSTGRESQL_SCHEMA,
+    });
 
 class MainModel {
         constructor() {
@@ -21,7 +28,7 @@ class MainModel {
                 }
                 let res;
                 try {
-                        await client.query(`SET search_path TO '${config.postgresql.schema}';`);
+                        await client.query(`SET search_path TO '${process.env.POSTGRESQL_SCHEMA}';`);
                         res = await client.query(queryString, values);
                 } catch (e) {
                         console.error('Ошибка подключения к БД');

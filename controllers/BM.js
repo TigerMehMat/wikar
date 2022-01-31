@@ -1,5 +1,4 @@
 const bm_api	= require("./GlobalControllers/BM_api");
-const config	= require('../configbot');
 const Discord	= require('discord.js');
 const fs		= require('fs');
 const path		= require('path');
@@ -278,7 +277,7 @@ class BM extends bm_api {
 				};
 			}
         }
-        fs.writeFileSync(path.resolve(__dirname, '../data/'+config.path.bm_directory+'/states.json'), JSON.stringify(state));
+        fs.writeFileSync(path.resolve(__dirname, '../data/'+process.env.PATH_BM_DIRECTORY+'/states.json'), JSON.stringify(state));
         message.reply('Статус сервера ' + serv + ' изменен на ' + status)
             .catch(console.error);
     }

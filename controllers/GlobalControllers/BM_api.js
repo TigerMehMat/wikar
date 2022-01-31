@@ -1,5 +1,4 @@
 const axios     = require("axios/index");
-const config    = require("../../configbot");
 
 class BM_api {
     constructor(token){
@@ -43,7 +42,7 @@ class BM_api {
             for(let j = 0; j < data.included.length; j++) {
                 result[serverList[i]].push({"name": data.included[j].attributes.name, "id": data.included[j].id});
             }
-            await setTimeout(() => {}, config.bm_duration_time);
+            await setTimeout(() => {}, process.env.BM_DURATION_TIME);
         }
         return result;
     }
