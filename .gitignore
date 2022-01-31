@@ -5,8 +5,8 @@
 /node_modules/
 /test log/
 configbot_release.js
-/data/ls/*
-/data/map/*
+/src/data/ls/*
+/src/data/map/*
 /package-lock.json
 /yarn.lock
 /.env
