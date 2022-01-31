@@ -7,7 +7,6 @@ const DiscordHelper = require('./GlobalControllers/DiscordHelper.js');
 const fs = require('fs');
 const path = require('path');
 
-const BadRequestsModel = new (require('../Models/BadRequestsModel.js'));
 const MapsModel = new (require('../Models/MapsModel.js'));
 const AbstractCommandController = require('./AbstractCommandController.js');
 
@@ -292,6 +291,8 @@ class MapsController extends AbstractCommandController {
                                 resolve(resultMaps);
                         }
                         let currentMap = maps.shift();
+
+                        console.log(this.generateLink(currentMap));
 
                         http.get(this.generateLink(currentMap), async map_request => {
                                 if (map_request.statusCode === 200) resultMaps.push(currentMap);

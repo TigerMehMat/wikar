@@ -10,3 +10,4 @@ configbot_release.js
 /package-lock.json
 /yarn.lock
 /.env
+/dist/

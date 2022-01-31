@@ -1,7 +1,7 @@
 {
   "name": "discbot",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.21.4",
@@ -20,9 +20,11 @@
     "typescript": "^4.5.5"
   },
   "scripts": {
+    "build": "tsc",
     "start": "node src/index.js"
   },
   "devDependencies": {
+    "@types/node": "^17.0.13",
     "bufferutil": "^4.0.6"
   }
 }
