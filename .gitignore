@@ -11,3 +11,4 @@ configbot_release.js
 /yarn.lock
 /.env
 /dist/
+/cache/

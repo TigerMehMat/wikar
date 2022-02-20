@@ -1,9 +1,9 @@
-require('dotenv').config();
+const env = require('./env.js');
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const DiscordServersModel = new (require('./Models/DiscordServersModel.js'));
 const Kibble = require("./controllers/kibble.js");
-const MapsController = require('./controllers/MapsController.ts');
+const MapsController = require('./controllers/MapsController');
 const BugReport = require('./controllers/BugReport.js');
 const LS = require('./controllers/ls.js');
 const ARK = require('./controllers/ARK.js');
@@ -19,7 +19,7 @@ const QueryLogs = require('./Models/QueryLogs.js');
 const MissCommandController = require("./controllers/MissCommandController.js");
 
 
-client.login(process.env.TOKEN)
+client.login(env.TOKEN)
         .catch(reason => {
                 console.error('Не удалось запустить клиент', reason);
         });

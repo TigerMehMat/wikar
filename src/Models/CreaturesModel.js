@@ -189,6 +189,19 @@ class CreaturesModel extends MainModel {
                                 .catch(reject);
                 });
         }
+
+        /**
+         * @returns {Promise<unknown[]>}
+         */
+        getAllCreatures() {
+                return new Promise((resolve, reject) => {
+                        this.query('SELECT * FROM creatures')
+                            .then(res => {
+                                    resolve(res.rows);
+                            })
+                            .catch(reject);
+                });
+        }
 }
 
 module.exports = CreaturesModel;
