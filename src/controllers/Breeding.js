@@ -67,7 +67,7 @@ class Breeding extends AbstractCommandController {
                 this.creature = await (new CreaturesModel()).getCreatureByID(this.creature.parent);
                 data = (new DvDataController()).getCreature(this.creature.dv_alias);
             } else {
-                await this.message.channel.send('Тушканчикам не удалось добыть информацию о разведении ' + this.creature.ru_name_rp + ', но они обещают спарить их при случае.');
+                await this.message.channel.send('Ноглинам не удалось добыть информацию о разведении ' + this.creature.ru_name_rp + ', но они обещают спарить их при случае.');
                 return;
             }
         }
