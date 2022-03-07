@@ -82,6 +82,8 @@ class Breeding extends AbstractCommandController {
             text = '✅ Разводимое существо';
             switch (this.creature.dv_alias) {
                 case 'reaper':
+                case 'reaperking':
+                case 'rreaperking':
                     text += '\n*Единственный способ "размножения" был бы через оплодотворение от королевы, но размножение технически невозможно из-за гендерной механики Жнеца.*';
                     break;
                 case 'featherlight':
