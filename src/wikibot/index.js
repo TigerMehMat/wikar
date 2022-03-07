@@ -27,6 +27,25 @@ function getWikiImage(url) {
     });
 }
 
+/**
+ *
+ * @returns {Promise<string>}
+ */
+function getDvData() {
+    return new Promise(resolve => {
+        client.getArticle('Module:Dv/data', true, function (err, data) {
+            // error handling
+            if (err) {
+                resolve(null);
+                return;
+            }
+
+            resolve(data);
+        });
+    });
+}
+
 module.exports = {
     getWikiImage: getWikiImage,
+    getDvData: getDvData,
 };

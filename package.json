@@ -23,7 +23,8 @@
   "scripts": {
     "build": "tsc",
     "extracts_maps": "node dist/Extractors/maps/index.js",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "update:dvdata": "node dist/parsers/DvData/index.js"
   },
   "devDependencies": {
     "@types/node": "^17.0.13",

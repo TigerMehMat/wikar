@@ -6,7 +6,6 @@
     "sourceMap": true,
     "allowJs": true,
     "resolveJsonModule": true,
-    "alwaysStrict": true,
     "outDir": "dist"
   },
   "include": [
