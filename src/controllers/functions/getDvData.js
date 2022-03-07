@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
+const env = require('../../env.js');
 
 module.exports = () => {
-    return JSON.parse(fs.readFileSync(path.resolve(__dirname, '../../data/wiki/dvdata.json'), 'utf8'));
+    return JSON.parse(fs.readFileSync(path.resolve(env.PATH_DATA, 'wiki/dvdata.json'), 'utf8'));
 };
