@@ -286,10 +286,9 @@ class MapsController extends AbstractCommandController {
             }
             let currentMap = maps.shift();
 
-            console.log(this.generateLink(currentMap));
-
-            http.get(this.generateLink(currentMap), async map_request => {
-                if (map_request.statusCode === 200) resultMaps.push(currentMap);
+            wikiBot.getWikiImage(this.generateLink(currentMap))
+                .then(async map_request => {
+                if (map_request) resultMaps.push(currentMap);
                 resolve(await this.getAllMapsListForCreature(maps, resultMaps));
             });
         });
