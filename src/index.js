@@ -17,6 +17,7 @@ const ItemsController = require('./controllers/ItemsController.js');
 const InfoCommandController = require('./controllers/InfoCommandController.js');
 const QueryLogs = require('./Models/QueryLogs.js');
 const MissCommandController = require("./controllers/MissCommandController.js");
+const Taming = require("./controllers/Taming.js");
 
 
 client.login(env.TOKEN)
@@ -104,6 +105,7 @@ client.on('message', async message => {
                 BugReport,
                 ItemsController,
                 Helper,
+                Taming,
         ];
 
         const controller_class = active_commands

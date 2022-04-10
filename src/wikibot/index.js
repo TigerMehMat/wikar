@@ -45,7 +45,45 @@ function getDvData() {
     });
 }
 
+/**
+ *
+ * @returns {Promise<string>}
+ */
+function getCreatures() {
+    return new Promise(resolve => {
+        client.getArticle('Module:TamingTable/creatures', true, function (err, data) {
+            // error handling
+            if (err) {
+                resolve(null);
+                return;
+            }
+
+            resolve(data);
+        });
+    });
+}
+
+/**
+ *
+ * @returns {Promise<string>}
+ */
+function getFood() {
+    return new Promise(resolve => {
+        client.getArticle('Module:TamingTable/food', true, function (err, data) {
+            // error handling
+            if (err) {
+                resolve(null);
+                return;
+            }
+
+            resolve(data);
+        });
+    });
+}
+
 module.exports = {
     getWikiImage: getWikiImage,
     getDvData: getDvData,
+    getCreatures: getCreatures,
+    getFood: getFood,
 };

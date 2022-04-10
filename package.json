@@ -24,7 +24,9 @@
     "build": "tsc",
     "extracts_maps": "node dist/Extractors/maps/index.js",
     "start": "node dist/index.js",
-    "update:dvdata": "node dist/parsers/DvData/index.js"
+    "update:dvdata": "node dist/parsers/WikiData/DvData.js",
+    "update:creatures": "node dist/parsers/WikiData/Creatures.js",
+    "update:food": "node dist/parsers/WikiData/Food.js"
   },
   "devDependencies": {
     "@types/node": "^17.0.13",
