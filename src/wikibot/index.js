@@ -5,9 +5,9 @@ const bot = require('nodemw');
 const client = new bot({
     "username": env.WIKI_BOT_LOGIN,
     "password": env.WIKI_BOT_PASSWORD,
-    protocol: 'https',           // Wikipedia now enforces HTTPS
-    server: 'ark.fandom.com',  // host name of MediaWiki-powered site
-    path: '',                  // path to api.php script
+    protocol: env.WIKI_BOT_PROTOCOL,           // Wikipedia now enforces HTTPS
+    server: env.WIKI_BOT_SERVER,  // host name of MediaWiki-powered site
+    path: env.WIKI_BOT_PATH,                  // path to api.php script
     debug: false                 // is more verbose when set to true
 });
 
