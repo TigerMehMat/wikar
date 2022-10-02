@@ -19,115 +19,136 @@ const QueryLogs = require('./Models/QueryLogs.js');
 const MissCommandController = require("./controllers/MissCommandController.js");
 const Taming = require("./controllers/Taming.js");
 
+const Sentry = require("@sentry/node");
+
+const Tracing = require("@sentry/tracing");
+
+Sentry.init({
+    dsn: env.SENTRY_DSN,
+
+    // Set tracesSampleRate to 1.0 to capture 100%
+    // of transactions for performance monitoring.
+    // We recommend adjusting this value in production
+    tracesSampleRate: 1.0,
+});
 
 client.login(env.TOKEN)
-        .catch(reason => {
-                console.error('Не удалось запустить клиент', reason);
-        });
+    .catch(reason => {
+        console.error('Не удалось запустить клиент', reason);
+    });
 
 global.DiscordAlarm = new alarm_class();
 
 client.on("ready", async () => {
-        await DiscordAlarm.setClient(client);
+    await DiscordAlarm.setClient(client);
 
-        try {
-                await DiscordAlarm.send("Готов!\n" + client.user.tag);
-        } catch (e) {
-                console.error('Не удалось отправить "Готов!"');
-                console.error(e);
-                return;
-        }
+    try {
+        await DiscordAlarm.send("Готов!\n" + client.user.tag);
+    } catch (e) {
+        console.error('Не удалось отправить "Готов!"');
+        console.error(e);
+        return;
+    }
 
-        console.log("Готов!\n" + client.user.tag);
+    console.log("Готов!\n" + client.user.tag);
 
-        SubscribeController.activate(client);
+    SubscribeController.activate(client);
 
-        /* Апдейтеры */
-        ark = new ARK(client, DiscordServersModel);
+    /* Апдейтеры */
+    ark = new ARK(client, DiscordServersModel);
 
-        ark.start()
-                .then(() => {
-                        ark.updater().catch(() => {
-                                DiscordAlarm.send('Логгер ARK окончательно завершил свою работу!');
-                        });
-                })
-                .catch(console.error);
+    ark.start()
+        .then(() => {
+            ark.updater().catch(() => {
+                DiscordAlarm.send('Логгер ARK окончательно завершил свою работу!');
+            });
+        })
+        .catch(console.error);
 });
 
 
 client.on('message', async message => {
+    const transaction = Sentry.startTransaction({
+        op: "test",
+        name: "My First Test Transaction",
+    });
 
-        if (!message) return;
-        if (typeof message.guild === "undefined" || !message.guild) {
-                if (!message.author.bot)
-                        LS.reply(message);
-                return;
-        }
+    if (!message) return;
+    if (typeof message.guild === "undefined" || !message.guild) {
+        if (!message.author.bot)
+            LS.reply(message);
+        return;
+    }
 
-        let access = (new Access(message.guild.id, message.channel.id)).validate();
-        let access_parameters = await access.getAccessParameters();
+    ungfdgfd();
 
-        /** @var {Object} Неведомый костыль, убрать когда переделаю верификацию. */
-        const messageAccess = await access.getMainCheck();
-        if (!messageAccess) return;
+    let access = (new Access(message.guild.id, message.channel.id)).validate();
+    let access_parameters = await access.getAccessParameters();
 
-        if (!access_parameters) {
-                return;
-        }
+    /** @var {Object} Неведомый костыль, убрать когда переделаю верификацию. */
+    const messageAccess = await access.getMainCheck();
+    if (!messageAccess) return;
 
-        /* Начало обработчика команд */
-        const prefix = access_parameters.prefix;
+    if (!access_parameters) {
+        return;
+    }
 
-        if (!message.content.startsWith(prefix) || message.author.bot) return;
+    /* Начало обработчика команд */
+    const prefix = access_parameters.prefix;
+
+    if (!message.content.startsWith(prefix) || message.author.bot) return;
 
 
-        let messageContent = message.content.replace(/\s+/g, ' ').trim();
-        messageContent = messageContent.replace(RegExp('^' + prefix.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&') + '\\s', 'g'), prefix);
-        const args = messageContent.slice(prefix.length).split(/ /);
-        const command = args.shift().toLowerCase();
-        let controller;
+    let messageContent = message.content.replace(/\s+/g, ' ').trim();
+    messageContent = messageContent.replace(RegExp('^' + prefix.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&') + '\\s', 'g'), prefix);
+    const args = messageContent.slice(prefix.length).split(/ /);
+    const command = args.shift().toLowerCase();
+    let controller;
 
-        (new QueryLogs()).send({
-                query: message.content,
-                author: message.author.id,
-                guild: message.guild.id,
-                channel: message.channel.id,
-                message: message.id,
+    (new QueryLogs()).send({
+        query: message.content,
+        author: message.author.id,
+        guild: message.guild.id,
+        channel: message.channel.id,
+        message: message.id,
 
-        })
-                .catch(console.error);
+    })
+        .catch(console.error);
 
-        const active_commands = [
-                Breeding,
-                InfoCommandController,
-                Kibble,
-                MapsController,
-                BugReport,
-                ItemsController,
-                Helper,
-                Taming,
-        ];
+    const active_commands = [
+        Breeding,
+        InfoCommandController,
+        Kibble,
+        MapsController,
+        BugReport,
+        ItemsController,
+        Helper,
+        Taming,
+    ];
 
-        const controller_class = active_commands
-                        .find(el => {
-                                return el.getAliases().indexOf(command) !== -1
-                        }) || MissCommandController;
+    const controller_class = active_commands
+        .find(el => {
+            return el.getAliases().indexOf(command) !== -1
+        }) || MissCommandController;
 
-        controller = new controller_class();
+    controller = new controller_class();
 
-        try {
-                await controller.setMessage(message);
-                await controller.setArgs(args);
-                await controller.validate();
-                await controller.process();
-        } catch (e) {
-                console.error('Что-то пошло не так, выпали из обработки контроллера', e);
-        }
-        setTimeout(() => {
-                message.channel.stopTyping(true);
-        }, 10000);
+    try {
+        await controller.setMessage(message);
+        await controller.setArgs(args);
+        await controller.validate();
+        await controller.process();
+    } catch (e) {
+        Sentry.captureException(e);
+        console.error('Что-то пошло не так, выпали из обработки контроллера', e);
+    }
+    transaction.finish();
+    setTimeout(() => {
+        message.channel.stopTyping(true);
+    }, 10000);
 });
 
-client.on('error', () => {
-        console.error('Discord long query error, its normal.');
+client.on('error', e => {
+    Sentry.captureException(e);
+    console.error('Discord long query error, its normal.');
 });

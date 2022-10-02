@@ -8,6 +8,7 @@ module.exports = {
     WIKI_BOT_PATH: process.env.WIKI_BOT_PATH || '',
     WIKI_BOT_LOGIN: process.env.WIKI_BOT_LOGIN,
     WIKI_BOT_PASSWORD: process.env.WIKI_BOT_PASSWORD,
+    SENTRY_DSN: process.env.SENTRY_DSN,
     PATH_DATA: path.resolve(__dirname, '../', process.env.PATH_DATA),
     PATH_CACHE: path.resolve(__dirname, '../', process.env.PATH_CACHE),
 };
