@@ -80,8 +80,6 @@ client.on('message', async message => {
         return;
     }
 
-    ungfdgfd();
-
     let access = (new Access(message.guild.id, message.channel.id)).validate();
     let access_parameters = await access.getAccessParameters();
 
